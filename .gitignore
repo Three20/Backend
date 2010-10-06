@@ -1,0 +1,8 @@
+Articles/
+application/cache
+application/logs
+application/views/articles
+application/views/pages
+application/views/templates
+www/gfx
+www/css
