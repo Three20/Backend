@@ -1,8 +1,15 @@
 <?php
 
+$nodirs = false;
 $force = false;
-if ($argv[1] == 'force') {
-  $force = true;
+
+foreach ($argv as $arg) {
+  if ($arg == 'force') {
+    $force = true;
+  }
+  if ($arg == 'nodirs') {
+    $nodirs = true;
+  }
 }
 
 if (!$force) {
@@ -154,4 +161,6 @@ process_directory('../Articles/_posts', 'update_article', $recurse = false);
 process_directory('../Articles/_layouts', 'update_layout', $recurse = false);
 process_directory('../Articles/_pages', 'update_page', $recurse = false);
 
-process_directory('../Articles/', 'copy_folders', $recurse = false);
+if (!$nodirs) {
+  process_directory('../Articles/', 'copy_folders', $recurse = false);
+}
