@@ -16,9 +16,7 @@ class Home_Controller extends Three20_Controller {
 
     $content = new View('pages/home');
 
-    $this->add_css_file('css/home.css');
-
-    $this->render_markdown_template($content);
+    $this->render_article_template($content);
   }
 
 }

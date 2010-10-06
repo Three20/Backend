@@ -56,14 +56,45 @@ class Three20_Controller extends Template_Controller {
     $this->template->render(TRUE);
   }
 
-  protected function render_article_template($content, $name, $date) {
+  protected function render_article_template($content, $name = null, $date = null) {
+    $filename = $content->kohana_filename;
+    $configFilename = substr($filename, 0, strrpos($filename, '.')).'.config';
+    
+    $config = array();
+    if (file_exists($configFilename)) {
+      $config = json_decode(file_get_contents($configFilename), TRUE);
+    }
+    
+    if (isset($config['css'])) {
+      $files = explode(' ', $config['css']);
+      foreach ($files as $file) {
+        $this->add_css_file('css/'.$file.'.css');
+      }
+    }
+
+    if (isset($config['layout'])) {
+      $this->template->set_filename('templates/'.$config['layout']);
+    }
+
+    if (isset($config['title'])) {
+      $name = $config['title'];
+    }
+
+    if (isset($config['date'])) {
+      $date = $config['date'];
+    }
+
     $content->title = current($this->template->title)."\n";
     $this->template->templateModifiedTime = filemtime($content->kohana_filename);
 
     $this->template->content = $content->render(FALSE);
 
-    array_unshift($this->template->title, $date);
-    array_unshift($this->template->title, $name);
+    if ($date) {
+      array_unshift($this->template->title, $date);
+    }
+    if ($name) {
+      array_unshift($this->template->title, $name);
+    }
 
     $this->template->title = implode(' | ', $this->template->title);
     $this->template->render(TRUE);
