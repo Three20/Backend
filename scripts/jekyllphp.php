@@ -9,7 +9,7 @@ define('LAYOUTS_PATH', '../application/views/templates');
 define('PAGES_PATH', '../application/views/pages');
 define('WWW_PATH', '../www');
 
-if (0) {
+if (1) {
   exec('cd ../Articles;git pull', $output);
 
   if ($output[0] == 'Already up-to-date.') {
