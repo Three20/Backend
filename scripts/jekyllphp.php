@@ -1,5 +1,7 @@
 <?php
 
+date_default_timezone_set('EST');
+
 $nodirs = false;
 $force = false;
 
@@ -41,11 +43,82 @@ if (!$force) {
   }
 }
 
+$globalphase = 0;
+
 function join_paths($path1, $path2) {
   return join('/', array(trim($path1, '/'), trim($path2, '/')));
 }
 
+function get_id_config($id) {
+  $configFilename = $id.'.config';
+
+  $possible_paths = array(
+    ARTICLES_PATH,
+    LAYOUTS_PATH,
+    PAGES_PATH
+  );
+
+  $configPath = null;
+  foreach ($possible_paths as $path) {
+    $testPath = join_paths($path, $configFilename);
+
+    if (file_exists($testPath)) {
+      $configPath = $testPath;
+    }
+  }
+  
+  $config = array();
+
+  if (preg_match('/([0-9]{4})-([0-9]{2})-([0-9]{2})-([a-z0-9\-]+)/i', $id, $matches)) {
+    $config['title'] = str_replace('-', ' ', $matches[4]);
+    $config['date'] = date('F n, Y', mktime(0, 0, 0, $matches[2], $matches[3], $matches[1]));
+    $config['base_path'] = '/article/';
+  } else {
+    $config['title'] = $id;
+    $config['base_path'] = '/';
+  }
+
+  if ($configPath) {
+    $config = array_merge($config, json_decode(file_get_contents($configPath), TRUE));
+  }
+
+  return $config;
+}
+
+function check_cross_links($path, $pagePath) {
+  $filename = substr($path, strrpos($path, '/') + 1);
+  $compiledFilename = substr($filename, 0, strrpos($filename, '.')).'.php';
+  $articlePath = join_paths($pagePath, $compiledFilename);
+  
+  if (file_exists($articlePath)) {
+    $fileData = file_get_contents($articlePath);
+    
+    $changed = false;
+    
+    if (preg_match_all('/{{(.+?)}}/i', $fileData, $matches)) {
+      foreach ($matches[1] as $match) {
+        $config = get_id_config($match);
+
+        $fileData = str_replace('{{'.$match.'}}',
+          '<a href="'.$config['base_path'].$match.'">'.$config['title'].'</a>', $fileData);
+        $changed = true;
+      }
+    }
+    
+    if ($changed) {
+      file_put_contents($articlePath, $fileData);
+    }
+  }
+}
+
 function update_content($path, $pagePath) {
+  global $globalphase;
+
+  if ($globalphase > 0) {
+    check_cross_links($path, $pagePath);
+    return;
+  }
+
   $ext = substr($path, strrpos($path, '.') + 1);
   $filename = substr($path, strrpos($path, '/') + 1);
   
@@ -157,9 +230,11 @@ function process_directory($path, $fn, $recurse) {
   }
 }
 
-process_directory('../Articles/_posts', 'update_article', $recurse = false);
-process_directory('../Articles/_layouts', 'update_layout', $recurse = false);
-process_directory('../Articles/_pages', 'update_page', $recurse = false);
+for ($globalphase = 0; $globalphase < 2; ++$globalphase) {
+  process_directory('../Articles/_posts', 'update_article', $recurse = false);
+  process_directory('../Articles/_layouts', 'update_layout', $recurse = false);
+  process_directory('../Articles/_pages', 'update_page', $recurse = false);
+}
 
 if (!$nodirs) {
   process_directory('../Articles/', 'copy_folders', $recurse = false);
