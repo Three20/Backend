@@ -2,6 +2,7 @@
 
 include '../system/vendor/Markdown.php';
 include '../system/vendor/classTextile.php';
+include '../system/vendor/spyc.php';
 
 define('ARTICLES_PATH', '../application/views/articles');
 define('LAYOUTS_PATH', '../application/views/templates');
@@ -26,7 +27,14 @@ function update_content($path, $pagePath) {
   $filename = substr($path, strrpos($path, '/') + 1);
   
   $filedata = trim(file_get_contents($path));
-  
+
+  $config = null;
+  if (preg_match('/^^---(.+?)---/is', $filedata, $match)) {
+    $config = Spyc::YAMLLoadString($match[1]);
+    
+    $filedata = trim(preg_replace('/^^---(.+?)---/is', '', $filedata));
+  }
+
   if (preg_match('/^mdown|markdown$/i', $ext)) {
     $compiledData = Markdown($filedata);
 
@@ -43,8 +51,17 @@ function update_content($path, $pagePath) {
 
   if ($compiledData) {
     $compiledFilename = substr($filename, 0, strrpos($filename, '.')).'.php';
-
+    $configFilename = substr($filename, 0, strrpos($filename, '.')).'.config';
+    
     $articlePath = join_paths($pagePath, $compiledFilename);
+    $configPath = join_paths($pagePath, $configFilename);
+
+    if (!$config) {
+      @unlink($configPath);
+      
+    } else {
+      file_put_contents($configPath, json_encode($config));
+    }
 
     file_put_contents($articlePath, $compiledData);
   }
