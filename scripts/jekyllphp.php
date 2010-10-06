@@ -21,6 +21,8 @@ if (1) {
   if ($output[0] == 'Already up-to-date.') {
     // Do nothing then.
     exit;
+  } else {
+    echo date('l jS \of F Y h:i:s A').": Updating the repo...\n";
   }
 }
 
