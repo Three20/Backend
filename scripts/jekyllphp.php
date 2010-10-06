@@ -1,5 +1,11 @@
 <?php
 
+if (file_exists('../application/cache/wants_update')) {
+  unlink('../application/cache/wants_update');
+} else {
+  exit;
+}
+
 include '../system/vendor/Markdown.php';
 include '../system/vendor/classTextile.php';
 include '../system/vendor/spyc.php';
