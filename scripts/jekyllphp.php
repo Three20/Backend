@@ -1,9 +1,16 @@
 <?php
 
-if (file_exists('../application/cache/wants_update')) {
-  unlink('../application/cache/wants_update');
-} else {
-  exit;
+$force = false;
+if ($argv[1] == 'force') {
+  $force = true;
+}
+
+if (!$force) {
+  if (file_exists('../application/cache/wants_update')) {
+    unlink('../application/cache/wants_update');
+  } else {
+    exit;
+  }
 }
 
 include '../system/vendor/Markdown.php';
@@ -15,7 +22,7 @@ define('LAYOUTS_PATH', '../application/views/templates');
 define('PAGES_PATH', '../application/views/pages');
 define('WWW_PATH', '../www');
 
-if (1) {
+if (!$force) {
   exec('cd ../Articles;git pull', $output);
 
   if ($output[0] == 'Already up-to-date.') {
