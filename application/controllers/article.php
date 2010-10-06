@@ -26,6 +26,16 @@ class Article_Controller extends Three20_Controller {
       $article_date = date('F n, Y', mktime(0, 0, 0, $matches[2], $matches[3], $matches[1]));
     }
 
+    $filename = $content->kohana_filename;
+    $configFilename = substr($filename, 0, strrpos($filename, '.')).'.config';
+    
+    $config = array();
+    if (file_exists($configFilename)) {
+      $config = json_decode(file_get_contents($configFilename), TRUE);
+    }
+
+    $this->template->article_id = $name.'.'.$config['ext'];
+
     $this->add_css_file('css/article.css');
 
     $this->render_article_template($content, $article_name, $article_date);

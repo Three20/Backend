@@ -124,13 +124,14 @@ function update_content($path, $pagePath) {
   
   $filedata = trim(file_get_contents($path));
 
-  $config = null;
+  $config = array();
   if (preg_match('/^^---(.+?)---/is', $filedata, $match)) {
     $config = Spyc::YAMLLoadString($match[1]);
     
     $filedata = trim(preg_replace('/^^---(.+?)---/is', '', $filedata));
   }
 
+  $config['ext'] = $ext;
   if (preg_match('/^mdown|markdown$/i', $ext)) {
     $compiledData = Markdown($filedata);
 
@@ -143,6 +144,7 @@ function update_content($path, $pagePath) {
     
   } else {
     $compiledData = null;
+    unset($config['ext']);
   }
 
   if ($compiledData) {
