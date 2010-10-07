@@ -422,6 +422,7 @@ class Markdown_Parser {
 	# These are all the transformations that form block-level
 	# tags like paragraphs, headers, and list items.
 	#
+	  "doHorizontalBar"   => 5,
 		"doHeaders"         => 10,
 		"doHorizontalRules" => 20,
 		
@@ -1235,6 +1236,25 @@ class Markdown_Parser {
 		return $pre;
 	}
 
+	function doHorizontalBar($text) {
+		$text = preg_replace_callback('/
+			  (								# Wrap whole match in $1
+			  ^--.*\n			# "--" at the beginning of the horizontal bar
+				(.*\n)+					# rest of the first line
+				--\n
+			  )
+			/xm',
+			array(&$this, '_doHorizontalBar_callback'), $text);
+
+		return $text;
+	}
+	function _doHorizontalBar_callback($matches) {
+		$bq = $matches[1];
+    
+		$bq = preg_replace('/--/', '', $bq);
+
+		return "\n". $this->hashBlock("</div><div class=\"horizontal-bar\">\n$bq\n</div><div class=\"fixed-width\">")."\n\n";
+	}
 
 	function doNaviQuotes($text) {
 		$text = preg_replace_callback('/

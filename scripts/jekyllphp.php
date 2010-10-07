@@ -98,9 +98,15 @@ function check_cross_links($path, $pagePath) {
     if (preg_match_all('/{{(.+?)}}/i', $fileData, $matches)) {
       foreach ($matches[1] as $match) {
         $config = get_id_config($match);
+        
+        if (isset($config['published']) && !$config['published']) {
+          $fileData = str_replace('{{'.$match.'}}', '', $fileData);
 
-        $fileData = str_replace('{{'.$match.'}}',
-          '<a href="'.$config['base_path'].$match.'">'.$config['title'].'</a>', $fileData);
+        } else {
+          $fileData = str_replace('{{'.$match.'}}',
+            '<a href="'.$config['base_path'].$match.'">'.$config['title'].'</a>', $fileData);
+        }
+
         $changed = true;
       }
     }
