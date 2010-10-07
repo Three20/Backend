@@ -233,8 +233,15 @@ function process_directory($path, $fn, $recurse) {
 }
 
 for ($globalphase = 0; $globalphase < 2; ++$globalphase) {
+  echo "Phase ".($globalphase+1)."...\n";
+
+  echo "posts...\n";
   process_directory('../Articles/_posts', 'update_article', $recurse = false);
+
+  echo "layouts...\n";
   process_directory('../Articles/_layouts', 'update_layout', $recurse = false);
+
+  echo "pages...\n";
   process_directory('../Articles/_pages', 'update_page', $recurse = false);
 }
 
