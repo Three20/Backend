@@ -44,6 +44,8 @@ if (!$force) {
 }
 
 $globalphase = 0;
+$globalindex = array();
+$globalindexregex = '';
 
 function join_paths($path1, $path2) {
   return join('/', array(trim($path1, '/'), trim($path2, '/')));
@@ -86,6 +88,9 @@ function get_id_config($id) {
 }
 
 function check_cross_links($path, $pagePath) {
+  global $globalindex;
+  global $globalindexregex;
+
   $filename = substr($path, strrpos($path, '/') + 1);
   $compiledFilename = substr($filename, 0, strrpos($filename, '.')).'.php';
   $articlePath = join_paths($pagePath, $compiledFilename);
@@ -105,6 +110,18 @@ function check_cross_links($path, $pagePath) {
         } else {
           $fileData = str_replace('{{'.$match.'}}',
             '<a href="'.$config['base_path'].$match.'">'.$config['title'].'</a>', $fileData);
+        }
+
+        $changed = true;
+      }
+    }
+    
+    if (preg_match_all($globalindexregex, $fileData, $matches)) {
+      for ($index = 0; $index < count($matches[0]); ++$index) {
+        $match = $matches[0][$index];
+        $classname = $matches[1][$index];
+        if (isset($globalindex[$classname])) {
+          $fileData = str_replace($match, '<a href="'.$globalindex[$classname].'">'.$classname.'</a>', $fileData);
         }
 
         $changed = true;
@@ -237,6 +254,21 @@ function process_directory($path, $fn, $recurse) {
     closedir($dhandle);
   }
 }
+
+function load_index() {
+  $index = array();
+  if (file_exists('index.json')) {
+    $index = json_decode(file_get_contents('index.json'), TRUE);
+  }
+  return $index;
+}
+
+function get_index_regex($index) {
+  return '/\^('.join('|', array_keys($index)).')\b/i';
+}
+
+$globalindex = load_index();
+$globalindexregex = get_index_regex($globalindex);
 
 for ($globalphase = 0; $globalphase < 2; ++$globalphase) {
   echo "Phase ".($globalphase+1)."...\n";
