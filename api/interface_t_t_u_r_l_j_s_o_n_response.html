@@ -81,6 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#properties">Properties</a>  </div>
   <div class="headertitle">
@@ -105,6 +106,10 @@ Inheritance diagram for TTURLJSONResponse:</div>
 
 <p><a href="class_t_t_u_r_l_j_s_o_n_response-members.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(NSError *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_u_r_l_response-p.html#a92fe1507b1789dfe686f047bffc61f34">request:processResponse:data:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Processes the data from a successful request and determines if it is valid.  <a href="#a92fe1507b1789dfe686f047bffc61f34"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6458c1a046d5d57bf978b6f2d4e82ace"></a><!-- doxytag: member="TTURLJSONResponse::_rootObject" ref="a6458c1a046d5d57bf978b6f2d4e82ace" args="" -->
@@ -116,6 +121,52 @@ id&nbsp;</td><td class="memItemRight" valign="bottom"><b>rootObject</b></td></tr
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>An implementation of the <a class="el" href="protocol_t_t_u_r_l_response-p.html" title="A response protocol for TTURLRequest.">TTURLResponse</a> protocal for turning JSON responses into NSObjects. </p>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a92fe1507b1789dfe686f047bffc61f34"></a><!-- doxytag: member="TTURLJSONResponse::request:processResponse:data:" ref="a92fe1507b1789dfe686f047bffc61f34" args="(TTURLRequest *request,[processResponse] NSHTTPURLResponse *response,[data] id data)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSError*) request: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_t_t_u_r_l_request.html">TTURLRequest</a> *)&nbsp;</td>
+          <td class="paramname"> <em>request</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">processResponse:</td>
+          <td></td>
+          <td class="paramtype">(NSHTTPURLResponse *)&nbsp;</td>
+          <td class="paramname"> <em>response</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">data:</td>
+          <td></td>
+          <td class="paramtype">(id)&nbsp;</td>
+          <td class="paramname"> <em>data</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td><td><code> [required, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Processes the data from a successful request and determines if it is valid. </p>
+<p>If the data is not valid, return an error. The data will not be cached if there is an error.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>request</em>&nbsp;</td><td>The request this response is bound to. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>response</em>&nbsp;</td><td>The response object, useful for getting the status code. </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>The data received from the <a class="el" href="interface_t_t_u_r_l_request.html" title="The Three20 network request object, built to work with the Three20 cache and co.">TTURLRequest</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>NSError if there was an error parsing the data. nil otherwise.</dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>extThree20JSON/Headers/<a class="el" href="_t_t_u_r_l_j_s_o_n_response_8h_source.html">TTURLJSONResponse.h</a></li>
 </ul>

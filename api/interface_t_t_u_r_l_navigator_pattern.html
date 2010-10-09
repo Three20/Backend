@@ -115,6 +115,12 @@ Public Member Functions</h2></td></tr>
 (id)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>invoke:withURL:query:</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae0acef58334385dfb02ae56c67acdcf0"></a><!-- doxytag: member="TTURLNavigatorPattern::createObjectFromURL:query:" ref="ae0acef58334385dfb02ae56c67acdcf0" args="(NSURL *URL,[query] NSDictionary *query)" -->
 (id)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>createObjectFromURL:query:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c809505f7238bb4e794e015a290319b"></a><!-- doxytag: member="TTURLNavigatorPattern::setSelectorIfPossible:" ref="a8c809505f7238bb4e794e015a290319b" args="(SEL selector)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>setSelectorIfPossible:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa7f1639e3e9602cc6dea68b16539b492"></a><!-- doxytag: member="TTURLNavigatorPattern::compileURL" ref="aa7f1639e3e9602cc6dea68b16539b492" args="()" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>compileURL</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c4737b51698f4044675b70877924b51"></a><!-- doxytag: member="TTURLNavigatorPattern::setSelectorWithNames:" ref="a4c4737b51698f4044675b70877924b51" args="(NSArray *names)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>setSelectorWithNames:</b></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf9ca4847941d234c4fb91942085745b"></a><!-- doxytag: member="TTURLNavigatorPattern::_targetClass" ref="acf9ca4847941d234c4fb91942085745b" args="" -->
@@ -129,6 +135,20 @@ TTNavigationMode&nbsp;</td><td class="memItemRight" valign="bottom"><b>_navigati
 NSInteger&nbsp;</td><td class="memItemRight" valign="bottom"><b>_transition</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1147ecef22627bca888d889f3f2868d5"></a><!-- doxytag: member="TTURLNavigatorPattern::_argumentCount" ref="a1147ecef22627bca888d889f3f2868d5" args="" -->
 NSInteger&nbsp;</td><td class="memItemRight" valign="bottom"><b>_argumentCount</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2debd916354fcc41f4514c1c878a5064"></a><!-- doxytag: member="TTURLNavigatorPattern::_URL" ref="a2debd916354fcc41f4514c1c878a5064" args="" -->
+<a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_URL</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab88c4e37d5185935a25ce1040c9a6867"></a><!-- doxytag: member="TTURLNavigatorPattern::_scheme" ref="ab88c4e37d5185935a25ce1040c9a6867" args="" -->
+<a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_scheme</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a96e77b0b462c7e0ebb4fb9bcbbd4a2bf"></a><!-- doxytag: member="TTURLNavigatorPattern::_path" ref="a96e77b0b462c7e0ebb4fb9bcbbd4a2bf" args="" -->
+<a class="el" href="class_n_s_mutable_array.html">NSMutableArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_path</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab2316c7e669924aa12500adbe91ebf5d"></a><!-- doxytag: member="TTURLNavigatorPattern::_query" ref="ab2316c7e669924aa12500adbe91ebf5d" args="" -->
+<a class="el" href="class_n_s_mutable_dictionary.html">NSMutableDictionary</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_query</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75cd0e15dbeee75842056f1fb0766e0e"></a><!-- doxytag: member="TTURLNavigatorPattern::_fragment" ref="a75cd0e15dbeee75842056f1fb0766e0e" args="" -->
+id&lt; <a class="el" href="protocol_t_t_u_r_l_pattern_text-p.html">TTURLPatternText</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>_fragment</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e3378053e22887c521858250c125601"></a><!-- doxytag: member="TTURLNavigatorPattern::_specificity" ref="a5e3378053e22887c521858250c125601" args="" -->
+NSInteger&nbsp;</td><td class="memItemRight" valign="bottom"><b>_specificity</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab61e39a652e580722083bc34033ef162"></a><!-- doxytag: member="TTURLNavigatorPattern::_selector" ref="ab61e39a652e580722083bc34033ef162" args="" -->
+SEL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_selector</b></td></tr>
 <tr><td colspan="2"><h2><a name="properties"></a>
 Properties</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aada428f0bb6085f91d4a665010f3dfaf"></a><!-- doxytag: member="TTURLNavigatorPattern::targetClass" ref="aada428f0bb6085f91d4a665010f3dfaf" args="" -->
@@ -147,6 +167,16 @@ NSInteger&nbsp;</td><td class="memItemRight" valign="bottom"><b>argumentCount</b
 BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>isUniversal</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4871005c57fb08b85a15f4ff1547247d"></a><!-- doxytag: member="TTURLNavigatorPattern::isFragment" ref="a4871005c57fb08b85a15f4ff1547247d" args="" -->
 BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>isFragment</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ac75d06c2cc6bec15d4064e51fbf0e4"></a><!-- doxytag: member="TTURLNavigatorPattern::URL" ref="a2ac75d06c2cc6bec15d4064e51fbf0e4" args="" -->
+<a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>URL</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b4347f0497c00ec39e07d21ef3c2075"></a><!-- doxytag: member="TTURLNavigatorPattern::scheme" ref="a3b4347f0497c00ec39e07d21ef3c2075" args="" -->
+<a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>scheme</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8faebb59d29e2ea512213edae01e054"></a><!-- doxytag: member="TTURLNavigatorPattern::specificity" ref="ac8faebb59d29e2ea512213edae01e054" args="" -->
+NSInteger&nbsp;</td><td class="memItemRight" valign="bottom"><b>specificity</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52737296350c66c67bdd136623d35fd1"></a><!-- doxytag: member="TTURLNavigatorPattern::classForInvocation" ref="a52737296350c66c67bdd136623d35fd1" args="" -->
+Class&nbsp;</td><td class="memItemRight" valign="bottom"><b>classForInvocation</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acc45aed4a4120330e38d6a3bb72f47fc"></a><!-- doxytag: member="TTURLNavigatorPattern::selector" ref="acc45aed4a4120330e38d6a3bb72f47fc" args="" -->
+SEL&nbsp;</td><td class="memItemRight" valign="bottom"><b>selector</b></td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Three20UINavigator/Headers/<a class="el" href="_t_t_u_r_l_navigator_pattern_8h_source.html">TTURLNavigatorPattern.h</a></li>

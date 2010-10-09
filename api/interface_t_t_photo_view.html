@@ -115,6 +115,53 @@ Public Member Functions</h2></td></tr>
 (void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>showProgress:</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b7b24fa6f5ae07a6c7a00727e013572"></a><!-- doxytag: member="TTPhotoView::showStatus:" ref="a4b7b24fa6f5ae07a6c7a00727e013572" args="(NSString *text)" -->
 (void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>showStatus:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a45f01356d13b9a4feb16a7d0dfc11dd6"></a><!-- doxytag: member="TTPhotoView::unsetImage" ref="a45f01356d13b9a4feb16a7d0dfc11dd6" args="()" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_image_view.html#a45f01356d13b9a4feb16a7d0dfc11dd6">unsetImage</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Cancel any pending request, remove the image, and redraw the view. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_image_view.html#acabfc9494cda1e296dfe5395adfa1ded">reload</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Force the image to be reloaded.  <a href="#acabfc9494cda1e296dfe5395adfa1ded"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab726aee4cb2dd60276eae933607366cf"></a><!-- doxytag: member="TTPhotoView::stopLoading" ref="ab726aee4cb2dd60276eae933607366cf" args="()" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_image_view.html#ab726aee4cb2dd60276eae933607366cf">stopLoading</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Cancel this image views' active asynchronous requests. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_image_view.html#aeb434f2a23554c10cc7f01d861fe841f">imageViewDidStartLoad</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Called when the image begins loading asynchronously.  <a href="#aeb434f2a23554c10cc7f01d861fe841f"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_image_view.html#af0feb022797654f5468d375dc8cd57d6">imageViewDidLoadImage:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Called when the image finishes loading asynchronously.  <a href="#af0feb022797654f5468d375dc8cd57d6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_image_view.html#a6257f74a8a335ea56eed95f5b33f62e6">imageViewDidFailLoadWithError:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Called when the image failed to load asynchronously.  <a href="#a6257f74a8a335ea56eed95f5b33f62e6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_image_view.html#ad2b661168892cc606dff75d436858171">setImage:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Useful when overriding the <a class="el" href="interface_t_t_image_view.html" title="A view that asynchronously loads an image and subsequently displays it.">TTImageView</a> class's setImage method.  <a href="#ad2b661168892cc606dff75d436858171"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad88f3307be7d49bf55b419941a1eabbd"></a><!-- doxytag: member="TTPhotoView::drawContent:" ref="ad88f3307be7d49bf55b419941a1eabbd" args="(CGRect rect)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>drawContent:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ca8c9a930241745c77280b6e5296a6b"></a><!-- doxytag: member="TTPhotoView::textForLayerWithStyle:" ref="a6ca8c9a930241745c77280b6e5296a6b" args="(TTStyle *style)" -->
+(<a class="el" href="class_n_s_string.html">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>textForLayerWithStyle:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61b305018c41e4b8596d477337614e28"></a><!-- doxytag: member="TTPhotoView::imageForLayerWithStyle:" ref="a61b305018c41e4b8596d477337614e28" args="(TTStyle *style)" -->
+(<a class="el" href="class_u_i_image.html">UIImage</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>imageForLayerWithStyle:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a940c09a71f143ac572cf3ebaddeb127e"></a><!-- doxytag: member="TTPhotoView::drawLayer:withStyle:" ref="a940c09a71f143ac572cf3ebaddeb127e" args="(TTStyleContext *context,[withStyle] TTStyle *style)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>drawLayer:withStyle:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_u_r_l_request_delegate-p.html#ae20fc15de596fef702c47a38343ccec6">requestDidStartLoad:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The request has begun loading.  <a href="#ae20fc15de596fef702c47a38343ccec6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_u_r_l_request_delegate-p.html#a9c831806650a4b887f5cf963f6bbba1c">requestDidUploadData:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The request has loaded some more data.  <a href="#a9c831806650a4b887f5cf963f6bbba1c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_u_r_l_request_delegate-p.html#a82d97cb6c6b7b9fa1d57da6a7493fdeb">requestDidFinishLoad:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The request has loaded data and been processed into a response.  <a href="#a82d97cb6c6b7b9fa1d57da6a7493fdeb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04aedf8b7c34959441ffc6c896682b01"></a><!-- doxytag: member="TTPhotoView::request:didReceiveAuthenticationChallenge:" ref="a04aedf8b7c34959441ffc6c896682b01" args="(TTURLRequest *request,[didReceiveAuthenticationChallenge] NSURLAuthenticationChallenge *challenge)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_u_r_l_request_delegate-p.html#a04aedf8b7c34959441ffc6c896682b01">request:didReceiveAuthenticationChallenge:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Allows delegate to handle any authentication challenges. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a8bc501340864cd0d96cb8a5bc14364"></a><!-- doxytag: member="TTPhotoView::request:didFailLoadWithError:" ref="a1a8bc501340864cd0d96cb8a5bc14364" args="(TTURLRequest *request,[didFailLoadWithError] NSError *error)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_u_r_l_request_delegate-p.html#a1a8bc501340864cd0d96cb8a5bc14364">request:didFailLoadWithError:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The request failed to load. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a208cacf0d2427a1f23d8d56b5536e358"></a><!-- doxytag: member="TTPhotoView::requestDidCancelLoad:" ref="a208cacf0d2427a1f23d8d56b5536e358" args="(TTURLRequest *request)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_u_r_l_request_delegate-p.html#a208cacf0d2427a1f23d8d56b5536e358">requestDidCancelLoad:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The request was canceled. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b886d3ccd4d38761c9def1a6bd728a7"></a><!-- doxytag: member="TTPhotoView::imageViewDidStartLoad:" ref="a0b886d3ccd4d38761c9def1a6bd728a7" args="(TTImageView *imageView)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_image_view_delegate-p.html#a0b886d3ccd4d38761c9def1a6bd728a7">imageViewDidStartLoad:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Called when the image begins loading asynchronously. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab5d16a19a3dcd15f5d8da934899ab15b"></a><!-- doxytag: member="TTPhotoView::imageView:didLoadImage:" ref="ab5d16a19a3dcd15f5d8da934899ab15b" args="(TTImageView *imageView,[didLoadImage] UIImage *image)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_image_view_delegate-p.html#ab5d16a19a3dcd15f5d8da934899ab15b">imageView:didLoadImage:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Called when the image finishes loading asynchronously. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_image_view_delegate-p.html#a5358b7ac3902e702dcd6bf53d346b942">imageView:didFailLoadWithError:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Called when the image failed to load asynchronously.  <a href="#a5358b7ac3902e702dcd6bf53d346b942"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2769e75bb58227592e8d850541df86b"></a><!-- doxytag: member="TTPhotoView::_photo" ref="ac2769e75bb58227592e8d850541df86b" args="" -->
@@ -133,6 +180,22 @@ TTPhotoVersion&nbsp;</td><td class="memItemRight" valign="bottom"><b>_photoVersi
 BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_hidesExtras</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3eb3798a9c3ca1e20cdba513f7bd64c2"></a><!-- doxytag: member="TTPhotoView::_hidesCaption" ref="a3eb3798a9c3ca1e20cdba513f7bd64c2" args="" -->
 BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_hidesCaption</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac744ef7f1c0bf049a4618b90aaf7e13d"></a><!-- doxytag: member="TTPhotoView::_request" ref="ac744ef7f1c0bf049a4618b90aaf7e13d" args="" -->
+<a class="el" href="interface_t_t_u_r_l_request.html">TTURLRequest</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_request</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64da0c5bcff90405cc5f16f03bd572a8"></a><!-- doxytag: member="TTPhotoView::_urlPath" ref="a64da0c5bcff90405cc5f16f03bd572a8" args="" -->
+<a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_urlPath</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aafadb349734c3755fced0347c71894d7"></a><!-- doxytag: member="TTPhotoView::_image" ref="aafadb349734c3755fced0347c71894d7" args="" -->
+<a class="el" href="class_u_i_image.html">UIImage</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_image</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a53f9cef668fe33fcd16be0e242423042"></a><!-- doxytag: member="TTPhotoView::_defaultImage" ref="a53f9cef668fe33fcd16be0e242423042" args="" -->
+<a class="el" href="class_u_i_image.html">UIImage</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_defaultImage</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a80c2ae080235ba57364ab0359f9fdf6f"></a><!-- doxytag: member="TTPhotoView::_autoresizesToImage" ref="a80c2ae080235ba57364ab0359f9fdf6f" args="" -->
+BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_autoresizesToImage</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adeafb6b49768ffc616e511e2eecd1509"></a><!-- doxytag: member="TTPhotoView::_delegate" ref="adeafb6b49768ffc616e511e2eecd1509" args="" -->
+id&lt; <a class="el" href="protocol_t_t_image_view_delegate-p.html">TTImageViewDelegate</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>_delegate</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97853b2c7509081da5ac2fc9cf89976f"></a><!-- doxytag: member="TTPhotoView::_style" ref="a97853b2c7509081da5ac2fc9cf89976f" args="" -->
+<a class="el" href="interface_t_t_style.html">TTStyle</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_style</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea5bd0ee9481a7012f50ea91cd7501bf"></a><!-- doxytag: member="TTPhotoView::_layout" ref="aea5bd0ee9481a7012f50ea91cd7501bf" args="" -->
+<a class="el" href="interface_t_t_layout.html">TTLayout</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_layout</b></td></tr>
 <tr><td colspan="2"><h2><a name="properties"></a>
 Properties</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac557444572725bb842972e20e164d740"></a><!-- doxytag: member="TTPhotoView::photo" ref="ac557444572725bb842972e20e164d740" args="" -->
@@ -143,7 +206,276 @@ id&lt; <a class="el" href="protocol_t_t_photo-p.html">TTPhoto</a> &gt;&nbsp;</td
 BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>hidesExtras</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a731e6e91de5899e45dd97ef760d7e9"></a><!-- doxytag: member="TTPhotoView::hidesCaption" ref="a6a731e6e91de5899e45dd97ef760d7e9" args="" -->
 BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>hidesCaption</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_image_view.html#a037c253134647eeb0dec16dc5bd8f7f6">urlPath</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The path of the image.  <a href="#a037c253134647eeb0dec16dc5bd8f7f6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_u_i_image.html">UIImage</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_image_view.html#ac0806da2d2e376974fe0af0242e8635a">defaultImage</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The default image that is displayed until the image has been downloaded.  <a href="#ac0806da2d2e376974fe0af0242e8635a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5a282b09c9dc2ae0fc3bb2d0dcbe165c"></a><!-- doxytag: member="TTPhotoView::image" ref="a5a282b09c9dc2ae0fc3bb2d0dcbe165c" args="" -->
+<a class="el" href="class_u_i_image.html">UIImage</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_image_view.html#a5a282b09c9dc2ae0fc3bb2d0dcbe165c">image</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The image that is currently being displayed. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_image_view.html#a550deee45ef3cf4f72eba737f38d0924">autoresizesToImage</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Override the default sizing operation and resize the frame of this view with the size of the image.  <a href="#a550deee45ef3cf4f72eba737f38d0924"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a665f800cac80e9b94521e68adf7f06e8"></a><!-- doxytag: member="TTPhotoView::isLoading" ref="a665f800cac80e9b94521e68adf7f06e8" args="" -->
+BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_image_view.html#a665f800cac80e9b94521e68adf7f06e8">isLoading</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Is an asynchronous request currently active? <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a771abb9049776ede10ec6db7a667e9fc"></a><!-- doxytag: member="TTPhotoView::isLoaded" ref="a771abb9049776ede10ec6db7a667e9fc" args="" -->
+BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_image_view.html#a771abb9049776ede10ec6db7a667e9fc">isLoaded</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Has the image been successfully loaded? <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28a5a7c4401e82b11b9266ae4fb4c414"></a><!-- doxytag: member="TTPhotoView::delegate" ref="a28a5a7c4401e82b11b9266ae4fb4c414" args="" -->
+id&lt; <a class="el" href="protocol_t_t_image_view_delegate-p.html">TTImageViewDelegate</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_image_view.html#a28a5a7c4401e82b11b9266ae4fb4c414">delegate</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A delegate that notifies you when the image has started and finished loading. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a832ab8c5e49539942c6d40c66fc80c78"></a><!-- doxytag: member="TTPhotoView::style" ref="a832ab8c5e49539942c6d40c66fc80c78" args="" -->
+<a class="el" href="interface_t_t_style.html">TTStyle</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>style</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae1379b4316b8434d095325bfac7b70a"></a><!-- doxytag: member="TTPhotoView::layout" ref="aae1379b4316b8434d095325bfac7b70a" args="" -->
+<a class="el" href="interface_t_t_layout.html">TTLayout</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>layout</b></td></tr>
 </table>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a5358b7ac3902e702dcd6bf53d346b942"></a><!-- doxytag: member="TTPhotoView::imageView:didFailLoadWithError:" ref="a5358b7ac3902e702dcd6bf53d346b942" args="(TTImageView *imageView,[didFailLoadWithError] NSError *error)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) imageView: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_t_t_image_view.html">TTImageView</a> *)&nbsp;</td>
+          <td class="paramname"> <em>imageView</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">didFailLoadWithError:</td>
+          <td></td>
+          <td class="paramtype">(NSError *)&nbsp;</td>
+          <td class="paramname"> <em>error</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td><td><code> [optional, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Called when the image failed to load asynchronously. </p>
+<p>If error is nil then the request was cancelled. </p>
+
+</div>
+</div>
+<a class="anchor" id="a6257f74a8a335ea56eed95f5b33f62e6"></a><!-- doxytag: member="TTPhotoView::imageViewDidFailLoadWithError:" ref="a6257f74a8a335ea56eed95f5b33f62e6" args="(NSError *error)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) imageViewDidFailLoadWithError: </td>
+          <td></td>
+          <td class="paramtype">(NSError*)&nbsp;</td>
+          <td class="paramname"> <em>error</em></td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Called when the image failed to load asynchronously. </p>
+<p>Overridable method. </p>
+
+</div>
+</div>
+<a class="anchor" id="af0feb022797654f5468d375dc8cd57d6"></a><!-- doxytag: member="TTPhotoView::imageViewDidLoadImage:" ref="af0feb022797654f5468d375dc8cd57d6" args="(UIImage *image)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) imageViewDidLoadImage: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_u_i_image.html">UIImage</a>*)&nbsp;</td>
+          <td class="paramname"> <em>image</em></td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Called when the image finishes loading asynchronously. </p>
+<p>Overridable method. </p>
+
+</div>
+</div>
+<a class="anchor" id="aeb434f2a23554c10cc7f01d861fe841f"></a><!-- doxytag: member="TTPhotoView::imageViewDidStartLoad" ref="aeb434f2a23554c10cc7f01d861fe841f" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) imageViewDidStartLoad </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Called when the image begins loading asynchronously. </p>
+<p>Overridable method. </p>
+
+</div>
+</div>
+<a class="anchor" id="acabfc9494cda1e296dfe5395adfa1ded"></a><!-- doxytag: member="TTPhotoView::reload" ref="acabfc9494cda1e296dfe5395adfa1ded" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) reload </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Force the image to be reloaded. </p>
+<p>If the image is not in the cache, an asynchronous request is sent off to fetch the image. </p>
+
+</div>
+</div>
+<a class="anchor" id="a82d97cb6c6b7b9fa1d57da6a7493fdeb"></a><!-- doxytag: member="TTPhotoView::requestDidFinishLoad:" ref="a82d97cb6c6b7b9fa1d57da6a7493fdeb" args="(TTURLRequest *request)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) requestDidFinishLoad: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_t_t_u_r_l_request.html">TTURLRequest</a> *)&nbsp;</td>
+          <td class="paramname"> <em>request</em></td>
+          <td>&nbsp;</td>
+          <td><code> [optional, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>The request has loaded data and been processed into a response. </p>
+<p>If the request is served from the cache, this is the only delegate method that will be called. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae20fc15de596fef702c47a38343ccec6"></a><!-- doxytag: member="TTPhotoView::requestDidStartLoad:" ref="ae20fc15de596fef702c47a38343ccec6" args="(TTURLRequest *request)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) requestDidStartLoad: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_t_t_u_r_l_request.html">TTURLRequest</a> *)&nbsp;</td>
+          <td class="paramname"> <em>request</em></td>
+          <td>&nbsp;</td>
+          <td><code> [optional, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>The request has begun loading. </p>
+<p>This method will not be called if the data is loaded immediately from the cache. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="protocol_t_t_u_r_l_request_delegate-p.html#a82d97cb6c6b7b9fa1d57da6a7493fdeb" title="The request has loaded data and been processed into a response.">- requestDidFinishLoad:</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9c831806650a4b887f5cf963f6bbba1c"></a><!-- doxytag: member="TTPhotoView::requestDidUploadData:" ref="a9c831806650a4b887f5cf963f6bbba1c" args="(TTURLRequest *request)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) requestDidUploadData: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_t_t_u_r_l_request.html">TTURLRequest</a> *)&nbsp;</td>
+          <td class="paramname"> <em>request</em></td>
+          <td>&nbsp;</td>
+          <td><code> [optional, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>The request has loaded some more data. </p>
+<p>Check the totalBytesLoaded and totalBytesExpected properties for details. </p>
+
+</div>
+</div>
+<a class="anchor" id="ad2b661168892cc606dff75d436858171"></a><!-- doxytag: member="TTPhotoView::setImage:" ref="ad2b661168892cc606dff75d436858171" args="(UIImage *image)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) setImage: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_u_i_image.html">UIImage</a> *)&nbsp;</td>
+          <td class="paramname"> <em>image</em></td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Useful when overriding the <a class="el" href="interface_t_t_image_view.html" title="A view that asynchronously loads an image and subsequently displays it.">TTImageView</a> class's setImage method. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="interface_t_t_photo_view.html">TTPhotoView</a> </dd></dl>
+
+</div>
+</div>
+<hr/><h2>Property Documentation</h2>
+<a class="anchor" id="a550deee45ef3cf4f72eba737f38d0924"></a><!-- doxytag: member="TTPhotoView::autoresizesToImage" ref="a550deee45ef3cf4f72eba737f38d0924" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) autoresizesToImage<code> [read, write, assign, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Override the default sizing operation and resize the frame of this view with the size of the image. </p>
+<p>NO </p>
+
+</div>
+</div>
+<a class="anchor" id="ac0806da2d2e376974fe0af0242e8635a"></a><!-- doxytag: member="TTPhotoView::defaultImage" ref="ac0806da2d2e376974fe0af0242e8635a" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="class_u_i_image.html">UIImage</a>*) defaultImage<code> [read, write, retain, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>The default image that is displayed until the image has been downloaded. </p>
+<p>If no urlPath is specified, this image will be displayed indefinitely. </p>
+
+</div>
+</div>
+<a class="anchor" id="a037c253134647eeb0dec16dc5bd8f7f6"></a><!-- doxytag: member="TTPhotoView::urlPath" ref="a037c253134647eeb0dec16dc5bd8f7f6" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="class_n_s_string.html">NSString</a>*) urlPath<code> [read, write, copy, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>The path of the image. </p>
+<p>This may be a web path (<a href="http://path/to/image.gif">http://path/to/image.gif</a>) or a local bundle path (bundle://path/to/image.png). </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Three20UI/Headers/<a class="el" href="_t_t_photo_view_8h_source.html">TTPhotoView.h</a></li>
 <li>Three20UI/Sources/TTPhotoView.m</li>

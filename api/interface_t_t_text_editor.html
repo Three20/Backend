@@ -106,6 +106,14 @@ Inheritance diagram for TTTextEditor:</div>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a37a8ec2c1131e0ecafca6e0b736151bf"></a><!-- doxytag: member="TTTextEditor::scrollContainerToCursor:" ref="a37a8ec2c1131e0ecafca6e0b736151bf" args="(UIScrollView *scrollView)" -->
 (void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>scrollContainerToCursor:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad88f3307be7d49bf55b419941a1eabbd"></a><!-- doxytag: member="TTTextEditor::drawContent:" ref="ad88f3307be7d49bf55b419941a1eabbd" args="(CGRect rect)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>drawContent:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ca8c9a930241745c77280b6e5296a6b"></a><!-- doxytag: member="TTTextEditor::textForLayerWithStyle:" ref="a6ca8c9a930241745c77280b6e5296a6b" args="(TTStyle *style)" -->
+(<a class="el" href="class_n_s_string.html">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>textForLayerWithStyle:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61b305018c41e4b8596d477337614e28"></a><!-- doxytag: member="TTTextEditor::imageForLayerWithStyle:" ref="a61b305018c41e4b8596d477337614e28" args="(TTStyle *style)" -->
+(<a class="el" href="class_u_i_image.html">UIImage</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>imageForLayerWithStyle:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a940c09a71f143ac572cf3ebaddeb127e"></a><!-- doxytag: member="TTTextEditor::drawLayer:withStyle:" ref="a940c09a71f143ac572cf3ebaddeb127e" args="(TTStyleContext *context,[withStyle] TTStyle *style)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>drawLayer:withStyle:</b></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d360d1484b54e61b21ee855a4a90ac4"></a><!-- doxytag: member="TTTextEditor::_internal" ref="a7d360d1484b54e61b21ee855a4a90ac4" args="" -->
@@ -128,6 +136,10 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_autoresizesToText</b
 BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_showsExtraLine</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51ded1bbb10aa657c6af1d33c9210f5e"></a><!-- doxytag: member="TTTextEditor::_delegate" ref="a51ded1bbb10aa657c6af1d33c9210f5e" args="" -->
 id&lt; <a class="el" href="protocol_t_t_text_editor_delegate-p.html">TTTextEditorDelegate</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>_delegate</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97853b2c7509081da5ac2fc9cf89976f"></a><!-- doxytag: member="TTTextEditor::_style" ref="a97853b2c7509081da5ac2fc9cf89976f" args="" -->
+<a class="el" href="interface_t_t_style.html">TTStyle</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_style</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea5bd0ee9481a7012f50ea91cd7501bf"></a><!-- doxytag: member="TTTextEditor::_layout" ref="aea5bd0ee9481a7012f50ea91cd7501bf" args="" -->
+<a class="el" href="interface_t_t_layout.html">TTLayout</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_layout</b></td></tr>
 <tr><td colspan="2"><h2><a name="properties"></a>
 Properties</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35f34d4054d7d68f6de5d54d8eeb3641"></a><!-- doxytag: member="TTTextEditor::text" ref="a35f34d4054d7d68f6de5d54d8eeb3641" args="" -->
@@ -150,6 +162,10 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>autoresizesToText</b>
 BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>showsExtraLine</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afba9ea1c397a0c5eaaad9b1894276d52"></a><!-- doxytag: member="TTTextEditor::delegate" ref="afba9ea1c397a0c5eaaad9b1894276d52" args="" -->
 id&lt; <a class="el" href="protocol_t_t_text_editor_delegate-p.html">TTTextEditorDelegate</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>delegate</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a832ab8c5e49539942c6d40c66fc80c78"></a><!-- doxytag: member="TTTextEditor::style" ref="a832ab8c5e49539942c6d40c66fc80c78" args="" -->
+<a class="el" href="interface_t_t_style.html">TTStyle</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>style</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae1379b4316b8434d095325bfac7b70a"></a><!-- doxytag: member="TTTextEditor::layout" ref="aae1379b4316b8434d095325bfac7b70a" args="" -->
+<a class="el" href="interface_t_t_layout.html">TTLayout</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>layout</b></td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Three20UI/Headers/<a class="el" href="_t_t_text_editor_8h_source.html">TTTextEditor.h</a></li>

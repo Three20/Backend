@@ -106,6 +106,26 @@ Inheritance diagram for TTPartStyle:</div>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57f98f500b48d21a1af6a88ecb028e87"></a><!-- doxytag: member="TTPartStyle::drawPart:" ref="a57f98f500b48d21a1af6a88ecb028e87" args="(TTStyleContext *context)" -->
 (void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>drawPart:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82661d758f52e1362f5f9c63e973df5f"></a><!-- doxytag: member="TTPartStyle::initWithNext:" ref="a82661d758f52e1362f5f9c63e973df5f" args="(TTStyle *next)" -->
+(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>initWithNext:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35952c391b436d3f8f98a441491946bd"></a><!-- doxytag: member="TTPartStyle::next:" ref="a35952c391b436d3f8f98a441491946bd" args="(TTStyle *next)" -->
+(<a class="el" href="interface_t_t_style.html">TTStyle</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>next:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad86cf830e4be9a236ab3ce8dfce216c1"></a><!-- doxytag: member="TTPartStyle::draw:" ref="ad86cf830e4be9a236ab3ce8dfce216c1" args="(TTStyleContext *context)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>draw:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7bcf3088626fad6ce719a40490135b6"></a><!-- doxytag: member="TTPartStyle::addToInsets:forSize:" ref="ab7bcf3088626fad6ce719a40490135b6" args="(UIEdgeInsets insets,[forSize] CGSize size)" -->
+(UIEdgeInsets)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>addToInsets:forSize:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff87a7a63493d97de1bed39214d5cd48"></a><!-- doxytag: member="TTPartStyle::addToSize:context:" ref="aff87a7a63493d97de1bed39214d5cd48" args="(CGSize size,[context] TTStyleContext *context)" -->
+(CGSize)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>addToSize:context:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a652f9ece113ba6b6ea1cd5f161438598"></a><!-- doxytag: member="TTPartStyle::addStyle:" ref="a652f9ece113ba6b6ea1cd5f161438598" args="(TTStyle *style)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>addStyle:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="add84af70ed0d751fc6979b1712f2d9f4"></a><!-- doxytag: member="TTPartStyle::firstStyleOfClass:" ref="add84af70ed0d751fc6979b1712f2d9f4" args="(Class cls)" -->
+(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>firstStyleOfClass:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9530c3267da5069a4ed5646d1d5bf4eb"></a><!-- doxytag: member="TTPartStyle::styleForPart:" ref="a9530c3267da5069a4ed5646d1d5bf4eb" args="(NSString *name)" -->
+(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>styleForPart:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48211ce404f1251585e757a90242a31d"></a><!-- doxytag: member="TTPartStyle::newGradientWithColors:locations:count:" ref="a48211ce404f1251585e757a90242a31d" args="(UIColor **colors,[locations] CGFloat *locations,[count] int count)" -->
+(CGGradientRef)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>newGradientWithColors:locations:count:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a35a26638a4faa56b3061a91509f02d22"></a><!-- doxytag: member="TTPartStyle::newGradientWithColors:count:" ref="a35a26638a4faa56b3061a91509f02d22" args="(UIColor **colors,[count] int count)" -->
+(CGGradientRef)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>newGradientWithColors:count:</b></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a30e640c01c6dd1b05eade1ea97416b06"></a><!-- doxytag: member="TTPartStyle::styleWithName:style:next:" ref="a30e640c01c6dd1b05eade1ea97416b06" args="(NSString *name,[style] TTStyle *style,[next] TTStyle *next)" -->
@@ -116,12 +136,16 @@ Protected Attributes</h2></td></tr>
 <a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_name</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aacc496f8d81b1ff77a484afbbcfbd11a"></a><!-- doxytag: member="TTPartStyle::_style" ref="aacc496f8d81b1ff77a484afbbcfbd11a" args="" -->
 <a class="el" href="interface_t_t_style.html">TTStyle</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_style</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa313c161147cde23524a441149e41290"></a><!-- doxytag: member="TTPartStyle::_next" ref="aa313c161147cde23524a441149e41290" args="" -->
+<a class="el" href="interface_t_t_style.html">TTStyle</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_next</b></td></tr>
 <tr><td colspan="2"><h2><a name="properties"></a>
 Properties</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82e3662ef759483f9771570e9b95dde9"></a><!-- doxytag: member="TTPartStyle::name" ref="a82e3662ef759483f9771570e9b95dde9" args="" -->
 <a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>name</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abd3f1e0fa9db375771e7c5e0d98cbb4b"></a><!-- doxytag: member="TTPartStyle::style" ref="abd3f1e0fa9db375771e7c5e0d98cbb4b" args="" -->
 <a class="el" href="interface_t_t_style.html">TTStyle</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>style</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e704cddfe9525e9184a7aec04f9a68c"></a><!-- doxytag: member="TTPartStyle::next" ref="a3e704cddfe9525e9184a7aec04f9a68c" args="" -->
+<a class="el" href="interface_t_t_style.html">TTStyle</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>next</b></td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Three20Style/Headers/<a class="el" href="_t_t_part_style_8h_source.html">TTPartStyle.h</a></li>

@@ -82,6 +82,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#properties">Properties</a> &#124;
 <a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <h1>SBJsonWriter Class Reference</h1>  </div>
@@ -120,6 +122,26 @@ Public Member Functions</h2></td></tr>
 (<a class="el" href="class_n_s_string.html">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>indent</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa62c0d5ef6acbc23be9242a34f25524f"></a><!-- doxytag: member="SBJsonWriter::stringWithFragment:" ref="aa62c0d5ef6acbc23be9242a34f25524f" args="(id value)" -->
 (<a class="el" href="class_n_s_string.html">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>stringWithFragment:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6fc685c386c1c4528bd30b2bd630d56"></a><!-- doxytag: member="SBJsonWriter::addErrorWithCode:description:" ref="af6fc685c386c1c4528bd30b2bd630d56" args="(NSUInteger code,[description] NSString *str)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>addErrorWithCode:description:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6a429d6db2149fea7435b9e0aac5d3fa"></a><!-- doxytag: member="SBJsonWriter::clearErrorTrace" ref="a6a429d6db2149fea7435b9e0aac5d3fa" args="()" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>clearErrorTrace</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="class_n_s_string.html">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_s_b_json_writer-p.html#a675b15e830d510b7fcd72f4e0a89ec45">stringWithObject:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return JSON representation (or fragment) for the given object.  <a href="#a675b15e830d510b7fcd72f4e0a89ec45"></a><br/></td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9fd64724d5da34a0f9842cee3d14620c"></a><!-- doxytag: member="SBJsonWriter::errorTrace" ref="a9fd64724d5da34a0f9842cee3d14620c" args="" -->
+<a class="el" href="class_n_s_mutable_array.html">NSMutableArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>errorTrace</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e80155581d240f565ec4149ad812e03"></a><!-- doxytag: member="SBJsonWriter::depth" ref="a5e80155581d240f565ec4149ad812e03" args="" -->
+NSUInteger&nbsp;</td><td class="memItemRight" valign="bottom"><b>depth</b></td></tr>
+<tr><td colspan="2"><h2><a name="properties"></a>
+Properties</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_array.html">NSArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_s_b_json_base.html#aa83f0ee5efade2fd26ddf6591ffd8dc0">errorTrace</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Return an error trace, or nil if there was no errors.  <a href="#aa83f0ee5efade2fd26ddf6591ffd8dc0"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">NSUInteger&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_s_b_json_base.html#abe3e47517711570a9a57e2d92a15055b">maxDepth</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The maximum recursing depth.  <a href="#abe3e47517711570a9a57e2d92a15055b"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">NSUInteger&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_s_b_json_base.html#abe3e47517711570a9a57e2d92a15055b">maxDepth</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The maximum recursing depth.  <a href="#abe3e47517711570a9a57e2d92a15055b"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_s_b_json_writer.html#af25807a58a322b56cb5d3593532228e5">sortKeys</a></td></tr>
@@ -140,6 +162,34 @@ Private Attributes</h2></td></tr>
 </ul>
 <p>In JSON the keys of an object must be strings. <a class="el" href="class_n_s_dictionary.html">NSDictionary</a> keys need not be, but attempting to convert an <a class="el" href="class_n_s_dictionary.html">NSDictionary</a> with non-string keys into JSON will throw an exception.</p>
 <p>NSNumber instances created with the +initWithBool: method are converted into the JSON boolean "true" and "false" values, and vice versa. Any other NSNumber instances are converted to a JSON number the way you would expect. </p>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a675b15e830d510b7fcd72f4e0a89ec45"></a><!-- doxytag: member="SBJsonWriter::stringWithObject:" ref="a675b15e830d510b7fcd72f4e0a89ec45" args="(id value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="class_n_s_string.html">NSString</a>*) stringWithObject: </td>
+          <td></td>
+          <td class="paramtype">(id)&nbsp;</td>
+          <td class="paramname"> <em>value</em></td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return JSON representation (or fragment) for the given object. </p>
+<p>Returns a string containing JSON representation of the passed in value, or nil on error. If nil is returned and <code>error</code> is not NULL, <code>*error</code> can be interrogated to find the cause of the error.</p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>value</em>&nbsp;</td><td>any instance that can be represented as a JSON fragment </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/><h2>Member Data Documentation</h2>
 <a class="anchor" id="a16ca84860a2ee76a03b567dc5181a851"></a><!-- doxytag: member="SBJsonWriter::humanReadable" ref="a16ca84860a2ee76a03b567dc5181a851" args="" -->
 <div class="memitem">
@@ -174,6 +224,55 @@ Private Attributes</h2></td></tr>
 <p>If this is set to YES, the dictionary keys in the JSON output will be in sorted order. (This is useful if you need to compare two structures, for example.) The default is NO. </p>
 
 <p>Reimplemented from <a class="el" href="protocol_s_b_json_writer-p.html#ad424f1c19aead35d04509bfa549f7290">&lt;SBJsonWriter&gt;</a>.</p>
+
+</div>
+</div>
+<hr/><h2>Property Documentation</h2>
+<a class="anchor" id="aa83f0ee5efade2fd26ddf6591ffd8dc0"></a><!-- doxytag: member="SBJsonWriter::errorTrace" ref="aa83f0ee5efade2fd26ddf6591ffd8dc0" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="class_n_s_array.html">NSArray</a>*) errorTrace<code> [read, copy, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Return an error trace, or nil if there was no errors. </p>
+<p>Note that this method returns the trace of the last method that failed. You need to check the return value of the call you're making to figure out if the call actually failed, before you know call this method. </p>
+
+</div>
+</div>
+<a class="anchor" id="abe3e47517711570a9a57e2d92a15055b"></a><!-- doxytag: member="SBJsonWriter::maxDepth" ref="abe3e47517711570a9a57e2d92a15055b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSUInteger) maxDepth<code> [read, write, assign, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>The maximum recursing depth. </p>
+<p>Defaults to 512. If the input is nested deeper than this the input will be deemed to be malicious and the parser returns nil, signalling an error. ("Nested too deep".) You can turn off this security feature by setting the maxDepth value to 0. </p>
+
+</div>
+</div>
+<a class="anchor" id="abe3e47517711570a9a57e2d92a15055b"></a><!-- doxytag: member="SBJsonWriter::maxDepth" ref="abe3e47517711570a9a57e2d92a15055b" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSUInteger) maxDepth<code> [read, write, assign, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>The maximum recursing depth. </p>
+<p>Defaults to 512. If the input is nested deeper than this the input will be deemed to be malicious and the parser returns nil, signalling an error. ("Nested too deep".) You can turn off this security feature by setting the maxDepth value to 0. </p>
 
 </div>
 </div>

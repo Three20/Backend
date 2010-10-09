@@ -133,6 +133,21 @@ Public Member Functions</h2></td></tr>
 (<a class="el" href="interface_t_t_styled_node.html">TTStyledNode</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>getElementByClassName:</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a673a3b40e11e2d702cdca57f80c9d52d"></a><!-- doxytag: member="TTStyledText::stopLoadingImages" ref="a673a3b40e11e2d702cdca57f80c9d52d" args="()" -->
 (void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>stopLoadingImages</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_u_r_l_request_delegate-p.html#ae20fc15de596fef702c47a38343ccec6">requestDidStartLoad:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The request has begun loading.  <a href="#ae20fc15de596fef702c47a38343ccec6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_u_r_l_request_delegate-p.html#a9c831806650a4b887f5cf963f6bbba1c">requestDidUploadData:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The request has loaded some more data.  <a href="#a9c831806650a4b887f5cf963f6bbba1c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_u_r_l_request_delegate-p.html#a82d97cb6c6b7b9fa1d57da6a7493fdeb">requestDidFinishLoad:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The request has loaded data and been processed into a response.  <a href="#a82d97cb6c6b7b9fa1d57da6a7493fdeb"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04aedf8b7c34959441ffc6c896682b01"></a><!-- doxytag: member="TTStyledText::request:didReceiveAuthenticationChallenge:" ref="a04aedf8b7c34959441ffc6c896682b01" args="(TTURLRequest *request,[didReceiveAuthenticationChallenge] NSURLAuthenticationChallenge *challenge)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_u_r_l_request_delegate-p.html#a04aedf8b7c34959441ffc6c896682b01">request:didReceiveAuthenticationChallenge:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Allows delegate to handle any authentication challenges. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a8bc501340864cd0d96cb8a5bc14364"></a><!-- doxytag: member="TTStyledText::request:didFailLoadWithError:" ref="a1a8bc501340864cd0d96cb8a5bc14364" args="(TTURLRequest *request,[didFailLoadWithError] NSError *error)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_u_r_l_request_delegate-p.html#a1a8bc501340864cd0d96cb8a5bc14364">request:didFailLoadWithError:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The request failed to load. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a208cacf0d2427a1f23d8d56b5536e358"></a><!-- doxytag: member="TTStyledText::requestDidCancelLoad:" ref="a208cacf0d2427a1f23d8d56b5536e358" args="(TTURLRequest *request)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_u_r_l_request_delegate-p.html#a208cacf0d2427a1f23d8d56b5536e358">requestDidCancelLoad:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The request was canceled. <br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_t_t_styled_text.html">TTStyledText</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_t_t_styled_text.html#ad75363ae16d23a7823f00adb79aa0636">textFromXHTML:</a></td></tr>
@@ -235,6 +250,70 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 
 <p>Finds the frame that represents the node. </p>
 <p>If multiple frames represent a node, such as an inline frame with line breaks, the first frame in the sequence will be returned. </p>
+
+</div>
+</div>
+<a class="anchor" id="a82d97cb6c6b7b9fa1d57da6a7493fdeb"></a><!-- doxytag: member="TTStyledText::requestDidFinishLoad:" ref="a82d97cb6c6b7b9fa1d57da6a7493fdeb" args="(TTURLRequest *request)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) requestDidFinishLoad: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_t_t_u_r_l_request.html">TTURLRequest</a> *)&nbsp;</td>
+          <td class="paramname"> <em>request</em></td>
+          <td>&nbsp;</td>
+          <td><code> [optional, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>The request has loaded data and been processed into a response. </p>
+<p>If the request is served from the cache, this is the only delegate method that will be called. </p>
+
+</div>
+</div>
+<a class="anchor" id="ae20fc15de596fef702c47a38343ccec6"></a><!-- doxytag: member="TTStyledText::requestDidStartLoad:" ref="ae20fc15de596fef702c47a38343ccec6" args="(TTURLRequest *request)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) requestDidStartLoad: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_t_t_u_r_l_request.html">TTURLRequest</a> *)&nbsp;</td>
+          <td class="paramname"> <em>request</em></td>
+          <td>&nbsp;</td>
+          <td><code> [optional, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>The request has begun loading. </p>
+<p>This method will not be called if the data is loaded immediately from the cache. </p>
+<dl class="see"><dt><b>See also:</b></dt><dd><a class="el" href="protocol_t_t_u_r_l_request_delegate-p.html#a82d97cb6c6b7b9fa1d57da6a7493fdeb" title="The request has loaded data and been processed into a response.">- requestDidFinishLoad:</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a9c831806650a4b887f5cf963f6bbba1c"></a><!-- doxytag: member="TTStyledText::requestDidUploadData:" ref="a9c831806650a4b887f5cf963f6bbba1c" args="(TTURLRequest *request)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) requestDidUploadData: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_t_t_u_r_l_request.html">TTURLRequest</a> *)&nbsp;</td>
+          <td class="paramname"> <em>request</em></td>
+          <td>&nbsp;</td>
+          <td><code> [optional, inherited]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>The request has loaded some more data. </p>
+<p>Check the totalBytesLoaded and totalBytesExpected properties for details. </p>
 
 </div>
 </div>

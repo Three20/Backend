@@ -83,6 +83,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
@@ -109,14 +110,144 @@ Public Member Functions</h2></td></tr>
 (BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>addStyleSheetFromDisk:</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6780a9ab8d0a23c79c22349598e0387f"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::backgroundColorForCSSSelector:" ref="a6780a9ab8d0a23c79c22349598e0387f" args="(NSString *cssSelector)" -->
 (<a class="el" href="class_u_i_color.html">UIColor</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>backgroundColorForCSSSelector:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a161443a42a5b7bf76f0669ea37f7722d"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::selectionFillStyle:" ref="a161443a42a5b7bf76f0669ea37f7722d" args="(TTStyle *next)" -->
+(<a class="el" href="interface_t_t_style.html">TTStyle</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>selectionFillStyle:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac8393bd8448d06123d09fbdac74df4dc"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::toolbarButtonForState:shape:tintColor:font:" ref="ac8393bd8448d06123d09fbdac74df4dc" args="(UIControlState state,[shape] TTShape *shape,[tintColor] UIColor *tintColor,[font] UIFont *font)" -->
+(<a class="el" href="interface_t_t_style.html">TTStyle</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>toolbarButtonForState:shape:tintColor:font:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08a8dcc0c459c9d453c12897df4d8586"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::pageDotWithColor:" ref="a08a8dcc0c459c9d453c12897df4d8586" args="(UIColor *color)" -->
+(<a class="el" href="interface_t_t_style.html">TTStyle</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>pageDotWithColor:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4c91256af880ce80796ba67f366896ea"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::styleWithSelector:" ref="a4c91256af880ce80796ba67f366896ea" args="(NSString *selector)" -->
+(<a class="el" href="interface_t_t_style.html">TTStyle</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>styleWithSelector:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a944da18158918ed45f51fb75b9c15a5f"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::styleWithSelector:forState:" ref="a944da18158918ed45f51fb75b9c15a5f" args="(NSString *selector,[forState] UIControlState state)" -->
+(<a class="el" href="interface_t_t_style.html">TTStyle</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>styleWithSelector:forState:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5d679bdf2168819e073a0cce68e4c961"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::freeMemory" ref="a5d679bdf2168819e073a0cce68e4c961" args="()" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>freeMemory</b></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a086b5048a63acdf4e12706c3888bbd8a"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::globalCSSStyleSheet" ref="a086b5048a63acdf4e12706c3888bbd8a" args="()" -->
 (<a class="el" href="interface_t_t_default_c_s_s_style_sheet.html">TTDefaultCSSStyleSheet</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">+ <b>globalCSSStyleSheet</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa2c7922d423e9863646ee104289f0e15"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::globalStyleSheet" ref="aa2c7922d423e9863646ee104289f0e15" args="()" -->
+(<a class="el" href="interface_t_t_style_sheet.html">TTStyleSheet</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">+ <b>globalStyleSheet</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a39335a19e323c16c27e96f50e6c267be"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::setGlobalStyleSheet:" ref="a39335a19e323c16c27e96f50e6c267be" args="(TTStyleSheet *styleSheet)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">+ <b>setGlobalStyleSheet:</b></td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea250de8617f56f00d8a401480df3a90"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::_styles" ref="aea250de8617f56f00d8a401480df3a90" args="" -->
+<a class="el" href="class_n_s_mutable_dictionary.html">NSMutableDictionary</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_styles</b></td></tr>
 <tr><td colspan="2"><h2><a name="properties"></a>
 Properties</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad94e115361f0311b0e2554ec791e5673"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::styleSheet" ref="ad94e115361f0311b0e2554ec791e5673" args="" -->
 <a class="el" href="interface_t_t_c_s_s_style_sheet.html">TTCSSStyleSheet</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>styleSheet</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e8b153381e84d59d7fcf2f43a3305c4"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::textColor" ref="a1e8b153381e84d59d7fcf2f43a3305c4" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>textColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aec1d1d4cd85648821727c87741d1099b"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::highlightedTextColor" ref="aec1d1d4cd85648821727c87741d1099b" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>highlightedTextColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6260ce5a19569f4f62374001b38be3c6"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::font" ref="a6260ce5a19569f4f62374001b38be3c6" args="" -->
+<a class="el" href="class_u_i_font.html">UIFont</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>font</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a81df455d30b17e4b9a847161c44e7c56"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::backgroundColor" ref="a81df455d30b17e4b9a847161c44e7c56" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>backgroundColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31c011aa2f5a195abf37fba2b970ec7d"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::navigationBarTintColor" ref="a31c011aa2f5a195abf37fba2b970ec7d" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>navigationBarTintColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e0763d283d4e2054d5e6b5feb599caf"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::toolbarTintColor" ref="a3e0763d283d4e2054d5e6b5feb599caf" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>toolbarTintColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeeed75c6978504a748e09d35978eed38"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::searchBarTintColor" ref="aeeed75c6978504a748e09d35978eed38" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>searchBarTintColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adef7cf4611a4d654cd06e68bd7908979"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::tablePlainBackgroundColor" ref="adef7cf4611a4d654cd06e68bd7908979" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tablePlainBackgroundColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af31ec90f9a54f1913a2eeb36a237e15a"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::tableGroupedBackgroundColor" ref="af31ec90f9a54f1913a2eeb36a237e15a" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tableGroupedBackgroundColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08c8c68eacbf0bf2578cf72d646c7b86"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::searchTableBackgroundColor" ref="a08c8c68eacbf0bf2578cf72d646c7b86" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>searchTableBackgroundColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a963b957ac7c843a65b6d5ff07d194e5c"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::searchTableSeparatorColor" ref="a963b957ac7c843a65b6d5ff07d194e5c" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>searchTableSeparatorColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1133e99c6adb0ee6afd6687dc320b471"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::tableHeaderTextColor" ref="a1133e99c6adb0ee6afd6687dc320b471" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tableHeaderTextColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae56db54831f5808c5075372f94946637"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::tableHeaderShadowColor" ref="ae56db54831f5808c5075372f94946637" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tableHeaderShadowColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95885209fbf18f789a07097c696cc814"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::tableHeaderShadowOffset" ref="a95885209fbf18f789a07097c696cc814" args="" -->
+CGSize&nbsp;</td><td class="memItemRight" valign="bottom"><b>tableHeaderShadowOffset</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa1da9806ac6a61abc42c22b9c07f972f"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::tableHeaderTintColor" ref="aa1da9806ac6a61abc42c22b9c07f972f" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tableHeaderTintColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7c82f8f53f02d82e68e6e37ee0afeb26"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::photoCaptionTextColor" ref="a7c82f8f53f02d82e68e6e37ee0afeb26" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>photoCaptionTextColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4bd5c478587a1f7bf446893e4ff71ad7"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::photoCaptionTextShadowColor" ref="a4bd5c478587a1f7bf446893e4ff71ad7" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>photoCaptionTextShadowColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad4c7dfa960a4d0cb5422fb07c312a983"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::photoCaptionTextShadowOffset" ref="ad4c7dfa960a4d0cb5422fb07c312a983" args="" -->
+CGSize&nbsp;</td><td class="memItemRight" valign="bottom"><b>photoCaptionTextShadowOffset</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd8862901d55bf463aff4cc23eec7366"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::timestampTextColor" ref="afd8862901d55bf463aff4cc23eec7366" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>timestampTextColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83a7294e8ac246d357d6273d4c88d615"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::linkTextColor" ref="a83a7294e8ac246d357d6273d4c88d615" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>linkTextColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66c00efe2dbd5f5d72686847a524e303"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::moreLinkTextColor" ref="a66c00efe2dbd5f5d72686847a524e303" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>moreLinkTextColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab56445cc1951cea1734d9a80f22e387"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::screenBackgroundColor" ref="aab56445cc1951cea1734d9a80f22e387" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>screenBackgroundColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26ffdcf80bfd8c9d2714a81fff8014ba"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::tableActivityTextColor" ref="a26ffdcf80bfd8c9d2714a81fff8014ba" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tableActivityTextColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ada9e5b736f137937435dce696c3076"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::tableErrorTextColor" ref="a5ada9e5b736f137937435dce696c3076" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tableErrorTextColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3e6b4c0c516d023f79332f528221d034"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::tableSubTextColor" ref="a3e6b4c0c516d023f79332f528221d034" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tableSubTextColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abfe663c115552e97dba0247acb3ceedf"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::tableTitleTextColor" ref="abfe663c115552e97dba0247acb3ceedf" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tableTitleTextColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6c9fd041d6e31e2a117f3cd9aeb02513"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::tabTintColor" ref="a6c9fd041d6e31e2a117f3cd9aeb02513" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tabTintColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab930f69675868175c1d3b6bc5c291ae6"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::tabBarTintColor" ref="ab930f69675868175c1d3b6bc5c291ae6" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tabBarTintColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac3784eefa0d6edbf02bc21c69efee035"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::messageFieldTextColor" ref="ac3784eefa0d6edbf02bc21c69efee035" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>messageFieldTextColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00475f6ab616e57be9c289f00d957989"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::messageFieldSeparatorColor" ref="a00475f6ab616e57be9c289f00d957989" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>messageFieldSeparatorColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac75856a15ceb0778ae57a3116a416215"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::thumbnailBackgroundColor" ref="ac75856a15ceb0778ae57a3116a416215" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>thumbnailBackgroundColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a81f0e86a89d899625fb06cfaaf6a7312"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::postButtonColor" ref="a81f0e86a89d899625fb06cfaaf6a7312" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>postButtonColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abce771c96419749f3a7ad9e5e82c4f67"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::buttonFont" ref="abce771c96419749f3a7ad9e5e82c4f67" args="" -->
+<a class="el" href="class_u_i_font.html">UIFont</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>buttonFont</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a343ee6d08c2340555aba31397dd08229"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::tableFont" ref="a343ee6d08c2340555aba31397dd08229" args="" -->
+<a class="el" href="class_u_i_font.html">UIFont</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tableFont</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66776104286740c0549a3cb9b8da0b6e"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::tableSmallFont" ref="a66776104286740c0549a3cb9b8da0b6e" args="" -->
+<a class="el" href="class_u_i_font.html">UIFont</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tableSmallFont</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4772d7de1d1d0d4e358f70c12064c85a"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::tableTitleFont" ref="a4772d7de1d1d0d4e358f70c12064c85a" args="" -->
+<a class="el" href="class_u_i_font.html">UIFont</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tableTitleFont</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a725af9e2ac18e73f0d8adaf6345909ea"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::tableTimestampFont" ref="a725af9e2ac18e73f0d8adaf6345909ea" args="" -->
+<a class="el" href="class_u_i_font.html">UIFont</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tableTimestampFont</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a46de4f810b999e552a81cfdc99bd8e60"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::tableButtonFont" ref="a46de4f810b999e552a81cfdc99bd8e60" args="" -->
+<a class="el" href="class_u_i_font.html">UIFont</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tableButtonFont</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afa4bcf74fb3adccfe67cf66510d35166"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::tableSummaryFont" ref="afa4bcf74fb3adccfe67cf66510d35166" args="" -->
+<a class="el" href="class_u_i_font.html">UIFont</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tableSummaryFont</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90bcefc33aa19b068c9f26ee7f25d1aa"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::tableHeaderPlainFont" ref="a90bcefc33aa19b068c9f26ee7f25d1aa" args="" -->
+<a class="el" href="class_u_i_font.html">UIFont</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tableHeaderPlainFont</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a98a3d7bb0dfb54f99f3d4daff5f02713"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::tableHeaderGroupedFont" ref="a98a3d7bb0dfb54f99f3d4daff5f02713" args="" -->
+<a class="el" href="class_u_i_font.html">UIFont</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tableHeaderGroupedFont</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3bcf19ba6206adf5ce0711f8b5dfdb2b"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::photoCaptionFont" ref="a3bcf19ba6206adf5ce0711f8b5dfdb2b" args="" -->
+<a class="el" href="class_u_i_font.html">UIFont</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>photoCaptionFont</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5950524d88a3df056c82b02c4c92b3d"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::messageFont" ref="ae5950524d88a3df056c82b02c4c92b3d" args="" -->
+<a class="el" href="class_u_i_font.html">UIFont</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>messageFont</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67a58503e67be9efbc52abd746a0f402"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::errorTitleFont" ref="a67a58503e67be9efbc52abd746a0f402" args="" -->
+<a class="el" href="class_u_i_font.html">UIFont</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>errorTitleFont</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab3240d3d33f5703d68190cf12868b283"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::errorSubtitleFont" ref="ab3240d3d33f5703d68190cf12868b283" args="" -->
+<a class="el" href="class_u_i_font.html">UIFont</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>errorSubtitleFont</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04c070cb0eb197c74c5d93eb467d4842"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::activityLabelFont" ref="a04c070cb0eb197c74c5d93eb467d4842" args="" -->
+<a class="el" href="class_u_i_font.html">UIFont</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>activityLabelFont</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1bcd4301800d633003ee793d44498c3d"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::activityBannerFont" ref="a1bcd4301800d633003ee793d44498c3d" args="" -->
+<a class="el" href="class_u_i_font.html">UIFont</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>activityBannerFont</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a81c3943b224b592169e6035b83fc2ba8"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::tableSelectionStyle" ref="a81c3943b224b592169e6035b83fc2ba8" args="" -->
+UITableViewCellSelectionStyle&nbsp;</td><td class="memItemRight" valign="bottom"><b>tableSelectionStyle</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f18a798c0aadca89cadf0218d507f86"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::tableRefreshHeaderLastUpdatedFont" ref="a3f18a798c0aadca89cadf0218d507f86" args="" -->
+<a class="el" href="class_u_i_font.html">UIFont</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tableRefreshHeaderLastUpdatedFont</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1cd6d155b1ccd0ae508bad3dbd48328"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::tableRefreshHeaderStatusFont" ref="ac1cd6d155b1ccd0ae508bad3dbd48328" args="" -->
+<a class="el" href="class_u_i_font.html">UIFont</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tableRefreshHeaderStatusFont</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9a27743c0752e41f14f87c492efd529c"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::tableRefreshHeaderBackgroundColor" ref="a9a27743c0752e41f14f87c492efd529c" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tableRefreshHeaderBackgroundColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a84b5722d570fadf6850d7f955a4b89d0"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::tableRefreshHeaderTextColor" ref="a84b5722d570fadf6850d7f955a4b89d0" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tableRefreshHeaderTextColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5191ea4b2eb3e98653d26f800f610a57"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::tableRefreshHeaderTextShadowColor" ref="a5191ea4b2eb3e98653d26f800f610a57" args="" -->
+<a class="el" href="class_u_i_color.html">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tableRefreshHeaderTextShadowColor</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0a97081779936aeddec58a64643b708"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::tableRefreshHeaderTextShadowOffset" ref="ac0a97081779936aeddec58a64643b708" args="" -->
+CGSize&nbsp;</td><td class="memItemRight" valign="bottom"><b>tableRefreshHeaderTextShadowOffset</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a049907d79f3d5cde42604015f6d3e65b"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::tableRefreshHeaderArrowImage" ref="a049907d79f3d5cde42604015f6d3e65b" args="" -->
+<a class="el" href="class_u_i_image.html">UIImage</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tableRefreshHeaderArrowImage</b></td></tr>
 <tr><td colspan="2"><h2><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58910f26b96033d2813752b89d254815"></a><!-- doxytag: member="TTDefaultCSSStyleSheet::_styleSheet" ref="a58910f26b96033d2813752b89d254815" args="" -->

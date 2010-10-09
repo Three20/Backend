@@ -110,6 +110,17 @@ Public Member Functions</h2></td></tr>
 (void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>_pop</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa582b4d02310f594a0f34f186a251581"></a><!-- doxytag: member="YAJLDocument::_popKey" ref="aa582b4d02310f594a0f34f186a251581" args="()" -->
 (void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>_popKey</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a68176263236a3ff3f7578816d0ec9e0d"></a><!-- doxytag: member="YAJLDocument::parserDidStartDictionary:" ref="a68176263236a3ff3f7578816d0ec9e0d" args="(YAJLParser *parser)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>parserDidStartDictionary:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24e62f45b73eb271dc0744b6787992ba"></a><!-- doxytag: member="YAJLDocument::parserDidEndDictionary:" ref="a24e62f45b73eb271dc0744b6787992ba" args="(YAJLParser *parser)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>parserDidEndDictionary:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab28667c43cd21dee7500ed3f44137fd2"></a><!-- doxytag: member="YAJLDocument::parserDidStartArray:" ref="ab28667c43cd21dee7500ed3f44137fd2" args="(YAJLParser *parser)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>parserDidStartArray:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e07bb4fac65e5b329786b6f08efbddc"></a><!-- doxytag: member="YAJLDocument::parserDidEndArray:" ref="a2e07bb4fac65e5b329786b6f08efbddc" args="(YAJLParser *parser)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>parserDidEndArray:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ad90afbda4e77208c1e61fc2a7175fe"></a><!-- doxytag: member="YAJLDocument::parser:didMapKey:" ref="a9ad90afbda4e77208c1e61fc2a7175fe" args="(YAJLParser *parser,[didMapKey] NSString *key)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>parser:didMapKey:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_y_a_j_l_parser_delegate-p.html#a2f554ab453f9108c0c046a9ad5b2034d">parser:didAdd:</a></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21c81df73f53b55e8537cdd1b79e21c5"></a><!-- doxytag: member="YAJLDocument::root_" ref="a21c81df73f53b55e8537cdd1b79e21c5" args="" -->
@@ -243,6 +254,41 @@ id&lt; <a class="el" href="protocol_y_a_j_l_document_delegate-p.html">YAJLDocume
   </dd>
 </dl>
 <dl class="return"><dt><b>Returns:</b></dt><dd>Parser status </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a2f554ab453f9108c0c046a9ad5b2034d"></a><!-- doxytag: member="YAJLDocument::parser:didAdd:" ref="a2f554ab453f9108c0c046a9ad5b2034d" args="(YAJLParser *parser,[didAdd] id value)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) parser: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_y_a_j_l_parser.html">YAJLParser</a> *)&nbsp;</td>
+          <td class="paramname"> <em>parser</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">didAdd:</td>
+          <td></td>
+          <td class="paramtype">(id)&nbsp;</td>
+          <td class="paramname"> <em>value</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Did add value. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>parser</em>&nbsp;</td><td>Sender </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>value</em>&nbsp;</td><td>Value of type NSNull, <a class="el" href="class_n_s_string.html" title="Additions.">NSString</a> or NSNumber </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

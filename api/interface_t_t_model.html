@@ -138,6 +138,23 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade47f3250e00f0809ca3e7da405bcdf2"></a><!-- doxytag: member="TTModel::didChange" ref="ade47f3250e00f0809ca3e7da405bcdf2" args="()" -->
 (void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_model.html#ade47f3250e00f0809ca3e7da405bcdf2">didChange</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Notifies delegates that the model changed in some fundamental way. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75f0ad85113d05134ed5e79b37b5827e"></a><!-- doxytag: member="TTModel::delegates" ref="a75f0ad85113d05134ed5e79b37b5827e" args="()" -->
+(<a class="el" href="class_n_s_mutable_array.html">NSMutableArray</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model-p.html#a75f0ad85113d05134ed5e79b37b5827e">delegates</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">An array of objects that conform to the <a class="el" href="protocol_t_t_model_delegate-p.html">TTModelDelegate</a> protocol. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model-p.html#a0717855b556f4efac8de7571f1d38cea">isLoaded</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indicates that the data has been loaded.  <a href="#a0717855b556f4efac8de7571f1d38cea"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model-p.html#a68b9d49ad095a221c82ec0d13b6038ec">isLoading</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indicates that the data is in the process of loading.  <a href="#a68b9d49ad095a221c82ec0d13b6038ec"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model-p.html#a41b1268d87a53c51aa8b22bbeeb29d07">isLoadingMore</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indicates that the data is in the process of loading additional data.  <a href="#a41b1268d87a53c51aa8b22bbeeb29d07"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model-p.html#adbf2fa828a24a0428695f4cd708d9db6">isOutdated</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indicates that the model is of date and should be reloaded as soon as possible.  <a href="#adbf2fa828a24a0428695f4cd708d9db6"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model-p.html#a7b6152507942206e12aa6889a0ed8b8c">load:more:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Loads the model.  <a href="#a7b6152507942206e12aa6889a0ed8b8c"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model-p.html#ab1a78579b78649df0061aabd384db721">cancel</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Cancels a load that is in progress.  <a href="#ab1a78579b78649df0061aabd384db721"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model-p.html#a13efe0c75b14ded343cd95bc84ed65f6">invalidate:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Invalidates data stored in the cache or optionally erases it.  <a href="#a13efe0c75b14ded343cd95bc84ed65f6"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2dafdf43691e40159c41e055b777c2da"></a><!-- doxytag: member="TTModel::_delegates" ref="a2dafdf43691e40159c41e055b777c2da" args="" -->
@@ -145,6 +162,158 @@ Protected Attributes</h2></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>A default implementation of <a class="el" href="interface_t_t_model.html" title="A default implementation of TTModel does nothing other than appear to be loaded.">TTModel</a> does nothing other than appear to be loaded. </p>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="ab1a78579b78649df0061aabd384db721"></a><!-- doxytag: member="TTModel::cancel" ref="ab1a78579b78649df0061aabd384db721" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) cancel </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Cancels a load that is in progress. </p>
+<p>Default implementation does nothing. </p>
+
+</div>
+</div>
+<a class="anchor" id="a13efe0c75b14ded343cd95bc84ed65f6"></a><!-- doxytag: member="TTModel::invalidate:" ref="a13efe0c75b14ded343cd95bc84ed65f6" args="(BOOL erase)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) invalidate: </td>
+          <td></td>
+          <td class="paramtype">(BOOL)&nbsp;</td>
+          <td class="paramname"> <em>erase</em></td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Invalidates data stored in the cache or optionally erases it. </p>
+<p>Default implementation does nothing. </p>
+
+</div>
+</div>
+<a class="anchor" id="a0717855b556f4efac8de7571f1d38cea"></a><!-- doxytag: member="TTModel::isLoaded" ref="a0717855b556f4efac8de7571f1d38cea" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) isLoaded </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Indicates that the data has been loaded. </p>
+<p>Default implementation returns YES. </p>
+
+</div>
+</div>
+<a class="anchor" id="a68b9d49ad095a221c82ec0d13b6038ec"></a><!-- doxytag: member="TTModel::isLoading" ref="a68b9d49ad095a221c82ec0d13b6038ec" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) isLoading </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Indicates that the data is in the process of loading. </p>
+<p>Default implementation returns NO. </p>
+
+</div>
+</div>
+<a class="anchor" id="a41b1268d87a53c51aa8b22bbeeb29d07"></a><!-- doxytag: member="TTModel::isLoadingMore" ref="a41b1268d87a53c51aa8b22bbeeb29d07" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) isLoadingMore </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Indicates that the data is in the process of loading additional data. </p>
+<p>Default implementation returns NO. </p>
+
+</div>
+</div>
+<a class="anchor" id="adbf2fa828a24a0428695f4cd708d9db6"></a><!-- doxytag: member="TTModel::isOutdated" ref="adbf2fa828a24a0428695f4cd708d9db6" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) isOutdated </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Indicates that the model is of date and should be reloaded as soon as possible. </p>
+<p>Default implementation returns NO. </p>
+
+</div>
+</div>
+<a class="anchor" id="a7b6152507942206e12aa6889a0ed8b8c"></a><!-- doxytag: member="TTModel::load:more:" ref="a7b6152507942206e12aa6889a0ed8b8c" args="(TTURLRequestCachePolicy cachePolicy,[more] BOOL more)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) load: </td>
+          <td></td>
+          <td class="paramtype">(TTURLRequestCachePolicy)&nbsp;</td>
+          <td class="paramname"> <em>cachePolicy</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">more:</td>
+          <td></td>
+          <td class="paramtype">(BOOL)&nbsp;</td>
+          <td class="paramname"> <em>more</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Loads the model. </p>
+<p>Default implementation does nothing. </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Three20Network/Headers/<a class="el" href="_t_t_model_8h_source.html">TTModel.h</a></li>
 <li>Three20Network/Sources/TTModel.m</li>

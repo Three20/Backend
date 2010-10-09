@@ -114,6 +114,14 @@ Public Member Functions</h2></td></tr>
 (void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>hideTabAtIndex:</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba6dab8bd5c1b6a5807dee1b3f1b03fe"></a><!-- doxytag: member="TTTabBar::layoutTabs" ref="aba6dab8bd5c1b6a5807dee1b3f1b03fe" args="()" -->
 (CGSize)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>layoutTabs</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad88f3307be7d49bf55b419941a1eabbd"></a><!-- doxytag: member="TTTabBar::drawContent:" ref="ad88f3307be7d49bf55b419941a1eabbd" args="(CGRect rect)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>drawContent:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ca8c9a930241745c77280b6e5296a6b"></a><!-- doxytag: member="TTTabBar::textForLayerWithStyle:" ref="a6ca8c9a930241745c77280b6e5296a6b" args="(TTStyle *style)" -->
+(<a class="el" href="class_n_s_string.html">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>textForLayerWithStyle:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61b305018c41e4b8596d477337614e28"></a><!-- doxytag: member="TTTabBar::imageForLayerWithStyle:" ref="a61b305018c41e4b8596d477337614e28" args="(TTStyle *style)" -->
+(<a class="el" href="class_u_i_image.html">UIImage</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>imageForLayerWithStyle:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a940c09a71f143ac572cf3ebaddeb127e"></a><!-- doxytag: member="TTTabBar::drawLayer:withStyle:" ref="a940c09a71f143ac572cf3ebaddeb127e" args="(TTStyleContext *context,[withStyle] TTStyle *style)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>drawLayer:withStyle:</b></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c188157189d7c9683668cdd4174bdd5"></a><!-- doxytag: member="TTTabBar::_tabStyle" ref="a8c188157189d7c9683668cdd4174bdd5" args="" -->
@@ -126,6 +134,10 @@ NSInteger&nbsp;</td><td class="memItemRight" valign="bottom"><b>_selectedTabInde
 <a class="el" href="class_n_s_mutable_array.html">NSMutableArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_tabViews</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04468fd8feff612e3b65b26fa01c66c7"></a><!-- doxytag: member="TTTabBar::_delegate" ref="a04468fd8feff612e3b65b26fa01c66c7" args="" -->
 id&lt; <a class="el" href="protocol_t_t_tab_delegate-p.html">TTTabDelegate</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>_delegate</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97853b2c7509081da5ac2fc9cf89976f"></a><!-- doxytag: member="TTTabBar::_style" ref="a97853b2c7509081da5ac2fc9cf89976f" args="" -->
+<a class="el" href="interface_t_t_style.html">TTStyle</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_style</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea5bd0ee9481a7012f50ea91cd7501bf"></a><!-- doxytag: member="TTTabBar::_layout" ref="aea5bd0ee9481a7012f50ea91cd7501bf" args="" -->
+<a class="el" href="interface_t_t_layout.html">TTLayout</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_layout</b></td></tr>
 <tr><td colspan="2"><h2><a name="properties"></a>
 Properties</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c3e1cdc292cb49ff06809ff122bbeac"></a><!-- doxytag: member="TTTabBar::tabStyle" ref="a2c3e1cdc292cb49ff06809ff122bbeac" args="" -->
@@ -142,6 +154,10 @@ NSInteger&nbsp;</td><td class="memItemRight" valign="bottom"><b>selectedTabIndex
 <a class="el" href="class_n_s_array.html">NSArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tabViews</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afde6b7aedd8d28bdd6b80ab02725894c"></a><!-- doxytag: member="TTTabBar::delegate" ref="afde6b7aedd8d28bdd6b80ab02725894c" args="" -->
 id&lt; <a class="el" href="protocol_t_t_tab_delegate-p.html">TTTabDelegate</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>delegate</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a832ab8c5e49539942c6d40c66fc80c78"></a><!-- doxytag: member="TTTabBar::style" ref="a832ab8c5e49539942c6d40c66fc80c78" args="" -->
+<a class="el" href="interface_t_t_style.html">TTStyle</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>style</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae1379b4316b8434d095325bfac7b70a"></a><!-- doxytag: member="TTTabBar::layout" ref="aae1379b4316b8434d095325bfac7b70a" args="" -->
+<a class="el" href="interface_t_t_layout.html">TTLayout</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>layout</b></td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Three20UI/Headers/<a class="el" href="_t_t_tab_bar_8h_source.html">TTTabBar.h</a></li>

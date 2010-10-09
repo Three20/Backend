@@ -105,6 +105,15 @@ Inheritance diagram for TTStyledTextFrame:</div>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8e987d64c9a8ec25b17fd34bcb1e9a4"></a><!-- doxytag: member="TTStyledTextFrame::initWithText:element:node:" ref="af8e987d64c9a8ec25b17fd34bcb1e9a4" args="(NSString *text,[element] TTStyledElement *element,[node] TTStyledTextNode *node)" -->
 (id)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>initWithText:element:node:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93c91ef15228fa6ae4b7693f5e093979"></a><!-- doxytag: member="TTStyledTextFrame::font" ref="a93c91ef15228fa6ae4b7693f5e093979" args="()" -->
+(<a class="el" href="class_u_i_font.html">UIFont</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>font</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abdd58f43dbce357ebf32748429e3196a"></a><!-- doxytag: member="TTStyledTextFrame::initWithElement:" ref="abdd58f43dbce357ebf32748429e3196a" args="(TTStyledElement *element)" -->
+(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>initWithElement:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a303beb9208d9cc6368f0c6e0ff8db821"></a><!-- doxytag: member="TTStyledTextFrame::drawInRect:" ref="a303beb9208d9cc6368f0c6e0ff8db821" args="(CGRect rect)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_styled_frame.html#a303beb9208d9cc6368f0c6e0ff8db821">drawInRect:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Draws the frame. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6fff50b9be6a44d492ef1437dbbe43a2"></a><!-- doxytag: member="TTStyledTextFrame::hitTest:" ref="a6fff50b9be6a44d492ef1437dbbe43a2" args="(CGPoint point)" -->
+(<a class="el" href="interface_t_t_styled_box_frame.html">TTStyledBoxFrame</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>hitTest:</b></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66f39f61adb7d6fc8e10b3e25b5c32d0"></a><!-- doxytag: member="TTStyledTextFrame::_node" ref="a66f39f61adb7d6fc8e10b3e25b5c32d0" args="" -->
@@ -113,6 +122,12 @@ Protected Attributes</h2></td></tr>
 <a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_text</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57cb459658d90214c0bb863850423313"></a><!-- doxytag: member="TTStyledTextFrame::_font" ref="a57cb459658d90214c0bb863850423313" args="" -->
 <a class="el" href="class_u_i_font.html">UIFont</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_font</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad03f8db51cb723fc5e39421e6bb57aa5"></a><!-- doxytag: member="TTStyledTextFrame::_element" ref="ad03f8db51cb723fc5e39421e6bb57aa5" args="" -->
+<a class="el" href="interface_t_t_styled_element.html">TTStyledElement</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_element</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ae54400ddeca3d416f1fd3b9e3ddfb1"></a><!-- doxytag: member="TTStyledTextFrame::_nextFrame" ref="a5ae54400ddeca3d416f1fd3b9e3ddfb1" args="" -->
+<a class="el" href="interface_t_t_styled_frame.html">TTStyledFrame</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_nextFrame</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24cf68c1443114c196c041743b8ee39e"></a><!-- doxytag: member="TTStyledTextFrame::_bounds" ref="a24cf68c1443114c196c041743b8ee39e" args="" -->
+CGRect&nbsp;</td><td class="memItemRight" valign="bottom"><b>_bounds</b></td></tr>
 <tr><td colspan="2"><h2><a name="properties"></a>
 Properties</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ce67624e8967f49f65f25febbb77e3f"></a><!-- doxytag: member="TTStyledTextFrame::node" ref="a3ce67624e8967f49f65f25febbb77e3f" args="" -->
@@ -124,6 +139,23 @@ Properties</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12d302d0ad05c8154e16185c006a6c17"></a><!-- doxytag: member="TTStyledTextFrame::font" ref="a12d302d0ad05c8154e16185c006a6c17" args="" -->
 <a class="el" href="class_u_i_font.html">UIFont</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_styled_text_frame.html#a12d302d0ad05c8154e16185c006a6c17">font</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The font that is used to measure and display the text of this frame. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67cc15e5eeaca5b7ad03e29bed795168"></a><!-- doxytag: member="TTStyledTextFrame::element" ref="a67cc15e5eeaca5b7ad03e29bed795168" args="" -->
+<a class="el" href="interface_t_t_styled_element.html">TTStyledElement</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_styled_frame.html#a67cc15e5eeaca5b7ad03e29bed795168">element</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The element that contains the frame. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac766ee3e369aade645baa3f93cec4867"></a><!-- doxytag: member="TTStyledTextFrame::nextFrame" ref="ac766ee3e369aade645baa3f93cec4867" args="" -->
+<a class="el" href="interface_t_t_styled_frame.html">TTStyledFrame</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_styled_frame.html#ac766ee3e369aade645baa3f93cec4867">nextFrame</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The next in the linked list of frames. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0bd9f22c306b1983ffe3889a3057971"></a><!-- doxytag: member="TTStyledTextFrame::bounds" ref="ab0bd9f22c306b1983ffe3889a3057971" args="" -->
+CGRect&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_styled_frame.html#ab0bd9f22c306b1983ffe3889a3057971">bounds</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The bounds of the content that is displayed by this frame. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e4e82fffc643c459e0527325dcb6cda"></a><!-- doxytag: member="TTStyledTextFrame::x" ref="a2e4e82fffc643c459e0527325dcb6cda" args="" -->
+CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><b>x</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6dfa6d3f5a80762f9b0dda76a61ba9ac"></a><!-- doxytag: member="TTStyledTextFrame::y" ref="a6dfa6d3f5a80762f9b0dda76a61ba9ac" args="" -->
+CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><b>y</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac52f801db1357e38f7cfc785264e55ea"></a><!-- doxytag: member="TTStyledTextFrame::width" ref="ac52f801db1357e38f7cfc785264e55ea" args="" -->
+CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><b>width</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a01628cb8596f1b94b801484be6bb321c"></a><!-- doxytag: member="TTStyledTextFrame::height" ref="a01628cb8596f1b94b801484be6bb321c" args="" -->
+CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><b>height</b></td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Three20Style/Headers/<a class="el" href="_t_t_styled_text_frame_8h_source.html">TTStyledTextFrame.h</a></li>

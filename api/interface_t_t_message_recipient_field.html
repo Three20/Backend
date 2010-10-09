@@ -81,6 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#properties">Properties</a>  </div>
   <div class="headertitle">
@@ -105,14 +106,34 @@ Inheritance diagram for TTMessageRecipientField:</div>
 
 <p><a href="class_t_t_message_recipient_field-members.html">List of all members.</a></p>
 <table class="memberdecls">
+<tr><td colspan="2"><h2><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aacceac8559f65e496569f92eb677adce"></a><!-- doxytag: member="TTMessageRecipientField::initWithTitle:required:" ref="aacceac8559f65e496569f92eb677adce" args="(NSString *title,[required] BOOL required)" -->
+(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>initWithTitle:required:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0f93744dfc0d65e3f5e29df09a0e97cf"></a><!-- doxytag: member="TTMessageRecipientField::createViewForController:" ref="a0f93744dfc0d65e3f5e29df09a0e97cf" args="(TTMessageController *controller)" -->
+(<a class="el" href="interface_t_t_picker_text_field.html">TTPickerTextField</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>createViewForController:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a049e983a289540bf306067b122f1739d"></a><!-- doxytag: member="TTMessageRecipientField::persistField:" ref="a049e983a289540bf306067b122f1739d" args="(UITextField *textField)" -->
+(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>persistField:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf558ba98d1f5e3080e88fc1bfd33885"></a><!-- doxytag: member="TTMessageRecipientField::restoreField:withData:" ref="abf558ba98d1f5e3080e88fc1bfd33885" args="(UITextField *textField,[withData] id data)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>restoreField:withData:</b></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aede50faac4e60aa9f2cbdba8631b0f2d"></a><!-- doxytag: member="TTMessageRecipientField::_recipients" ref="aede50faac4e60aa9f2cbdba8631b0f2d" args="" -->
 <a class="el" href="class_n_s_array.html">NSArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_recipients</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a90316ca630ea8feb63c5da644a830592"></a><!-- doxytag: member="TTMessageRecipientField::_title" ref="a90316ca630ea8feb63c5da644a830592" args="" -->
+<a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_title</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa3d3af7631a19c2664ac90231794c839"></a><!-- doxytag: member="TTMessageRecipientField::_required" ref="aa3d3af7631a19c2664ac90231794c839" args="" -->
+BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_required</b></td></tr>
 <tr><td colspan="2"><h2><a name="properties"></a>
 Properties</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef8683ec4f19915a4bb76b68e10d8944"></a><!-- doxytag: member="TTMessageRecipientField::recipients" ref="aef8683ec4f19915a4bb76b68e10d8944" args="" -->
 <a class="el" href="class_n_s_array.html">NSArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>recipients</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a494006ed1c012efd8082287c38212f4b"></a><!-- doxytag: member="TTMessageRecipientField::title" ref="a494006ed1c012efd8082287c38212f4b" args="" -->
+<a class="el" href="class_n_s_string.html">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_field.html#a494006ed1c012efd8082287c38212f4b">title</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The title of this field, which will be rendered along with the field's contents. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa0f70cbfe47c719bb44790c8e138d254"></a><!-- doxytag: member="TTMessageRecipientField::required" ref="aa0f70cbfe47c719bb44790c8e138d254" args="" -->
+BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_field.html#aa0f70cbfe47c719bb44790c8e138d254">required</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">If true, the user must supply a value for this field before they will be able to send their message. <br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>A field for holding recipients, typically found in an address book. </p>
