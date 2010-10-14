@@ -1252,6 +1252,7 @@ class Markdown_Parser {
 		$bq = $matches[1];
     
 		$bq = preg_replace('/--/', '', $bq);
+		$bq = $this->runBlockGamut($bq);
 
 		return "\n". $this->hashBlock("</div><div class=\"horizontal-bar\">\n$bq\n</div><div class=\"fixed-width\">")."\n\n";
 	}
