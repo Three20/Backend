@@ -115,7 +115,7 @@ function check_cross_links($path, $pagePath) {
         $changed = true;
       }
     }
-    
+
     if (preg_match_all($globalindexregex, $fileData, $matches)) {
       for ($index = 0; $index < count($matches[0]); ++$index) {
         $match = $matches[0][$index];
@@ -152,6 +152,26 @@ function update_content($path, $pagePath) {
     $config = Spyc::YAMLLoadString($match[1]);
     
     $filedata = trim(preg_replace('/^^---(.+?)---/is', '', $filedata));
+  }
+
+  if (preg_match_all('/`([a-zA-Z0-9]*Three20[a-zA-Z0-9]+)\/([a-zA-Z0-9]+)\.(h|m)`/', $filedata, $matches)) {
+    for ($index = 0; $index < count($matches[0]); ++$index) {
+      $library = $matches[1][$index];
+      $classname = $matches[2][$index];
+      $filetype = $matches[3][$index];
+      
+      if ($filetype == 'h') {
+        $subdir = 'Headers';
+
+      } else if ($filetype == 'm') {
+        $subdir = 'Sources';
+      }
+      
+      $url = 'http://github.com/facebook/three20/blob/master/src/'
+        .$library.'/'.$subdir.'/'.$classname.'.'.$filetype;
+
+      $filedata = preg_replace('/`'.$library.'\/'.$classname.'\.'.$filetype.'`/', '<a href="'.$url.'">'.$classname.'</a>', $filedata);
+    }
   }
 
   $config['ext'] = $ext;
