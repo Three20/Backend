@@ -29,16 +29,29 @@
 
 <div id="page-wrapper">
 
-<div id="header">
-<div class="fixed-width">
-<ul class="left-links">
-  <li>&larr; <a href="http://new.three20.info/">Home</a></li>
-</ul>
-<ul class="right-links">
+<!-- HEADER --> 
+ 
+<div id="header"> 
+<div class="fixed-width"> 
+ 
+<ul class="right-links"> 
+  <li><a href="/documentation">Documentation</a></li> 
+  <li><a href="/tutorials">Tutorials</a></li> 
+  <li><a href="http://api.three20.info/">API</a></li> 
+  <li><a href="/community">Community</a></li> 
+</ul> 
+ 
+<ul class="right-links"> 
   <li><a href="http://<?= $_SERVER['SERVER_NAME']?><?= $_SERVER['REQUEST_URI'] ?>#disqus_thread">Comments</a></li>
-</ul>
-</div> <!-- .fixed-width -->
-</div>
+</ul> 
+ 
+<div class="leadin"> 
+  <h1><a href="/">Three20</a></h1> 
+  <h2><a href="/">An open-source library for iOS applications</a></h2> 
+</div> <!-- .leadin --> 
+ 
+</div> <!-- .fixed-width --> 
+</div> <!-- #header --> 
 
 <div id="content">
 <div class="fixed-width">
