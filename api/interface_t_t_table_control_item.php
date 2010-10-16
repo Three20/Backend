@@ -35,10 +35,10 @@
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
-  <li><a href="/documentation">Documentation</a></li> 
-  <li><a href="/tutorials">Tutorials</a></li> 
+  <li><a href="http://three20.info/documentation">Documentation</a></li> 
+  <li><a href="http://three20.info/tutorials">Tutorials</a></li> 
   <li><a href="http://api.three20.info/">API</a></li> 
-  <li><a href="/community">Community</a></li> 
+  <li><a href="http://three20.info/community">Community</a></li> 
 </ul> 
  
 <ul class="right-links"> 
@@ -46,8 +46,8 @@
 </ul> 
  
 <div class="leadin"> 
-  <h1><a href="/">Three20</a></h1> 
-  <h2><a href="/">An open-source library for iOS applications</a></h2> 
+  <h1><a href="http://three20.info/">Three20</a></h1> 
+  <h2><a href="http://three20.info/">An open-source library for iOS applications</a></h2> 
 </div> <!-- .leadin --> 
  
 </div> <!-- .fixed-width --> 
