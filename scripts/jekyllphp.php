@@ -28,6 +28,7 @@ include '../system/vendor/spyc.php';
 
 define('ARTICLES_PATH', '../application/views/articles');
 define('LAYOUTS_PATH', '../application/views/templates');
+define('SUBLAYOUTS_PATH', '../application/views/sublayouts');
 define('PAGES_PATH', '../application/views/pages');
 define('WWW_PATH', '../www');
 
@@ -56,7 +57,7 @@ function get_id_config($id) {
 
   $possible_paths = array(
     ARTICLES_PATH,
-    LAYOUTS_PATH,
+    SUBLAYOUTS_PATH,
     PAGES_PATH
   );
 
@@ -110,6 +111,30 @@ function check_cross_links($path, $pagePath) {
         } else {
           $fileData = str_replace('{{'.$match.'}}',
             '<a href="'.$config['base_path'].$match.'">'.$config['title'].'</a>', $fileData);
+        }
+
+        $changed = true;
+      }
+    }
+    
+    if (preg_match_all('/>>(.+?)<</i', $fileData, $matches)) {
+      foreach ($matches[1] as $match) {
+        $testPath = join_paths(SUBLAYOUTS_PATH, $match.'.php');
+
+        if (!file_exists($testPath)) {
+          $fileData = str_replace('>>'.$match.'<<', '', $fileData);
+          $changed = true;
+          continue;
+        }
+
+        $config = get_id_config($match);
+
+        if (isset($config['published']) && !$config['published']) {
+          $fileData = str_replace('>>'.$match.'<<', '', $fileData);
+
+        } else {
+          $fileData = str_replace('>>'.$match.'<<',
+            file_get_contents($testPath), $fileData);
         }
 
         $changed = true;
@@ -216,6 +241,10 @@ function update_layout($path) {
   update_content($path, LAYOUTS_PATH);
 }
 
+function update_sublayout($path) {
+  update_content($path, SUBLAYOUTS_PATH);
+}
+
 function update_page($path) {
   update_content($path, PAGES_PATH);
 }
@@ -295,6 +324,9 @@ for ($globalphase = 0; $globalphase < 2; ++$globalphase) {
 
   echo "posts...\n";
   process_directory('../Articles/_posts', 'update_article', $recurse = false);
+
+  echo "sublayouts...\n";
+  process_directory('../Articles/_sublayouts', 'update_sublayout', $recurse = false);
 
   echo "layouts...\n";
   process_directory('../Articles/_layouts', 'update_layout', $recurse = false);
