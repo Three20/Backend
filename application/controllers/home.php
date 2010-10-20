@@ -19,4 +19,16 @@ class Home_Controller extends Three20_Controller {
     $this->render_article_template($content);
   }
 
+  public function showcase($id) {
+    if (!IN_PRODUCTION) {
+      $profiler = new Profiler;
+    }
+
+    $content = new View('pages/home');
+
+    $content->showcaseid = $id;
+
+    $this->render_article_template($content);
+  }
+
 }
