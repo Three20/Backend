@@ -27,6 +27,7 @@ include '../system/vendor/classTextile.php';
 include '../system/vendor/spyc.php';
 
 define('ARTICLES_PATH', '../application/views/articles');
+define('MODULES_PATH', '../application/views/modules');
 define('LAYOUTS_PATH', '../application/views/templates');
 define('SUBLAYOUTS_PATH', '../application/views/sublayouts');
 define('PAGES_PATH', '../application/views/pages');
@@ -237,6 +238,10 @@ function update_article($path) {
   update_content($path, ARTICLES_PATH);
 }
 
+function update_module($path) {
+  update_content($path, MODULES_PATH);
+}
+
 function update_layout($path) {
   update_content($path, LAYOUTS_PATH);
 }
@@ -312,8 +317,13 @@ function load_index() {
   return $index;
 }
 
+function length_sort($a,$b){
+    return strlen($b)-strlen($a);
+}
+
 function get_index_regex($index) {
-  return '/\^('.join('|', array_keys($index)).')\b/i';
+  $ids = array_keys($index);
+  return '/\^('.join('|', $ids).')\^/i';
 }
 
 $globalindex = load_index();
@@ -324,6 +334,9 @@ for ($globalphase = 0; $globalphase < 2; ++$globalphase) {
 
   echo "posts...\n";
   process_directory('../Articles/_posts', 'update_article', $recurse = false);
+
+  echo "modules...\n";
+  process_directory('../Articles/_modules', 'update_module', $recurse = false);
 
   echo "sublayouts...\n";
   process_directory('../Articles/_sublayouts', 'update_sublayout', $recurse = false);
