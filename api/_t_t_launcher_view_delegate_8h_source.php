@@ -14,7 +14,7 @@
   <meta property="og:image" content="http://github.com/facebook/three20/raw/06cd0abe33ac39d1f509e278e286c6bf1e45e821/samples/Resources/Icon.png"/>
   <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
-  <title>Three20: Three20UI/Headers/TTLauncherViewDelegate.h Source File</title>
+  <title>Three20: Three20Launcher/Headers/TTLauncherViewDelegate.h Source File</title>
 <link href="http://new.three20.info/css/reset.css" rel="stylesheet" type="text/css"/>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -93,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 <div class="header">
   <div class="headertitle">
-<h1>Three20UI/Headers/TTLauncherViewDelegate.h</h1>  </div>
+<h1>Three20Launcher/Headers/TTLauncherViewDelegate.h</h1>  </div>
 </div>
 <div class="contents">
 <div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
@@ -114,24 +114,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00016"></a>00016 
 <a name="l00017"></a>00017 <span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span>
 <a name="l00018"></a>00018 
-<a name="l00019"></a>00019 <span class="keyword">@class</span> <a class="code" href="interface_t_t_launcher_view.php">TTLauncherView</a>;
-<a name="l00020"></a>00020 <span class="keyword">@class</span> <a class="code" href="interface_t_t_launcher_item.php">TTLauncherItem</a>;
+<a name="l00019"></a>00019 <span class="keyword">@class</span> <a class="code" href="interface_t_t_launcher_view.php" title="A view that mimics the functionality of the App Launcher found on all iOS devices.">TTLauncherView</a>;
+<a name="l00020"></a>00020 <span class="keyword">@class</span> <a class="code" href="interface_t_t_launcher_item.php" title="A simple data object for the launcher view.">TTLauncherItem</a>;
 <a name="l00021"></a>00021 
 <a name="l00022"></a><a class="code" href="protocol_t_t_launcher_view_delegate-p.php">00022</a> <span class="keyword">@protocol </span><a class="code" href="protocol_t_t_launcher_view_delegate-p.php">TTLauncherViewDelegate</a> &lt;<a class="code" href="class_n_s_object.php" title="Additions.">NSObject</a>&gt;
 <a name="l00023"></a>00023 
 <a name="l00024"></a>00024 <span class="keyword">@optional</span>
 <a name="l00025"></a>00025 
-<a name="l00026"></a>00026 - (void)launcherView:(<a class="code" href="interface_t_t_launcher_view.php">TTLauncherView</a>*)launcher didAddItem:(<a class="code" href="interface_t_t_launcher_item.php">TTLauncherItem</a>*)item;
+<a name="l00026"></a>00026 - (void)launcherView:(<a class="code" href="interface_t_t_launcher_view.php" title="A view that mimics the functionality of the App Launcher found on all iOS devices.">TTLauncherView</a>*)launcher didAddItem:(<a class="code" href="interface_t_t_launcher_item.php" title="A simple data object for the launcher view.">TTLauncherItem</a>*)item;
 <a name="l00027"></a>00027 
-<a name="l00028"></a>00028 - (void)launcherView:(<a class="code" href="interface_t_t_launcher_view.php">TTLauncherView</a>*)launcher didRemoveItem:(<a class="code" href="interface_t_t_launcher_item.php">TTLauncherItem</a>*)item;
+<a name="l00028"></a>00028 - (void)launcherView:(<a class="code" href="interface_t_t_launcher_view.php" title="A view that mimics the functionality of the App Launcher found on all iOS devices.">TTLauncherView</a>*)launcher didRemoveItem:(<a class="code" href="interface_t_t_launcher_item.php" title="A simple data object for the launcher view.">TTLauncherItem</a>*)item;
 <a name="l00029"></a>00029 
-<a name="l00030"></a>00030 - (void)launcherView:(<a class="code" href="interface_t_t_launcher_view.php">TTLauncherView</a>*)launcher didMoveItem:(<a class="code" href="interface_t_t_launcher_item.php">TTLauncherItem</a>*)item;
+<a name="l00030"></a>00030 - (void)launcherView:(<a class="code" href="interface_t_t_launcher_view.php" title="A view that mimics the functionality of the App Launcher found on all iOS devices.">TTLauncherView</a>*)launcher didMoveItem:(<a class="code" href="interface_t_t_launcher_item.php" title="A simple data object for the launcher view.">TTLauncherItem</a>*)item;
 <a name="l00031"></a>00031 
-<a name="l00032"></a>00032 - (void)launcherView:(<a class="code" href="interface_t_t_launcher_view.php">TTLauncherView</a>*)launcher didSelectItem:(<a class="code" href="interface_t_t_launcher_item.php">TTLauncherItem</a>*)item;
+<a name="l00032"></a>00032 - (void)launcherView:(<a class="code" href="interface_t_t_launcher_view.php" title="A view that mimics the functionality of the App Launcher found on all iOS devices.">TTLauncherView</a>*)launcher didSelectItem:(<a class="code" href="interface_t_t_launcher_item.php" title="A simple data object for the launcher view.">TTLauncherItem</a>*)item;
 <a name="l00033"></a>00033 
-<a name="l00034"></a>00034 - (void)launcherViewDidBeginEditing:(<a class="code" href="interface_t_t_launcher_view.php">TTLauncherView</a>*)launcher;
+<a name="l00034"></a>00034 - (void)launcherViewDidBeginEditing:(<a class="code" href="interface_t_t_launcher_view.php" title="A view that mimics the functionality of the App Launcher found on all iOS devices.">TTLauncherView</a>*)launcher;
 <a name="l00035"></a>00035 
-<a name="l00036"></a>00036 - (void)launcherViewDidEndEditing:(<a class="code" href="interface_t_t_launcher_view.php">TTLauncherView</a>*)launcher;
+<a name="l00036"></a>00036 - (void)launcherViewDidEndEditing:(<a class="code" href="interface_t_t_launcher_view.php" title="A view that mimics the functionality of the App Launcher found on all iOS devices.">TTLauncherView</a>*)launcher;
 <a name="l00037"></a>00037 
 <a name="l00038"></a>00038 <span class="keyword">@end</span>
 <a name="l00039"></a>00039 

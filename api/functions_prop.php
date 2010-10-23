@@ -148,6 +148,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
+<li>badgeNumber
+: <a class="el" href="interface_t_t_launcher_item.php#a33cc517318625c7b06a326ababf78453">TTLauncherItem</a>
+</li>
 <li>body
 : <a class="el" href="interface_t_t_message_controller.php#a179539948de0b4377b0559e9ef2c57e6">TTMessageController</a>
 </li>
@@ -174,6 +177,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="interface_t_t_u_r_l_request.php#a34ad517e5d5fe222baec6702b9eb4cde">TTURLRequest</a>
 , <a class="el" href="interface_t_t_request_loader.php#a73a04e9934fd4e34b369c60c31578227">TTRequestLoader</a>
 </li>
+<li>canDelete
+: <a class="el" href="interface_t_t_launcher_item.php#a57ff4e97f351504b40136011a7bea38e">TTLauncherItem</a>
+</li>
 <li>caption
 : <a class="el" href="protocol_t_t_photo-p.php#ae7dbc655e54ac2f77c7b0b5addf9cb47">&lt;TTPhoto&gt;</a>
 </li>
@@ -191,6 +197,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>charsetForMultipart
 : <a class="el" href="interface_t_t_u_r_l_request.php#a8a432224b4b3c781a593f8512c124ec1">TTURLRequest</a>
+</li>
+<li>columnCount
+: <a class="el" href="interface_t_t_launcher_view.php#aff4916500fa5de98835b074811ec0fed">TTLauncherView</a>
 </li>
 <li>contentInset
 : <a class="el" href="interface_t_t_styled_text_label.php#a82b3d4f94a46a347621ec4ed6bc03244">TTStyledTextLabel</a>
@@ -307,7 +316,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
 <li>image
-: <a class="el" href="interface_t_t_image_view.php#a5a282b09c9dc2ae0fc3bb2d0dcbe165c">TTImageView</a>
+: <a class="el" href="interface_t_t_launcher_item.php#afde6b045dedee41c88c4d51604da77fc">TTLauncherItem</a>
+, <a class="el" href="interface_t_t_image_view.php#a5a282b09c9dc2ae0fc3bb2d0dcbe165c">TTImageView</a>
 </li>
 <li>imageCompressionQuality
 : <a class="el" href="interface_t_t_u_r_l_request_queue.php#aa6818e451230a069a53bcb2026d14fa0">TTURLRequestQueue</a>
@@ -496,8 +506,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="interface_t_t_base_view_controller.php#a9fbdc64e7c1d0e33c6e5c18c637484f7">TTBaseViewController</a>
 </li>
 <li>style
-: <a class="el" href="interface_t_t_styled_box_frame.php#a5d525ddd5702d1cc8aeeef17a01c51eb">TTStyledBoxFrame</a>
-, <a class="el" href="interface_t_t_styled_image_frame.php#a4419840410dcc3f63169692800591469">TTStyledImageFrame</a>
+: <a class="el" href="interface_t_t_styled_image_frame.php#a4419840410dcc3f63169692800591469">TTStyledImageFrame</a>
+, <a class="el" href="interface_t_t_styled_box_frame.php#a5d525ddd5702d1cc8aeeef17a01c51eb">TTStyledBoxFrame</a>
+, <a class="el" href="interface_t_t_launcher_item.php#ab7361915c019a6ae823d615a5ab222ea">TTLauncherItem</a>
 </li>
 <li>subject
 : <a class="el" href="interface_t_t_message_controller.php#a8414169377f297b9fcb41bbc9c0a058d">TTMessageController</a>
@@ -532,7 +543,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="interface_t_t_styled_text_label.php#afd11f17950467bcff3c50122a21e9bb3">TTStyledTextLabel</a>
 </li>
 <li>title
-: <a class="el" href="interface_t_t_message_field.php#a494006ed1c012efd8082287c38212f4b">TTMessageField</a>
+: <a class="el" href="interface_t_t_launcher_item.php#ac1766a0567b3531dc66208a01146df13">TTLauncherItem</a>
+, <a class="el" href="interface_t_t_message_field.php#a494006ed1c012efd8082287c38212f4b">TTMessageField</a>
 , <a class="el" href="protocol_t_t_photo_source-p.php#acfc9f3efc7b8a7dc672a147d99b6bea3">&lt;TTPhotoSource&gt;</a>
 </li>
 <li>topViewController
@@ -552,9 +564,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
 <li>URL
-: <a class="el" href="interface_t_t_link.php#a411a2104db6c430c46a6cbe687f5ac42">TTLink</a>
-, <a class="el" href="interface_t_t_web_controller.php#a30b8fa744369bcd1066fb6a386e775ef">TTWebController</a>
+: <a class="el" href="interface_t_t_launcher_item.php#a21dc66cc63cb14b3317bee8a1ffb325f">TTLauncherItem</a>
+, <a class="el" href="interface_t_t_link.php#a411a2104db6c430c46a6cbe687f5ac42">TTLink</a>
 , <a class="el" href="interface_t_t_base_navigator.php#a1ffbcfbcbefed8badea9d3bcbe21681a">TTBaseNavigator</a>
+, <a class="el" href="interface_t_t_web_controller.php#a30b8fa744369bcd1066fb6a386e775ef">TTWebController</a>
 </li>
 <li>URLAction
 : <a class="el" href="interface_t_t_link.php#acac5fc4e17c49e878bd9e25df4fa1780">TTLink</a>
@@ -563,8 +576,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="interface_t_t_base_navigator.php#a3017d22aba919b66969e863484bb2168">TTBaseNavigator</a>
 </li>
 <li>urlPath
-: <a class="el" href="interface_t_t_u_r_l_request.php#a4ad107c41d501a5666e65ad357842a4a">TTURLRequest</a>
-, <a class="el" href="interface_t_t_image_view.php#a037c253134647eeb0dec16dc5bd8f7f6">TTImageView</a>
+: <a class="el" href="interface_t_t_image_view.php#a037c253134647eeb0dec16dc5bd8f7f6">TTImageView</a>
+, <a class="el" href="interface_t_t_u_r_l_request.php#a4ad107c41d501a5666e65ad357842a4a">TTURLRequest</a>
 , <a class="el" href="interface_t_t_request_loader.php#ae05ab957f8610bdf6d8dc6c55561cf18">TTRequestLoader</a>
 </li>
 <li>URLValue

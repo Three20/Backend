@@ -138,8 +138,8 @@ CGRect&nbsp;</td><td class="memItemRight" valign="bottom"><b>highlightRect</b></
 <a class="el" href="class_n_s_string.php">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>text</b></td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Three20UI/Headers/<a class="el" href="_t_t_launcher_highlight_view_8h_source.php">TTLauncherHighlightView.h</a></li>
-<li>Three20UI/Sources/TTLauncherHighlightView.m</li>
+<li>Three20Launcher/Headers/<a class="el" href="_t_t_launcher_highlight_view_8h_source.php">TTLauncherHighlightView.h</a></li>
+<li>Three20Launcher/Sources/TTLauncherHighlightView.m</li>
 </ul>
 </div>
 <!--- window showing the filter options -->

@@ -119,6 +119,7 @@ Here are the classes, structs, unions and interfaces with brief descriptions:<ta
   <tr><td class="indexkey"><a class="el" href="class_n_s_mutable_dictionary.php">NSMutableDictionary</a></td><td class="indexvalue">Additions </td></tr>
   <tr><td class="indexkey"><a class="el" href="class_n_s_object.php">NSObject</a></td><td class="indexvalue">Additions </td></tr>
   <tr><td class="indexkey"><a class="el" href="class_n_s_string.php">NSString</a></td><td class="indexvalue">Additions </td></tr>
+  <tr><td class="indexkey"><a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_s_b_j_s_o_n.php">SBJSON</a></td><td class="indexvalue">Facade for SBJsonWriter/SBJsonParser </td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_s_b_json_base.php">SBJsonBase</a></td><td class="indexvalue">Common base class for parsing &amp; writing </td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_s_b_json_parser.php">SBJsonParser</a></td><td class="indexvalue">The JSON parser class </td></tr>
@@ -159,11 +160,13 @@ Here are the classes, structs, unions and interfaces with brief descriptions:<ta
   <tr><td class="indexkey"><a class="el" href="interface_t_t_inner_shadow_style.php">TTInnerShadowStyle</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_inset_style.php">TTInsetStyle</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_label.php">TTLabel</a></td><td class="indexvalue"></td></tr>
-  <tr><td class="indexkey"><a class="el" href="interface_t_t_launcher_button.php">TTLauncherButton</a></td><td class="indexvalue"></td></tr>
+  <tr><td class="indexkey"><a class="el" href="interface_t_t_launcher_button.php">TTLauncherButton</a></td><td class="indexvalue">A button defined created using a TTLauncherItem's data </td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_launcher_highlight_view.php">TTLauncherHighlightView</a></td><td class="indexvalue"></td></tr>
-  <tr><td class="indexkey"><a class="el" href="interface_t_t_launcher_item.php">TTLauncherItem</a></td><td class="indexvalue"></td></tr>
+  <tr><td class="indexkey"><a class="el" href="interface_t_t_launcher_item.php">TTLauncherItem</a></td><td class="indexvalue">A simple data object for the launcher view </td></tr>
+  <tr><td class="indexkey"><a class="el" href="protocol_t_t_launcher_item_delegate-p.php">&lt;TTLauncherItemDelegate&gt;</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_launcher_scroll_view.php">TTLauncherScrollView</a></td><td class="indexvalue"></td></tr>
-  <tr><td class="indexkey"><a class="el" href="interface_t_t_launcher_view.php">TTLauncherView</a></td><td class="indexvalue"></td></tr>
+  <tr><td class="indexkey"><a class="el" href="interface_t_t_launcher_view.php">TTLauncherView</a></td><td class="indexvalue">A view that mimics the functionality of the App Launcher found on all iOS devices </td></tr>
+  <tr><td class="indexkey"><a class="el" href="interface_t_t_launcher_view_controller.php">TTLauncherViewController</a></td><td class="indexvalue">A dead simple view controller with a launcher view covering the entire view </td></tr>
   <tr><td class="indexkey"><a class="el" href="protocol_t_t_launcher_view_delegate-p.php">&lt;TTLauncherViewDelegate&gt;</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_layout.php">TTLayout</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_linear_gradient_border_style.php">TTLinearGradientBorderStyle</a></td><td class="indexvalue"></td></tr>

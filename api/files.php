@@ -151,6 +151,16 @@ Here is a list of all documented files with brief descriptions:<table>
   <tr><td class="indexkey">Three20Core/Headers/<b>TTGlobalCorePaths.h</b> <a href="_t_t_global_core_paths_8h_source.php">[code]</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey">Three20Core/Headers/<b>TTGlobalCoreRects.h</b> <a href="_t_t_global_core_rects_8h_source.php">[code]</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey">Three20Core/Headers/<b>TTMarkupStripper.h</b> <a href="_t_t_markup_stripper_8h_source.php">[code]</a></td><td class="indexvalue"></td></tr>
+  <tr><td class="indexkey">Three20Launcher/Headers/<b>Three20Launcher+Additions.h</b> <a href="_three20_launcher_09_additions_8h_source.php">[code]</a></td><td class="indexvalue"></td></tr>
+  <tr><td class="indexkey">Three20Launcher/Headers/<b>Three20Launcher.h</b> <a href="_three20_launcher_8h_source.php">[code]</a></td><td class="indexvalue"></td></tr>
+  <tr><td class="indexkey">Three20Launcher/Headers/<b>TTLauncherButton.h</b> <a href="_t_t_launcher_button_8h_source.php">[code]</a></td><td class="indexvalue"></td></tr>
+  <tr><td class="indexkey">Three20Launcher/Headers/<b>TTLauncherHighlightView.h</b> <a href="_t_t_launcher_highlight_view_8h_source.php">[code]</a></td><td class="indexvalue"></td></tr>
+  <tr><td class="indexkey">Three20Launcher/Headers/<b>TTLauncherItem.h</b> <a href="_t_t_launcher_item_8h_source.php">[code]</a></td><td class="indexvalue"></td></tr>
+  <tr><td class="indexkey">Three20Launcher/Headers/<b>TTLauncherItemDelegate.h</b> <a href="_t_t_launcher_item_delegate_8h_source.php">[code]</a></td><td class="indexvalue"></td></tr>
+  <tr><td class="indexkey">Three20Launcher/Headers/<b>TTLauncherScrollView.h</b> <a href="_t_t_launcher_scroll_view_8h_source.php">[code]</a></td><td class="indexvalue"></td></tr>
+  <tr><td class="indexkey">Three20Launcher/Headers/<b>TTLauncherView.h</b> <a href="_t_t_launcher_view_8h_source.php">[code]</a></td><td class="indexvalue"></td></tr>
+  <tr><td class="indexkey">Three20Launcher/Headers/<b>TTLauncherViewController.h</b> <a href="_t_t_launcher_view_controller_8h_source.php">[code]</a></td><td class="indexvalue"></td></tr>
+  <tr><td class="indexkey">Three20Launcher/Headers/<b>TTLauncherViewDelegate.h</b> <a href="_t_t_launcher_view_delegate_8h_source.php">[code]</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey">Three20Network/Headers/<b>Three20Network.h</b> <a href="_three20_network_8h_source.php">[code]</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey">Three20Network/Headers/<b>TTGlobalNetwork.h</b> <a href="_t_t_global_network_8h_source.php">[code]</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey">Three20Network/Headers/<b>TTModel.h</b> <a href="_t_t_model_8h_source.php">[code]</a></td><td class="indexvalue"></td></tr>
@@ -251,12 +261,6 @@ Here is a list of all documented files with brief descriptions:<table>
   <tr><td class="indexkey">Three20UI/Headers/<b>TTImageViewDelegate.h</b> <a href="_t_t_image_view_delegate_8h_source.php">[code]</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey">Three20UI/Headers/<b>TTImageViewInternal.h</b> <a href="_t_t_image_view_internal_8h_source.php">[code]</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey">Three20UI/Headers/<b>TTLabel.h</b> <a href="_t_t_label_8h_source.php">[code]</a></td><td class="indexvalue"></td></tr>
-  <tr><td class="indexkey">Three20UI/Headers/<b>TTLauncherButton.h</b> <a href="_t_t_launcher_button_8h_source.php">[code]</a></td><td class="indexvalue"></td></tr>
-  <tr><td class="indexkey">Three20UI/Headers/<b>TTLauncherHighlightView.h</b> <a href="_t_t_launcher_highlight_view_8h_source.php">[code]</a></td><td class="indexvalue"></td></tr>
-  <tr><td class="indexkey">Three20UI/Headers/<b>TTLauncherItem.h</b> <a href="_t_t_launcher_item_8h_source.php">[code]</a></td><td class="indexvalue"></td></tr>
-  <tr><td class="indexkey">Three20UI/Headers/<b>TTLauncherScrollView.h</b> <a href="_t_t_launcher_scroll_view_8h_source.php">[code]</a></td><td class="indexvalue"></td></tr>
-  <tr><td class="indexkey">Three20UI/Headers/<b>TTLauncherView.h</b> <a href="_t_t_launcher_view_8h_source.php">[code]</a></td><td class="indexvalue"></td></tr>
-  <tr><td class="indexkey">Three20UI/Headers/<b>TTLauncherViewDelegate.h</b> <a href="_t_t_launcher_view_delegate_8h_source.php">[code]</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey">Three20UI/Headers/<b>TTLink.h</b> <a href="_t_t_link_8h_source.php">[code]</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey">Three20UI/Headers/<b>TTListDataSource.h</b> <a href="_t_t_list_data_source_8h_source.php">[code]</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey">Three20UI/Headers/<b>TTMessageController.h</b> <a href="_t_t_message_controller_8h_source.php">[code]</a></td><td class="indexvalue"></td></tr>

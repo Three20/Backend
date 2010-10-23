@@ -14,7 +14,7 @@
   <meta property="og:image" content="http://github.com/facebook/three20/raw/06cd0abe33ac39d1f509e278e286c6bf1e45e821/samples/Resources/Icon.png"/>
   <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
-  <title>Three20: Three20UI/Headers/TTLauncherItem.h Source File</title>
+  <title>Three20: Three20Launcher/Headers/TTLauncherItem.h Source File</title>
 <link href="http://new.three20.info/css/reset.css" rel="stylesheet" type="text/css"/>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -93,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 <div class="header">
   <div class="headertitle">
-<h1>Three20UI/Headers/TTLauncherItem.h</h1>  </div>
+<h1>Three20Launcher/Headers/TTLauncherItem.h</h1>  </div>
 </div>
 <div class="contents">
 <div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
@@ -115,34 +115,48 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00017"></a>00017 <span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span>
 <a name="l00018"></a>00018 <span class="preprocessor">#import &lt;UIKit/UIKit.h&gt;</span>
 <a name="l00019"></a>00019 
-<a name="l00020"></a>00020 <span class="keyword">@class</span> <a class="code" href="interface_t_t_launcher_view.php">TTLauncherView</a>;
+<a name="l00020"></a>00020 <span class="keyword">@protocol </span><a class="code" href="protocol_t_t_launcher_item_delegate-p.php">TTLauncherItemDelegate</a>;
 <a name="l00021"></a>00021 
-<a name="l00022"></a><a class="code" href="interface_t_t_launcher_item.php">00022</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_launcher_item.php">TTLauncherItem</a> : <a class="code" href="class_n_s_object.php" title="Additions.">NSObject</a> &lt;NSCoding&gt; {
-<a name="l00023"></a>00023   <a class="code" href="interface_t_t_launcher_view.php">TTLauncherView</a>* _launcher;
-<a name="l00024"></a>00024 
-<a name="l00025"></a>00025   <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*       _title;
-<a name="l00026"></a>00026   <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*       _image;
-<a name="l00027"></a>00027   <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*       _URL;
-<a name="l00028"></a>00028 
-<a name="l00029"></a>00029   <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*       _style;
-<a name="l00030"></a>00030   NSInteger       _badgeNumber;
+<a name="l00027"></a><a class="code" href="interface_t_t_launcher_item.php">00027</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_launcher_item.php" title="A simple data object for the launcher view.">TTLauncherItem</a> : <a class="code" href="class_n_s_object.php" title="Additions.">NSObject</a> &lt;NSCoding&gt; {
+<a name="l00028"></a>00028   <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*       _title;
+<a name="l00029"></a>00029   <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*       _image;
+<a name="l00030"></a>00030   <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*       _URL;
 <a name="l00031"></a>00031 
-<a name="l00032"></a>00032   BOOL            _canDelete;
-<a name="l00033"></a>00033 }
+<a name="l00032"></a>00032   <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*       _style;
+<a name="l00033"></a>00033   NSInteger       _badgeNumber;
 <a name="l00034"></a>00034 
-<a name="l00035"></a>00035 @property (nonatomic, assign) <a class="code" href="interface_t_t_launcher_view.php">TTLauncherView</a>* launcher;
-<a name="l00036"></a>00036 @property (nonatomic, copy)   <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*       title;
-<a name="l00037"></a>00037 @property (nonatomic, copy)   <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*       image;
-<a name="l00038"></a>00038 @property (nonatomic, copy)   <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*       URL;
-<a name="l00039"></a>00039 @property (nonatomic, copy)   <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*       style;
-<a name="l00040"></a>00040 @property (nonatomic)         NSInteger       badgeNumber;
-<a name="l00041"></a>00041 @property (nonatomic)         BOOL            canDelete;
-<a name="l00042"></a>00042 
-<a name="l00043"></a>00043 - (<span class="keywordtype">id</span>)initWithTitle:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)title image:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)image URL:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)URL;
-<a name="l00044"></a>00044 - (<span class="keywordtype">id</span>)initWithTitle:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)title image:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)image URL:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)URL
-<a name="l00045"></a>00045       canDelete:(BOOL)canDelete;
-<a name="l00046"></a>00046 
-<a name="l00047"></a>00047 @end
+<a name="l00035"></a>00035   BOOL            _canDelete;
+<a name="l00036"></a>00036 
+<a name="l00037"></a>00037   id&lt;TTLauncherItemDelegate&gt; _delegate;
+<a name="l00038"></a>00038 }
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040 <span class="comment">// Designated initializer.</span>
+<a name="l00041"></a>00041 - (id)initWithTitle: (<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)title
+<a name="l00042"></a>00042               image: (<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)image
+<a name="l00043"></a>00043                 URL: (<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)URL
+<a name="l00044"></a>00044           canDelete: (BOOL)canDelete;
+<a name="l00045"></a>00045 
+<a name="l00046"></a>00046 - (id)initWithTitle: (<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)title
+<a name="l00047"></a>00047               image: (<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)image
+<a name="l00048"></a>00048                 URL: (<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)URL;
+<a name="l00049"></a>00049 
+<a name="l00050"></a>00050 
+<a name="l00054"></a><a class="code" href="interface_t_t_launcher_item.php#ac1766a0567b3531dc66208a01146df13">00054</a> @property (nonatomic, copy)   <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*       title;
+<a name="l00055"></a>00055 
+<a name="l00061"></a><a class="code" href="interface_t_t_launcher_item.php#afde6b045dedee41c88c4d51604da77fc">00061</a> @property (nonatomic, copy)   <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*       image;
+<a name="l00062"></a>00062 
+<a name="l00068"></a><a class="code" href="interface_t_t_launcher_item.php#a21dc66cc63cb14b3317bee8a1ffb325f">00068</a> @property (nonatomic, copy)   <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*       URL;
+<a name="l00069"></a>00069 
+<a name="l00075"></a><a class="code" href="interface_t_t_launcher_item.php#ab7361915c019a6ae823d615a5ab222ea">00075</a> @property (nonatomic, copy)   <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*       style;
+<a name="l00076"></a>00076 
+<a name="l00082"></a><a class="code" href="interface_t_t_launcher_item.php#a33cc517318625c7b06a326ababf78453">00082</a> @property (nonatomic)         NSInteger       badgeNumber;
+<a name="l00083"></a>00083 
+<a name="l00089"></a><a class="code" href="interface_t_t_launcher_item.php#a57ff4e97f351504b40136011a7bea38e">00089</a> @property (nonatomic)         BOOL            canDelete;
+<a name="l00090"></a>00090 
+<a name="l00091"></a>00091 @property (nonatomic, assign) <span class="keywordtype">id</span>&lt;<a class="code" href="protocol_t_t_launcher_item_delegate-p.php">TTLauncherItemDelegate</a>&gt; delegate;
+<a name="l00092"></a>00092 
+<a name="l00093"></a>00093 
+<a name="l00094"></a>00094 @end
 </pre></div></div>
 </div>
 <!--- window showing the filter options -->

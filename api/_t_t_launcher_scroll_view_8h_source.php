@@ -14,7 +14,7 @@
   <meta property="og:image" content="http://github.com/facebook/three20/raw/06cd0abe33ac39d1f509e278e286c6bf1e45e821/samples/Resources/Icon.png"/>
   <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
-  <title>Three20: Three20UI/Headers/TTLauncherScrollView.h Source File</title>
+  <title>Three20: Three20Launcher/Headers/TTLauncherScrollView.h Source File</title>
 <link href="http://new.three20.info/css/reset.css" rel="stylesheet" type="text/css"/>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -93,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 <div class="header">
   <div class="headertitle">
-<h1>Three20UI/Headers/TTLauncherScrollView.h</h1>  </div>
+<h1>Three20Launcher/Headers/TTLauncherScrollView.h</h1>  </div>
 </div>
 <div class="contents">
 <div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>

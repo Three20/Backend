@@ -135,7 +135,8 @@ Here is a list of all documented class members with links to the class documenta
 
 <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
 <li>image
-: <a class="el" href="interface_t_t_image_view.php#a5a282b09c9dc2ae0fc3bb2d0dcbe165c">TTImageView</a>
+: <a class="el" href="interface_t_t_launcher_item.php#afde6b045dedee41c88c4d51604da77fc">TTLauncherItem</a>
+, <a class="el" href="interface_t_t_image_view.php#a5a282b09c9dc2ae0fc3bb2d0dcbe165c">TTImageView</a>
 </li>
 <li>imageCompressionQuality
 : <a class="el" href="interface_t_t_u_r_l_request_queue.php#aa6818e451230a069a53bcb2026d14fa0">TTURLRequestQueue</a>
@@ -174,8 +175,8 @@ Here is a list of all documented class members with links to the class documenta
 : <a class="el" href="interface_y_a_j_l_document.php#a9b206b6d99ed1edd0cbec744ec75ff1b">YAJLDocument</a>
 </li>
 <li>initWithParserOptions:
-: <a class="el" href="interface_y_a_j_l_document.php#a5244e742acee8498bbc4b488ed63ad0c">YAJLDocument</a>
-, <a class="el" href="interface_y_a_j_l_parser.php#a3cddbd758c51a3cfbcdabe67f82ea151">YAJLParser</a>
+: <a class="el" href="interface_y_a_j_l_parser.php#a3cddbd758c51a3cfbcdabe67f82ea151">YAJLParser</a>
+, <a class="el" href="interface_y_a_j_l_document.php#a5244e742acee8498bbc4b488ed63ad0c">YAJLDocument</a>
 </li>
 <li>initWithRecipients:
 : <a class="el" href="interface_t_t_message_controller.php#a47cf65af782ef1f172bf3187295bbb01">TTMessageController</a>
@@ -221,8 +222,8 @@ Here is a list of all documented class members with links to the class documenta
 : <a class="el" href="interface_t_t_base_navigator.php#aaaa44f8ff42826f21da0fa61bc55e22e">TTBaseNavigator</a>
 </li>
 <li>isLoaded
-: <a class="el" href="protocol_t_t_model-p.php#a0717855b556f4efac8de7571f1d38cea">&lt;TTModel&gt;</a>
-, <a class="el" href="interface_t_t_image_view.php#a771abb9049776ede10ec6db7a667e9fc">TTImageView</a>
+: <a class="el" href="interface_t_t_image_view.php#a771abb9049776ede10ec6db7a667e9fc">TTImageView</a>
+, <a class="el" href="protocol_t_t_model-p.php#a0717855b556f4efac8de7571f1d38cea">&lt;TTModel&gt;</a>
 </li>
 <li>isLoading
 : <a class="el" href="interface_t_t_request_loader.php#a26e45bc2d7677cfbae03d6a20905f78a">TTRequestLoader</a>

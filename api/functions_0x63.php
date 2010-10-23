@@ -184,6 +184,9 @@ Here is a list of all documented class members with links to the class documenta
 <li>cancelTouches
 : <a class="el" href="interface_t_t_scroll_view.php#a0355b8acf924ee8a50be198cf7c9388f">TTScrollView</a>
 </li>
+<li>canDelete
+: <a class="el" href="interface_t_t_launcher_item.php#a57ff4e97f351504b40136011a7bea38e">TTLauncherItem</a>
+</li>
 <li>canShowModel
 : <a class="el" href="interface_t_t_model_view_controller.php#a1648848389e0e716f42cbab7ba1bad94">TTModelViewController</a>
 </li>
@@ -210,6 +213,9 @@ Here is a list of all documented class members with links to the class documenta
 </li>
 <li>colorWithCssSelector:forState:
 : <a class="el" href="interface_t_t_c_s_s_style_sheet.php#a61047c7d2218ef3225ecd797e49ead9e">TTCSSStyleSheet</a>
+</li>
+<li>columnCount
+: <a class="el" href="interface_t_t_launcher_view.php#aff4916500fa5de98835b074811ec0fed">TTLauncherView</a>
 </li>
 <li>composeController:didSendFields:
 : <a class="el" href="protocol_t_t_message_controller_delegate-p.php#a2829ad907cea2d4ecdb71961bdb2da66">&lt;TTMessageControllerDelegate&gt;</a>

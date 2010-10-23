@@ -101,7 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <!-- doxytag: class="TTLauncherScrollView" --><table class="memberdecls">
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>Three20UI/Headers/<a class="el" href="_t_t_launcher_scroll_view_8h_source.php">TTLauncherScrollView.h</a></li>
+<li>Three20Launcher/Headers/<a class="el" href="_t_t_launcher_scroll_view_8h_source.php">TTLauncherScrollView.h</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->

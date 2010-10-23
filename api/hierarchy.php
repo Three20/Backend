@@ -305,6 +305,7 @@ This inheritance list is sorted roughly, but not completely, alphabetically:<ul>
 </ul>
 </li>
 <li><a class="el" href="class_n_s_string.php">NSString</a></li>
+<li><a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a></li>
 <li><a class="el" href="protocol_s_b_json_parser-p.php">&lt;SBJsonParser&gt;</a><ul>
 <li><a class="el" href="interface_s_b_j_s_o_n.php">SBJSON</a></li>
 <li><a class="el" href="interface_s_b_json_parser.php">SBJsonParser</a></li>
@@ -324,8 +325,15 @@ This inheritance list is sorted roughly, but not completely, alphabetically:<ul>
 <li><a class="el" href="interface_t_t_photo_view.php">TTPhotoView</a></li>
 </ul>
 </li>
+<li><a class="el" href="protocol_t_t_launcher_item_delegate-p.php">&lt;TTLauncherItemDelegate&gt;</a><ul>
+<li><a class="el" href="interface_t_t_launcher_view.php">TTLauncherView</a></li>
+</ul>
+</li>
 <li><a class="el" href="interface_t_t_launcher_scroll_view.php">TTLauncherScrollView</a></li>
-<li><a class="el" href="protocol_t_t_launcher_view_delegate-p.php">&lt;TTLauncherViewDelegate&gt;</a></li>
+<li><a class="el" href="protocol_t_t_launcher_view_delegate-p.php">&lt;TTLauncherViewDelegate&gt;</a><ul>
+<li><a class="el" href="interface_t_t_launcher_view_controller.php">TTLauncherViewController</a></li>
+</ul>
+</li>
 <li><a class="el" href="interface_t_t_link.php">TTLink</a></li>
 <li><a class="el" href="protocol_t_t_message_controller_delegate-p.php">&lt;TTMessageControllerDelegate&gt;</a></li>
 <li><a class="el" href="protocol_t_t_model-p.php">&lt;TTModel&gt;</a><ul>

@@ -34,6 +34,7 @@ class Article_Controller extends Three20_Controller {
       $config = json_decode(file_get_contents($configFilename), TRUE);
     }
 
+    $this->template->article_dir = '_posts';
     $this->template->article_id = $name.'.'.$config['ext'];
 
     $this->add_css_file('css/article.css');

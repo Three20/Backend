@@ -14,7 +14,7 @@
   <meta property="og:image" content="http://github.com/facebook/three20/raw/06cd0abe33ac39d1f509e278e286c6bf1e45e821/samples/Resources/Icon.png"/>
   <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
-  <title>Three20: Three20UI/Headers/TTLauncherButton.h Source File</title>
+  <title>Three20: Three20Launcher/Headers/TTLauncherButton.h Source File</title>
 <link href="http://new.three20.info/css/reset.css" rel="stylesheet" type="text/css"/>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -93,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 <div class="header">
   <div class="headertitle">
-<h1>Three20UI/Headers/TTLauncherButton.h</h1>  </div>
+<h1>Three20Launcher/Headers/TTLauncherButton.h</h1>  </div>
 </div>
 <div class="contents">
 <div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
@@ -115,26 +115,27 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00017"></a>00017 <span class="comment">// UI</span>
 <a name="l00018"></a>00018 <span class="preprocessor">#import &quot;Three20UI/TTButton.h&quot;</span>
 <a name="l00019"></a>00019 
-<a name="l00020"></a>00020 <span class="keyword">@class</span> <a class="code" href="interface_t_t_launcher_item.php">TTLauncherItem</a>;
+<a name="l00020"></a>00020 <span class="keyword">@class</span> <a class="code" href="interface_t_t_launcher_item.php" title="A simple data object for the launcher view.">TTLauncherItem</a>;
 <a name="l00021"></a>00021 <span class="keyword">@class</span> <a class="code" href="interface_t_t_label.php">TTLabel</a>;
 <a name="l00022"></a>00022 
-<a name="l00023"></a><a class="code" href="interface_t_t_launcher_button.php">00023</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_launcher_button.php">TTLauncherButton</a> : <a class="code" href="interface_t_t_button.php">TTButton</a> {
-<a name="l00024"></a>00024   <a class="code" href="interface_t_t_launcher_item.php">TTLauncherItem</a>* _item;
-<a name="l00025"></a>00025   <a class="code" href="interface_t_t_label.php">TTLabel</a>*        _badge;
-<a name="l00026"></a>00026   <a class="code" href="interface_t_t_button.php">TTButton</a>*       _closeButton;
-<a name="l00027"></a>00027 
-<a name="l00028"></a>00028   BOOL _dragging;
-<a name="l00029"></a>00029   BOOL _editing;
-<a name="l00030"></a>00030 }
-<a name="l00031"></a>00031 
-<a name="l00032"></a>00032 @property (nonatomic, readonly) <a class="code" href="interface_t_t_launcher_item.php">TTLauncherItem</a>* item;
-<a name="l00033"></a>00033 @property (nonatomic, readonly) <a class="code" href="interface_t_t_button.php">TTButton</a>*       closeButton;
-<a name="l00034"></a>00034 @property (nonatomic)           BOOL            dragging;
-<a name="l00035"></a>00035 @property (nonatomic)           BOOL            editing;
-<a name="l00036"></a>00036 
-<a name="l00037"></a>00037 - (<span class="keywordtype">id</span>)initWithItem:(<a class="code" href="interface_t_t_launcher_item.php">TTLauncherItem</a>*)item;
-<a name="l00038"></a>00038 
-<a name="l00039"></a>00039 @end
+<a name="l00026"></a><a class="code" href="interface_t_t_launcher_button.php">00026</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_launcher_button.php" title="A button defined created using a TTLauncherItem&amp;#39;s data.">TTLauncherButton</a> : <a class="code" href="interface_t_t_button.php">TTButton</a> {
+<a name="l00027"></a>00027   <a class="code" href="interface_t_t_launcher_item.php" title="A simple data object for the launcher view.">TTLauncherItem</a>* _item;
+<a name="l00028"></a>00028   <a class="code" href="interface_t_t_label.php">TTLabel</a>*        _badge;
+<a name="l00029"></a>00029   <a class="code" href="interface_t_t_button.php">TTButton</a>*       _closeButton;
+<a name="l00030"></a>00030 
+<a name="l00031"></a>00031   BOOL _dragging;
+<a name="l00032"></a>00032   BOOL _editing;
+<a name="l00033"></a>00033 }
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035 @property (nonatomic, readonly) <a class="code" href="interface_t_t_launcher_item.php" title="A simple data object for the launcher view.">TTLauncherItem</a>* item;
+<a name="l00036"></a>00036 @property (nonatomic, readonly) <a class="code" href="interface_t_t_button.php">TTButton</a>*       closeButton;
+<a name="l00037"></a>00037 @property (nonatomic)           BOOL            dragging;
+<a name="l00038"></a>00038 @property (nonatomic)           BOOL            editing;
+<a name="l00039"></a>00039 
+<a name="l00040"></a>00040 <span class="comment">// Designated initializer.</span>
+<a name="l00041"></a>00041 - (<span class="keywordtype">id</span>)initWithItem:(<a class="code" href="interface_t_t_launcher_item.php" title="A simple data object for the launcher view.">TTLauncherItem</a>*)item;
+<a name="l00042"></a>00042 
+<a name="l00043"></a>00043 @end
 </pre></div></div>
 </div>
 <!--- window showing the filter options -->

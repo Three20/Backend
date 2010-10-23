@@ -137,6 +137,9 @@ Here is a list of all documented class members with links to the class documenta
 <li>backgroundColorWithCssSelector:forState:
 : <a class="el" href="interface_t_t_c_s_s_style_sheet.php#a5c1e127cd3e97c3494b1e094dbb436be">TTCSSStyleSheet</a>
 </li>
+<li>badgeNumber
+: <a class="el" href="interface_t_t_launcher_item.php#a33cc517318625c7b06a326ababf78453">TTLauncherItem</a>
+</li>
 <li>beautify
 : <a class="el" href="structyajl__gen__config.php#a85437a875ae65161b4f28bac6ff89c99">yajl_gen_config</a>
 </li>
@@ -147,8 +150,8 @@ Here is a list of all documented class members with links to the class documenta
 : <a class="el" href="interface_t_t_launcher_view.php#a94fd37f6f6ee925010dcddcd23df1f32">TTLauncherView</a>
 </li>
 <li>beginUpdates
-: <a class="el" href="interface_t_t_model.php#aafb43ebb3bfec2f63be76cfeccb6b1e0">TTModel</a>
-, <a class="el" href="interface_t_t_model_view_controller.php#a96f3ef31d4df7409e44a740ced1d91f4">TTModelViewController</a>
+: <a class="el" href="interface_t_t_model_view_controller.php#a96f3ef31d4df7409e44a740ced1d91f4">TTModelViewController</a>
+, <a class="el" href="interface_t_t_model.php#aafb43ebb3bfec2f63be76cfeccb6b1e0">TTModel</a>
 </li>
 <li>body
 : <a class="el" href="interface_t_t_message_controller.php#a179539948de0b4377b0559e9ef2c57e6">TTMessageController</a>
