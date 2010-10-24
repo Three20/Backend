@@ -15,15 +15,15 @@
   <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
   <title>Three20: Three20UI/Headers/TTTableImageItem.h Source File</title>
-<link href="http://new.three20.info/css/reset.css" rel="stylesheet" type="text/css"/>
+<link href="http://three20.info/css/reset.css" rel="stylesheet" type="text/css"/>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css"/>
-<link href="http://new.three20.info/css/global.css" rel="stylesheet" type="text/css"/>
-<link href="http://new.three20.info/css/article.css" rel="stylesheet" type="text/css"/>
-<link href="http://new.three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/>
-<link href="http://new.three20.info/css/api.css" rel="stylesheet" type="text/css"/>
+<link href="http://three20.info/css/global.css" rel="stylesheet" type="text/css"/>
+<link href="http://three20.info/css/article.css" rel="stylesheet" type="text/css"/>
+<link href="http://three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/>
+<link href="http://three20.info/css/api.css" rel="stylesheet" type="text/css"/>
 </head>
 <body onload='searchBox.OnSelectItem(0);'>
 
@@ -35,11 +35,11 @@
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
-  <li><a href="http://new.three20.info/roadmap">Roadmap</a></li> 
-  <li><a href="http://new.three20.info/documentation">Documentation</a></li> 
-  <li><a href="http://new.three20.info/tutorials">Tutorials</a></li> 
+  <li><a href="http://three20.info/roadmap">Roadmap</a></li> 
+  <li><a href="http://three20.info/documentation">Documentation</a></li> 
+  <li><a href="http://three20.info/tutorials">Tutorials</a></li> 
   <li><a href="http://api.three20.info/">API</a></li> 
-  <li><a href="http://new.three20.info/community">Community</a></li> 
+  <li><a href="http://three20.info/community">Community</a></li> 
 </ul> 
  
 <ul class="right-links"> 
@@ -47,8 +47,8 @@
 </ul> 
  
 <div class="leadin"> 
-  <h1><a href="http://new.three20.info/">Three20</a></h1> 
-  <h2><a href="http://new.three20.info/">An open-source library for iOS applications</a></h2> 
+  <h1><a href="http://three20.info/">Three20</a></h1> 
+  <h2><a href="http://three20.info/">An open-source library for iOS applications</a></h2> 
 </div> <!-- .leadin --> 
  
 </div> <!-- .fixed-width --> 
