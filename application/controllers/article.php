@@ -23,7 +23,7 @@ class Article_Controller extends Three20_Controller {
 
     if (preg_match('/([0-9]{4})-([0-9]{2})-([0-9]{2})-([a-z0-9\-]+)/i', $name, $matches)) {
       $article_name = str_replace('-', ' ', $matches[4]);
-      $article_date = date('F n, Y', mktime(0, 0, 0, $matches[2], $matches[3], $matches[1]));
+      $article_date = date('F j, Y', mktime(0, 0, 0, $matches[2], $matches[3], $matches[1]));
     }
 
     $filename = $content->kohana_filename;
