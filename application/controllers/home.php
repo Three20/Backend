@@ -31,4 +31,15 @@ class Home_Controller extends Three20_Controller {
     $this->render_article_template($content);
   }
 
+  public function redirect($to) {
+    switch (strtolower($to)) {
+      case 'overview':              url::redirect('home', 301);
+      case 'setup_existing':        url::redirect('/article/2010-10-06-Adding-Three20-To-Your-Project', 301);
+      case 'setup_templates':       url::redirect('/article/2010-10-06-Adding-Three20-To-Your-Project', 301);
+      case 'core_debugging':        url::redirect('/article/2010-10-07-Debugging-With-Three20', 301);
+      case 'ui_navigation':         url::redirect('/article/2010-10-06-URL-Based-Navigation', 301);
+      case 'timeline_roadmap':      url::redirect('/roadmap', 301);
+    }
+  }
+
 }
