@@ -35,6 +35,7 @@
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
+  <li><a href="http://new.three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://new.three20.info/documentation">Documentation</a></li> 
   <li><a href="http://new.three20.info/tutorials">Tutorials</a></li> 
   <li><a href="http://api.three20.info/">API</a></li> 
@@ -96,24 +97,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#properties">Properties</a>  </div>
   <div class="headertitle">
 <h1>TTLauncherView Class Reference</h1>  </div>
 </div>
 <div class="contents">
-<!-- doxytag: class="TTLauncherView" --><!-- doxytag: inherits="UIView,TTLauncherItemDelegate-p" -->
-<p>A view that mimics the functionality of the App Launcher found on all iOS devices.  
-<a href="#_details">More...</a></p>
-
-<p><code>#import &lt;<a class="el" href="_t_t_launcher_view_8h_source.php">TTLauncherView.h</a>&gt;</code></p>
-<div class="dynheader">
+<!-- doxytag: class="TTLauncherView" --><!-- doxytag: inherits="UIView" --><div class="dynheader">
 Inheritance diagram for TTLauncherView:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="interface_t_t_launcher_view.png" usemap="#TTLauncherView_map" alt=""/>
   <map id="TTLauncherView_map" name="TTLauncherView_map">
-<area href="class_u_i_view.php" alt="UIView" shape="rect" coords="0,0,166,24"/>
-<area href="protocol_t_t_launcher_item_delegate-p.php" alt="&lt;TTLauncherItemDelegate&gt;" shape="rect" coords="176,0,342,24"/>
+<area href="class_u_i_view.php" alt="UIView" shape="rect" coords="0,0,108,24"/>
 </map>
 </div>
 
@@ -139,15 +135,52 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Dims the launcher view except for a transparent circle around the given item.  <a href="#a94fd37f6f6ee925010dcddcd23df1f32"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_launcher_view.php#ab28f4928ecc921a0f94745037a6d863d">endHighlightItem:</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Removes the highlighting overlay introduced by -beginHighlightItem:withText:.  <a href="#ab28f4928ecc921a0f94745037a6d863d"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1401620dcfe7c77e8e9801331a2ad49c"></a><!-- doxytag: member="TTLauncherView::launcherItem:didChangeBadgeNumber:" ref="a1401620dcfe7c77e8e9801331a2ad49c" args="(TTLauncherItem *item,[didChangeBadgeNumber] NSInteger badgeNumber)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>launcherItem:didChangeBadgeNumber:</b></td></tr>
+<tr><td colspan="2"><h2><a name="pro-attribs"></a>
+Protected Attributes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04e4c0a2bf1b44694aee8b704a48328f"></a><!-- doxytag: member="TTLauncherView::_pages" ref="a04e4c0a2bf1b44694aee8b704a48328f" args="" -->
+<a class="el" href="class_n_s_mutable_array.php">NSMutableArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_pages</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac6b878a6a0c8fc268ab2973fdceaa5b3"></a><!-- doxytag: member="TTLauncherView::_columnCount" ref="ac6b878a6a0c8fc268ab2973fdceaa5b3" args="" -->
+NSInteger&nbsp;</td><td class="memItemRight" valign="bottom"><b>_columnCount</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0ab6dd4af114188b3b970ff1133ca13"></a><!-- doxytag: member="TTLauncherView::_rowCount" ref="ac0ab6dd4af114188b3b970ff1133ca13" args="" -->
+NSInteger&nbsp;</td><td class="memItemRight" valign="bottom"><b>_rowCount</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ade73ddc437fcc8499502acb9fae4a98e"></a><!-- doxytag: member="TTLauncherView::_prompt" ref="ade73ddc437fcc8499502acb9fae4a98e" args="" -->
+<a class="el" href="class_n_s_string.php">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_prompt</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a54f240b6842f6372811cbd34cffac7e1"></a><!-- doxytag: member="TTLauncherView::_buttons" ref="a54f240b6842f6372811cbd34cffac7e1" args="" -->
+<a class="el" href="class_n_s_mutable_array.php">NSMutableArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_buttons</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8078a233eb2fbc85c62165bcd7f44643"></a><!-- doxytag: member="TTLauncherView::_scrollView" ref="a8078a233eb2fbc85c62165bcd7f44643" args="" -->
+UIScrollView *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_scrollView</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26df773b21c28a3071a2a9ec82fa5b6b"></a><!-- doxytag: member="TTLauncherView::_pager" ref="a26df773b21c28a3071a2a9ec82fa5b6b" args="" -->
+<a class="el" href="interface_t_t_page_control.php">TTPageControl</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_pager</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09f5e2e575438be7348e7c5d8d47818a"></a><!-- doxytag: member="TTLauncherView::_editHoldTimer" ref="a09f5e2e575438be7348e7c5d8d47818a" args="" -->
+NSTimer *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_editHoldTimer</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af636df380d3f126222df2f9446aa0bf0"></a><!-- doxytag: member="TTLauncherView::_springLoadTimer" ref="af636df380d3f126222df2f9446aa0bf0" args="" -->
+NSTimer *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_springLoadTimer</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24db0a962ee8f2b7b709e829b2bc84c1"></a><!-- doxytag: member="TTLauncherView::_dragButton" ref="a24db0a962ee8f2b7b709e829b2bc84c1" args="" -->
+<a class="el" href="interface_t_t_launcher_button.php">TTLauncherButton</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_dragButton</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9b9d241e8d1d46b2b6fdfb2701e57652"></a><!-- doxytag: member="TTLauncherView::_dragTouch" ref="a9b9d241e8d1d46b2b6fdfb2701e57652" args="" -->
+<a class="el" href="class_u_i_touch.php">UITouch</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_dragTouch</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9268d9dd1c898b938f98236aa283fea9"></a><!-- doxytag: member="TTLauncherView::_positionOrigin" ref="a9268d9dd1c898b938f98236aa283fea9" args="" -->
+NSInteger&nbsp;</td><td class="memItemRight" valign="bottom"><b>_positionOrigin</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd7737dce592544e6d13442a0e1dcbfb"></a><!-- doxytag: member="TTLauncherView::_dragOrigin" ref="afd7737dce592544e6d13442a0e1dcbfb" args="" -->
+CGPoint&nbsp;</td><td class="memItemRight" valign="bottom"><b>_dragOrigin</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a682e9b202bcee98ca91d88ef80140786"></a><!-- doxytag: member="TTLauncherView::_touchOrigin" ref="a682e9b202bcee98ca91d88ef80140786" args="" -->
+CGPoint&nbsp;</td><td class="memItemRight" valign="bottom"><b>_touchOrigin</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae63e152c0294c6faf704e5ca35fa3262"></a><!-- doxytag: member="TTLauncherView::_highlightView" ref="ae63e152c0294c6faf704e5ca35fa3262" args="" -->
+<a class="el" href="interface_t_t_launcher_highlight_view.php">TTLauncherHighlightView</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_highlightView</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a14672f46dc838db8e5247ed6895f8425"></a><!-- doxytag: member="TTLauncherView::_editing" ref="a14672f46dc838db8e5247ed6895f8425" args="" -->
+BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_editing</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9433e3e694b933545ddc81e2e52bd0ab"></a><!-- doxytag: member="TTLauncherView::_springing" ref="a9433e3e694b933545ddc81e2e52bd0ab" args="" -->
+BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_springing</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9f0f022fd55c6a648bba485960fa91c"></a><!-- doxytag: member="TTLauncherView::_delegate" ref="aa9f0f022fd55c6a648bba485960fa91c" args="" -->
+id&lt; <a class="el" href="protocol_t_t_launcher_view_delegate-p.php">TTLauncherViewDelegate</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>_delegate</b></td></tr>
 <tr><td colspan="2"><h2><a name="properties"></a>
 Properties</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1484a31e79c939df2061f91a4a0d1c0"></a><!-- doxytag: member="TTLauncherView::delegate" ref="ac1484a31e79c939df2061f91a4a0d1c0" args="" -->
+id&lt; <a class="el" href="protocol_t_t_launcher_view_delegate-p.php">TTLauncherViewDelegate</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>delegate</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad272b501c7666d314f00fd958834afe4"></a><!-- doxytag: member="TTLauncherView::pages" ref="ad272b501c7666d314f00fd958834afe4" args="" -->
 <a class="el" href="class_n_s_array.php">NSArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>pages</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff4916500fa5de98835b074811ec0fed"></a><!-- doxytag: member="TTLauncherView::columnCount" ref="aff4916500fa5de98835b074811ec0fed" args="" -->
-NSInteger&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_launcher_view.php#aff4916500fa5de98835b074811ec0fed">columnCount</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">3 columns. <br/></td></tr>
+NSInteger&nbsp;</td><td class="memItemRight" valign="bottom"><b>columnCount</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1ea78d42cf91fb82a5857a76becf5a7"></a><!-- doxytag: member="TTLauncherView::rowCount" ref="ac1ea78d42cf91fb82a5857a76becf5a7" args="" -->
 NSInteger&nbsp;</td><td class="memItemRight" valign="bottom"><b>rowCount</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e47f07f4bb53c04c747169331974504"></a><!-- doxytag: member="TTLauncherView::currentPageIndex" ref="a9e47f07f4bb53c04c747169331974504" args="" -->
@@ -157,9 +190,6 @@ NSInteger&nbsp;</td><td class="memItemRight" valign="bottom"><b>currentPageIndex
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61693fbd072397450d91f1ed518918e7"></a><!-- doxytag: member="TTLauncherView::editing" ref="a61693fbd072397450d91f1ed518918e7" args="" -->
 BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>editing</b></td></tr>
 </table>
-<hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A view that mimics the functionality of the App Launcher found on all iOS devices. </p>
-<p>Implements tap-and-hold reordering, deleting icons, and icon badges. </p>
 <hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="a94fd37f6f6ee925010dcddcd23df1f32"></a><!-- doxytag: member="TTLauncherView::beginHighlightItem:withText:" ref="a94fd37f6f6ee925010dcddcd23df1f32" args="(TTLauncherItem *item,[withText] NSString *text)" -->
 <div class="memitem">
@@ -213,8 +243,8 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>editing</b></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Three20Launcher/Headers/<a class="el" href="_t_t_launcher_view_8h_source.php">TTLauncherView.h</a></li>
-<li>Three20Launcher/Sources/TTLauncherView.m</li>
+<li>Three20UI/Headers/<a class="el" href="_t_t_launcher_view_8h_source.php">TTLauncherView.h</a></li>
+<li>Three20UI/Sources/TTLauncherView.m</li>
 </ul>
 </div>
 <!--- window showing the filter options -->

@@ -35,6 +35,7 @@
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
+  <li><a href="http://new.three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://new.three20.info/documentation">Documentation</a></li> 
   <li><a href="http://new.three20.info/tutorials">Tutorials</a></li> 
   <li><a href="http://api.three20.info/">API</a></li> 
@@ -91,23 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>Three20 API Documentation </h1>  </div>
 </div>
 <div class="contents">
-<h3 class="version">1.0 </h3><h2><a class="anchor" id="intro_sec"></a>
-Introduction</h2>
-<p>All of the API documentation you see here has been generated from the Three20 source.</p>
-<p>Get the source: <a href="http://github.com/facebook/three20">http://github.com/facebook/three20</a></p>
-<p>Three20 is a rather large iPhone development library. It is composed of a stack of four components:</p>
-<center> <a href="#UI" style="display:block;width:200px;font-size:1.5em">UI</a> <a href="#Style" style="display:block;width:200px;font-size:1.5em">Style</a> <a href="#Network" style="display:block;width:200px;font-size:1.5em">Network</a> <a href="#Core" style="display:block;width:200px;font-size:1.5em">Core</a> </center><h2><a class="anchor" id="Core"></a>
-Core</h2>
-<p>Three20's foundation includes debugging utilities and a plethora of useful additions to common objects.</p>
-<h2><a class="anchor" id="Network"></a>
-Network</h2>
-<p>A full network+cache implementation has been built around NSURLRequests with support for disc and memory caching.</p>
-<h2><a class="anchor" id="Style"></a>
-Style</h2>
-<p>A robust style framework that makes it easy to create gradients, shadows, and rounded borders.</p>
-<h2><a class="anchor" id="UI"></a>
-UI</h2>
-<p>Three20 includes a growing set of common controls. Photo browsers, table view cells, and springboard implementations are just a few. The UI component includes the <a class="el" href="interface_t_t_navigator.php" title="A URL-based navigation system with built-in persistence.">TTNavigator</a> object that makes building persistent applications easy. </p>
+<h3 class="version">v1.0a1 </h3><p>Generated from Three20 Cut <a href="http://three20.info/roadmap/v1.0a1">v1.0a1</a>. </p>
 </div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"

@@ -35,6 +35,7 @@
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
+  <li><a href="http://new.three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://new.three20.info/documentation">Documentation</a></li> 
   <li><a href="http://new.three20.info/tutorials">Tutorials</a></li> 
   <li><a href="http://api.three20.info/">API</a></li> 
@@ -105,11 +106,17 @@ This is the complete list of members for <a class="el" href="class_pbxproj_1_1_p
   <tr bgcolor="#f0f0f0"><td><b>_guid</b> (defined in <a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a>)</td><td><a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a></td><td><code> [private]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>_project_data</b> (defined in <a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a>)</td><td><a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a></td><td><code> [private]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>_project_name</b> (defined in <a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a>)</td><td><a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a></td><td><code> [private]</code></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>_resources_guid</b> (defined in <a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a>)</td><td><a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a></td><td><code> [private]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>add_build_setting</b> (defined in <a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a>)</td><td><a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>add_buildfile</b> (defined in <a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a>)</td><td><a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>add_bundle</b> (defined in <a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a>)</td><td><a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>add_dependency</b> (defined in <a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a>)</td><td><a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>add_file_to_frameworks</b> (defined in <a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a>)</td><td><a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>add_file_to_frameworks_phase</b> (defined in <a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a>)</td><td><a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>add_file_to_group</b> (defined in <a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a>)</td><td><a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>add_file_to_phase</b> (defined in <a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a>)</td><td><a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>add_file_to_resources</b> (defined in <a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a>)</td><td><a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>add_file_to_resources_phase</b> (defined in <a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a>)</td><td><a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>add_filereference</b> (defined in <a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a>)</td><td><a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>add_framework</b> (defined in <a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a>)</td><td><a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>add_header_search_path</b> (defined in <a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a>)</td><td><a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a></td><td></td></tr>
@@ -117,6 +124,7 @@ This is the complete list of members for <a class="el" href="class_pbxproj_1_1_p
   <tr bgcolor="#f0f0f0"><td><b>get_hash_base</b> (defined in <a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a>)</td><td><a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>get_pbxproj_by_name</b> (defined in <a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a>)</td><td><a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>get_project_data</b> (defined in <a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a>)</td><td><a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td><b>get_rel_path_to_products_dir</b> (defined in <a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a>)</td><td><a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>guid</b> (defined in <a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a>)</td><td><a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>name</b> (defined in <a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a>)</td><td><a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td><b>path</b> (defined in <a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a>)</td><td><a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a></td><td></td></tr>

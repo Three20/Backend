@@ -35,6 +35,7 @@
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
+  <li><a href="http://new.three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://new.three20.info/documentation">Documentation</a></li> 
   <li><a href="http://new.three20.info/tutorials">Tutorials</a></li> 
   <li><a href="http://api.three20.info/">API</a></li> 
@@ -137,10 +138,20 @@ def&nbsp;</td><td class="memItemRight" valign="bottom"><b>dependencies</b></td><
 def&nbsp;</td><td class="memItemRight" valign="bottom"><b>add_buildfile</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f8a76b39246ff4607cae506050cf1cc"></a><!-- doxytag: member="Pbxproj::Pbxproj::add_filereference" ref="a8f8a76b39246ff4607cae506050cf1cc" args="" -->
 def&nbsp;</td><td class="memItemRight" valign="bottom"><b>add_filereference</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8553ebc84c522d4a48dc94e47aad1d41"></a><!-- doxytag: member="Pbxproj::Pbxproj::add_file_to_group" ref="a8553ebc84c522d4a48dc94e47aad1d41" args="" -->
+def&nbsp;</td><td class="memItemRight" valign="bottom"><b>add_file_to_group</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afdc917a96e59241a2daed15977bce51a"></a><!-- doxytag: member="Pbxproj::Pbxproj::add_file_to_frameworks" ref="afdc917a96e59241a2daed15977bce51a" args="" -->
 def&nbsp;</td><td class="memItemRight" valign="bottom"><b>add_file_to_frameworks</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83c20677a3791a394575663cb8769bb5"></a><!-- doxytag: member="Pbxproj::Pbxproj::add_file_to_resources" ref="a83c20677a3791a394575663cb8769bb5" args="" -->
+def&nbsp;</td><td class="memItemRight" valign="bottom"><b>add_file_to_resources</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1ef4e24397cce90583a71f8bd3cbc37a"></a><!-- doxytag: member="Pbxproj::Pbxproj::add_file_to_phase" ref="a1ef4e24397cce90583a71f8bd3cbc37a" args="" -->
+def&nbsp;</td><td class="memItemRight" valign="bottom"><b>add_file_to_phase</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab91cbf1e7f5508279382f056a0ca7dca"></a><!-- doxytag: member="Pbxproj::Pbxproj::get_rel_path_to_products_dir" ref="ab91cbf1e7f5508279382f056a0ca7dca" args="" -->
+def&nbsp;</td><td class="memItemRight" valign="bottom"><b>get_rel_path_to_products_dir</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae0c97ca2996e655d574afc5b786ad7e1"></a><!-- doxytag: member="Pbxproj::Pbxproj::add_file_to_frameworks_phase" ref="ae0c97ca2996e655d574afc5b786ad7e1" args="" -->
 def&nbsp;</td><td class="memItemRight" valign="bottom"><b>add_file_to_frameworks_phase</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e4d650b536dbd96b0ba301c67987b78"></a><!-- doxytag: member="Pbxproj::Pbxproj::add_file_to_resources_phase" ref="a8e4d650b536dbd96b0ba301c67987b78" args="" -->
+def&nbsp;</td><td class="memItemRight" valign="bottom"><b>add_file_to_resources_phase</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae9183a76e166af338697e3aed4151919"></a><!-- doxytag: member="Pbxproj::Pbxproj::add_header_search_path" ref="ae9183a76e166af338697e3aed4151919" args="" -->
 def&nbsp;</td><td class="memItemRight" valign="bottom"><b>add_header_search_path</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa9ceb839b7053988faa8e6cece5cd1d7"></a><!-- doxytag: member="Pbxproj::Pbxproj::add_build_setting" ref="aa9ceb839b7053988faa8e6cece5cd1d7" args="" -->
@@ -149,6 +160,8 @@ def&nbsp;</td><td class="memItemRight" valign="bottom"><b>add_build_setting</b><
 def&nbsp;</td><td class="memItemRight" valign="bottom"><b>get_hash_base</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a867701e6e1f4bab0e42b1a2d8f4a612e"></a><!-- doxytag: member="Pbxproj::Pbxproj::add_framework" ref="a867701e6e1f4bab0e42b1a2d8f4a612e" args="" -->
 def&nbsp;</td><td class="memItemRight" valign="bottom"><b>add_framework</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3813329cfc8442993c89b6b999493a95"></a><!-- doxytag: member="Pbxproj::Pbxproj::add_bundle" ref="a3813329cfc8442993c89b6b999493a95" args="" -->
+def&nbsp;</td><td class="memItemRight" valign="bottom"><b>add_bundle</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae59efd4cb43a34879b4531d6f98dc731"></a><!-- doxytag: member="Pbxproj::Pbxproj::add_dependency" ref="ae59efd4cb43a34879b4531d6f98dc731" args="" -->
 def&nbsp;</td><td class="memItemRight" valign="bottom"><b>add_dependency</b></td></tr>
 <tr><td colspan="2"><h2><a name="pub-attribs"></a>
@@ -167,6 +180,8 @@ Private Attributes</h2></td></tr>
 &nbsp;</td><td class="memItemRight" valign="bottom"><b>_guid</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b17133607b857ea0cb525961c052578"></a><!-- doxytag: member="Pbxproj::Pbxproj::_deps" ref="a4b17133607b857ea0cb525961c052578" args="" -->
 &nbsp;</td><td class="memItemRight" valign="bottom"><b>_deps</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0065171b8617d3726d71dda13216f190"></a><!-- doxytag: member="Pbxproj::Pbxproj::_resources_guid" ref="a0065171b8617d3726d71dda13216f190" args="" -->
+&nbsp;</td><td class="memItemRight" valign="bottom"><b>_resources_guid</b></td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>scripts/Pbxproj.py</li>

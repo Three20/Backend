@@ -35,6 +35,7 @@
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
+  <li><a href="http://new.three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://new.three20.info/documentation">Documentation</a></li> 
   <li><a href="http://new.three20.info/tutorials">Tutorials</a></li> 
   <li><a href="http://api.three20.info/">API</a></li> 
@@ -185,7 +186,6 @@ Here is a list of all documented class members with links to the class documenta
 </li>
 <li>title
 : <a class="el" href="interface_t_t_message_field.php#a494006ed1c012efd8082287c38212f4b">TTMessageField</a>
-, <a class="el" href="interface_t_t_launcher_item.php#ac1766a0567b3531dc66208a01146df13">TTLauncherItem</a>
 , <a class="el" href="protocol_t_t_photo_source-p.php#acfc9f3efc7b8a7dc672a147d99b6bea3">&lt;TTPhotoSource&gt;</a>
 </li>
 <li>titleForSending

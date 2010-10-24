@@ -35,6 +35,7 @@
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
+  <li><a href="http://new.three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://new.three20.info/documentation">Documentation</a></li> 
   <li><a href="http://new.three20.info/tutorials">Tutorials</a></li> 
   <li><a href="http://api.three20.info/">API</a></li> 
@@ -103,12 +104,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>TTLauncherButton Class Reference</h1>  </div>
 </div>
 <div class="contents">
-<!-- doxytag: class="TTLauncherButton" --><!-- doxytag: inherits="TTButton" -->
-<p>A button defined created using a TTLauncherItem's data.  
-<a href="#_details">More...</a></p>
-
-<p><code>#import &lt;<a class="el" href="_t_t_launcher_button_8h_source.php">TTLauncherButton.h</a>&gt;</code></p>
-<div class="dynheader">
+<!-- doxytag: class="TTLauncherButton" --><!-- doxytag: inherits="TTButton" --><div class="dynheader">
 Inheritance diagram for TTLauncherButton:</div>
 <div class="dyncontent">
  <div class="center">
@@ -194,8 +190,6 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>isVertical</b></td></
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d7930f8ab232c45da3faf3a5e005a88"></a><!-- doxytag: member="TTLauncherButton::imageDelegate" ref="a6d7930f8ab232c45da3faf3a5e005a88" args="" -->
 id&lt; <a class="el" href="protocol_t_t_image_view_delegate-p.php">TTImageViewDelegate</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>imageDelegate</b></td></tr>
 </table>
-<hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A button defined created using a TTLauncherItem's data. </p>
 <hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="ad60dcde51645f676d1052c67ce9b1fe9"></a><!-- doxytag: member="TTLauncherButton::setStylesWithSelector:" ref="ad60dcde51645f676d1052c67ce9b1fe9" args="(NSString *selector)" -->
 <div class="memitem">
@@ -219,8 +213,8 @@ id&lt; <a class="el" href="protocol_t_t_image_view_delegate-p.php">TTImageViewDe
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Three20Launcher/Headers/<a class="el" href="_t_t_launcher_button_8h_source.php">TTLauncherButton.h</a></li>
-<li>Three20Launcher/Sources/TTLauncherButton.m</li>
+<li>Three20UI/Headers/<a class="el" href="_t_t_launcher_button_8h_source.php">TTLauncherButton.h</a></li>
+<li>Three20UI/Sources/TTLauncherButton.m</li>
 </ul>
 </div>
 <!--- window showing the filter options -->

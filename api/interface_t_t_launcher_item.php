@@ -35,6 +35,7 @@
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
+  <li><a href="http://new.three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://new.three20.info/documentation">Documentation</a></li> 
   <li><a href="http://new.three20.info/tutorials">Tutorials</a></li> 
   <li><a href="http://api.three20.info/">API</a></li> 
@@ -102,12 +103,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>TTLauncherItem Class Reference</h1>  </div>
 </div>
 <div class="contents">
-<!-- doxytag: class="TTLauncherItem" --><!-- doxytag: inherits="NSObject" -->
-<p>A simple data object for the launcher view.  
-<a href="#_details">More...</a></p>
-
-<p><code>#import &lt;<a class="el" href="_t_t_launcher_item_8h_source.php">TTLauncherItem.h</a>&gt;</code></p>
-<div class="dynheader">
+<!-- doxytag: class="TTLauncherItem" --><!-- doxytag: inherits="NSObject" --><div class="dynheader">
 Inheritance diagram for TTLauncherItem:</div>
 <div class="dyncontent">
  <div class="center">
@@ -121,12 +117,14 @@ Inheritance diagram for TTLauncherItem:</div>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3cd9002f3fd0b66a831d4195806ccbff"></a><!-- doxytag: member="TTLauncherItem::initWithTitle:image:URL:canDelete:" ref="a3cd9002f3fd0b66a831d4195806ccbff" args="(NSString *title,[image] NSString *image,[URL] NSString *URL,[canDelete] BOOL canDelete)" -->
-(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>initWithTitle:image:URL:canDelete:</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a48741401f6b5bdce89251fe80375791b"></a><!-- doxytag: member="TTLauncherItem::initWithTitle:image:URL:" ref="a48741401f6b5bdce89251fe80375791b" args="(NSString *title,[image] NSString *image,[URL] NSString *URL)" -->
 (id)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>initWithTitle:image:URL:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3cd9002f3fd0b66a831d4195806ccbff"></a><!-- doxytag: member="TTLauncherItem::initWithTitle:image:URL:canDelete:" ref="a3cd9002f3fd0b66a831d4195806ccbff" args="(NSString *title,[image] NSString *image,[URL] NSString *URL,[canDelete] BOOL canDelete)" -->
+(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>initWithTitle:image:URL:canDelete:</b></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca88d19e763f965d7fd33a0e7da35e47"></a><!-- doxytag: member="TTLauncherItem::_launcher" ref="aca88d19e763f965d7fd33a0e7da35e47" args="" -->
+<a class="el" href="interface_t_t_launcher_view.php">TTLauncherView</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_launcher</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afd54414e82d6243ce1f2790858cbfe99"></a><!-- doxytag: member="TTLauncherItem::_title" ref="afd54414e82d6243ce1f2790858cbfe99" args="" -->
 <a class="el" href="class_n_s_string.php">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_title</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2b03dce6b69eceb50af7d8b190ed3a55"></a><!-- doxytag: member="TTLauncherItem::_image" ref="a2b03dce6b69eceb50af7d8b190ed3a55" args="" -->
@@ -139,113 +137,26 @@ Protected Attributes</h2></td></tr>
 NSInteger&nbsp;</td><td class="memItemRight" valign="bottom"><b>_badgeNumber</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0aa85cc03393103df2c7e73d6a1fe81c"></a><!-- doxytag: member="TTLauncherItem::_canDelete" ref="a0aa85cc03393103df2c7e73d6a1fe81c" args="" -->
 BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_canDelete</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a154b8293587f4bbd0e7e353aa38fdd71"></a><!-- doxytag: member="TTLauncherItem::_delegate" ref="a154b8293587f4bbd0e7e353aa38fdd71" args="" -->
-id&lt; <a class="el" href="protocol_t_t_launcher_item_delegate-p.php">TTLauncherItemDelegate</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>_delegate</b></td></tr>
 <tr><td colspan="2"><h2><a name="properties"></a>
 Properties</h2></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a83757e4daa610c0272778b8e2170a9f4"></a><!-- doxytag: member="TTLauncherItem::launcher" ref="a83757e4daa610c0272778b8e2170a9f4" args="" -->
+<a class="el" href="interface_t_t_launcher_view.php">TTLauncherView</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>launcher</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1766a0567b3531dc66208a01146df13"></a><!-- doxytag: member="TTLauncherItem::title" ref="ac1766a0567b3531dc66208a01146df13" args="" -->
-<a class="el" href="class_n_s_string.php">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_launcher_item.php#ac1766a0567b3531dc66208a01146df13">title</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The text shown directly below the icon. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.php">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_launcher_item.php#afde6b045dedee41c88c4d51604da77fc">image</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A URLPath to the image.  <a href="#afde6b045dedee41c88c4d51604da77fc"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.php">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_launcher_item.php#a21dc66cc63cb14b3317bee8a1ffb325f">URL</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The URLPath to execute when this item is tapped.  <a href="#a21dc66cc63cb14b3317bee8a1ffb325f"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_n_s_string.php">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_launcher_item.php#ab7361915c019a6ae823d615a5ab222ea">style</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The <a class="el" href="interface_t_t_style.php">TTStyle</a> to use for the <a class="el" href="interface_t_t_launcher_button.php" title="A button defined created using a TTLauncherItem&#39;s data.">TTLauncherButton</a>.  <a href="#ab7361915c019a6ae823d615a5ab222ea"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">NSInteger&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_launcher_item.php#a33cc517318625c7b06a326ababf78453">badgeNumber</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The number shown in a badge in the corner of the button.  <a href="#a33cc517318625c7b06a326ababf78453"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_launcher_item.php#a57ff4e97f351504b40136011a7bea38e">canDelete</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Whether or not to show the delete button in editing mode.  <a href="#a57ff4e97f351504b40136011a7bea38e"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adb3dd313a3e239b787083899f4806d52"></a><!-- doxytag: member="TTLauncherItem::delegate" ref="adb3dd313a3e239b787083899f4806d52" args="" -->
-id&lt; <a class="el" href="protocol_t_t_launcher_item_delegate-p.php">TTLauncherItemDelegate</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>delegate</b></td></tr>
+<a class="el" href="class_n_s_string.php">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>title</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afde6b045dedee41c88c4d51604da77fc"></a><!-- doxytag: member="TTLauncherItem::image" ref="afde6b045dedee41c88c4d51604da77fc" args="" -->
+<a class="el" href="class_n_s_string.php">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>image</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21dc66cc63cb14b3317bee8a1ffb325f"></a><!-- doxytag: member="TTLauncherItem::URL" ref="a21dc66cc63cb14b3317bee8a1ffb325f" args="" -->
+<a class="el" href="class_n_s_string.php">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>URL</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7361915c019a6ae823d615a5ab222ea"></a><!-- doxytag: member="TTLauncherItem::style" ref="ab7361915c019a6ae823d615a5ab222ea" args="" -->
+<a class="el" href="class_n_s_string.php">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>style</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33cc517318625c7b06a326ababf78453"></a><!-- doxytag: member="TTLauncherItem::badgeNumber" ref="a33cc517318625c7b06a326ababf78453" args="" -->
+NSInteger&nbsp;</td><td class="memItemRight" valign="bottom"><b>badgeNumber</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57ff4e97f351504b40136011a7bea38e"></a><!-- doxytag: member="TTLauncherItem::canDelete" ref="a57ff4e97f351504b40136011a7bea38e" args="" -->
+BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>canDelete</b></td></tr>
 </table>
-<hr/><a name="_details"></a><h2>Detailed Description</h2>
-<p>A simple data object for the launcher view. </p>
-<p>Defines the basic components used to create a <a class="el" href="interface_t_t_launcher_button.php" title="A button defined created using a TTLauncherItem&#39;s data.">TTLauncherButton</a>. </p>
-<hr/><h2>Property Documentation</h2>
-<a class="anchor" id="a33cc517318625c7b06a326ababf78453"></a><!-- doxytag: member="TTLauncherItem::badgeNumber" ref="a33cc517318625c7b06a326ababf78453" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (NSInteger) badgeNumber<code> [read, write, assign]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>The number shown in a badge in the corner of the button. </p>
-<p>Max value: 99 </p>
-
-</div>
-</div>
-<a class="anchor" id="a57ff4e97f351504b40136011a7bea38e"></a><!-- doxytag: member="TTLauncherItem::canDelete" ref="a57ff4e97f351504b40136011a7bea38e" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (BOOL) canDelete<code> [read, write, assign]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Whether or not to show the delete button in editing mode. </p>
-<p>TODO(jverkoey, Oct 21, 2010): This should be canShowDeleteButton. </p>
-
-</div>
-</div>
-<a class="anchor" id="afde6b045dedee41c88c4d51604da77fc"></a><!-- doxytag: member="TTLauncherItem::image" ref="afde6b045dedee41c88c4d51604da77fc" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="class_n_s_string.php">NSString</a>*) image<code> [read, write, copy]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>A URLPath to the image. </p>
-<p>TODO(jverkoey, Oct 21, 2010): This should be imageURLPath. </p>
-
-</div>
-</div>
-<a class="anchor" id="ab7361915c019a6ae823d615a5ab222ea"></a><!-- doxytag: member="TTLauncherItem::style" ref="ab7361915c019a6ae823d615a5ab222ea" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="class_n_s_string.php">NSString</a>*) style<code> [read, write, copy]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>The <a class="el" href="interface_t_t_style.php">TTStyle</a> to use for the <a class="el" href="interface_t_t_launcher_button.php" title="A button defined created using a TTLauncherItem&#39;s data.">TTLauncherButton</a>. </p>
-<p>If none is set, <a class="el" href="interface_t_t_launcher_button.php" title="A button defined created using a TTLauncherItem&#39;s data.">TTLauncherButton</a> uses "launcherButton:". </p>
-
-</div>
-</div>
-<a class="anchor" id="a21dc66cc63cb14b3317bee8a1ffb325f"></a><!-- doxytag: member="TTLauncherItem::URL" ref="a21dc66cc63cb14b3317bee8a1ffb325f" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="class_n_s_string.php">NSString</a>*) URL<code> [read, write, copy]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>The URLPath to execute when this item is tapped. </p>
-<p>TODO(jverkoey, Oct 21, 2010): This should be urlPath. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>Three20Launcher/Headers/<a class="el" href="_t_t_launcher_item_8h_source.php">TTLauncherItem.h</a></li>
-<li>Three20Launcher/Sources/TTLauncherItem.m</li>
+<li>Three20UI/Headers/<a class="el" href="_t_t_launcher_item_8h_source.php">TTLauncherItem.h</a></li>
+<li>Three20UI/Sources/TTLauncherItem.m</li>
 </ul>
 </div>
 <!--- window showing the filter options -->

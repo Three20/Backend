@@ -35,6 +35,7 @@
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
+  <li><a href="http://new.three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://new.three20.info/documentation">Documentation</a></li> 
   <li><a href="http://new.three20.info/tutorials">Tutorials</a></li> 
   <li><a href="http://api.three20.info/">API</a></li> 
@@ -325,15 +326,8 @@ This inheritance list is sorted roughly, but not completely, alphabetically:<ul>
 <li><a class="el" href="interface_t_t_photo_view.php">TTPhotoView</a></li>
 </ul>
 </li>
-<li><a class="el" href="protocol_t_t_launcher_item_delegate-p.php">&lt;TTLauncherItemDelegate&gt;</a><ul>
-<li><a class="el" href="interface_t_t_launcher_view.php">TTLauncherView</a></li>
-</ul>
-</li>
 <li><a class="el" href="interface_t_t_launcher_scroll_view.php">TTLauncherScrollView</a></li>
-<li><a class="el" href="protocol_t_t_launcher_view_delegate-p.php">&lt;TTLauncherViewDelegate&gt;</a><ul>
-<li><a class="el" href="interface_t_t_launcher_view_controller.php">TTLauncherViewController</a></li>
-</ul>
-</li>
+<li><a class="el" href="protocol_t_t_launcher_view_delegate-p.php">&lt;TTLauncherViewDelegate&gt;</a></li>
 <li><a class="el" href="interface_t_t_link.php">TTLink</a></li>
 <li><a class="el" href="protocol_t_t_message_controller_delegate-p.php">&lt;TTMessageControllerDelegate&gt;</a></li>
 <li><a class="el" href="protocol_t_t_model-p.php">&lt;TTModel&gt;</a><ul>

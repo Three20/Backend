@@ -35,6 +35,7 @@
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
+  <li><a href="http://new.three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://new.three20.info/documentation">Documentation</a></li> 
   <li><a href="http://new.three20.info/tutorials">Tutorials</a></li> 
   <li><a href="http://api.three20.info/">API</a></li> 
@@ -290,9 +291,8 @@ Here is a list of all documented class members with links to the class documenta
 : <a class="el" href="interface_s_b_j_s_o_n.php#a830175bff0fbef8ccb82da852a154b48">SBJSON</a>
 </li>
 <li>style
-: <a class="el" href="interface_t_t_styled_box_frame.php#a5d525ddd5702d1cc8aeeef17a01c51eb">TTStyledBoxFrame</a>
-, <a class="el" href="interface_t_t_styled_image_frame.php#a4419840410dcc3f63169692800591469">TTStyledImageFrame</a>
-, <a class="el" href="interface_t_t_launcher_item.php#ab7361915c019a6ae823d615a5ab222ea">TTLauncherItem</a>
+: <a class="el" href="interface_t_t_styled_image_frame.php#a4419840410dcc3f63169692800591469">TTStyledImageFrame</a>
+, <a class="el" href="interface_t_t_styled_box_frame.php#a5d525ddd5702d1cc8aeeef17a01c51eb">TTStyledBoxFrame</a>
 </li>
 <li>subject
 : <a class="el" href="interface_t_t_message_controller.php#a8414169377f297b9fcb41bbc9c0a058d">TTMessageController</a>

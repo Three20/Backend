@@ -35,6 +35,7 @@
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
+  <li><a href="http://new.three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://new.three20.info/documentation">Documentation</a></li> 
   <li><a href="http://new.three20.info/tutorials">Tutorials</a></li> 
   <li><a href="http://api.three20.info/">API</a></li> 
@@ -100,16 +101,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>&lt;TTLauncherViewDelegate&gt; Protocol Reference</h1>  </div>
 </div>
 <div class="contents">
-<!-- doxytag: class="TTLauncherViewDelegate-p" --><div class="dynheader">
-Inheritance diagram for &lt;TTLauncherViewDelegate&gt;:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="protocol_t_t_launcher_view_delegate-p.png" usemap="#&lt;TTLauncherViewDelegate&gt;_map" alt=""/>
-  <map id="&lt;TTLauncherViewDelegate&gt;_map" name="&lt;TTLauncherViewDelegate&gt;_map">
-<area href="interface_t_t_launcher_view_controller.php" alt="TTLauncherViewController" shape="rect" coords="0,56,172,80"/>
-</map>
-</div>
-
+<!-- doxytag: class="TTLauncherViewDelegate-p" -->
 <p><a href="protocol_t_t_launcher_view_delegate-p-members.php">List of all members.</a></p>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
@@ -128,7 +120,7 @@ Public Member Functions</h2></td></tr>
 (void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>launcherViewDidEndEditing:</b></td></tr>
 </table>
 <hr/>The documentation for this protocol was generated from the following file:<ul>
-<li>Three20Launcher/Headers/<a class="el" href="_t_t_launcher_view_delegate_8h_source.php">TTLauncherViewDelegate.h</a></li>
+<li>Three20UI/Headers/<a class="el" href="_t_t_launcher_view_delegate_8h_source.php">TTLauncherViewDelegate.h</a></li>
 </ul>
 </div>
 <!--- window showing the filter options -->

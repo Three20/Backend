@@ -14,7 +14,7 @@
   <meta property="og:image" content="http://github.com/facebook/three20/raw/06cd0abe33ac39d1f509e278e286c6bf1e45e821/samples/Resources/Icon.png"/>
   <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
-  <title>Three20: Three20Launcher/Headers/TTLauncherHighlightView.h Source File</title>
+  <title>Three20: Three20UI/Headers/TTLauncherHighlightView.h Source File</title>
 <link href="http://new.three20.info/css/reset.css" rel="stylesheet" type="text/css"/>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -35,6 +35,7 @@
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
+  <li><a href="http://new.three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://new.three20.info/documentation">Documentation</a></li> 
   <li><a href="http://new.three20.info/tutorials">Tutorials</a></li> 
   <li><a href="http://api.three20.info/">API</a></li> 
@@ -93,7 +94,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
 <div class="header">
   <div class="headertitle">
-<h1>Three20Launcher/Headers/TTLauncherHighlightView.h</h1>  </div>
+<h1>Three20UI/Headers/TTLauncherHighlightView.h</h1>  </div>
 </div>
 <div class="contents">
 <div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
@@ -115,17 +116,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00017"></a>00017 <span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span>
 <a name="l00018"></a>00018 <span class="preprocessor">#import &lt;UIKit/UIKit.h&gt;</span>
 <a name="l00019"></a>00019 
-<a name="l00020"></a>00020 <span class="keyword">@class</span> <a class="code" href="interface_t_t_launcher_view.php" title="A view that mimics the functionality of the App Launcher found on all iOS devices.">TTLauncherView</a>;
+<a name="l00020"></a>00020 <span class="keyword">@class</span> <a class="code" href="interface_t_t_launcher_view.php">TTLauncherView</a>;
 <a name="l00021"></a>00021 
 <a name="l00022"></a><a class="code" href="interface_t_t_launcher_highlight_view.php">00022</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_launcher_highlight_view.php">TTLauncherHighlightView</a> : <a class="code" href="class_u_i_view.php">UIView</a> {
-<a name="l00023"></a>00023   <a class="code" href="interface_t_t_launcher_view.php" title="A view that mimics the functionality of the App Launcher found on all iOS devices.">TTLauncherView</a>* _parentView;
+<a name="l00023"></a>00023   <a class="code" href="interface_t_t_launcher_view.php">TTLauncherView</a>* _parentView;
 <a name="l00024"></a>00024   CGRect          _highlightRect;
 <a name="l00025"></a>00025   CGFloat         _highlightScale;
 <a name="l00026"></a>00026   UILabel*        _textLabel;
 <a name="l00027"></a>00027 }
 <a name="l00028"></a>00028 
 <a name="l00029"></a>00029 @property (nonatomic, assign) CGRect          highlightRect;
-<a name="l00030"></a>00030 @property (nonatomic, retain) <a class="code" href="interface_t_t_launcher_view.php" title="A view that mimics the functionality of the App Launcher found on all iOS devices.">TTLauncherView</a>* parentView;
+<a name="l00030"></a>00030 @property (nonatomic, retain) <a class="code" href="interface_t_t_launcher_view.php">TTLauncherView</a>* parentView;
 <a name="l00031"></a>00031 @property (nonatomic, copy)   <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*       text;
 <a name="l00032"></a>00032 
 <a name="l00033"></a>00033 - (<span class="keywordtype">void</span>)appear:(BOOL)animated;
