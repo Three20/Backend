@@ -252,30 +252,18 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_didFail</b></td></tr
 </div> <!-- #content -->
 </div> <!-- #page-wrapper -->
 
-<noscript><p><img alt="Clicky" width="1" height="1" src="http://static.getclicky.com/155532ns.gif" /></p></noscript>
+<script type="text/javascript">
 
-<script type="text/javascript">//<![CDATA[
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19295672-1']);
+  _gaq.push(['_setDomainName', '.three20.info']);
+  _gaq.push(['_trackPageview']);
 
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-
-//]]>
-</script>
-
-<script type="text/javascript" src="http://static.getclicky.com/js"></script>
-
-<script type="text/javascript">//<![CDATA[
-clicky.init(155532);
-//]]>
-</script>
-
-<script type="text/javascript">//<![CDATA[
-
-try {
-var pageTracker = _gat._getTracker("UA-11762059-1");
-pageTracker._trackPageview();
-} catch(err) {}
-//]]>
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 </script>
 
 <script type="text/javascript">

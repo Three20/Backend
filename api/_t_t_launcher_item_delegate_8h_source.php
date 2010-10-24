@@ -15,15 +15,15 @@
   <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
   <title>Three20: Three20Launcher/Headers/TTLauncherItemDelegate.h Source File</title>
-<link href="http://new.three20.info/css/reset.css" rel="stylesheet" type="text/css"/>
+<link href="http://three20.info/css/reset.css" rel="stylesheet" type="text/css"/>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css"/>
-<link href="http://new.three20.info/css/global.css" rel="stylesheet" type="text/css"/>
-<link href="http://new.three20.info/css/article.css" rel="stylesheet" type="text/css"/>
-<link href="http://new.three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/>
-<link href="http://new.three20.info/css/api.css" rel="stylesheet" type="text/css"/>
+<link href="http://three20.info/css/global.css" rel="stylesheet" type="text/css"/>
+<link href="http://three20.info/css/article.css" rel="stylesheet" type="text/css"/>
+<link href="http://three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/>
+<link href="http://three20.info/css/api.css" rel="stylesheet" type="text/css"/>
 </head>
 <body onload='searchBox.OnSelectItem(0);'>
 
@@ -35,11 +35,11 @@
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
-  <li><a href="http://new.three20.info/roadmap">Roadmap</a></li> 
-  <li><a href="http://new.three20.info/documentation">Documentation</a></li> 
-  <li><a href="http://new.three20.info/tutorials">Tutorials</a></li> 
+  <li><a href="http://three20.info/roadmap">Roadmap</a></li> 
+  <li><a href="http://three20.info/documentation">Documentation</a></li> 
+  <li><a href="http://three20.info/tutorials">Tutorials</a></li> 
   <li><a href="http://api.three20.info/">API</a></li> 
-  <li><a href="http://new.three20.info/community">Community</a></li> 
+  <li><a href="http://three20.info/community">Community</a></li> 
 </ul> 
  
 <ul class="right-links"> 
@@ -47,8 +47,8 @@
 </ul> 
  
 <div class="leadin"> 
-  <h1><a href="http://new.three20.info/">Three20</a></h1> 
-  <h2><a href="http://new.three20.info/">An open-source library for iOS applications</a></h2> 
+  <h1><a href="http://three20.info/">Three20</a></h1> 
+  <h2><a href="http://three20.info/">An open-source library for iOS applications</a></h2> 
 </div> <!-- .leadin --> 
  
 </div> <!-- .fixed-width --> 
@@ -159,30 +159,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div> <!-- #content -->
 </div> <!-- #page-wrapper -->
 
-<noscript><p><img alt="Clicky" width="1" height="1" src="http://static.getclicky.com/155532ns.gif" /></p></noscript>
+<script type="text/javascript">
 
-<script type="text/javascript">//<![CDATA[
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19295672-1']);
+  _gaq.push(['_setDomainName', '.three20.info']);
+  _gaq.push(['_trackPageview']);
 
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-
-//]]>
-</script>
-
-<script type="text/javascript" src="http://static.getclicky.com/js"></script>
-
-<script type="text/javascript">//<![CDATA[
-clicky.init(155532);
-//]]>
-</script>
-
-<script type="text/javascript">//<![CDATA[
-
-try {
-var pageTracker = _gat._getTracker("UA-11762059-1");
-pageTracker._trackPageview();
-} catch(err) {}
-//]]>
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 </script>
 
 <script type="text/javascript">
