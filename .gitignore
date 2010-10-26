@@ -4,6 +4,7 @@ application/logs
 application/views/articles
 application/views/pages
 application/views/templates
+application/views/sublayouts
 www/gfx
 www/css
 www/js
