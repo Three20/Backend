@@ -1239,8 +1239,8 @@ class Markdown_Parser {
 	function doHorizontalBar($text) {
 		$text = preg_replace_callback('/
 			  (								# Wrap whole match in $1
-			  ^--.*\n			# "--" at the beginning of the horizontal bar
-				(.*\n)+					# rest of the first line
+			  ^--\n			# "--" at the beginning of the horizontal bar
+				(.*\n)+?					# rest of the first line
 				--\n
 			  )
 			/xm',
