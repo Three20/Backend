@@ -119,7 +119,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00020"></a>00020 
 <a name="l00026"></a>00026 @property (nonatomic, readonly) <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>* md5Hash;
 <a name="l00027"></a>00027 
-<a name="l00028"></a>00028 @end
+<a name="l00033"></a>00033 @property (nonatomic, readonly) <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>* sha1Hash;
+<a name="l00034"></a>00034 
+<a name="l00035"></a>00035 @end
 </pre></div></div>
 </div>
 <!--- window showing the filter options -->

@@ -114,6 +114,8 @@ Public Member Functions</h2></td></tr>
 (void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>launcherView:didMoveItem:</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca57ebe70ea2d9a70de1794859c43548"></a><!-- doxytag: member="TTLauncherViewDelegate&#45;p::launcherView:didSelectItem:" ref="aca57ebe70ea2d9a70de1794859c43548" args="(TTLauncherView *launcher,[didSelectItem] TTLauncherItem *item)" -->
 (void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>launcherView:didSelectItem:</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47a384b84172b60ecb7d095b2756794c"></a><!-- doxytag: member="TTLauncherViewDelegate&#45;p::launcherViewDidEndDragging:" ref="a47a384b84172b60ecb7d095b2756794c" args="(TTLauncherView *launcher)" -->
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>launcherViewDidEndDragging:</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a10a9899e2e4a9f27bdc29410b8cf420b"></a><!-- doxytag: member="TTLauncherViewDelegate&#45;p::launcherViewDidBeginEditing:" ref="a10a9899e2e4a9f27bdc29410b8cf420b" args="(TTLauncherView *launcher)" -->
 (void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>launcherViewDidBeginEditing:</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2729de1e308af1789aaabcaa1728ab58"></a><!-- doxytag: member="TTLauncherViewDelegate&#45;p::launcherViewDidEndEditing:" ref="a2729de1e308af1789aaabcaa1728ab58" args="(TTLauncherView *launcher)" -->

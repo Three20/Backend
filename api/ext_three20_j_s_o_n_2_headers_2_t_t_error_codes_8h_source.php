@@ -14,7 +14,7 @@
   <meta property="og:image" content="http://github.com/facebook/three20/raw/06cd0abe33ac39d1f509e278e286c6bf1e45e821/samples/Resources/Icon.png"/>
   <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
-  <title>Three20: Member List</title>
+  <title>Three20: extThree20JSON/Headers/TTErrorCodes.h Source File</title>
 <link href="http://three20.info/css/reset.css" rel="stylesheet" type="text/css"/>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
@@ -65,8 +65,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="index.php"><span>Main&nbsp;Page</span></a></li>
       <li><a href="pages.php"><span>Related&nbsp;Pages</span></a></li>
-      <li class="current"><a href="annotated.php"><span>Classes</span></a></li>
-      <li><a href="files.php"><span>Files</span></a></li>
+      <li><a href="annotated.php"><span>Classes</span></a></li>
+      <li class="current"><a href="files.php"><span>Files</span></a></li>
       <li><a href="examples.php"><span>Examples</span></a></li>
       <li id="searchli">
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -88,28 +88,36 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </div>
   <div class="tabs2">
     <ul class="tablist">
-      <li><a href="annotated.php"><span>Class&nbsp;List</span></a></li>
-      <li><a href="hierarchy.php"><span>Class&nbsp;Hierarchy</span></a></li>
-      <li><a href="functions.php"><span>Class&nbsp;Members</span></a></li>
+      <li><a href="files.php"><span>File&nbsp;List</span></a></li>
+      <li><a href="globals.php"><span>File&nbsp;Members</span></a></li>
     </ul>
   </div>
-</div>
 <div class="header">
   <div class="headertitle">
-<h1>TTLauncherHighlightView Member List</h1>  </div>
+<h1>extThree20JSON/Headers/TTErrorCodes.h</h1>  </div>
 </div>
 <div class="contents">
-This is the complete list of members for <a class="el" href="interface_t_t_launcher_highlight_view.php">TTLauncherHighlightView</a>, including all inherited members.<table>
-  <tr bgcolor="#f0f0f0"><td></td><td><b>_highlightRect</b> (defined in <a class="el" href="interface_t_t_launcher_highlight_view.php">TTLauncherHighlightView</a>)</td><td><a class="el" href="interface_t_t_launcher_highlight_view.php">TTLauncherHighlightView</a></td><td><code> [protected]</code></td></tr>
-  <tr bgcolor="#f0f0f0"><td></td><td><b>_highlightScale</b> (defined in <a class="el" href="interface_t_t_launcher_highlight_view.php">TTLauncherHighlightView</a>)</td><td><a class="el" href="interface_t_t_launcher_highlight_view.php">TTLauncherHighlightView</a></td><td><code> [protected]</code></td></tr>
-  <tr bgcolor="#f0f0f0"><td></td><td><b>_parentView</b> (defined in <a class="el" href="interface_t_t_launcher_highlight_view.php">TTLauncherHighlightView</a>)</td><td><a class="el" href="interface_t_t_launcher_highlight_view.php">TTLauncherHighlightView</a></td><td><code> [protected]</code></td></tr>
-  <tr bgcolor="#f0f0f0"><td></td><td><b>_statusBarCover</b> (defined in <a class="el" href="interface_t_t_launcher_highlight_view.php">TTLauncherHighlightView</a>)</td><td><a class="el" href="interface_t_t_launcher_highlight_view.php">TTLauncherHighlightView</a></td><td><code> [protected]</code></td></tr>
-  <tr bgcolor="#f0f0f0"><td></td><td><b>_textLabel</b> (defined in <a class="el" href="interface_t_t_launcher_highlight_view.php">TTLauncherHighlightView</a>)</td><td><a class="el" href="interface_t_t_launcher_highlight_view.php">TTLauncherHighlightView</a></td><td><code> [protected]</code></td></tr>
-  <tr bgcolor="#f0f0f0"><td>-&nbsp;</td><td><b>appear:</b> (defined in <a class="el" href="interface_t_t_launcher_highlight_view.php">TTLauncherHighlightView</a>)</td><td><a class="el" href="interface_t_t_launcher_highlight_view.php">TTLauncherHighlightView</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td></td><td><b>highlightRect</b> (defined in <a class="el" href="interface_t_t_launcher_highlight_view.php">TTLauncherHighlightView</a>)</td><td><a class="el" href="interface_t_t_launcher_highlight_view.php">TTLauncherHighlightView</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td></td><td><b>parentView</b> (defined in <a class="el" href="interface_t_t_launcher_highlight_view.php">TTLauncherHighlightView</a>)</td><td><a class="el" href="interface_t_t_launcher_highlight_view.php">TTLauncherHighlightView</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td></td><td><b>text</b> (defined in <a class="el" href="interface_t_t_launcher_highlight_view.php">TTLauncherHighlightView</a>)</td><td><a class="el" href="interface_t_t_launcher_highlight_view.php">TTLauncherHighlightView</a></td><td></td></tr>
-</table></div>
+<div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
+<a name="l00002"></a>00002 <span class="comment">// Copyright 2009-2010 Facebook</span>
+<a name="l00003"></a>00003 <span class="comment">//</span>
+<a name="l00004"></a>00004 <span class="comment">// Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
+<a name="l00005"></a>00005 <span class="comment">// you may not use this file except in compliance with the License.</span>
+<a name="l00006"></a>00006 <span class="comment">// You may obtain a copy of the License at</span>
+<a name="l00007"></a>00007 <span class="comment">//</span>
+<a name="l00008"></a>00008 <span class="comment">//    http://www.apache.org/licenses/LICENSE-2.0</span>
+<a name="l00009"></a>00009 <span class="comment">//</span>
+<a name="l00010"></a>00010 <span class="comment">// Unless required by applicable law or agreed to in writing, software</span>
+<a name="l00011"></a>00011 <span class="comment">// distributed under the License is distributed on an &quot;AS IS&quot; BASIS,</span>
+<a name="l00012"></a>00012 <span class="comment">// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.</span>
+<a name="l00013"></a>00013 <span class="comment">// See the License for the specific language governing permissions and</span>
+<a name="l00014"></a>00014 <span class="comment">// limitations under the License.</span>
+<a name="l00015"></a>00015 <span class="comment">//</span>
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017 <span class="keyword">extern</span> <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>* <span class="keyword">const</span> kTTExtJSONErrorDomain;
+<a name="l00018"></a>00018 <span class="keyword">extern</span> NSInteger <span class="keyword">const</span> kTTExtJSONErrorCodeInvalidJSON;
+<a name="l00019"></a>00019 
+</pre></div></div>
+</div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"

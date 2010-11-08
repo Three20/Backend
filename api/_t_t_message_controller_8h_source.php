@@ -134,57 +134,59 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00049"></a>00049 
 <a name="l00050"></a>00050   BOOL _showsRecipientPicker;
 <a name="l00051"></a>00051   BOOL _isModified;
-<a name="l00052"></a>00052 
-<a name="l00053"></a>00053   id&lt;TTTableViewDataSource&gt;       _dataSource;
-<a name="l00054"></a>00054   id&lt;TTMessageControllerDelegate&gt; _delegate;
-<a name="l00055"></a>00055 }
-<a name="l00056"></a>00056 
-<a name="l00061"></a><a class="code" href="interface_t_t_message_controller.php#a8cf1658e4a2cdbe7dc72f1c0e9e6b2ed">00061</a> @property (nonatomic, assign) id&lt;<a class="code" href="protocol_t_t_message_controller_delegate-p.php" title="A protocol for the object that implements the backend logic for the TTMessageController.">TTMessageControllerDelegate</a>&gt; delegate;
-<a name="l00062"></a>00062 
-<a name="l00068"></a><a class="code" href="interface_t_t_message_controller.php#a577f1d8cad6e8591a4759f11d36aad2d">00068</a> @property (nonatomic, retain) <span class="keywordtype">id</span>&lt;<a class="code" href="interface_t_t_table_view_data_source.php">TTTableViewDataSource</a>&gt; dataSource;
-<a name="l00069"></a>00069 
-<a name="l00074"></a><a class="code" href="interface_t_t_message_controller.php#a81c2daf27f3f8f21cecf0a92fa45b1d3">00074</a> @property (nonatomic, retain) <a class="code" href="class_n_s_array.php" title="Additions.">NSArray</a>* fields;
-<a name="l00075"></a>00075 
-<a name="l00081"></a><a class="code" href="interface_t_t_message_controller.php#a8414169377f297b9fcb41bbc9c0a058d">00081</a> @property (nonatomic, retain) <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>* subject;
-<a name="l00082"></a>00082 
-<a name="l00087"></a><a class="code" href="interface_t_t_message_controller.php#a179539948de0b4377b0559e9ef2c57e6">00087</a> @property (nonatomic, retain) <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>* body;
-<a name="l00088"></a>00088 
-<a name="l00093"></a><a class="code" href="interface_t_t_message_controller.php#a81e95b4725b4c6ad3bb9a534fa045660">00093</a> @property (nonatomic) BOOL showsRecipientPicker;
-<a name="l00094"></a>00094 
-<a name="l00100"></a><a class="code" href="interface_t_t_message_controller.php#aa41f369642a1ce1afcfc381972d79d68">00100</a> @property (nonatomic, readonly) BOOL isModified;
-<a name="l00101"></a>00101 
+<a name="l00052"></a>00052   BOOL _requireNonEmptyMessageBody;
+<a name="l00053"></a>00053 
+<a name="l00054"></a>00054   id&lt;TTTableViewDataSource&gt;       _dataSource;
+<a name="l00055"></a>00055   id&lt;TTMessageControllerDelegate&gt; _delegate;
+<a name="l00056"></a>00056 }
+<a name="l00057"></a>00057 
+<a name="l00062"></a><a class="code" href="interface_t_t_message_controller.php#a8cf1658e4a2cdbe7dc72f1c0e9e6b2ed">00062</a> @property (nonatomic, assign) id&lt;<a class="code" href="protocol_t_t_message_controller_delegate-p.php" title="A protocol for the object that implements the backend logic for the TTMessageController.">TTMessageControllerDelegate</a>&gt; delegate;
+<a name="l00063"></a>00063 
+<a name="l00069"></a><a class="code" href="interface_t_t_message_controller.php#a577f1d8cad6e8591a4759f11d36aad2d">00069</a> @property (nonatomic, retain) <span class="keywordtype">id</span>&lt;<a class="code" href="interface_t_t_table_view_data_source.php">TTTableViewDataSource</a>&gt; dataSource;
+<a name="l00070"></a>00070 
+<a name="l00075"></a><a class="code" href="interface_t_t_message_controller.php#a81c2daf27f3f8f21cecf0a92fa45b1d3">00075</a> @property (nonatomic, retain) <a class="code" href="class_n_s_array.php" title="Additions.">NSArray</a>* fields;
+<a name="l00076"></a>00076 
+<a name="l00082"></a><a class="code" href="interface_t_t_message_controller.php#a8414169377f297b9fcb41bbc9c0a058d">00082</a> @property (nonatomic, retain) <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>* subject;
+<a name="l00083"></a>00083 
+<a name="l00088"></a><a class="code" href="interface_t_t_message_controller.php#a179539948de0b4377b0559e9ef2c57e6">00088</a> @property (nonatomic, retain) <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>* body;
+<a name="l00089"></a>00089 
+<a name="l00094"></a><a class="code" href="interface_t_t_message_controller.php#a81e95b4725b4c6ad3bb9a534fa045660">00094</a> @property (nonatomic) BOOL showsRecipientPicker;
+<a name="l00095"></a>00095 
+<a name="l00101"></a><a class="code" href="interface_t_t_message_controller.php#aa41f369642a1ce1afcfc381972d79d68">00101</a> @property (nonatomic, readonly) BOOL isModified;
 <a name="l00102"></a>00102 
-<a name="l00111"></a>00111 - (<span class="keywordtype">id</span>)initWithRecipients:(<a class="code" href="class_n_s_array.php" title="Additions.">NSArray</a>*)recipients;
-<a name="l00112"></a>00112 
-<a name="l00123"></a>00123 - (<span class="keywordtype">void</span>)addRecipient:(<span class="keywordtype">id</span>)recipient forFieldAtIndex:(NSUInteger)fieldIndex;
-<a name="l00124"></a>00124 
-<a name="l00131"></a>00131 - (<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)textForFieldAtIndex:(NSUInteger)fieldIndex;
+<a name="l00109"></a><a class="code" href="interface_t_t_message_controller.php#a59c21173aaf5330e31ba62a8a0f834d5">00109</a> @property(nonatomic) BOOL requireNonEmptyMessageBody;
+<a name="l00110"></a>00110 
+<a name="l00119"></a>00119 - (<span class="keywordtype">id</span>)initWithRecipients:(<a class="code" href="class_n_s_array.php" title="Additions.">NSArray</a>*)recipients;
+<a name="l00120"></a>00120 
+<a name="l00131"></a>00131 - (<span class="keywordtype">void</span>)addRecipient:(<span class="keywordtype">id</span>)recipient forFieldAtIndex:(NSUInteger)fieldIndex;
 <a name="l00132"></a>00132 
-<a name="l00137"></a>00137 - (<span class="keywordtype">void</span>)setText:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)text forFieldAtIndex:(NSUInteger)fieldIndex;
-<a name="l00138"></a>00138 
-<a name="l00144"></a>00144 - (BOOL)fieldHasValueAtIndex:(NSUInteger)fieldIndex;
-<a name="l00145"></a>00145 
-<a name="l00150"></a>00150 - (<a class="code" href="class_u_i_view.php">UIView</a>*)viewForFieldAtIndex:(NSUInteger)fieldIndex;
-<a name="l00151"></a>00151 
-<a name="l00157"></a>00157 - (<span class="keywordtype">void</span>)showActivityView:(BOOL)show;
-<a name="l00158"></a>00158 
-<a name="l00164"></a>00164 - (<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)titleForSending;
-<a name="l00165"></a>00165 
-<a name="l00169"></a>00169 - (<span class="keywordtype">void</span>)send;
-<a name="l00170"></a>00170 
-<a name="l00174"></a>00174 - (<span class="keywordtype">void</span>)cancel:(BOOL)confirmIfNecessary;
-<a name="l00175"></a>00175 
-<a name="l00179"></a>00179 - (<span class="keywordtype">void</span>)confirmCancellation;
-<a name="l00180"></a>00180 
-<a name="l00185"></a>00185 - (<span class="keywordtype">void</span>)messageWillSend:(<a class="code" href="class_n_s_array.php" title="Additions.">NSArray</a>*)fields;
-<a name="l00186"></a>00186 
-<a name="l00191"></a>00191 - (<span class="keywordtype">void</span>)messageWillShowRecipientPicker;
-<a name="l00192"></a>00192 
-<a name="l00197"></a>00197 - (<span class="keywordtype">void</span>)messageDidSend;
-<a name="l00198"></a>00198 
-<a name="l00205"></a>00205 - (BOOL)messageShouldCancel;
+<a name="l00139"></a>00139 - (<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)textForFieldAtIndex:(NSUInteger)fieldIndex;
+<a name="l00140"></a>00140 
+<a name="l00145"></a>00145 - (<span class="keywordtype">void</span>)setText:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)text forFieldAtIndex:(NSUInteger)fieldIndex;
+<a name="l00146"></a>00146 
+<a name="l00152"></a>00152 - (BOOL)fieldHasValueAtIndex:(NSUInteger)fieldIndex;
+<a name="l00153"></a>00153 
+<a name="l00158"></a>00158 - (<a class="code" href="class_u_i_view.php">UIView</a>*)viewForFieldAtIndex:(NSUInteger)fieldIndex;
+<a name="l00159"></a>00159 
+<a name="l00165"></a>00165 - (<span class="keywordtype">void</span>)showActivityView:(BOOL)show;
+<a name="l00166"></a>00166 
+<a name="l00172"></a>00172 - (<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)titleForSending;
+<a name="l00173"></a>00173 
+<a name="l00177"></a>00177 - (<span class="keywordtype">void</span>)send;
+<a name="l00178"></a>00178 
+<a name="l00182"></a>00182 - (<span class="keywordtype">void</span>)cancel:(BOOL)confirmIfNecessary;
+<a name="l00183"></a>00183 
+<a name="l00187"></a>00187 - (<span class="keywordtype">void</span>)confirmCancellation;
+<a name="l00188"></a>00188 
+<a name="l00193"></a>00193 - (<span class="keywordtype">void</span>)messageWillSend:(<a class="code" href="class_n_s_array.php" title="Additions.">NSArray</a>*)fields;
+<a name="l00194"></a>00194 
+<a name="l00199"></a>00199 - (<span class="keywordtype">void</span>)messageWillShowRecipientPicker;
+<a name="l00200"></a>00200 
+<a name="l00205"></a>00205 - (<span class="keywordtype">void</span>)messageDidSend;
 <a name="l00206"></a>00206 
-<a name="l00207"></a>00207 @end
+<a name="l00213"></a>00213 - (BOOL)messageShouldCancel;
+<a name="l00214"></a>00214 
+<a name="l00215"></a>00215 @end
 </pre></div></div>
 </div>
 <!--- window showing the filter options -->

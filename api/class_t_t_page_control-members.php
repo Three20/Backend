@@ -108,7 +108,7 @@ This is the complete list of members for <a class="el" href="interface_t_t_page_
   <tr bgcolor="#f0f0f0"><td></td><td><b>_numberOfPages</b> (defined in <a class="el" href="interface_t_t_page_control.php">TTPageControl</a>)</td><td><a class="el" href="interface_t_t_page_control.php">TTPageControl</a></td><td><code> [protected]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td></td><td><b>currentPage</b> (defined in <a class="el" href="interface_t_t_page_control.php">TTPageControl</a>)</td><td><a class="el" href="interface_t_t_page_control.php">TTPageControl</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td></td><td><b>dotStyle</b> (defined in <a class="el" href="interface_t_t_page_control.php">TTPageControl</a>)</td><td><a class="el" href="interface_t_t_page_control.php">TTPageControl</a></td><td></td></tr>
-  <tr bgcolor="#f0f0f0"><td></td><td><b>hidesForSinglePage</b> (defined in <a class="el" href="interface_t_t_page_control.php">TTPageControl</a>)</td><td><a class="el" href="interface_t_t_page_control.php">TTPageControl</a></td><td></td></tr>
+  <tr class="memlist"><td></td><td><a class="el" href="interface_t_t_page_control.php#a34b27ff3d33fc8073294d4a3bf377c52">hidesForSinglePage</a></td><td><a class="el" href="interface_t_t_page_control.php">TTPageControl</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td></td><td><b>numberOfPages</b> (defined in <a class="el" href="interface_t_t_page_control.php">TTPageControl</a>)</td><td><a class="el" href="interface_t_t_page_control.php">TTPageControl</a></td><td></td></tr>
 </table></div>
 <!--- window showing the filter options -->

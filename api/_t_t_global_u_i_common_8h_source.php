@@ -140,62 +140,64 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00084"></a>00084 
 <a name="l00088"></a>00088 <span class="keywordtype">void</span> TTAlert(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>* message);
 <a name="l00089"></a>00089 
-<a name="l00090"></a>00090 
-<a name="l00092"></a>00092 <span class="comment">// Debug logging helpers</span>
-<a name="l00093"></a>00093 
-<a name="l00094"></a>00094 <span class="preprocessor">#define TTLOGRECT(rect) \</span>
-<a name="l00095"></a>00095 <span class="preprocessor">  TTDINFO(@&quot;%s x=%f, y=%f, w=%f, h=%f&quot;, #rect, rect.origin.x, rect.origin.y, \</span>
-<a name="l00096"></a>00096 <span class="preprocessor">  rect.size.width, rect.size.height)</span>
-<a name="l00097"></a>00097 <span class="preprocessor"></span>
-<a name="l00098"></a>00098 <span class="preprocessor">#define TTLOGPOINT(pt) \</span>
-<a name="l00099"></a>00099 <span class="preprocessor">  TTDINFO(@&quot;%s x=%f, y=%f&quot;, #pt, pt.x, pt.y)</span>
-<a name="l00100"></a>00100 <span class="preprocessor"></span>
-<a name="l00101"></a>00101 <span class="preprocessor">#define TTLOGSIZE(size) \</span>
-<a name="l00102"></a>00102 <span class="preprocessor">  TTDINFO(@&quot;%s w=%f, h=%f&quot;, #size, size.width, size.height)</span>
-<a name="l00103"></a>00103 <span class="preprocessor"></span>
-<a name="l00104"></a>00104 <span class="preprocessor">#define TTLOGEDGES(edges) \</span>
-<a name="l00105"></a>00105 <span class="preprocessor">  TTDINFO(@&quot;%s left=%f, right=%f, top=%f, bottom=%f&quot;, #edges, edges.left, edges.right, \</span>
-<a name="l00106"></a>00106 <span class="preprocessor">  edges.top, edges.bottom)</span>
-<a name="l00107"></a>00107 <span class="preprocessor"></span>
-<a name="l00108"></a>00108 <span class="preprocessor">#define TTLOGHSV(_COLOR) \</span>
-<a name="l00109"></a>00109 <span class="preprocessor">  TTDINFO(@&quot;%s h=%f, s=%f, v=%f&quot;, #_COLOR, _COLOR.hue, _COLOR.saturation, _COLOR.value)</span>
-<a name="l00110"></a>00110 <span class="preprocessor"></span>
-<a name="l00111"></a>00111 <span class="preprocessor">#define TTLOGVIEWS(_VIEW) \</span>
-<a name="l00112"></a>00112 <span class="preprocessor">  { for (UIView* view = _VIEW; view; view = view.superview) { TTDINFO(@&quot;%@&quot;, view); } }</span>
-<a name="l00113"></a>00113 <span class="preprocessor"></span>
-<a name="l00114"></a>00114 
-<a name="l00116"></a>00116 <span class="comment">// Dimensions of common iPhone OS Views</span>
-<a name="l00117"></a>00117 
-<a name="l00122"></a>00122 <span class="keyword">extern</span> <span class="keyword">const</span> CGFloat ttkDefaultRowHeight;
-<a name="l00123"></a>00123 
-<a name="l00128"></a>00128 <span class="keyword">extern</span> <span class="keyword">const</span> CGFloat ttkDefaultPortraitToolbarHeight;
-<a name="l00129"></a>00129 
-<a name="l00134"></a>00134 <span class="keyword">extern</span> <span class="keyword">const</span> CGFloat ttkDefaultLandscapeToolbarHeight;
-<a name="l00135"></a>00135 
-<a name="l00140"></a>00140 <span class="keyword">extern</span> <span class="keyword">const</span> CGFloat ttkDefaultPortraitKeyboardHeight;
-<a name="l00141"></a>00141 
-<a name="l00146"></a>00146 <span class="keyword">extern</span> <span class="keyword">const</span> CGFloat ttkDefaultLandscapeKeyboardHeight;
-<a name="l00147"></a>00147 
-<a name="l00152"></a>00152 <span class="keyword">extern</span> <span class="keyword">const</span> CGFloat ttkGroupedTableCellInset;
-<a name="l00153"></a>00153 
-<a name="l00157"></a>00157 <span class="preprocessor">#define TT_ROW_HEIGHT                 ttkDefaultRowHeight</span>
-<a name="l00158"></a>00158 <span class="preprocessor"></span><span class="preprocessor">#define TT_TOOLBAR_HEIGHT             ttkDefaultPortraitToolbarHeight</span>
-<a name="l00159"></a>00159 <span class="preprocessor"></span><span class="preprocessor">#define TT_LANDSCAPE_TOOLBAR_HEIGHT   ttkDefaultLandscapeToolbarHeight</span>
-<a name="l00160"></a>00160 <span class="preprocessor"></span>
-<a name="l00161"></a>00161 <span class="preprocessor">#define TT_KEYBOARD_HEIGHT            ttkDefaultPortraitKeyboardHeight</span>
-<a name="l00162"></a>00162 <span class="preprocessor"></span><span class="preprocessor">#define TT_LANDSCAPE_KEYBOARD_HEIGHT  ttkDefaultLandscapeKeyboardHeight</span>
-<a name="l00163"></a>00163 <span class="preprocessor"></span>
-<a name="l00165"></a>00165 <span class="comment">// Animation</span>
-<a name="l00166"></a>00166 
-<a name="l00171"></a>00171 <span class="keyword">extern</span> <span class="keyword">const</span> CGFloat ttkDefaultTransitionDuration;
-<a name="l00172"></a>00172 
-<a name="l00177"></a>00177 <span class="keyword">extern</span> <span class="keyword">const</span> CGFloat ttkDefaultFastTransitionDuration;
-<a name="l00178"></a>00178 
-<a name="l00183"></a>00183 <span class="keyword">extern</span> <span class="keyword">const</span> CGFloat ttkDefaultFlipTransitionDuration;
-<a name="l00184"></a>00184 
-<a name="l00188"></a>00188 <span class="preprocessor">#define TT_TRANSITION_DURATION      ttkDefaultTransitionDuration</span>
-<a name="l00189"></a>00189 <span class="preprocessor"></span><span class="preprocessor">#define TT_FAST_TRANSITION_DURATION ttkDefaultFastTransitionDuration</span>
-<a name="l00190"></a>00190 <span class="preprocessor"></span><span class="preprocessor">#define TT_FLIP_TRANSITION_DURATION ttkDefaultFlipTransitionDuration</span>
+<a name="l00093"></a>00093 <span class="keywordtype">void</span> TTAlertNoTitle(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>* message);
+<a name="l00094"></a>00094 
+<a name="l00095"></a>00095 
+<a name="l00097"></a>00097 <span class="comment">// Debug logging helpers</span>
+<a name="l00098"></a>00098 
+<a name="l00099"></a>00099 <span class="preprocessor">#define TTLOGRECT(rect) \</span>
+<a name="l00100"></a>00100 <span class="preprocessor">  TTDINFO(@&quot;%s x=%f, y=%f, w=%f, h=%f&quot;, #rect, rect.origin.x, rect.origin.y, \</span>
+<a name="l00101"></a>00101 <span class="preprocessor">  rect.size.width, rect.size.height)</span>
+<a name="l00102"></a>00102 <span class="preprocessor"></span>
+<a name="l00103"></a>00103 <span class="preprocessor">#define TTLOGPOINT(pt) \</span>
+<a name="l00104"></a>00104 <span class="preprocessor">  TTDINFO(@&quot;%s x=%f, y=%f&quot;, #pt, pt.x, pt.y)</span>
+<a name="l00105"></a>00105 <span class="preprocessor"></span>
+<a name="l00106"></a>00106 <span class="preprocessor">#define TTLOGSIZE(size) \</span>
+<a name="l00107"></a>00107 <span class="preprocessor">  TTDINFO(@&quot;%s w=%f, h=%f&quot;, #size, size.width, size.height)</span>
+<a name="l00108"></a>00108 <span class="preprocessor"></span>
+<a name="l00109"></a>00109 <span class="preprocessor">#define TTLOGEDGES(edges) \</span>
+<a name="l00110"></a>00110 <span class="preprocessor">  TTDINFO(@&quot;%s left=%f, right=%f, top=%f, bottom=%f&quot;, #edges, edges.left, edges.right, \</span>
+<a name="l00111"></a>00111 <span class="preprocessor">  edges.top, edges.bottom)</span>
+<a name="l00112"></a>00112 <span class="preprocessor"></span>
+<a name="l00113"></a>00113 <span class="preprocessor">#define TTLOGHSV(_COLOR) \</span>
+<a name="l00114"></a>00114 <span class="preprocessor">  TTDINFO(@&quot;%s h=%f, s=%f, v=%f&quot;, #_COLOR, _COLOR.hue, _COLOR.saturation, _COLOR.value)</span>
+<a name="l00115"></a>00115 <span class="preprocessor"></span>
+<a name="l00116"></a>00116 <span class="preprocessor">#define TTLOGVIEWS(_VIEW) \</span>
+<a name="l00117"></a>00117 <span class="preprocessor">  { for (UIView* view = _VIEW; view; view = view.superview) { TTDINFO(@&quot;%@&quot;, view); } }</span>
+<a name="l00118"></a>00118 <span class="preprocessor"></span>
+<a name="l00119"></a>00119 
+<a name="l00121"></a>00121 <span class="comment">// Dimensions of common iPhone OS Views</span>
+<a name="l00122"></a>00122 
+<a name="l00127"></a>00127 <span class="keyword">extern</span> <span class="keyword">const</span> CGFloat ttkDefaultRowHeight;
+<a name="l00128"></a>00128 
+<a name="l00133"></a>00133 <span class="keyword">extern</span> <span class="keyword">const</span> CGFloat ttkDefaultPortraitToolbarHeight;
+<a name="l00134"></a>00134 
+<a name="l00139"></a>00139 <span class="keyword">extern</span> <span class="keyword">const</span> CGFloat ttkDefaultLandscapeToolbarHeight;
+<a name="l00140"></a>00140 
+<a name="l00145"></a>00145 <span class="keyword">extern</span> <span class="keyword">const</span> CGFloat ttkDefaultPortraitKeyboardHeight;
+<a name="l00146"></a>00146 
+<a name="l00151"></a>00151 <span class="keyword">extern</span> <span class="keyword">const</span> CGFloat ttkDefaultLandscapeKeyboardHeight;
+<a name="l00152"></a>00152 
+<a name="l00157"></a>00157 <span class="keyword">extern</span> <span class="keyword">const</span> CGFloat ttkGroupedTableCellInset;
+<a name="l00158"></a>00158 
+<a name="l00162"></a>00162 <span class="preprocessor">#define TT_ROW_HEIGHT                 ttkDefaultRowHeight</span>
+<a name="l00163"></a>00163 <span class="preprocessor"></span><span class="preprocessor">#define TT_TOOLBAR_HEIGHT             ttkDefaultPortraitToolbarHeight</span>
+<a name="l00164"></a>00164 <span class="preprocessor"></span><span class="preprocessor">#define TT_LANDSCAPE_TOOLBAR_HEIGHT   ttkDefaultLandscapeToolbarHeight</span>
+<a name="l00165"></a>00165 <span class="preprocessor"></span>
+<a name="l00166"></a>00166 <span class="preprocessor">#define TT_KEYBOARD_HEIGHT            ttkDefaultPortraitKeyboardHeight</span>
+<a name="l00167"></a>00167 <span class="preprocessor"></span><span class="preprocessor">#define TT_LANDSCAPE_KEYBOARD_HEIGHT  ttkDefaultLandscapeKeyboardHeight</span>
+<a name="l00168"></a>00168 <span class="preprocessor"></span>
+<a name="l00170"></a>00170 <span class="comment">// Animation</span>
+<a name="l00171"></a>00171 
+<a name="l00176"></a>00176 <span class="keyword">extern</span> <span class="keyword">const</span> CGFloat ttkDefaultTransitionDuration;
+<a name="l00177"></a>00177 
+<a name="l00182"></a>00182 <span class="keyword">extern</span> <span class="keyword">const</span> CGFloat ttkDefaultFastTransitionDuration;
+<a name="l00183"></a>00183 
+<a name="l00188"></a>00188 <span class="keyword">extern</span> <span class="keyword">const</span> CGFloat ttkDefaultFlipTransitionDuration;
+<a name="l00189"></a>00189 
+<a name="l00193"></a>00193 <span class="preprocessor">#define TT_TRANSITION_DURATION      ttkDefaultTransitionDuration</span>
+<a name="l00194"></a>00194 <span class="preprocessor"></span><span class="preprocessor">#define TT_FAST_TRANSITION_DURATION ttkDefaultFastTransitionDuration</span>
+<a name="l00195"></a>00195 <span class="preprocessor"></span><span class="preprocessor">#define TT_FLIP_TRANSITION_DURATION ttkDefaultFlipTransitionDuration</span>
 </pre></div></div>
 </div>
 <!--- window showing the filter options -->

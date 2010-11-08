@@ -226,6 +226,8 @@ CGSize&nbsp;</td><td class="memItemRight" valign="bottom"><b>photoCaptionTextSha
 <a class="el" href="class_u_i_font.php">UIFont</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tableHeaderPlainFont</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a98a3d7bb0dfb54f99f3d4daff5f02713"></a><!-- doxytag: member="TTDefaultStyleSheet::tableHeaderGroupedFont" ref="a98a3d7bb0dfb54f99f3d4daff5f02713" args="" -->
 <a class="el" href="class_u_i_font.php">UIFont</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tableHeaderGroupedFont</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a274b17a18d53d8fd40e01e3276853239"></a><!-- doxytag: member="TTDefaultStyleSheet::tableBannerViewHeight" ref="a274b17a18d53d8fd40e01e3276853239" args="" -->
+CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><b>tableBannerViewHeight</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3bcf19ba6206adf5ce0711f8b5dfdb2b"></a><!-- doxytag: member="TTDefaultStyleSheet::photoCaptionFont" ref="a3bcf19ba6206adf5ce0711f8b5dfdb2b" args="" -->
 <a class="el" href="class_u_i_font.php">UIFont</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>photoCaptionFont</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae5950524d88a3df056c82b02c4c92b3d"></a><!-- doxytag: member="TTDefaultStyleSheet::messageFont" ref="ae5950524d88a3df056c82b02c4c92b3d" args="" -->

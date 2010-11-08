@@ -130,12 +130,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00031"></a>00031 
 <a name="l00032"></a>00032 - (void)launcherView:(<a class="code" href="interface_t_t_launcher_view.php">TTLauncherView</a>*)launcher didSelectItem:(<a class="code" href="interface_t_t_launcher_item.php">TTLauncherItem</a>*)item;
 <a name="l00033"></a>00033 
-<a name="l00034"></a>00034 - (void)launcherViewDidBeginEditing:(<a class="code" href="interface_t_t_launcher_view.php">TTLauncherView</a>*)launcher;
+<a name="l00034"></a>00034 - (void)launcherViewDidEndDragging:(<a class="code" href="interface_t_t_launcher_view.php">TTLauncherView</a>*)launcher;
 <a name="l00035"></a>00035 
-<a name="l00036"></a>00036 - (void)launcherViewDidEndEditing:(<a class="code" href="interface_t_t_launcher_view.php">TTLauncherView</a>*)launcher;
+<a name="l00036"></a>00036 - (void)launcherViewDidBeginEditing:(<a class="code" href="interface_t_t_launcher_view.php">TTLauncherView</a>*)launcher;
 <a name="l00037"></a>00037 
-<a name="l00038"></a>00038 <span class="keyword">@end</span>
+<a name="l00038"></a>00038 - (void)launcherViewDidEndEditing:(<a class="code" href="interface_t_t_launcher_view.php">TTLauncherView</a>*)launcher;
 <a name="l00039"></a>00039 
+<a name="l00040"></a>00040 <span class="keyword">@end</span>
+<a name="l00041"></a>00041 
 </pre></div></div>
 </div>
 <!--- window showing the filter options -->

@@ -162,6 +162,9 @@ Here is a list of all documented class members with links to the class documenta
 <li>hideMenu:
 : <a class="el" href="interface_t_t_table_view_controller.php#a8243f7936265a1594569e7999510c088">TTTableViewController</a>
 </li>
+<li>hidesForSinglePage
+: <a class="el" href="interface_t_t_page_control.php#a34b27ff3d33fc8073294d4a3bf377c52">TTPageControl</a>
+</li>
 <li>highlighted
 : <a class="el" href="interface_t_t_styled_text_label.php#a22f1bf6aa775f236297edfb6f7566be7">TTStyledTextLabel</a>
 </li>

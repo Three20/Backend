@@ -176,23 +176,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00077"></a>00077 @property (nonatomic, readonly) <a class="code" href="class_u_i_font.php" title="Additions.">UIFont</a>* tableSummaryFont;
 <a name="l00078"></a>00078 @property (nonatomic, readonly) <a class="code" href="class_u_i_font.php" title="Additions.">UIFont</a>* tableHeaderPlainFont;
 <a name="l00079"></a>00079 @property (nonatomic, readonly) <a class="code" href="class_u_i_font.php" title="Additions.">UIFont</a>* tableHeaderGroupedFont;
-<a name="l00080"></a>00080 @property (nonatomic, readonly) <a class="code" href="class_u_i_font.php" title="Additions.">UIFont</a>* photoCaptionFont;
-<a name="l00081"></a>00081 @property (nonatomic, readonly) <a class="code" href="class_u_i_font.php" title="Additions.">UIFont</a>* messageFont;
-<a name="l00082"></a>00082 @property (nonatomic, readonly) <a class="code" href="class_u_i_font.php" title="Additions.">UIFont</a>* errorTitleFont;
-<a name="l00083"></a>00083 @property (nonatomic, readonly) <a class="code" href="class_u_i_font.php" title="Additions.">UIFont</a>* errorSubtitleFont;
-<a name="l00084"></a>00084 @property (nonatomic, readonly) <a class="code" href="class_u_i_font.php" title="Additions.">UIFont</a>* activityLabelFont;
-<a name="l00085"></a>00085 @property (nonatomic, readonly) <a class="code" href="class_u_i_font.php" title="Additions.">UIFont</a>* activityBannerFont;
-<a name="l00086"></a>00086 
-<a name="l00087"></a>00087 @property (nonatomic, readonly) UITableViewCellSelectionStyle tableSelectionStyle;
-<a name="l00088"></a>00088 
-<a name="l00089"></a>00089 - (<a class="code" href="interface_t_t_style.php">TTStyle</a>*)selectionFillStyle:(<a class="code" href="interface_t_t_style.php">TTStyle</a>*)next;
-<a name="l00090"></a>00090 
-<a name="l00091"></a>00091 - (<a class="code" href="interface_t_t_style.php">TTStyle</a>*)toolbarButtonForState:(UIControlState)state shape:(<a class="code" href="interface_t_t_shape.php">TTShape</a>*)shape
-<a name="l00092"></a>00092             tintColor:(<a class="code" href="class_u_i_color.php" title="Additions.">UIColor</a>*)tintColor font:(<a class="code" href="class_u_i_font.php" title="Additions.">UIFont</a>*)font;
-<a name="l00093"></a>00093 
-<a name="l00094"></a>00094 - (<a class="code" href="interface_t_t_style.php">TTStyle</a>*)pageDotWithColor:(<a class="code" href="class_u_i_color.php" title="Additions.">UIColor</a>*)color;
-<a name="l00095"></a>00095 
-<a name="l00096"></a>00096 <span class="keyword">@end</span>
+<a name="l00080"></a>00080 @property (nonatomic, readonly) CGFloat tableBannerViewHeight;
+<a name="l00081"></a>00081 @property (nonatomic, readonly) <a class="code" href="class_u_i_font.php" title="Additions.">UIFont</a>* photoCaptionFont;
+<a name="l00082"></a>00082 @property (nonatomic, readonly) <a class="code" href="class_u_i_font.php" title="Additions.">UIFont</a>* messageFont;
+<a name="l00083"></a>00083 @property (nonatomic, readonly) <a class="code" href="class_u_i_font.php" title="Additions.">UIFont</a>* errorTitleFont;
+<a name="l00084"></a>00084 @property (nonatomic, readonly) <a class="code" href="class_u_i_font.php" title="Additions.">UIFont</a>* errorSubtitleFont;
+<a name="l00085"></a>00085 @property (nonatomic, readonly) <a class="code" href="class_u_i_font.php" title="Additions.">UIFont</a>* activityLabelFont;
+<a name="l00086"></a>00086 @property (nonatomic, readonly) <a class="code" href="class_u_i_font.php" title="Additions.">UIFont</a>* activityBannerFont;
+<a name="l00087"></a>00087 
+<a name="l00088"></a>00088 @property (nonatomic, readonly) UITableViewCellSelectionStyle tableSelectionStyle;
+<a name="l00089"></a>00089 
+<a name="l00090"></a>00090 - (<a class="code" href="interface_t_t_style.php">TTStyle</a>*)selectionFillStyle:(<a class="code" href="interface_t_t_style.php">TTStyle</a>*)next;
+<a name="l00091"></a>00091 
+<a name="l00092"></a>00092 - (<a class="code" href="interface_t_t_style.php">TTStyle</a>*)toolbarButtonForState:(UIControlState)state shape:(<a class="code" href="interface_t_t_shape.php">TTShape</a>*)shape
+<a name="l00093"></a>00093             tintColor:(<a class="code" href="class_u_i_color.php" title="Additions.">UIColor</a>*)tintColor font:(<a class="code" href="class_u_i_font.php" title="Additions.">UIFont</a>*)font;
+<a name="l00094"></a>00094 
+<a name="l00095"></a>00095 - (<a class="code" href="interface_t_t_style.php">TTStyle</a>*)pageDotWithColor:(<a class="code" href="class_u_i_color.php" title="Additions.">UIColor</a>*)color;
+<a name="l00096"></a>00096 
+<a name="l00097"></a>00097 <span class="keyword">@end</span>
 </pre></div></div>
 </div>
 <!--- window showing the filter options -->

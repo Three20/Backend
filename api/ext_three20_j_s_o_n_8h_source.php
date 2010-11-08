@@ -113,7 +113,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00014"></a>00014 <span class="comment">// limitations under the License.</span>
 <a name="l00015"></a>00015 <span class="comment">//</span>
 <a name="l00016"></a>00016 
-<a name="l00017"></a>00017 <span class="preprocessor">#import &quot;extThree20JSON/TTURLJSONResponse.h&quot;</span>
+<a name="l00017"></a>00017 <span class="preprocessor">#import &quot;extThree20JSON/TTErrorCodes.h&quot;</span>
+<a name="l00018"></a>00018 <span class="preprocessor">#import &quot;extThree20JSON/TTURLJSONResponse.h&quot;</span>
 </pre></div></div>
 </div>
 <!--- window showing the filter options -->

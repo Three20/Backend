@@ -92,7 +92,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>Three20 API Documentation </h1>  </div>
 </div>
 <div class="contents">
-<h3 class="version">v1.0a1 </h3><p>Generated from Three20 Cut <a href="http://three20.info/roadmap/v1.0a1">v1.0a1</a>. </p>
+<h3 class="version">v1.0a1 </h3><p>Generated from Three20 Cut <a href="http://three20.info/roadmap/v1.0a2">v1.0a2</a>. </p>
 </div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"

@@ -133,9 +133,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00037"></a>00037 @property (nonatomic)       NSInteger currentPage;
 <a name="l00038"></a>00038 @property (nonatomic, copy) <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>* dotStyle;
 <a name="l00039"></a>00039 
-<a name="l00040"></a>00040 @property (nonatomic)       BOOL      hidesForSinglePage;
-<a name="l00041"></a>00041 
-<a name="l00042"></a>00042 @end
+<a name="l00045"></a><a class="code" href="interface_t_t_page_control.php#a34b27ff3d33fc8073294d4a3bf377c52">00045</a> @property (nonatomic)       BOOL      hidesForSinglePage;
+<a name="l00046"></a>00046 
+<a name="l00047"></a>00047 @end
 </pre></div></div>
 </div>
 <!--- window showing the filter options -->

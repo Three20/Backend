@@ -210,6 +210,8 @@ UIScrollView *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_scrollView
 BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_showsRecipientPicker</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b9736bf30efb27fbfe74187bfde9e42"></a><!-- doxytag: member="TTMessageController::_isModified" ref="a4b9736bf30efb27fbfe74187bfde9e42" args="" -->
 BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_isModified</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abc5b98222a473b23f931a3ad6c623458"></a><!-- doxytag: member="TTMessageController::_requireNonEmptyMessageBody" ref="abc5b98222a473b23f931a3ad6c623458" args="" -->
+BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_requireNonEmptyMessageBody</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a38dde907590f2a443743fd1d91011eb2"></a><!-- doxytag: member="TTMessageController::_dataSource" ref="a38dde907590f2a443743fd1d91011eb2" args="" -->
 id&lt; <a class="el" href="interface_t_t_table_view_data_source.php">TTTableViewDataSource</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>_dataSource</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47fca5147d52366682fdff075fefd5c8"></a><!-- doxytag: member="TTMessageController::_delegate" ref="a47fca5147d52366682fdff075fefd5c8" args="" -->
@@ -248,6 +250,8 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Controls whether a contact add button is shown in the views for <a class="el" href="interface_t_t_message_recipient_field.php" title="A field for holding recipients, typically found in an address book.">TTMessageRecipientField</a> instances. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_controller.php#aa41f369642a1ce1afcfc381972d79d68">isModified</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indicates if this message has been modified since it was originally shown.  <a href="#aa41f369642a1ce1afcfc381972d79d68"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_controller.php#a59c21173aaf5330e31ba62a8a0f834d5">requireNonEmptyMessageBody</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indicates if the user must enter text in the editor field to be allowed to send the message.  <a href="#a59c21173aaf5330e31ba62a8a0f834d5"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_t_t_table_view_controller.php">TTTableViewController</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_view_controller.php#aee5cb350b30e5feefffd3f118df21f86">searchViewController</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A view controller used to display the contents of the search display controller.  <a href="#aee5cb350b30e5feefffd3f118df21f86"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">UIBarStyle&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_base_view_controller.php#a0d8ab3d6c6b655258293c2df842d161b">navigationBarStyle</a></td></tr>
@@ -655,6 +659,22 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 
 <p>The color of the navigation bar when this view controller is pushed onto a navigation controller. </p>
 <p>TTSTYLEVAR(navigationBarTintColor) </p>
+
+</div>
+</div>
+<a class="anchor" id="a59c21173aaf5330e31ba62a8a0f834d5"></a><!-- doxytag: member="TTMessageController::requireNonEmptyMessageBody" ref="a59c21173aaf5330e31ba62a8a0f834d5" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) requireNonEmptyMessageBody<code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Indicates if the user must enter text in the editor field to be allowed to send the message. </p>
+<p>NO </p>
 
 </div>
 </div>

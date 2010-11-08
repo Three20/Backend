@@ -114,25 +114,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00015"></a>00015 <span class="comment">//</span>
 <a name="l00016"></a>00016 
 <a name="l00017"></a>00017 <span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span>
-<a name="l00018"></a>00018 
-<a name="l00023"></a>00023 <span class="keyword">@interface </span><a class="code" href="class_n_s_string.php" title="Additions.">NSString</a> (TTAdditions)
-<a name="l00024"></a>00024 
-<a name="l00028"></a>00028 - (BOOL)isWhitespaceAndNewlines;
-<a name="l00029"></a>00029 
-<a name="l00033"></a>00033 - (BOOL)isEmptyOrWhitespace;
-<a name="l00034"></a>00034 
-<a name="l00038"></a>00038 - (<a class="code" href="class_n_s_dictionary.php">NSDictionary</a>*)queryDictionaryUsingEncoding:(NSStringEncoding)encoding;
-<a name="l00039"></a>00039 
-<a name="l00043"></a>00043 - (<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)stringByAddingQueryDictionary:(<a class="code" href="class_n_s_dictionary.php">NSDictionary</a>*)query;
-<a name="l00044"></a>00044 
-<a name="l00048"></a>00048 - (<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)stringByRemovingHTMLTags;
-<a name="l00049"></a>00049 
-<a name="l00082"></a>00082 - (NSComparisonResult)versionStringCompare:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a> *)other;
-<a name="l00083"></a>00083 
-<a name="l00089"></a>00089 @property (nonatomic, readonly) <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>* md5Hash;
-<a name="l00090"></a>00090 
-<a name="l00091"></a>00091 @end
-<a name="l00092"></a>00092 
+<a name="l00018"></a>00018 <span class="preprocessor">#import &quot;Three20Core/TTCorePreprocessorMacros.h&quot;</span> <span class="comment">// For __TTDEPRECATED_METHOD</span>
+<a name="l00019"></a>00019 
+<a name="l00024"></a>00024 <span class="keyword">@interface </span><a class="code" href="class_n_s_string.php" title="Additions.">NSString</a> (TTAdditions)
+<a name="l00025"></a>00025 
+<a name="l00029"></a>00029 - (BOOL)isWhitespaceAndNewlines;
+<a name="l00030"></a>00030 
+<a name="l00034"></a>00034 - (BOOL)isEmptyOrWhitespace;
+<a name="l00035"></a>00035 
+<a name="l00041"></a>00041 - (<a class="code" href="class_n_s_dictionary.php">NSDictionary</a>*)queryDictionaryUsingEncoding:(NSStringEncoding)encoding __TTDEPRECATED_METHOD;
+<a name="l00042"></a>00042 
+<a name="l00046"></a>00046 - (<a class="code" href="class_n_s_dictionary.php">NSDictionary</a>*)queryContentsUsingEncoding:(NSStringEncoding)encoding;
+<a name="l00047"></a>00047 
+<a name="l00051"></a>00051 - (<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)stringByAddingQueryDictionary:(<a class="code" href="class_n_s_dictionary.php">NSDictionary</a>*)query;
+<a name="l00052"></a>00052 
+<a name="l00056"></a>00056 - (<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)stringByRemovingHTMLTags;
+<a name="l00057"></a>00057 
+<a name="l00090"></a>00090 - (NSComparisonResult)versionStringCompare:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a> *)other;
+<a name="l00091"></a>00091 
+<a name="l00097"></a>00097 @property (nonatomic, readonly) <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>* md5Hash;
+<a name="l00098"></a>00098 
+<a name="l00104"></a>00104 @property (nonatomic, readonly) <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>* sha1Hash;
+<a name="l00105"></a>00105 
+<a name="l00106"></a>00106 @end
+<a name="l00107"></a>00107 
 </pre></div></div>
 </div>
 <!--- window showing the filter options -->

@@ -282,6 +282,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>height
 : <a class="el" href="interface_t_t_styled_text.php#ab6a78cf16173257d8d03cbeccf9f7054">TTStyledText</a>
 </li>
+<li>hidesForSinglePage
+: <a class="el" href="interface_t_t_page_control.php#a34b27ff3d33fc8073294d4a3bf377c52">TTPageControl</a>
+</li>
 <li>highlighted
 : <a class="el" href="interface_t_t_styled_text_label.php#a22f1bf6aa775f236297edfb6f7566be7">TTStyledTextLabel</a>
 </li>
@@ -446,6 +449,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>required
 : <a class="el" href="interface_t_t_message_field.php#aa0f70cbfe47c719bb44790c8e138d254">TTMessageField</a>
+</li>
+<li>requireNonEmptyMessageBody
+: <a class="el" href="interface_t_t_message_controller.php#a59c21173aaf5330e31ba62a8a0f834d5">TTMessageController</a>
 </li>
 <li>respondedFromCache
 : <a class="el" href="interface_t_t_u_r_l_request.php#a4276b8e633d614eab0fd649775d75e7a">TTURLRequest</a>

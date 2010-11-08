@@ -203,6 +203,9 @@ Here is a list of all documented class members with links to the class documenta
 <li>required
 : <a class="el" href="interface_t_t_message_field.php#aa0f70cbfe47c719bb44790c8e138d254">TTMessageField</a>
 </li>
+<li>requireNonEmptyMessageBody
+: <a class="el" href="interface_t_t_message_controller.php#a59c21173aaf5330e31ba62a8a0f834d5">TTMessageController</a>
+</li>
 <li>reset
 : <a class="el" href="interface_t_t_u_r_l_request_model.php#a29ebf5997eb74ac247bc416e5e90d14a">TTURLRequestModel</a>
 </li>

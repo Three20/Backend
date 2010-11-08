@@ -132,11 +132,28 @@ NSInteger&nbsp;</td><td class="memItemRight" valign="bottom"><b>numberOfPages</b
 NSInteger&nbsp;</td><td class="memItemRight" valign="bottom"><b>currentPage</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a79114d539ceba59e188f85bcc4180e38"></a><!-- doxytag: member="TTPageControl::dotStyle" ref="a79114d539ceba59e188f85bcc4180e38" args="" -->
 <a class="el" href="class_n_s_string.php">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>dotStyle</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a34b27ff3d33fc8073294d4a3bf377c52"></a><!-- doxytag: member="TTPageControl::hidesForSinglePage" ref="a34b27ff3d33fc8073294d4a3bf377c52" args="" -->
-BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>hidesForSinglePage</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_page_control.php#a34b27ff3d33fc8073294d4a3bf377c52">hidesForSinglePage</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Set to YES to hide the pagecontrol if only one page is present.  <a href="#a34b27ff3d33fc8073294d4a3bf377c52"></a><br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p><a class="el" href="interface_t_t_page_control.php" title="TTPageControl is a version of UIPageControl which allows you to style the dots.">TTPageControl</a> is a version of UIPageControl which allows you to style the dots. </p>
+<hr/><h2>Property Documentation</h2>
+<a class="anchor" id="a34b27ff3d33fc8073294d4a3bf377c52"></a><!-- doxytag: member="TTPageControl::hidesForSinglePage" ref="a34b27ff3d33fc8073294d4a3bf377c52" args="" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (BOOL) hidesForSinglePage<code> [read, write, assign]</code></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+
+<p>Set to YES to hide the pagecontrol if only one page is present. </p>
+<p>NO </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Three20UI/Headers/<a class="el" href="_t_t_page_control_8h_source.php">TTPageControl.h</a></li>
 </ul>

@@ -127,6 +127,8 @@ Protected Attributes</h2></td></tr>
 CGRect&nbsp;</td><td class="memItemRight" valign="bottom"><b>_highlightRect</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1a9942314f346ccb549d210a474dd6f5"></a><!-- doxytag: member="TTLauncherHighlightView::_highlightScale" ref="a1a9942314f346ccb549d210a474dd6f5" args="" -->
 CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><b>_highlightScale</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad26b89b29708cecac9e0d71258c59596"></a><!-- doxytag: member="TTLauncherHighlightView::_statusBarCover" ref="ad26b89b29708cecac9e0d71258c59596" args="" -->
+<a class="el" href="class_u_i_window.php">UIWindow</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_statusBarCover</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f5d1331dfee0eb82f43e9724ca27d5b"></a><!-- doxytag: member="TTLauncherHighlightView::_textLabel" ref="a3f5d1331dfee0eb82f43e9724ca27d5b" args="" -->
 UILabel *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_textLabel</b></td></tr>
 <tr><td colspan="2"><h2><a name="properties"></a>

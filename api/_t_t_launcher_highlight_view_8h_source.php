@@ -122,16 +122,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00023"></a>00023   <a class="code" href="interface_t_t_launcher_view.php">TTLauncherView</a>* _parentView;
 <a name="l00024"></a>00024   CGRect          _highlightRect;
 <a name="l00025"></a>00025   CGFloat         _highlightScale;
-<a name="l00026"></a>00026   UILabel*        _textLabel;
-<a name="l00027"></a>00027 }
-<a name="l00028"></a>00028 
-<a name="l00029"></a>00029 @property (nonatomic, assign) CGRect          highlightRect;
-<a name="l00030"></a>00030 @property (nonatomic, retain) <a class="code" href="interface_t_t_launcher_view.php">TTLauncherView</a>* parentView;
-<a name="l00031"></a>00031 @property (nonatomic, copy)   <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*       text;
-<a name="l00032"></a>00032 
-<a name="l00033"></a>00033 - (<span class="keywordtype">void</span>)appear:(BOOL)animated;
-<a name="l00034"></a>00034 
-<a name="l00035"></a>00035 @end
+<a name="l00026"></a>00026   <a class="code" href="class_u_i_window.php" title="Additions.">UIWindow</a>*       _statusBarCover;
+<a name="l00027"></a>00027   UILabel*        _textLabel;
+<a name="l00028"></a>00028 }
+<a name="l00029"></a>00029 
+<a name="l00030"></a>00030 @property (nonatomic, assign) CGRect          highlightRect;
+<a name="l00031"></a>00031 @property (nonatomic, retain) <a class="code" href="interface_t_t_launcher_view.php">TTLauncherView</a>* parentView;
+<a name="l00032"></a>00032 @property (nonatomic, copy)   <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*       text;
+<a name="l00033"></a>00033 
+<a name="l00034"></a>00034 - (<span class="keywordtype">void</span>)appear:(BOOL)animated;
+<a name="l00035"></a>00035 
+<a name="l00036"></a>00036 @end
 </pre></div></div>
 </div>
 <!--- window showing the filter options -->

@@ -113,37 +113,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00014"></a>00014 <span class="comment">// limitations under the License.</span>
 <a name="l00015"></a>00015 <span class="comment">//</span>
 <a name="l00016"></a>00016 
-<a name="l00023"></a>00023 <span class="preprocessor">#define __TTDEPRECATED_METHOD __attribute__((deprecated))</span>
-<a name="l00024"></a>00024 <span class="preprocessor"></span>
-<a name="l00026"></a>00026 <span class="comment">// Errors</span>
-<a name="l00027"></a>00027 
-<a name="l00028"></a>00028 <span class="preprocessor">#define TT_ERROR_DOMAIN @&quot;three20.net&quot;</span>
-<a name="l00029"></a>00029 <span class="preprocessor"></span>
-<a name="l00030"></a>00030 <span class="preprocessor">#define TT_EC_INVALID_IMAGE 101</span>
-<a name="l00031"></a>00031 <span class="preprocessor"></span>
-<a name="l00032"></a>00032 
-<a name="l00034"></a>00034 <span class="comment">// Flags</span>
-<a name="l00035"></a>00035 
-<a name="l00040"></a>00040 <span class="preprocessor">#define IS_MASK_SET(value, flag)  (((value) &amp; (flag)) == (flag))</span>
-<a name="l00041"></a>00041 <span class="preprocessor"></span>
-<a name="l00042"></a>00042 
-<a name="l00044"></a>00044 <span class="comment">// Time</span>
-<a name="l00045"></a>00045 
-<a name="l00046"></a>00046 <span class="preprocessor">#define TT_MINUTE 60</span>
-<a name="l00047"></a>00047 <span class="preprocessor"></span><span class="preprocessor">#define TT_HOUR   (60 * TT_MINUTE)</span>
-<a name="l00048"></a>00048 <span class="preprocessor"></span><span class="preprocessor">#define TT_DAY    (24 * TT_HOUR)</span>
-<a name="l00049"></a>00049 <span class="preprocessor"></span><span class="preprocessor">#define TT_5_DAYS (5 * TT_DAY)</span>
-<a name="l00050"></a>00050 <span class="preprocessor"></span><span class="preprocessor">#define TT_WEEK   (7 * TT_DAY)</span>
-<a name="l00051"></a>00051 <span class="preprocessor"></span><span class="preprocessor">#define TT_MONTH  (30.5 * TT_DAY)</span>
-<a name="l00052"></a>00052 <span class="preprocessor"></span><span class="preprocessor">#define TT_YEAR   (365 * TT_DAY)</span>
-<a name="l00053"></a>00053 <span class="preprocessor"></span>
-<a name="l00055"></a>00055 <span class="comment">// Safe releases</span>
-<a name="l00056"></a>00056 
-<a name="l00057"></a>00057 <span class="preprocessor">#define TT_RELEASE_SAFELY(__POINTER) { [__POINTER release]; __POINTER = nil; }</span>
-<a name="l00058"></a>00058 <span class="preprocessor"></span><span class="preprocessor">#define TT_INVALIDATE_TIMER(__TIMER) { [__TIMER invalidate]; __TIMER = nil; }</span>
-<a name="l00059"></a>00059 <span class="preprocessor"></span>
-<a name="l00060"></a>00060 <span class="comment">// Release a CoreFoundation object safely.</span>
-<a name="l00061"></a>00061 <span class="preprocessor">#define TT_RELEASE_CF_SAFELY(__REF) { if (nil != (__REF)) { CFRelease(__REF); __REF = nil; } }</span>
+<a name="l00018"></a>00018 <span class="comment">// Code Management</span>
+<a name="l00019"></a>00019 
+<a name="l00026"></a>00026 <span class="preprocessor">#define __TTDEPRECATED_METHOD __attribute__((deprecated))</span>
+<a name="l00027"></a>00027 <span class="preprocessor"></span>
+<a name="l00028"></a>00028 
+<a name="l00030"></a>00030 <span class="comment">// Flags</span>
+<a name="l00031"></a>00031 
+<a name="l00036"></a>00036 <span class="preprocessor">#define IS_MASK_SET(value, flag)  (((value) &amp; (flag)) == (flag))</span>
+<a name="l00037"></a>00037 <span class="preprocessor"></span>
+<a name="l00038"></a>00038 
+<a name="l00040"></a>00040 <span class="comment">// Time</span>
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042 <span class="preprocessor">#define TT_MINUTE 60</span>
+<a name="l00043"></a>00043 <span class="preprocessor"></span><span class="preprocessor">#define TT_HOUR   (60 * TT_MINUTE)</span>
+<a name="l00044"></a>00044 <span class="preprocessor"></span><span class="preprocessor">#define TT_DAY    (24 * TT_HOUR)</span>
+<a name="l00045"></a>00045 <span class="preprocessor"></span><span class="preprocessor">#define TT_5_DAYS (5 * TT_DAY)</span>
+<a name="l00046"></a>00046 <span class="preprocessor"></span><span class="preprocessor">#define TT_WEEK   (7 * TT_DAY)</span>
+<a name="l00047"></a>00047 <span class="preprocessor"></span><span class="preprocessor">#define TT_MONTH  (30.5 * TT_DAY)</span>
+<a name="l00048"></a>00048 <span class="preprocessor"></span><span class="preprocessor">#define TT_YEAR   (365 * TT_DAY)</span>
+<a name="l00049"></a>00049 <span class="preprocessor"></span>
+<a name="l00051"></a>00051 <span class="comment">// Safe releases</span>
+<a name="l00052"></a>00052 
+<a name="l00053"></a>00053 <span class="preprocessor">#define TT_RELEASE_SAFELY(__POINTER) { [__POINTER release]; __POINTER = nil; }</span>
+<a name="l00054"></a>00054 <span class="preprocessor"></span><span class="preprocessor">#define TT_INVALIDATE_TIMER(__TIMER) { [__TIMER invalidate]; __TIMER = nil; }</span>
+<a name="l00055"></a>00055 <span class="preprocessor"></span>
+<a name="l00056"></a>00056 <span class="comment">// Release a CoreFoundation object safely.</span>
+<a name="l00057"></a>00057 <span class="preprocessor">#define TT_RELEASE_CF_SAFELY(__REF) { if (nil != (__REF)) { CFRelease(__REF); __REF = nil; } }</span>
 </pre></div></div>
 </div>
 <!--- window showing the filter options -->
