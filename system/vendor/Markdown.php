@@ -1261,7 +1261,7 @@ class Markdown_Parser {
 		$text = preg_replace_callback('/
 			  (								# Wrap whole match in $1
 				(?>
-				  ^[ ]*!>[ ]?			# "!>" at the start of a line
+				  ^[ ]*[!+]>[ ]?			# "!>" at the start of a line
 					.+\n					# rest of the first line
 				  (.+\n)*					# subsequent consecutive lines
 				  \n*						# blanks
@@ -1275,7 +1275,10 @@ class Markdown_Parser {
 	function _doNaviQuotes_callback($matches) {
 		$bq = $matches[1];
 		# trim one level of quoting - trim whitespace-only lines
-		$bq = preg_replace('/^[ ]*!>[ ]?|^[ ]+$/m', '', $bq);
+		preg_match('/^[ ]*([!+])>/', $bq, $match);
+
+		$type = $match[1];
+		$bq = preg_replace('/^[ ]*[!+]>[ ]?|^[ ]+$/m', '', $bq);
 		$bq = preg_replace_callback('/^[ ]*(!\*.+)/xm',
 		                            array(&$this, '_doNaviQuotes_callback3'), $bq);
 		$bq = $this->runBlockGamut($bq);		# recurse
@@ -1286,7 +1289,15 @@ class Markdown_Parser {
 		$bq = preg_replace_callback('{(\s*<pre.+>.+?</pre>)}sx', 
 			array(&$this, '_doNaviQuotes_callback2'), $bq);
 
-		return "\n". $this->hashBlock("<div class=\"naviblock\">\n$bq\n</div>")."\n\n";
+    if ($type == '!') {
+      $class = 'naviblock';
+    } else if ($type == '+') {
+      $class = 'infoblock';
+    } else {
+      $class = 'naviblock';
+    }
+
+		return "\n". $this->hashBlock("<div class=\"$class\">\n$bq\n</div>")."\n\n";
 	}
 	function _doNaviQuotes_callback2($matches) {
 		$pre = $matches[1];
