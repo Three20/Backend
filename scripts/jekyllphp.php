@@ -262,9 +262,6 @@ function rrmdir($path) {
 
 function recurse_copy($src,$dst) { 
   $dir = opendir($src); 
-  if (file_exists($dst)) {
-    rrmdir($dst);
-  }
   @mkdir($dst); 
   while(false !== ( $file = readdir($dir)) ) { 
     if (( $file != '.' ) && ( $file != '..' )) { 
@@ -298,7 +295,7 @@ function process_directory($path, $fn, $recurse) {
         $subpath = join_paths($path, $fname);
         if (is_dir($subpath) && $recurse) {
           // Ignore subdirectories for now.
-          process_directory($subpath);
+          process_directory($subpath, $fn, $recurse);
 
         } else {
           $fn($subpath);
