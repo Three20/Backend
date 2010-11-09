@@ -144,6 +144,10 @@ Protected Attributes</h2></td></tr>
 <a class="el" href="interface_t_t_view.php">TTView</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_overflowRight</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a174bc441c2ef113ff32c4f9294f5bfd1"></a><!-- doxytag: member="TTTabStrip::_scrollView" ref="a174bc441c2ef113ff32c4f9294f5bfd1" args="" -->
 UIScrollView *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_scrollView</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4913842632c2d458ae23dd85d3772161"></a><!-- doxytag: member="TTTabStrip::_contentSizeCached" ref="a4913842632c2d458ae23dd85d3772161" args="" -->
+BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_contentSizeCached</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4d9565618cf152b4901a68c693fa8b34"></a><!-- doxytag: member="TTTabStrip::_contentSize" ref="a4d9565618cf152b4901a68c693fa8b34" args="" -->
+CGSize&nbsp;</td><td class="memItemRight" valign="bottom"><b>_contentSize</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c188157189d7c9683668cdd4174bdd5"></a><!-- doxytag: member="TTTabStrip::_tabStyle" ref="a8c188157189d7c9683668cdd4174bdd5" args="" -->
 <a class="el" href="class_n_s_string.php">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_tabStyle</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b94de68a69b12018af313a4ec9eb648"></a><!-- doxytag: member="TTTabStrip::_selectedTabIndex" ref="a0b94de68a69b12018af313a4ec9eb648" args="" -->
