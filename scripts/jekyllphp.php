@@ -4,6 +4,7 @@ date_default_timezone_set('EST');
 
 $nodirs = false;
 $force = false;
+$cssonly = false;
 
 foreach ($argv as $arg) {
   if ($arg == 'force') {
@@ -11,6 +12,9 @@ foreach ($argv as $arg) {
   }
   if ($arg == 'nodirs') {
     $nodirs = true;
+  }
+  if ($arg == 'css') {
+    $cssonly = true;
   }
 }
 
@@ -276,9 +280,10 @@ function recurse_copy($src,$dst) {
 }
 
 function copy_folders($path) {
+  global $cssonly;
   if (is_dir($path)) {
     $filename = substr($path, strrpos($path, '/') + 1);
-    if ($filename[0] != '_') {
+    if ($filename[0] != '_' && (!$cssonly || $filename == 'css')) {
       recurse_copy($path, join_paths(WWW_PATH, $filename));
     }
   }
