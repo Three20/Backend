@@ -36,7 +36,7 @@ $config['default'] = array
 		'host'     => 'localhost',
 		'port'     => FALSE,
 		'socket'   => FALSE,
-		'database' => 'three20'
+		'database' => DATABASE_TABLE
 	),
 	'character_set' => 'utf8',
 	'table_prefix'  => '',

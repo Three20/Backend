@@ -2,3 +2,4 @@
 
 define('DATABASE_USER', '');
 define('DATABASE_PASSWORD', '');
+define('DATABASE_TABLE', '');
