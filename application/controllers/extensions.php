@@ -19,4 +19,14 @@ class Extensions_Controller extends Three20_Controller {
     $this->render_article_template($content);
   }
 
+  public function submit() {
+    if (!IN_PRODUCTION) {
+      $profiler = new Profiler;
+    }
+    
+    $content = new View('pages/submitextension');
+
+    $this->render_article_template($content);
+  }
+
 }
