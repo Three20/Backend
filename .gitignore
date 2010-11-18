@@ -10,3 +10,4 @@ www/css
 www/js
 blog/wp-config.php
 modules/facebook-php-sdk/src/facebook.config.php
+application/config/database.config.php
