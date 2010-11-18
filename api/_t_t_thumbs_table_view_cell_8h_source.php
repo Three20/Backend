@@ -37,7 +37,6 @@
 <ul class="right-links"> 
   <li><a href="http://three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://three20.info/documentation">Documentation</a></li> 
-  <li><a href="http://three20.info/tutorials">Tutorials</a></li> 
   <li><a href="http://api.three20.info/">API</a></li> 
   <li><a href="http://three20.info/community">Community</a></li> 
 </ul> 

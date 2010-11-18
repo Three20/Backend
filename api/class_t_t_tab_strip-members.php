@@ -37,7 +37,6 @@
 <ul class="right-links"> 
   <li><a href="http://three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://three20.info/documentation">Documentation</a></li> 
-  <li><a href="http://three20.info/tutorials">Tutorials</a></li> 
   <li><a href="http://api.three20.info/">API</a></li> 
   <li><a href="http://three20.info/community">Community</a></li> 
 </ul> 
@@ -100,8 +99,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 This is the complete list of members for <a class="el" href="interface_t_t_tab_strip.php">TTTabStrip</a>, including all inherited members.<table>
-  <tr bgcolor="#f0f0f0"><td></td><td><b>_contentSize</b> (defined in <a class="el" href="interface_t_t_tab_strip.php">TTTabStrip</a>)</td><td><a class="el" href="interface_t_t_tab_strip.php">TTTabStrip(TTPrivate)</a></td><td><code> [protected]</code></td></tr>
-  <tr bgcolor="#f0f0f0"><td></td><td><b>_contentSizeCached</b> (defined in <a class="el" href="interface_t_t_tab_strip.php">TTTabStrip</a>)</td><td><a class="el" href="interface_t_t_tab_strip.php">TTTabStrip(TTPrivate)</a></td><td><code> [protected]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td></td><td><b>_delegate</b> (defined in <a class="el" href="interface_t_t_tab_bar.php">TTTabBar</a>)</td><td><a class="el" href="interface_t_t_tab_bar.php">TTTabBar</a></td><td><code> [protected]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td></td><td><b>_layout</b> (defined in <a class="el" href="interface_t_t_view.php">TTView</a>)</td><td><a class="el" href="interface_t_t_view.php">TTView</a></td><td><code> [protected]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td></td><td><b>_overflowLeft</b> (defined in <a class="el" href="interface_t_t_tab_strip.php">TTTabStrip</a>)</td><td><a class="el" href="interface_t_t_tab_strip.php">TTTabStrip</a></td><td><code> [protected]</code></td></tr>
