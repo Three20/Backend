@@ -13,10 +13,8 @@ class Tutorials_Controller extends Three20_Controller {
     if (!IN_PRODUCTION) {
       $profiler = new Profiler;
     }
-
-    $content = new View('pages/tutorials');
-
-    $this->render_article_template($content);
+    
+    url::redirect('documentation', 301);
   }
 
 }
