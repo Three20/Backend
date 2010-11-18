@@ -1,4 +1,9 @@
 <?php defined('SYSPATH') OR die('No direct access allowed.');
+
+require MODPATH.'facebook-php-sdk/src/facebook.php';
+require MODPATH.'facebook-php-sdk/src/facebook.config.php';
+
+
 /**
  * @package    three20
  * @author     Jeff Verkoeyen
@@ -23,6 +28,96 @@ class Three20_Controller extends Template_Controller {
     $this->template->js_head_scripts = array();
     $this->template->css_files = array();
     $this->template->title = array('Three20');
+
+    $this->facebook = new Facebook(array(
+      'appId'  => FACEBOOK_APP_ID,
+      'secret' => FACEBOOK_SECRET,
+      'cookie' => true,
+    ));
+
+    $this->fbsession = $this->facebook->getSession();
+
+    $me = null;
+    $uid = null;
+    $this->profile = null;
+    // Session based API call.
+    if ($this->fbsession) {
+      try {
+        $uid = $this->facebook->getUser();
+      } catch (FacebookApiException $e) {
+        error_log($e);
+      }
+    }
+
+    // login or logout url will be needed depending on current user state.
+    if ($uid) {
+      $this->logoutUrl = $this->facebook->getLogoutUrl();
+
+      $db = Database::instance();
+
+      $result = $db->
+        from('fbaccounts')->
+        select(array('fbid', 'userid'))->
+        where('fbid', $uid)->
+        limit(1)->
+        get();
+
+      $userId = null;
+
+      $this->profile = array();
+
+      if (count($result)) {
+        foreach ($result as $row) {
+          $userrel = $row;
+          break;
+        }
+        $userId = $userrel->userid;
+
+        $result = $db->
+          from('accounts')->
+          select(array('name', 'first_name', 'last_name'))->
+          where('id', $userId)->
+          limit(1)->
+          get();
+
+        if (count($result)) {
+          foreach ($result as $row) {
+            $userInfo = $row;
+            break;
+          }
+
+          $this->profile['name'] = $userInfo->name;
+          $this->profile['first_name'] = $userInfo->first_name;
+          $this->profile['last_name'] = $userInfo->last_name;
+          $this->profile['userid'] = $userId;
+        }
+
+      } else {  
+        $me = $this->facebook->api('/me');
+
+        $dataToStore = array(
+          'name' => $me['name'],
+          'first_name' => $me['first_name'],
+          'last_name' => $me['last_name'],
+        );
+        $this->profile = $dataToStore;
+        $userInfo = $db->insert('accounts', $dataToStore);
+        $userId = $userInfo->insert_id();
+        $this->profile['userid'] = $userId;
+
+        $dataToStore = array(
+          'fbid' => $uid,
+          'userid' => $userId,
+        );
+        $userInfo = $db->insert('fbaccounts', $dataToStore);
+      }
+
+      $this->profile['fbid'] = $uid;
+      unset($uid);
+
+    } else {
+      $loginUrl = $this->facebook->getLoginUrl();
+    }
   }
 
   protected function add_js_foot_file($file) {
@@ -91,7 +186,17 @@ class Three20_Controller extends Template_Controller {
       $date = $config['date'];
     }
 
+    if (isset($this->logoutUrl)) {
+      $this->template->logoutUrl = $this->logoutUrl;
+      $content->logoutUrl = $this->logoutUrl;
+    }
+    $this->template->fbsession = $this->fbsession;
+    $this->template->facebook = $this->facebook;
+    $this->template->profile = $this->profile;
     $content->title = current($this->template->title)."\n";
+    $content->fbsession = $this->fbsession;
+    $content->facebook = $this->facebook;
+    $content->profile = $this->profile;
     $this->template->templateModifiedTime = filemtime($content->kohana_filename);
 
     $this->template->content = $content->render(FALSE);
