@@ -13,7 +13,7 @@
   <meta property="og:image" content="http://github.com/facebook/three20/raw/06cd0abe33ac39d1f509e278e286c6bf1e45e821/samples/Resources/Icon.png"/>
   <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
-  <title><?php echo html::specialchars($title) ?></title>
+  <title>Oh no! | Three20</title>
 <?
   echo three20html::stylesheet(array(
     'css/reset',
@@ -25,58 +25,35 @@
 
 <div id="page-wrapper">
 
-<?php if ( !IN_PRODUCTION AND ! empty($line) AND ! empty($file)): ?>
-<p><?php echo Kohana::lang('core.error_file_line', $file, $line) ?></p>
-<?php endif ?>
-<?php if ( !IN_PRODUCTION AND ! empty($trace)): ?>
-<div id="framework_error" style="width:42em;margin:20px auto;">
-<h3><?php echo Kohana::lang('core.stack_trace') ?></h3>
-<?php echo $trace ?>
-</div>
-<?php endif ?>
+We couldn't find the resource you're looking for. <a href="/">Click your heels three times...</a>
 
 </div> <!-- #page-wrapper -->
 
-<noscript><p><img alt="Clicky" width="1" height="1" src="http://static.getclicky.com/155532ns.gif" /></p></noscript>
+<?php if (IN_PRODUCTION): ?>
+<script type="text/javascript">
 
-<?
-if (IN_PRODUCTION) {
-  echo three20html::inlinescript('
-    var is_ssl = ("https:" == document.location.protocol);
-    var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
-    document.write(unescape("%3Cscript src=\'" + asset_host + "javascripts/feedback-v2.js\' type=\'text/javascript\'%3E%3C/script%3E"));
-  ');
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19295672-1']);
+  _gaq.push(['_setDomainName', '.three20.info']);
+  _gaq.push(['_trackPageview']);
 
-  echo three20html::inlinescript('
-    var feedback_widget_options = {};
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 
-    feedback_widget_options.display = "overlay";  
-    feedback_widget_options.company = "Three20";
-    feedback_widget_options.placement = "left";
-    feedback_widget_options.color = "#FC9";
-    feedback_widget_options.style = "idea";
+<script type="text/javascript">
+var disqus_shortname = 'three20info2';
+(function () {
+  var s = document.createElement('script'); s.async = true;
+  s.src = 'http://disqus.com/forums/three20info2/count.js';
+  (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+}());
+</script>
 
-    var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
-  ');
-}
-
-if (IN_PRODUCTION) {
-  echo three20html::inlinescript('
-  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-  document.write(unescape("%3Cscript src=\'" + gaJsHost + "google-analytics.com/ga.js\' type=\'text/javascript\'%3E%3C/script%3E"));
-  ');
-
-  echo three20html::script('http://static.getclicky.com/js');
-  echo three20html::inlinescript('clicky.init(155532);');
-
-  echo three20html::inlinescript('
-  try {
-  var pageTracker = _gat._getTracker("'.Kohana::config('core.google_analytics_key').'");
-  pageTracker._setDomainName(".three20.info");
-  pageTracker._trackPageview();
-  } catch(err) {}');
-}
-?>
+<?php endif ?>
 
 </body>
 </html>
