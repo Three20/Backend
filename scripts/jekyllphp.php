@@ -5,6 +5,7 @@ date_default_timezone_set('EST');
 $nodirs = false;
 $force = false;
 $cssonly = false;
+$jsonly = false;
 
 foreach ($argv as $arg) {
   if ($arg == 'force') {
@@ -15,6 +16,9 @@ foreach ($argv as $arg) {
   }
   if ($arg == 'css') {
     $cssonly = true;
+  }
+  if ($arg == 'js') {
+    $jsonly = true;
   }
 }
 
@@ -281,9 +285,13 @@ function recurse_copy($src,$dst) {
 
 function copy_folders($path) {
   global $cssonly;
+  global $jsonly;
   if (is_dir($path)) {
     $filename = substr($path, strrpos($path, '/') + 1);
-    if ($filename[0] != '_' && (!$cssonly || $filename == 'css')) {
+    if ($filename[0] != '_' && $filename[0] != '.' && (!$cssonly && !$jsonly
+        || $cssonly && $filename == 'css'
+        || $jsonly && $filename == 'js')) {
+      echo 'copying: '.$filename.'...'."\n";
       recurse_copy($path, join_paths(WWW_PATH, $filename));
     }
   }

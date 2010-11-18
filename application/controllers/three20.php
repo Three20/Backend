@@ -71,6 +71,13 @@ class Three20_Controller extends Template_Controller {
         $this->add_css_file('css/'.$file.'.css');
       }
     }
+    
+    if (isset($config['js'])) {
+      $files = explode(' ', $config['js']);
+      foreach ($files as $file) {
+        $this->add_js_head_file('js/'.$file.'.js');
+      }
+    }
 
     if (isset($config['layout'])) {
       $this->template->set_filename('templates/'.$config['layout']);
