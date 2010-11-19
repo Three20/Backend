@@ -24,7 +24,12 @@ class Ajax_Controller extends Three20_Controller {
 
     } else {
       // Data is stale. Fetch it from github.
-      $data = @file_get_contents($url);
+      $ch = curl_init($url);
+      curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+      curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
+      //curl_setopt($ch, CURLOPT_VERBOSE, true);
+      curl_setopt($ch, CURLOPT_USERAGENT, 'Three20Spider/1.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.1.7)');
+      $data = curl_exec($ch);
 
       file_put_contents($cacheFilename, $data);
     }
