@@ -18,7 +18,7 @@ class Extension_Controller extends Three20_Controller {
 
     $result = $db->
       from('repos')->
-      select(array('repoid'))->
+      select(array('repoid', 'reponame', 'username', 'description', 'homepage'))->
       where('reponame', $reponame)->
       get();
 
@@ -26,7 +26,27 @@ class Extension_Controller extends Three20_Controller {
       url::redirect('extensions', 301);
     }
 
+    $repos = array();
+    foreach ($result as $row) {
+      $extensionsresult = $db->
+        from('extensions')->
+        select(array('fbid', 'name', 'tagname', 'downloads', 'date_submitted'))->
+        join('fbaccounts', 'fbaccounts.userid', 'extensions.userid')->
+        join('accounts', 'accounts.id', 'extensions.userid')->
+        where('repoid', $row->repoid)->
+        get();
+
+      $row->tags = array();
+      foreach ($extensionsresult as $tagrow) {
+        $tagrow->date_submitted = date('l, \t\h\e jS \of F, Y', strtotime($tagrow->date_submitted));
+        $row->tags []= $tagrow;
+      }
+      
+      $repos []= $row;
+    }
+
     $content = new View('pages/extension');
+    $content->repos = $repos;
 
     $this->render_article_template($content);
   }

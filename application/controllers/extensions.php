@@ -104,7 +104,7 @@ class Extensions_Controller extends Three20_Controller {
       get();
 
     if (count($result)) {
-      url::redirect('extension/'.$reponame.'/'.$repoid, 301);
+      url::redirect('extension/'.$reponame, 301);
     }
 
     // Insert the extension now.
@@ -112,10 +112,11 @@ class Extensions_Controller extends Three20_Controller {
       'userid' => $this->profile['userid'],
       'repoid' => $repoid,
       'tagname' => $tagname,
+      'date_submitted' => date("Y-m-d H:i:s")
     );
     $extensiondbinfo = $db->insert('extensions', $extensiondbobj);
 
-    url::redirect('extension/'.$reponame.'/'.$repoid, 301);
+    url::redirect('extension/'.$reponame, 301);
   }
 
 }
