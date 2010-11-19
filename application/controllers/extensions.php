@@ -13,8 +13,27 @@ class Extensions_Controller extends Three20_Controller {
     if (!IN_PRODUCTION) {
       $profiler = new Profiler;
     }
-    
+
+    $db = Database::instance();
+
+    $extensionsresult = $db->
+      from('extensions')->
+      select(array('username', 'reponame', 'extensions.repoid', 'description',
+        'homepage'))->
+      join('fbaccounts', 'fbaccounts.userid', 'extensions.userid')->
+      join('repos', 'repos.repoid', 'extensions.repoid')->
+      groupby('extensions.repoid')->
+      orderby('reponame', 'ASC')->
+      limit(10)->
+      get();
+
+    $extensions = array();
+    foreach ($extensionsresult as $row) {
+      $extensions []= $row;
+    }
+
     $content = new View('pages/extensions');
+    $content->extensions = $extensions;
 
     $this->render_article_template($content);
   }
