@@ -28,7 +28,7 @@ class Extension_Controller extends Three20_Controller {
     foreach ($result as $row) {
       $extensionsresult = $db->
         from('extensions')->
-        select(array('fbid', 'name', 'tagname', 'downloads', 'date_submitted'))->
+        select(array('fbid', 'name', 'tagname', 'downloads', 'readme', 'date_submitted'))->
         join('fbaccounts', 'fbaccounts.userid', 'extensions.userid')->
         join('accounts', 'accounts.id', 'extensions.userid')->
         where('repoid', $row->repoid)->

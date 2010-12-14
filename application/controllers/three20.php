@@ -3,6 +3,8 @@
 require MODPATH.'facebook-php-sdk/src/facebook.php';
 require MODPATH.'facebook-php-sdk/src/facebook.config.php';
 
+define('GITHUB_DATA_DB_REFRESH', 5);
+define('GITHUB_DATA_FETCH_REFRESH', 5*60);
 
 /**
  * @package    three20

@@ -1,7 +1,5 @@
 <?php defined('SYSPATH') OR die('No direct access allowed.');
 
-define('GITHUB_DATA_DB_REFRESH', 5);
-define('GITHUB_DATA_FETCH_REFRESH', 5*60);
 define('GITHUB_USERNAME_REGEX', '/^[a-z0-9_]+$/i');
 define('GITHUB_REPONAME_REGEX', '/^[a-z0-9_]+$/i');
 

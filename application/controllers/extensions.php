@@ -63,8 +63,6 @@ class Extensions_Controller extends Three20_Controller {
 
     $db = Database::instance();
 
-    // $this->profile['fbid']
-
     $username = $this->input->post('username');
     $reponame = $this->input->post('reponame');
     $tagname = $this->input->post('tagname');
@@ -83,10 +81,10 @@ class Extensions_Controller extends Three20_Controller {
       get();
 
     if (!count($result)) {
-      $this->session->set_flash('error_message', 'The repository "'.$reponame.'" doesn\'t exist. This is likely a problem with the backend db.');
+      $this->session->set_flash('error_message', 'The repository "'.$reponame.'" wasn\'t created correctly on our end.');
       url::redirect('extensions/submit', 301);
     }
-    
+
     foreach ($result as $row) {
       $repodbobj = $row;
       break;
@@ -103,7 +101,7 @@ class Extensions_Controller extends Three20_Controller {
       get();
 
     if (!count($result)) {
-      $this->session->set_flash('error_message', 'The tag name "'.$tagname.'" doesn\'t exist. This is likely a problem with the backend db.');
+      $this->session->set_flash('error_message', 'The tag name "'.$tagname.'" doesn\'t exist.');
       url::redirect('extensions/submit', 301);
     }
     
@@ -126,11 +124,39 @@ class Extensions_Controller extends Three20_Controller {
       url::redirect('extension/'.$reponame, 301);
     }
 
+    // Get README information about this extension.
+    $url = 'http://github.com/api/v2/json/tree/show/'.$username.'/'.$reponame.'/'.$tagsha1;
+    $treedata = $this->fetch_data_from_url($url, GITHUB_DATA_FETCH_REFRESH);
+
+    if (!$treedata) {
+      $this->session->set_flash('error_message', 'Unable to get the tree data for the given tag.');
+      url::redirect('extensions/submit', 301);
+    }
+    
+    $treeobj = json_decode($treedata, TRUE);
+    
+    $readmeleaf = null;
+    
+    foreach ($treeobj['tree'] as $leaf) {
+      if (preg_match('/^README/i', $leaf['name'])) {
+        $readmeleaf = $leaf;
+        break;
+      }
+    }
+    
+    $readmedata = null;
+    
+    if ($readmeleaf) {
+      $url = 'http://github.com/api/v2/json/blob/show/'.$username.'/'.$reponame.'/'.$readmeleaf['sha'];
+      $readmedata = $this->fetch_data_from_url($url, GITHUB_DATA_FETCH_REFRESH);
+    }
+
     // Insert the extension now.
     $extensiondbobj = array(
-      'userid' => $this->profile['userid'],
-      'repoid' => $repoid,
+      'userid'  => $this->profile['userid'],
+      'repoid'  => $repoid,
       'tagname' => $tagname,
+      'readme'  => $readmedata,
       'date_submitted' => date("Y-m-d H:i:s")
     );
     $extensiondbinfo = $db->insert('extensions', $extensiondbobj);
