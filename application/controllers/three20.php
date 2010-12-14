@@ -120,6 +120,29 @@ class Three20_Controller extends Template_Controller {
     }
   }
 
+  protected function fetch_data_from_url($url, $stale_age) {
+    $cachePath = APPPATH.'cache/';
+    $cacheKey = sha1($url);
+    $cacheFilename = $cachePath.$cacheKey;
+
+    if (file_exists($cacheFilename)
+        && filemtime($cacheFilename) >= time() - $stale_age) {
+      $data = file_get_contents($cacheFilename);
+
+    } else {
+      // Data is stale. Fetch it from github.
+      $ch = curl_init($url);
+      curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+      //curl_setopt($ch, CURLOPT_VERBOSE, true);
+      curl_setopt($ch, CURLOPT_USERAGENT, 'Three20Spider/1.0 (Macintosh; U; Intel Mac OS X 10.5; en-US; rv:1.9.1.7)');
+      $data = curl_exec($ch);
+
+      file_put_contents($cacheFilename, $data);
+    }
+
+    return $data;
+  }
+
   protected function select_repo_info($db) {
     return $db->
       from('repos')->
@@ -131,6 +154,15 @@ class Three20_Controller extends Template_Controller {
         'homepage',
         'watchers',
         'last_updated'
+      ));
+  }
+
+  protected function select_tag_info($db) {
+    return $db->
+      from('tags')->
+      select(array(
+        'tagname',
+        'tagsha1',
       ));
   }
 
