@@ -16,9 +16,7 @@ class Extension_Controller extends Three20_Controller {
 
     $db = Database::instance();
 
-    $result = $db->
-      from('repos')->
-      select(array('repoid', 'reponame', 'username', 'description', 'homepage'))->
+    $result = $this->select_repo_info($db)->
       where('reponame', $reponame)->
       get();
 

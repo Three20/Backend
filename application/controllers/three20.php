@@ -120,6 +120,57 @@ class Three20_Controller extends Template_Controller {
     }
   }
 
+  protected function select_repo_info($db) {
+    return $db->
+      from('repos')->
+      select(array(
+        'repoid',
+        'username',
+        'reponame',
+        'description',
+        'homepage',
+        'watchers',
+        'last_updated'
+      ));
+  }
+
+  /**
+   * Fetch the repo information from the database, if it exists.
+   *
+   * @return null if no repo with this info exists in the db
+   */
+  protected function get_db_repo_info($db, $username, $reponame) {
+    $result = $this->select_repo_info($db)->
+      where('username', $username)->
+      where('reponame', $reponame)->
+      limit(1)->
+      get();
+
+    $repo = null;
+
+    if (count($result)) {
+      // TODO: Is there a simpler way to do this?
+      $repodbobj = null;
+      foreach ($result as $row) {
+        $repodbobj = $row;
+        break;
+      }
+
+      // TODO: Is there a simpler, equivalently specific way to do this?
+      $repo = array(
+        'repoid'        => $repodbobj->repoid,
+        'username'      => $repodbobj->username,
+        'reponame'      => $repodbobj->reponame,
+        'description'   => $repodbobj->description,
+        'homepage'      => $repodbobj->homepage,
+        'watchers'      => $repodbobj->watchers,
+        'last_updated'  => $repodbobj->last_updated
+      );
+    }
+
+    return $repo;
+  }
+
   protected function add_js_foot_file($file) {
     $this->template->js_foot_files []= $file;
   }

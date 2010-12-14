@@ -38,42 +38,6 @@ class Ajax_Controller extends Three20_Controller {
     return $data;
   }
 
-  /**
-   * Fetch the repo information from the database, if it exists.
-   *
-   * @return null if no repo with this info exists in the db
-   */
-  protected function get_db_repo_info($db, $username, $reponame) {
-    $result = $db->
-      from('repos')->
-      select(array('repoid', 'description', 'homepage', 'last_updated'))->
-      where('username', $username)->
-      where('reponame', $reponame)->
-      limit(1)->
-      get();
-
-    $repo = null;
-
-    if (count($result)) {
-      // TODO: Is there a simpler way to do this?
-      $repodbobj = null;
-      foreach ($result as $row) {
-        $repodbobj = $row;
-        break;
-      }
-
-      // TODO: Is there a simpler, equivalently specific way to do this?
-      $repo = array(
-        'repoid'        => $repodbobj->repoid,
-        'description'   => $repodbobj->description,
-        'homepage'      => $repodbobj->homepage,
-        'last_updated'  => $repodbobj->last_updated
-      );
-    }
-
-    return $repo;
-  }
-
   // Welcome to clowntown. This method is insanely long. It basically does some caching of
   // github info in a db and returns the results in JSON form.
   public function github($username, $reponame) {
@@ -132,6 +96,7 @@ class Ajax_Controller extends Three20_Controller {
       $repo['tags'] = $tagobj['tags'];
       $repo['description'] = $repoobj['repository']['description'];
       $repo['homepage'] = $repoobj['repository']['homepage'];
+      $repo['watchers'] = $repoobj['repository']['watchers'];
       
       // Creating a new repo?
       if (!$repo['repoid']) {
@@ -142,6 +107,7 @@ class Ajax_Controller extends Three20_Controller {
           'reponame' => $reponame,
           'description' => $repo['description'],
           'homepage' => $repo['homepage'],
+          'watchers' => $repo['watchers'],
           'last_updated' => $last_updated,
         );
         $repodbinfo = $db->insert('repos', $repodbobj);
@@ -165,6 +131,7 @@ class Ajax_Controller extends Three20_Controller {
           from('repos')->
           set('description', $repo['description'])->
           set('homepage', $repo['homepage'])->
+          set('watchers', $repo['watchers'])->
           set('last_updated', $repo['last_updated'])->
           where('repoid', $repo['repoid'])->
           update();
