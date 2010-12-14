@@ -2,6 +2,8 @@
 
 define('GITHUB_DATA_DB_REFRESH', 5);
 define('GITHUB_DATA_FETCH_REFRESH', 5*60);
+define('GITHUB_USERNAME_REGEX', '/^[a-z0-9_]+$/i');
+define('GITHUB_REPONAME_REGEX', '/^[a-z0-9_]+$/i');
 
 /**
  * @package    three20
@@ -13,7 +15,7 @@ class Ajax_Controller extends Three20_Controller {
 
   const ALLOW_PRODUCTION = TRUE;
 
-  public function fetch_data_from_url($url, $stale_age) {
+  protected function fetch_data_from_url($url, $stale_age) {
     $cachePath = APPPATH.'cache/';
     $cacheKey = sha1($url);
     $cacheFilename = $cachePath.$cacheKey;
@@ -36,13 +38,49 @@ class Ajax_Controller extends Three20_Controller {
     return $data;
   }
 
+  /**
+   * Fetch the repo information from the database, if it exists.
+   *
+   * @return null if no repo with this info exists in the db
+   */
+  protected function get_db_repo_info($db, $username, $reponame) {
+    $result = $db->
+      from('repos')->
+      select(array('repoid', 'description', 'homepage', 'last_updated'))->
+      where('username', $username)->
+      where('reponame', $reponame)->
+      limit(1)->
+      get();
+
+    $repo = null;
+
+    if (count($result)) {
+      // TODO: Is there a simpler way to do this?
+      $repodbobj = null;
+      foreach ($result as $row) {
+        $repodbobj = $row;
+        break;
+      }
+
+      // TODO: Is there a simpler, equivalently specific way to do this?
+      $repo = array(
+        'repoid'        => $repodbobj->repoid,
+        'description'   => $repodbobj->description,
+        'homepage'      => $repodbobj->homepage,
+        'last_updated'  => $repodbobj->last_updated
+      );
+    }
+
+    return $repo;
+  }
+
   // Welcome to clowntown. This method is insanely long. It basically does some caching of
   // github info in a db and returns the results in JSON form.
   public function github($username, $reponame) {
     header('Content-type: application/json');
 
-    if (!preg_match('/^[a-z0-9_]+$/i', $username) ||
-        !preg_match('/^[a-z0-9_]+$/i', $reponame)) {
+    if (!preg_match(GITHUB_USERNAME_REGEX, $username) ||
+        !preg_match(GITHUB_REPONAME_REGEX, $reponame)) {
       echo json_encode(array('error' => "Invalid username or reponame"));
       exit;
     }
@@ -54,42 +92,21 @@ class Ajax_Controller extends Three20_Controller {
       'username' => $username,
       'reponame' => $reponame
     );
-    $repoid = null;
+
     // Assume the data is stale/nonexistent.
     $data_is_stale = true;
 
-    // Check if the repo exists.
-    $result = $db->
-      from('repos')->
-      select(array('repoid', 'description', 'homepage', 'last_updated'))->
-      where('username', $username)->
-      where('reponame', $reponame)->
-      limit(1)->
-      get();
+    $repoinfo = $this->get_db_repo_info($db, $username, $reponame);
 
-    if (count($result)) {
-      // The repo exists!
-      $repodbobj = null;
-      foreach ($result as $row) {
-        $repodbobj = $row;
-        break;
-      }
-      
-      // Grab the available information.
-      $repoid = $repodbobj->repoid;
-      $repo['repoid'] = $repoid;
-      $repo['description'] = $repodbobj->description;
-      $repo['homepage'] = $repodbobj->homepage;
-      $repo['last_updated'] = $repodbobj->last_updated;
-      
-      // Does the repo need to be updated?
-      $last_updated = strtotime($repo['last_updated']);
+    if ($repoinfo) {
+      $repo = array_merge($repo, $repoinfo);
+
+      $last_updated = strtotime($repoinfo['last_updated']);
       if (time() - $last_updated <= GITHUB_DATA_DB_REFRESH) {
-        // Yes, it does.
         $data_is_stale = false;
       }
     }
-    
+
     if ($data_is_stale) {
       // Let's check the local cache to see if we have any non-stale github data then.
       $url = 'http://github.com/api/v2/json/repos/show/'.$username.'/'.$reponame.'/tags';
@@ -117,7 +134,7 @@ class Ajax_Controller extends Three20_Controller {
       $repo['homepage'] = $repoobj['repository']['homepage'];
       
       // Creating a new repo?
-      if (!$repoid) {
+      if (!$repo['repoid']) {
         // Yes, fire it off to the db.
         $last_updated = date("Y-m-d H:i:s");
         $repodbobj = array(
@@ -129,13 +146,12 @@ class Ajax_Controller extends Three20_Controller {
         );
         $repodbinfo = $db->insert('repos', $repodbobj);
         
-        $repoid = $repodbinfo->insert_id();
-        $repo['repoid'] = $repoid;
+        $repo['repoid'] = $repodbinfo->insert_id();
         $repo['last_updated'] = $last_updated;
 
         foreach ($tagobj['tags'] as $tagname => $tagsha1) {
           $tagdbobj = array(
-            'repoid' => $repoid,
+            'repoid' => $repo['repoid'],
             'tagname' => $tagname,
             'tagsha1' => $tagsha1,
           );
@@ -150,14 +166,14 @@ class Ajax_Controller extends Three20_Controller {
           set('description', $repo['description'])->
           set('homepage', $repo['homepage'])->
           set('last_updated', $repo['last_updated'])->
-          where('repoid', $repoid)->
+          where('repoid', $repo['repoid'])->
           update();
 
         // Get the list of known tags.
         $result = $db->
           from('tags')->
           select(array('tagname', 'tagsha1'))->
-          where('repoid', $repoid)->
+          where('repoid', $repo['repoid'])->
           get();
 
         // Simplify the result.
@@ -173,12 +189,12 @@ class Ajax_Controller extends Three20_Controller {
         foreach ($dbtags as $tagname => $tagsha1) {
           if (!isset($repo['tags'][$tagname])) {
             // If the tag doesn't exist in the new tag list, delete it from the db.
-            $result = $db->delete('tags', array('repoid' => $repoid, 'tagname' => $tagname));
+            $result = $db->delete('tags', array('repoid' => $repo['repoid'], 'tagname' => $tagname));
             
           } else if ($repo['tags'][$tagname] != $tagsha1) {
             // If the tag's sha1 has changed, update it in the db.
             $result = $db->update('tags', array('tagsha1' => $tagsha1),
-                                  array('repoid' => $repoid, 'tagname' => $tagname));
+                                  array('repoid' => $repo['repoid'], 'tagname' => $tagname));
           }
         }
         
@@ -186,7 +202,7 @@ class Ajax_Controller extends Three20_Controller {
         foreach ($repo['tags'] as $tagname => $tagsha1) {
           if (!isset($dbtags[$tagname])) {
             $tagdbobj = array(
-              'repoid' => $repoid,
+              'repoid' => $repo['repoid'],
               'tagname' => $tagname,
               'tagsha1' => $tagsha1,
             );
@@ -202,7 +218,7 @@ class Ajax_Controller extends Three20_Controller {
       $result = $db->
         from('tags')->
         select(array('tagname', 'tagsha1'))->
-        where('repoid', $repoid)->
+        where('repoid', $repo['repoid'])->
         get();
       
       $repo['tags'] = array();
