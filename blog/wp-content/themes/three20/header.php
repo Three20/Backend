@@ -70,15 +70,14 @@
 <!-- HEADER --> 
 
 <div id="header"> 
-<div class="fixed-width"> 
+<div class="fixed-width">
 
-<ul class="right-links"> 
-  <li><a href="http://Three20.info/roadmap">Roadmap</a></li> 
-  <li><a href="http://Three20.info/documentation">Documentation</a></li> 
-  <li><a href="http://Three20.info/tutorials">Tutorials</a></li> 
-  <li><a href="http://api.three20.info/">API</a></li> 
-  <li><a href="http://Three20.info/community">Community</a></li>
-</ul> 
+<ul class="right-links">
+  <li><a href="/roadmap">Roadmap</a></li>
+  <li><a href="/documentation">Documentation</a></li>
+  <li><a href="/extensions">Extensions</a></li>
+  <li><a href="/community">Community</a></li>
+</ul>
 
 <div class="right-links">
   

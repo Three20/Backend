@@ -9,7 +9,7 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 #container {
 	float: left;
 	margin: 0 -240px 0 0;
-	width: 100%;
+  width: 780px;
 }
 #primary,
 #secondary {
@@ -247,6 +247,9 @@ div.menu li {
 }
 #content tr.odd td {
 	background: #f2f7fc;
+}
+#content ul li {
+  list-style-type: none;
 }
 .hentry {
 	margin: 0 0 48px 0;
@@ -879,6 +882,16 @@ h3#reply-title {
 .widget_rss .widget-title img {
 	width: 11px;
 	height: 11px;
+}
+#content .widget-container h3 {
+  margin: 0;
+  line-height: 1em;
+  font-size: 1em;
+}
+
+#main .widget-area ul .widget_archive ul,
+#main .widget-area ul .widget_archive li {
+  margin-left: 0;
 }
 
 /* Main sidebars */
