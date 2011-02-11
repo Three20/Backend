@@ -73,10 +73,10 @@
 <div class="fixed-width">
 
 <ul class="right-links">
-  <li><a href="/roadmap">Roadmap</a></li>
-  <li><a href="/documentation">Documentation</a></li>
-  <li><a href="/extensions">Extensions</a></li>
-  <li><a href="/community">Community</a></li>
+  <li><a href="http://three20.info/roadmap">Roadmap</a></li>
+  <li><a href="http://three20.info/documentation">Documentation</a></li>
+  <li><a href="http://three20.info/extensions">Extensions</a></li>
+  <li><a href="http://three20.info/community">Community</a></li>
 </ul>
 
 <div class="right-links">
