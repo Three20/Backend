@@ -128,7 +128,40 @@ function check_cross_links($path, $pagePath) {
     
     if (preg_match_all('/>>(.+?)<</i', $fileData, $matches)) {
       foreach ($matches[1] as $match) {
-        $testPath = join_paths(SUBLAYOUTS_PATH, $match.'.php');
+        $args = array();
+        $sublayoutName = $match;
+
+        // We allow the use of >>name(arg0, arg1, ...)<< to reuse sublayouts.
+        // Within the sublayout, $$args[n]$$ will be replaced by the corresponding argument
+        // passed into the layout.
+        if (preg_match('/\((.+?)\)/i', $match, $argumentMatches)) {
+          $dirtyargs = explode(',', $argumentMatches[1]);
+          $args = array();
+          $is_string = false;
+          foreach ($dirtyargs as $arg) {
+            $did_add = false;
+            if ($is_string) {
+              $args[count($args) - 1] .= ','.rtrim($arg, '"');
+              $did_add = true;
+            }
+            $arg = ltrim($arg);
+            if ($arg[0] == '"') {
+              $is_string = true;
+              $arg = ltrim($arg, '"');
+            }
+            if ($arg[strlen($arg)-1] == '"') {
+              $is_string = false;
+            }
+            
+            if (!$did_add) {
+              $args []= $arg;
+            }
+          }
+          
+          $sublayoutName = preg_replace('/\(.+?\)/i', '', $match);
+        }
+
+        $testPath = join_paths(SUBLAYOUTS_PATH, $sublayoutName.'.php');
 
         if (!file_exists($testPath)) {
           $fileData = str_replace('>>'.$match.'<<', '', $fileData);
@@ -136,14 +169,32 @@ function check_cross_links($path, $pagePath) {
           continue;
         }
 
-        $config = get_id_config($match);
+        $config = get_id_config($sublayoutName);
 
         if (isset($config['published']) && !$config['published']) {
+          // If this article isn't published, remove the link from the output.
           $fileData = str_replace('>>'.$match.'<<', '', $fileData);
 
         } else {
-          $fileData = str_replace('>>'.$match.'<<',
-            file_get_contents($testPath), $fileData);
+          $contents = file_get_contents($testPath);
+          
+          // If there are any arguments used to invoke this sublayout, search the sublayout
+          // for any places where it uses arguments and replace them accordingly.
+          if (count($args) > 0) {
+            if (preg_match_all('/\$\$args\[([0-9]+)\]\$\$/i', $contents, $argMatches)) {
+              foreach ($argMatches[1] as $argMatch) {
+                $index = intval($argMatch);
+                if ($index >= 0 && $index < count($args)) {
+                  $contents = str_replace('$$args['.$argMatch.']$$',
+                                          $args[intval($argMatch)], $contents);
+                  
+                } else {
+                  $contents = str_replace('$$args['.$argMatch.']$$', '', $contents);
+                }
+              }
+            }
+          }
+          $fileData = str_replace('>>'.$match.'<<', $contents, $fileData);
         }
 
         $changed = true;
