@@ -1,48 +1,71 @@
-<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:og="http://opengraphprotocol.org/schema/"
-      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta property="fb:app_id" content="114720825217072"/>
-  <meta property="fb:admins" content="122605446"/>
-  <meta property="og:title" content="three20.info"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="http://three20.info/"/>
-  <meta property="og:image" content="http://github.com/facebook/three20/raw/06cd0abe33ac39d1f509e278e286c6bf1e45e821/samples/Resources/Icon.png"/>
-  <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
+      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en"> 
+<head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  <meta property="fb:app_id" content="114720825217072"/> 
+  <meta property="fb:admins" content="122605446"/> 
+  <meta property="og:title" content="three20.info"/> 
+  <meta property="og:type" content="website"/> 
+  <meta property="og:url" content="http://three20.info/"/> 
+  <meta property="og:image" content="http://github.com/facebook/three20/raw/master/samples/Resources/Icon.png"/> 
+  <meta name="keywords" content="three20 iPhone api open source library uikit tt" /> 
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
-  <title>Three20: TTModelViewController Class Reference</title>
+<title>Three20 API: TTModelViewController Class Reference</title>
 <link href="http://three20.info/css/reset.css" rel="stylesheet" type="text/css"/>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/global.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/article.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/api.css" rel="stylesheet" type="text/css"/>
+<link href="http://dev.three20.info/css/global.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/article.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/api.css" rel="stylesheet" type="text/css"/>
 </head>
 <body onload='searchBox.OnSelectItem(0);'>
+<div id="page-wrapper"> 
 
-<div id="page-wrapper">
+<!-- HEADER -->
 
-<!-- HEADER --> 
- 
 <div id="header"> 
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
   <li><a href="http://three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://three20.info/documentation">Documentation</a></li> 
-  <li><a href="http://api.three20.info/">API</a></li> 
+  <li><a href="http://three20.info/extensions">Extensions</a></li> 
   <li><a href="http://three20.info/community">Community</a></li> 
 </ul> 
  
+<div id="fb-root"></div> 
+<script> 
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId   : '165692500131929',
+      session : {"access_token":"165692500131929|2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446|7YjdqHOYyL6MXMHd-udsP0EbTsg","base_domain":"three20.info","expires":"1298952000","secret":"Hcv3uGki22DI7f_imqBhgQ__","session_key":"2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446","sig":"fdaa725c7cf196ce9579d1b232a16e64","uid":"122605446"}, // don't refetch the session when PHP already has it
+      status  : true, // check login status
+      cookie  : true, // enable cookies to allow the server to access the session
+      xfbml   : true // parse XFBML
+    });
+ 
+    // whenever the user logs in, we refresh the page
+    FB.Event.subscribe('auth.login', function() {
+      window.location.reload();
+    });
+  };
+ 
+  (function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script> 
+ 
 <ul class="right-links"> 
-  <li><a href="http://<?= $_SERVER['SERVER_NAME']?><?= $_SERVER['REQUEST_URI'] ?>#disqus_thread">Comments</a></li>
+<li><img class="profileimg" width="25" height="25" valign="bottom" src="https://graph.facebook.com/122605446/picture?type=square">Jeff Verkoeyen</li> 
+<li><a href="https://www.facebook.com/logout.php?next=http%3A%2F%2Fdev.three20.info%2F&access_token=165692500131929%7C2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446%7C7YjdqHOYyL6MXMHd-udsP0EbTsg" onclick="FB.logout(function() { window.location.reload();}); return false;">Log out</a></li> 
 </ul> 
  
 <div class="leadin"> 
@@ -53,7 +76,9 @@
 </div> <!-- .fixed-width --> 
 </div> <!-- #header --> 
 
-<div id="content">
+<!-- CONTENT -->
+
+<div id="content"> 
 <div class="fixed-width">
 <!-- Generated by Doxygen 1.7.1 -->
 <script type="text/javascript"><!--
@@ -63,7 +88,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul class="tablist">
       <li><a href="index.php"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.php"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.php"><span>Classes</span></a></li>
       <li><a href="files.php"><span>Files</span></a></li>
       <li><a href="examples.php"><span>Examples</span></a></li>
@@ -96,7 +120,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#properties">Properties</a>  </div>
   <div class="headertitle">
@@ -114,20 +137,22 @@ Inheritance diagram for TTModelViewController:</div>
  <div class="center">
   <img src="interface_t_t_model_view_controller.png" usemap="#TTModelViewController_map" alt=""/>
   <map id="TTModelViewController_map" name="TTModelViewController_map">
-<area href="interface_t_t_view_controller.php" alt="TTViewController" shape="rect" coords="393,168,558,192"/>
-<area href="protocol_t_t_model_delegate-p.php" alt="&lt;TTModelDelegate&gt;" shape="rect" coords="568,168,733,192"/>
-<area href="interface_t_t_navigator_view_controller.php" alt="TTNavigatorViewController" shape="rect" coords="393,112,558,136"/>
-<area href="interface_t_t_base_view_controller.php" alt="TTBaseViewController" shape="rect" coords="393,56,558,80"/>
-<area href="class_u_i_view_controller.php" alt="UIViewController" shape="rect" coords="393,0,558,24"/>
+<area href="interface_t_t_view_controller.php" alt="TTViewController" shape="rect" coords="481,168,646,192"/>
+<area href="protocol_t_t_model_delegate-p.php" alt="&lt;TTModelDelegate&gt;" shape="rect" coords="656,168,821,192"/>
+<area href="interface_t_t_navigator_view_controller.php" alt="TTNavigatorViewController" shape="rect" coords="481,112,646,136"/>
+<area href="interface_t_t_base_view_controller.php" alt="TTBaseViewController" shape="rect" coords="481,56,646,80"/>
+<area href="class_u_i_view_controller.php" alt="UIViewController" shape="rect" coords="481,0,646,24"/>
 <area href="interface_t_t_photo_view_controller.php" alt="TTPhotoViewController" shape="rect" coords="0,280,165,304"/>
 <area href="interface_t_t_popup_view_controller.php" alt="TTPopupViewController" shape="rect" coords="262,280,427,304"/>
-<area href="interface_t_t_table_view_controller.php" alt="TTTableViewController" shape="rect" coords="700,280,865,304"/>
-<area href="interface_t_t_web_controller.php" alt="TTWebController" shape="rect" coords="875,280,1040,304"/>
+<area href="interface_t_t_table_view_controller.php" alt="TTTableViewController" shape="rect" coords="875,280,1040,304"/>
+<area href="interface_t_t_web_controller.php" alt="TTWebController" shape="rect" coords="1050,280,1215,304"/>
 <area href="interface_t_t_action_sheet_controller.php" alt="TTActionSheetController" shape="rect" coords="0,336,165,360"/>
 <area href="interface_t_t_alert_view_controller.php" alt="TTAlertViewController" shape="rect" coords="175,336,340,360"/>
 <area href="interface_t_t_post_controller.php" alt="TTPostController" shape="rect" coords="350,336,515,360"/>
 <area href="interface_t_t_text_bar_controller.php" alt="TTTextBarController" shape="rect" coords="525,336,690,360"/>
-<area href="interface_t_t_thumbs_view_controller.php" alt="TTThumbsViewController" shape="rect" coords="700,336,865,360"/>
+<area href="interface_t_t_extension_info_controller.php" alt="TTExtensionInfoController" shape="rect" coords="700,336,865,360"/>
+<area href="interface_t_t_extensions_controller.php" alt="TTExtensionsController" shape="rect" coords="875,336,1040,360"/>
+<area href="interface_t_t_thumbs_view_controller.php" alt="TTThumbsViewController" shape="rect" coords="1050,336,1215,360"/>
 </map>
 </div>
 
@@ -188,49 +213,13 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a36b36cb89ffe7f5c2ff0611980af3e32"></a><!-- doxytag: member="TTModelViewController::showError:" ref="a36b36cb89ffe7f5c2ff0611980af3e32" args="(BOOL show)" -->
 (void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_model_view_controller.php#a36b36cb89ffe7f5c2ff0611980af3e32">showError:</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Shows views to represent an error that occurred while loading the model. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae517ac05a60aff4c64dadfdf5e0be548"></a><!-- doxytag: member="TTModelViewController::keyboardWillAppear:withBounds:" ref="ae517ac05a60aff4c64dadfdf5e0be548" args="(BOOL animated,[withBounds] CGRect bounds)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_base_view_controller.php#ae517ac05a60aff4c64dadfdf5e0be548">keyboardWillAppear:withBounds:</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sent to the controller before the keyboard slides in. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b370029749e85fe261726375ba13289"></a><!-- doxytag: member="TTModelViewController::keyboardWillDisappear:withBounds:" ref="a3b370029749e85fe261726375ba13289" args="(BOOL animated,[withBounds] CGRect bounds)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_base_view_controller.php#a3b370029749e85fe261726375ba13289">keyboardWillDisappear:withBounds:</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sent to the controller before the keyboard slides out. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1405d3b2f2c3d4e1db7c7e29226c2e74"></a><!-- doxytag: member="TTModelViewController::keyboardDidAppear:withBounds:" ref="a1405d3b2f2c3d4e1db7c7e29226c2e74" args="(BOOL animated,[withBounds] CGRect bounds)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_base_view_controller.php#a1405d3b2f2c3d4e1db7c7e29226c2e74">keyboardDidAppear:withBounds:</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sent to the controller after the keyboard has slid in. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad27dfcbbc6587b779af6231825679be0"></a><!-- doxytag: member="TTModelViewController::keyboardDidDisappear:withBounds:" ref="ad27dfcbbc6587b779af6231825679be0" args="(BOOL animated,[withBounds] CGRect bounds)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_base_view_controller.php#ad27dfcbbc6587b779af6231825679be0">keyboardDidDisappear:withBounds:</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sent to the controller after the keyboard has slid out. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5df22439eaf4f407a261ad79c03f55c4"></a><!-- doxytag: member="TTModelViewController::modelDidStartLoad:" ref="a5df22439eaf4f407a261ad79c03f55c4" args="(id&lt; TTModel &gt; model)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>modelDidStartLoad:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a68a9663728353e79b48867bbda192d3a"></a><!-- doxytag: member="TTModelViewController::modelDidFinishLoad:" ref="a68a9663728353e79b48867bbda192d3a" args="(id&lt; TTModel &gt; model)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>modelDidFinishLoad:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d09bbb97be34017532f5705bac1aab0"></a><!-- doxytag: member="TTModelViewController::model:didFailLoadWithError:" ref="a1d09bbb97be34017532f5705bac1aab0" args="(id&lt; TTModel &gt; model,[didFailLoadWithError] NSError *error)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>model:didFailLoadWithError:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c05ffe2a2e74cea34275819610b3940"></a><!-- doxytag: member="TTModelViewController::modelDidCancelLoad:" ref="a0c05ffe2a2e74cea34275819610b3940" args="(id&lt; TTModel &gt; model)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>modelDidCancelLoad:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model_delegate-p.php#a2f3a9659380ba388b9a475d6761e5143">modelDidChange:</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Informs the delegate that the model has changed in some fundamental way.  <a href="#a2f3a9659380ba388b9a475d6761e5143"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af16cbcde168b818c04e8f97983ccb435"></a><!-- doxytag: member="TTModelViewController::model:didUpdateObject:atIndexPath:" ref="af16cbcde168b818c04e8f97983ccb435" args="(id&lt; TTModel &gt; model,[didUpdateObject] id object,[atIndexPath] NSIndexPath *indexPath)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>model:didUpdateObject:atIndexPath:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae897d061f4b78ef523cb179bcbe498c3"></a><!-- doxytag: member="TTModelViewController::model:didInsertObject:atIndexPath:" ref="ae897d061f4b78ef523cb179bcbe498c3" args="(id&lt; TTModel &gt; model,[didInsertObject] id object,[atIndexPath] NSIndexPath *indexPath)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>model:didInsertObject:atIndexPath:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2f4f7858bd3ab9e36b4c54594f09e47e"></a><!-- doxytag: member="TTModelViewController::model:didDeleteObject:atIndexPath:" ref="a2f4f7858bd3ab9e36b4c54594f09e47e" args="(id&lt; TTModel &gt; model,[didDeleteObject] id object,[atIndexPath] NSIndexPath *indexPath)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>model:didDeleteObject:atIndexPath:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model_delegate-p.php#a58855366f525d711b76767007d99fd43">modelDidBeginUpdates:</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Informs the delegate that the model is about to begin a multi-stage update.  <a href="#a58855366f525d711b76767007d99fd43"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model_delegate-p.php#a3aa2a5802f68a87df0605342d8b4ca7a">modelDidEndUpdates:</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Informs the delegate that the model has completed a multi-stage update.  <a href="#a3aa2a5802f68a87df0605342d8b4ca7a"></a><br/></td></tr>
-<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_t_t_view_controller.php#a0e5fe2b34de8a02a7f3f0dccd5156958">doGarbageCollection</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Forcefully initiates garbage collection.  <a href="#a0e5fe2b34de8a02a7f3f0dccd5156958"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac1d409c9cfc0a5411003dfe628338cce"></a><!-- doxytag: member="TTModelViewController::_model" ref="ac1d409c9cfc0a5411003dfe628338cce" args="" -->
 id&lt; <a class="el" href="interface_t_t_model.php">TTModel</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>_model</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab9291afe449c5fe8ebe3325e13a86fef"></a><!-- doxytag: member="TTModelViewController::_modelError" ref="ab9291afe449c5fe8ebe3325e13a86fef" args="" -->
 NSError *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_modelError</b></td></tr>
-<tr><td class="memItemLeft" ><a class="anchor" id="aba625f6b2705037c47cd76f7af8f1dfc"></a><!-- doxytag: member="TTModelViewController::_flags" ref="aba625f6b2705037c47cd76f7af8f1dfc" args="" -->
+<tr><td class="memItemLeft" ><a class="anchor" id="ac8968f89da3e15d89b245a50639bbc9f"></a><!-- doxytag: member="TTModelViewController::_flags" ref="ac8968f89da3e15d89b245a50639bbc9f" args="" -->
 struct {</td></tr>
 <tr><td class="memItemLeft" >&nbsp;&nbsp;&nbsp;unsigned int&nbsp;&nbsp;&nbsp;<b>isModelDidRefreshInvalid</b>:1</td></tr>
 <tr><td class="memItemLeft" >&nbsp;&nbsp;&nbsp;unsigned int&nbsp;&nbsp;&nbsp;<b>isModelWillLoadInvalid</b>:1</td></tr>
@@ -245,22 +234,6 @@ struct {</td></tr>
 <tr><td class="memItemLeft" >&nbsp;&nbsp;&nbsp;unsigned int&nbsp;&nbsp;&nbsp;<b>isShowingModel</b>:1</td></tr>
 <tr><td class="memItemLeft" >&nbsp;&nbsp;&nbsp;unsigned int&nbsp;&nbsp;&nbsp;<b>isShowingError</b>:1</td></tr>
 <tr><td class="memItemLeft" valign="top">}&nbsp;</td><td class="memItemRight" valign="bottom"><b>_flags</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62bac03420a9ca3fe201915f64c710df"></a><!-- doxytag: member="TTModelViewController::_searchController" ref="a62bac03420a9ca3fe201915f64c710df" args="" -->
-<a class="el" href="interface_t_t_search_display_controller.php">TTSearchDisplayController</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_searchController</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af73a75af4a8540e9a0824dfde0ff7ba9"></a><!-- doxytag: member="TTModelViewController::_frozenState" ref="af73a75af4a8540e9a0824dfde0ff7ba9" args="" -->
-<a class="el" href="class_n_s_dictionary.php">NSDictionary</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_frozenState</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a043ebeb2719175e6b4fd09ff8e6dc7eb"></a><!-- doxytag: member="TTModelViewController::_navigationBarStyle" ref="a043ebeb2719175e6b4fd09ff8e6dc7eb" args="" -->
-UIBarStyle&nbsp;</td><td class="memItemRight" valign="bottom"><b>_navigationBarStyle</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9539b16b96e55313d37a24a517d91aa1"></a><!-- doxytag: member="TTModelViewController::_navigationBarTintColor" ref="a9539b16b96e55313d37a24a517d91aa1" args="" -->
-<a class="el" href="class_u_i_color.php">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_navigationBarTintColor</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ba256d9d10c48e1f20b5ec266186452"></a><!-- doxytag: member="TTModelViewController::_statusBarStyle" ref="a9ba256d9d10c48e1f20b5ec266186452" args="" -->
-UIStatusBarStyle&nbsp;</td><td class="memItemRight" valign="bottom"><b>_statusBarStyle</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92713568320087178a7ec813edd761fa"></a><!-- doxytag: member="TTModelViewController::_isViewAppearing" ref="a92713568320087178a7ec813edd761fa" args="" -->
-BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_isViewAppearing</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78f0448e948f1157cf6ba0a2d2f21d59"></a><!-- doxytag: member="TTModelViewController::_hasViewAppeared" ref="a78f0448e948f1157cf6ba0a2d2f21d59" args="" -->
-BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_hasViewAppeared</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d7348edcd90eb5573452996da10b0c8"></a><!-- doxytag: member="TTModelViewController::_autoresizesForKeyboard" ref="a6d7348edcd90eb5573452996da10b0c8" args="" -->
-BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_autoresizesForKeyboard</b></td></tr>
 <tr><td colspan="2"><h2><a name="properties"></a>
 Properties</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61f1378a65641be5991cfb07d7f894e5"></a><!-- doxytag: member="TTModelViewController::model" ref="a61f1378a65641be5991cfb07d7f894e5" args="" -->
@@ -268,23 +241,6 @@ id&lt; <a class="el" href="interface_t_t_model.php">TTModel</a> &gt;&nbsp;</td><
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abf74cd2086bd97dfa34f6e250598bd8f"></a><!-- doxytag: member="TTModelViewController::modelError" ref="abf74cd2086bd97dfa34f6e250598bd8f" args="" -->
 NSError *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_model_view_controller.php#abf74cd2086bd97dfa34f6e250598bd8f">modelError</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">An error that occurred while trying to load content. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_t_t_table_view_controller.php">TTTableViewController</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_view_controller.php#aee5cb350b30e5feefffd3f118df21f86">searchViewController</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A view controller used to display the contents of the search display controller.  <a href="#aee5cb350b30e5feefffd3f118df21f86"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">UIBarStyle&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_base_view_controller.php#a0d8ab3d6c6b655258293c2df842d161b">navigationBarStyle</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The style of the navigation bar when this view controller is pushed onto a navigation controller.  <a href="#a0d8ab3d6c6b655258293c2df842d161b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_u_i_color.php">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_base_view_controller.php#af9f360ea82a7008a4cdb785765ca368d">navigationBarTintColor</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The color of the navigation bar when this view controller is pushed onto a navigation controller.  <a href="#af9f360ea82a7008a4cdb785765ca368d"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">UIStatusBarStyle&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_base_view_controller.php#a9fbdc64e7c1d0e33c6e5c18c637484f7">statusBarStyle</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The style of the status bar when this view controller is appearing.  <a href="#a9fbdc64e7c1d0e33c6e5c18c637484f7"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba404e0d3d915055ce87f45191c2be8d"></a><!-- doxytag: member="TTModelViewController::hasViewAppeared" ref="aba404e0d3d915055ce87f45191c2be8d" args="" -->
-BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_base_view_controller.php#aba404e0d3d915055ce87f45191c2be8d">hasViewAppeared</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The view has appeared at least once and hasn't been removed due to a memory warning. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afeb4bf49b4efd4199f03e32dc793c87d"></a><!-- doxytag: member="TTModelViewController::isViewAppearing" ref="afeb4bf49b4efd4199f03e32dc793c87d" args="" -->
-BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_base_view_controller.php#afeb4bf49b4efd4199f03e32dc793c87d">isViewAppearing</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The view is about to appear and has not appeared yet. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c53a69ddcc3e4d4f8eef61d51d98c75"></a><!-- doxytag: member="TTModelViewController::autoresizesForKeyboard" ref="a9c53a69ddcc3e4d4f8eef61d51d98c75" args="" -->
-BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_base_view_controller.php#a9c53a69ddcc3e4d4f8eef61d51d98c75">autoresizesForKeyboard</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Determines if the view will be resized automatically to fit the keyboard. <br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>A view controller that manages a model in addition to a view. </p>
@@ -393,27 +349,6 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 
 </div>
 </div>
-<a class="anchor" id="a0e5fe2b34de8a02a7f3f0dccd5156958"></a><!-- doxytag: member="TTModelViewController::doGarbageCollection" ref="a0e5fe2b34de8a02a7f3f0dccd5156958" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">+ (void) doGarbageCollection </td>
-          <td></td>
-          <td class="paramname"></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Forcefully initiates garbage collection. </p>
-<p>You may call this in your didReceiveMemoryWarning message if you are worried about garbage collection memory consumption.</p>
-<p>See Articles/UI/GarbageCollection.mdown for a more detailed discussion. </p>
-
-</div>
-</div>
 <a class="anchor" id="a54488637f89a309a5de88123257b73bc"></a><!-- doxytag: member="TTModelViewController::endUpdates" ref="a54488637f89a309a5de88123257b73bc" args="()" -->
 <div class="memitem">
 <div class="memproto">
@@ -431,69 +366,6 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 
 <p>Ends a multi-stage model update and updates the view to reflect the model. </p>
 <p>You can call this method to make complicated updates more efficient, and to condense multiple changes to your model into a single visual change. </p>
-
-</div>
-</div>
-<a class="anchor" id="a58855366f525d711b76767007d99fd43"></a><!-- doxytag: member="TTModelViewController::modelDidBeginUpdates:" ref="a58855366f525d711b76767007d99fd43" args="(id&lt; TTModel &gt; model)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) modelDidBeginUpdates: </td>
-          <td></td>
-          <td class="paramtype">(id&lt; <a class="el" href="interface_t_t_model.php">TTModel</a> &gt;)&nbsp;</td>
-          <td class="paramname"> <em>model</em></td>
-          <td>&nbsp;</td>
-          <td><code> [optional, inherited]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Informs the delegate that the model is about to begin a multi-stage update. </p>
-<p>Models should use this method to condense multiple updates into a single visible update. This avoids having the view update multiple times for each change. Instead, the user will only see the end result of all of your changes when you call modelDidEndUpdates. </p>
-
-</div>
-</div>
-<a class="anchor" id="a2f3a9659380ba388b9a475d6761e5143"></a><!-- doxytag: member="TTModelViewController::modelDidChange:" ref="a2f3a9659380ba388b9a475d6761e5143" args="(id&lt; TTModel &gt; model)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) modelDidChange: </td>
-          <td></td>
-          <td class="paramtype">(id&lt; <a class="el" href="interface_t_t_model.php">TTModel</a> &gt;)&nbsp;</td>
-          <td class="paramname"> <em>model</em></td>
-          <td>&nbsp;</td>
-          <td><code> [optional, inherited]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Informs the delegate that the model has changed in some fundamental way. </p>
-<p>The change is not described specifically, so the delegate must assume that the entire contents of the model may have changed, and react almost as if it was given a new model. </p>
-
-</div>
-</div>
-<a class="anchor" id="a3aa2a5802f68a87df0605342d8b4ca7a"></a><!-- doxytag: member="TTModelViewController::modelDidEndUpdates:" ref="a3aa2a5802f68a87df0605342d8b4ca7a" args="(id&lt; TTModel &gt; model)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) modelDidEndUpdates: </td>
-          <td></td>
-          <td class="paramtype">(id&lt; <a class="el" href="interface_t_t_model.php">TTModel</a> &gt;)&nbsp;</td>
-          <td class="paramname"> <em>model</em></td>
-          <td>&nbsp;</td>
-          <td><code> [optional, inherited]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Informs the delegate that the model has completed a multi-stage update. </p>
-<p>The exact nature of the change is not specified, so the receiver should investigate the new state of the model by examining its properties. </p>
 
 </div>
 </div>
@@ -641,71 +513,6 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 
 </div>
 </div>
-<hr/><h2>Property Documentation</h2>
-<a class="anchor" id="a0d8ab3d6c6b655258293c2df842d161b"></a><!-- doxytag: member="TTModelViewController::navigationBarStyle" ref="a0d8ab3d6c6b655258293c2df842d161b" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (UIBarStyle) navigationBarStyle<code> [read, write, assign, inherited]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>The style of the navigation bar when this view controller is pushed onto a navigation controller. </p>
-<p>UIBarStyleDefault </p>
-
-</div>
-</div>
-<a class="anchor" id="af9f360ea82a7008a4cdb785765ca368d"></a><!-- doxytag: member="TTModelViewController::navigationBarTintColor" ref="af9f360ea82a7008a4cdb785765ca368d" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="class_u_i_color.php">UIColor</a>*) navigationBarTintColor<code> [read, write, retain, inherited]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>The color of the navigation bar when this view controller is pushed onto a navigation controller. </p>
-<p>TTSTYLEVAR(navigationBarTintColor) </p>
-
-</div>
-</div>
-<a class="anchor" id="aee5cb350b30e5feefffd3f118df21f86"></a><!-- doxytag: member="TTModelViewController::searchViewController" ref="aee5cb350b30e5feefffd3f118df21f86" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="interface_t_t_table_view_controller.php">TTTableViewController</a> *) searchViewController<code> [read, write, retain, inherited]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>A view controller used to display the contents of the search display controller. </p>
-<p>If you assign a view controller to this property, it will automatically create a search display controller which you can access through this view controller's searchDisplaController property. You can then take the searchBar from that controller and add it to your views. The search bar will then search the data source of the view controller that you assigned here. </p>
-
-</div>
-</div>
-<a class="anchor" id="a9fbdc64e7c1d0e33c6e5c18c637484f7"></a><!-- doxytag: member="TTModelViewController::statusBarStyle" ref="a9fbdc64e7c1d0e33c6e5c18c637484f7" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (UIStatusBarStyle) statusBarStyle<code> [read, write, assign, inherited]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>The style of the status bar when this view controller is appearing. </p>
-<p>UIStatusBarStyleDefault </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Three20UI/Headers/<a class="el" href="_t_t_model_view_controller_8h_source.php">TTModelViewController.h</a></li>
 <li>Three20UI/Sources/TTModelViewController.m</li>
@@ -725,47 +532,46 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </iframe>
 </div>
 
-
-</div> <!-- .fixed-width -->
-
-<div class="fixed-width">
-<div id="disqus_thread"></div>
-<script type="text/javascript">
+<div id="disqus_thread"></div> 
+<script type="text/javascript"> 
   (function() {
    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
    dsq.src = 'http://three20info2.disqus.com/embed.js';
    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</div> <!-- .fixed-width -->
-
-</div> <!-- #content -->
-</div> <!-- #page-wrapper -->
-
-<script type="text/javascript">
-
+</script> 
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript> 
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> 
+</div> <!-- .fixed-width --> 
+ 
+</div> <!-- #content --> 
+</div> <!-- #page-wrapper --> 
+ 
+ 
+ 
+<script type="text/javascript"> 
+ 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-19295672-1']);
   _gaq.push(['_setDomainName', '.three20.info']);
   _gaq.push(['_trackPageview']);
-
+ 
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-</script>
-
-<script type="text/javascript">
+</script> 
+ 
+<script type="text/javascript"> 
 var disqus_shortname = 'three20info2';
 (function () {
   var s = document.createElement('script'); s.async = true;
   s.src = 'http://disqus.com/forums/three20info2/count.js';
   (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
-</script>
-
-</body>
+</script> 
+ 
+ 
+</body> 
 </html>

@@ -1,48 +1,71 @@
-<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:og="http://opengraphprotocol.org/schema/"
-      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta property="fb:app_id" content="114720825217072"/>
-  <meta property="fb:admins" content="122605446"/>
-  <meta property="og:title" content="three20.info"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="http://three20.info/"/>
-  <meta property="og:image" content="http://github.com/facebook/three20/raw/06cd0abe33ac39d1f509e278e286c6bf1e45e821/samples/Resources/Icon.png"/>
-  <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
+      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en"> 
+<head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  <meta property="fb:app_id" content="114720825217072"/> 
+  <meta property="fb:admins" content="122605446"/> 
+  <meta property="og:title" content="three20.info"/> 
+  <meta property="og:type" content="website"/> 
+  <meta property="og:url" content="http://three20.info/"/> 
+  <meta property="og:image" content="http://github.com/facebook/three20/raw/master/samples/Resources/Icon.png"/> 
+  <meta name="keywords" content="three20 iPhone api open source library uikit tt" /> 
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
-  <title>Three20: TTTabGrid Class Reference</title>
+<title>Three20 API: TTTabGrid Class Reference</title>
 <link href="http://three20.info/css/reset.css" rel="stylesheet" type="text/css"/>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/global.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/article.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/api.css" rel="stylesheet" type="text/css"/>
+<link href="http://dev.three20.info/css/global.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/article.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/api.css" rel="stylesheet" type="text/css"/>
 </head>
 <body onload='searchBox.OnSelectItem(0);'>
+<div id="page-wrapper"> 
 
-<div id="page-wrapper">
+<!-- HEADER -->
 
-<!-- HEADER --> 
- 
 <div id="header"> 
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
   <li><a href="http://three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://three20.info/documentation">Documentation</a></li> 
-  <li><a href="http://api.three20.info/">API</a></li> 
+  <li><a href="http://three20.info/extensions">Extensions</a></li> 
   <li><a href="http://three20.info/community">Community</a></li> 
 </ul> 
  
+<div id="fb-root"></div> 
+<script> 
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId   : '165692500131929',
+      session : {"access_token":"165692500131929|2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446|7YjdqHOYyL6MXMHd-udsP0EbTsg","base_domain":"three20.info","expires":"1298952000","secret":"Hcv3uGki22DI7f_imqBhgQ__","session_key":"2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446","sig":"fdaa725c7cf196ce9579d1b232a16e64","uid":"122605446"}, // don't refetch the session when PHP already has it
+      status  : true, // check login status
+      cookie  : true, // enable cookies to allow the server to access the session
+      xfbml   : true // parse XFBML
+    });
+ 
+    // whenever the user logs in, we refresh the page
+    FB.Event.subscribe('auth.login', function() {
+      window.location.reload();
+    });
+  };
+ 
+  (function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script> 
+ 
 <ul class="right-links"> 
-  <li><a href="http://<?= $_SERVER['SERVER_NAME']?><?= $_SERVER['REQUEST_URI'] ?>#disqus_thread">Comments</a></li>
+<li><img class="profileimg" width="25" height="25" valign="bottom" src="https://graph.facebook.com/122605446/picture?type=square">Jeff Verkoeyen</li> 
+<li><a href="https://www.facebook.com/logout.php?next=http%3A%2F%2Fdev.three20.info%2F&access_token=165692500131929%7C2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446%7C7YjdqHOYyL6MXMHd-udsP0EbTsg" onclick="FB.logout(function() { window.location.reload();}); return false;">Log out</a></li> 
 </ul> 
  
 <div class="leadin"> 
@@ -53,7 +76,9 @@
 </div> <!-- .fixed-width --> 
 </div> <!-- #header --> 
 
-<div id="content">
+<!-- CONTENT -->
+
+<div id="content"> 
 <div class="fixed-width">
 <!-- Generated by Doxygen 1.7.1 -->
 <script type="text/javascript"><!--
@@ -63,7 +88,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul class="tablist">
       <li><a href="index.php"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.php"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.php"><span>Classes</span></a></li>
       <li><a href="files.php"><span>Files</span></a></li>
       <li><a href="examples.php"><span>Examples</span></a></li>
@@ -95,7 +119,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#properties">Properties</a>  </div>
   <div class="headertitle">
@@ -117,64 +140,14 @@ Inheritance diagram for TTTabGrid:</div>
 
 <p><a href="class_t_t_tab_grid-members.php">List of all members.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af60c66bc1ad0a8dbabc66d1923fd1e67"></a><!-- doxytag: member="TTTabGrid::initWithFrame:" ref="af60c66bc1ad0a8dbabc66d1923fd1e67" args="(CGRect frame)" -->
-(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>initWithFrame:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3fdf83c25f6a034ef72155a4417ae2c7"></a><!-- doxytag: member="TTTabGrid::showTabAtIndex:" ref="a3fdf83c25f6a034ef72155a4417ae2c7" args="(NSInteger tabIndex)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>showTabAtIndex:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae989d5ec06207c9c0e4443ed3f92a334"></a><!-- doxytag: member="TTTabGrid::hideTabAtIndex:" ref="ae989d5ec06207c9c0e4443ed3f92a334" args="(NSInteger tabIndex)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>hideTabAtIndex:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba6dab8bd5c1b6a5807dee1b3f1b03fe"></a><!-- doxytag: member="TTTabGrid::layoutTabs" ref="aba6dab8bd5c1b6a5807dee1b3f1b03fe" args="()" -->
-(CGSize)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>layoutTabs</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad88f3307be7d49bf55b419941a1eabbd"></a><!-- doxytag: member="TTTabGrid::drawContent:" ref="ad88f3307be7d49bf55b419941a1eabbd" args="(CGRect rect)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>drawContent:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ca8c9a930241745c77280b6e5296a6b"></a><!-- doxytag: member="TTTabGrid::textForLayerWithStyle:" ref="a6ca8c9a930241745c77280b6e5296a6b" args="(TTStyle *style)" -->
-(<a class="el" href="class_n_s_string.php">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>textForLayerWithStyle:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61b305018c41e4b8596d477337614e28"></a><!-- doxytag: member="TTTabGrid::imageForLayerWithStyle:" ref="a61b305018c41e4b8596d477337614e28" args="(TTStyle *style)" -->
-(<a class="el" href="class_u_i_image.php">UIImage</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>imageForLayerWithStyle:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a940c09a71f143ac572cf3ebaddeb127e"></a><!-- doxytag: member="TTTabGrid::drawLayer:withStyle:" ref="a940c09a71f143ac572cf3ebaddeb127e" args="(TTStyleContext *context,[withStyle] TTStyle *style)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>drawLayer:withStyle:</b></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21060ecce7429528227665f4bc8ae776"></a><!-- doxytag: member="TTTabGrid::_columnCount" ref="a21060ecce7429528227665f4bc8ae776" args="" -->
 NSInteger&nbsp;</td><td class="memItemRight" valign="bottom"><b>_columnCount</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8c188157189d7c9683668cdd4174bdd5"></a><!-- doxytag: member="TTTabGrid::_tabStyle" ref="a8c188157189d7c9683668cdd4174bdd5" args="" -->
-<a class="el" href="class_n_s_string.php">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_tabStyle</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b94de68a69b12018af313a4ec9eb648"></a><!-- doxytag: member="TTTabGrid::_selectedTabIndex" ref="a0b94de68a69b12018af313a4ec9eb648" args="" -->
-NSInteger&nbsp;</td><td class="memItemRight" valign="bottom"><b>_selectedTabIndex</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5542f82f20db54bdb067c722d612700"></a><!-- doxytag: member="TTTabGrid::_tabItems" ref="ac5542f82f20db54bdb067c722d612700" args="" -->
-<a class="el" href="class_n_s_array.php">NSArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_tabItems</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3cdcaafd96265e3320b50cfe180be47b"></a><!-- doxytag: member="TTTabGrid::_tabViews" ref="a3cdcaafd96265e3320b50cfe180be47b" args="" -->
-<a class="el" href="class_n_s_mutable_array.php">NSMutableArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_tabViews</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04468fd8feff612e3b65b26fa01c66c7"></a><!-- doxytag: member="TTTabGrid::_delegate" ref="a04468fd8feff612e3b65b26fa01c66c7" args="" -->
-id&lt; <a class="el" href="protocol_t_t_tab_delegate-p.php">TTTabDelegate</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>_delegate</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a97853b2c7509081da5ac2fc9cf89976f"></a><!-- doxytag: member="TTTabGrid::_style" ref="a97853b2c7509081da5ac2fc9cf89976f" args="" -->
-<a class="el" href="interface_t_t_style.php">TTStyle</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_style</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aea5bd0ee9481a7012f50ea91cd7501bf"></a><!-- doxytag: member="TTTabGrid::_layout" ref="aea5bd0ee9481a7012f50ea91cd7501bf" args="" -->
-<a class="el" href="interface_t_t_layout.php">TTLayout</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_layout</b></td></tr>
 <tr><td colspan="2"><h2><a name="properties"></a>
 Properties</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac21a7d63b6db0aac0003926b2a1ebe9d"></a><!-- doxytag: member="TTTabGrid::columnCount" ref="ac21a7d63b6db0aac0003926b2a1ebe9d" args="" -->
 NSInteger&nbsp;</td><td class="memItemRight" valign="bottom"><b>columnCount</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c3e1cdc292cb49ff06809ff122bbeac"></a><!-- doxytag: member="TTTabGrid::tabStyle" ref="a2c3e1cdc292cb49ff06809ff122bbeac" args="" -->
-<a class="el" href="class_n_s_string.php">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tabStyle</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a07934e4dc1ca33e0fc19d22fbc768b1b"></a><!-- doxytag: member="TTTabGrid::selectedTabItem" ref="a07934e4dc1ca33e0fc19d22fbc768b1b" args="" -->
-<a class="el" href="interface_t_t_tab_item.php">TTTabItem</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>selectedTabItem</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0c0738e623416b0e6d90906da55c26f2"></a><!-- doxytag: member="TTTabGrid::selectedTabView" ref="a0c0738e623416b0e6d90906da55c26f2" args="" -->
-<a class="el" href="interface_t_t_tab.php">TTTab</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>selectedTabView</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1f8fb2c3764af42e39af69fdcf4ded6e"></a><!-- doxytag: member="TTTabGrid::selectedTabIndex" ref="a1f8fb2c3764af42e39af69fdcf4ded6e" args="" -->
-NSInteger&nbsp;</td><td class="memItemRight" valign="bottom"><b>selectedTabIndex</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aceecdf8e3676a84b08ba1864ce21387b"></a><!-- doxytag: member="TTTabGrid::tabItems" ref="aceecdf8e3676a84b08ba1864ce21387b" args="" -->
-<a class="el" href="class_n_s_array.php">NSArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tabItems</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7046ca3df14c3e831d57ed4552bf428"></a><!-- doxytag: member="TTTabGrid::tabViews" ref="af7046ca3df14c3e831d57ed4552bf428" args="" -->
-<a class="el" href="class_n_s_array.php">NSArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>tabViews</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afde6b7aedd8d28bdd6b80ab02725894c"></a><!-- doxytag: member="TTTabGrid::delegate" ref="afde6b7aedd8d28bdd6b80ab02725894c" args="" -->
-id&lt; <a class="el" href="protocol_t_t_tab_delegate-p.php">TTTabDelegate</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>delegate</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a832ab8c5e49539942c6d40c66fc80c78"></a><!-- doxytag: member="TTTabGrid::style" ref="a832ab8c5e49539942c6d40c66fc80c78" args="" -->
-<a class="el" href="interface_t_t_style.php">TTStyle</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>style</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aae1379b4316b8434d095325bfac7b70a"></a><!-- doxytag: member="TTTabGrid::layout" ref="aae1379b4316b8434d095325bfac7b70a" args="" -->
-<a class="el" href="interface_t_t_layout.php">TTLayout</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>layout</b></td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Three20UI/Headers/<a class="el" href="_t_t_tab_grid_8h_source.php">TTTabGrid.h</a></li>
@@ -194,47 +167,46 @@ id&lt; <a class="el" href="protocol_t_t_tab_delegate-p.php">TTTabDelegate</a> &g
 </iframe>
 </div>
 
-
-</div> <!-- .fixed-width -->
-
-<div class="fixed-width">
-<div id="disqus_thread"></div>
-<script type="text/javascript">
+<div id="disqus_thread"></div> 
+<script type="text/javascript"> 
   (function() {
    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
    dsq.src = 'http://three20info2.disqus.com/embed.js';
    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</div> <!-- .fixed-width -->
-
-</div> <!-- #content -->
-</div> <!-- #page-wrapper -->
-
-<script type="text/javascript">
-
+</script> 
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript> 
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> 
+</div> <!-- .fixed-width --> 
+ 
+</div> <!-- #content --> 
+</div> <!-- #page-wrapper --> 
+ 
+ 
+ 
+<script type="text/javascript"> 
+ 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-19295672-1']);
   _gaq.push(['_setDomainName', '.three20.info']);
   _gaq.push(['_trackPageview']);
-
+ 
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-</script>
-
-<script type="text/javascript">
+</script> 
+ 
+<script type="text/javascript"> 
 var disqus_shortname = 'three20info2';
 (function () {
   var s = document.createElement('script'); s.async = true;
   s.src = 'http://disqus.com/forums/three20info2/count.js';
   (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
-</script>
-
-</body>
+</script> 
+ 
+ 
+</body> 
 </html>

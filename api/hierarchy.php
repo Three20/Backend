@@ -1,48 +1,71 @@
-<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:og="http://opengraphprotocol.org/schema/"
-      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta property="fb:app_id" content="114720825217072"/>
-  <meta property="fb:admins" content="122605446"/>
-  <meta property="og:title" content="three20.info"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="http://three20.info/"/>
-  <meta property="og:image" content="http://github.com/facebook/three20/raw/06cd0abe33ac39d1f509e278e286c6bf1e45e821/samples/Resources/Icon.png"/>
-  <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
+      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en"> 
+<head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  <meta property="fb:app_id" content="114720825217072"/> 
+  <meta property="fb:admins" content="122605446"/> 
+  <meta property="og:title" content="three20.info"/> 
+  <meta property="og:type" content="website"/> 
+  <meta property="og:url" content="http://three20.info/"/> 
+  <meta property="og:image" content="http://github.com/facebook/three20/raw/master/samples/Resources/Icon.png"/> 
+  <meta name="keywords" content="three20 iPhone api open source library uikit tt" /> 
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
-  <title>Three20: Hierarchical Index</title>
+<title>Three20 API: Hierarchical Index</title>
 <link href="http://three20.info/css/reset.css" rel="stylesheet" type="text/css"/>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/global.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/article.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/api.css" rel="stylesheet" type="text/css"/>
+<link href="http://dev.three20.info/css/global.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/article.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/api.css" rel="stylesheet" type="text/css"/>
 </head>
 <body onload='searchBox.OnSelectItem(0);'>
+<div id="page-wrapper"> 
 
-<div id="page-wrapper">
+<!-- HEADER -->
 
-<!-- HEADER --> 
- 
 <div id="header"> 
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
   <li><a href="http://three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://three20.info/documentation">Documentation</a></li> 
-  <li><a href="http://api.three20.info/">API</a></li> 
+  <li><a href="http://three20.info/extensions">Extensions</a></li> 
   <li><a href="http://three20.info/community">Community</a></li> 
 </ul> 
  
+<div id="fb-root"></div> 
+<script> 
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId   : '165692500131929',
+      session : {"access_token":"165692500131929|2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446|7YjdqHOYyL6MXMHd-udsP0EbTsg","base_domain":"three20.info","expires":"1298952000","secret":"Hcv3uGki22DI7f_imqBhgQ__","session_key":"2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446","sig":"fdaa725c7cf196ce9579d1b232a16e64","uid":"122605446"}, // don't refetch the session when PHP already has it
+      status  : true, // check login status
+      cookie  : true, // enable cookies to allow the server to access the session
+      xfbml   : true // parse XFBML
+    });
+ 
+    // whenever the user logs in, we refresh the page
+    FB.Event.subscribe('auth.login', function() {
+      window.location.reload();
+    });
+  };
+ 
+  (function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script> 
+ 
 <ul class="right-links"> 
-  <li><a href="http://<?= $_SERVER['SERVER_NAME']?><?= $_SERVER['REQUEST_URI'] ?>#disqus_thread">Comments</a></li>
+<li><img class="profileimg" width="25" height="25" valign="bottom" src="https://graph.facebook.com/122605446/picture?type=square">Jeff Verkoeyen</li> 
+<li><a href="https://www.facebook.com/logout.php?next=http%3A%2F%2Fdev.three20.info%2F&access_token=165692500131929%7C2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446%7C7YjdqHOYyL6MXMHd-udsP0EbTsg" onclick="FB.logout(function() { window.location.reload();}); return false;">Log out</a></li> 
 </ul> 
  
 <div class="leadin"> 
@@ -53,7 +76,9 @@
 </div> <!-- .fixed-width --> 
 </div> <!-- #header --> 
 
-<div id="content">
+<!-- CONTENT -->
+
+<div id="content"> 
 <div class="fixed-width">
 <!-- Generated by Doxygen 1.7.1 -->
 <script type="text/javascript"><!--
@@ -63,7 +88,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul class="tablist">
       <li><a href="index.php"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.php"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.php"><span>Classes</span></a></li>
       <li><a href="files.php"><span>Files</span></a></li>
       <li><a href="examples.php"><span>Examples</span></a></li>
@@ -119,7 +143,6 @@ This inheritance list is sorted roughly, but not completely, alphabetically:<ul>
 <li><a class="el" href="interface_g_s_event_fake.php">GSEventFake</a></li>
 <li><a class="el" href="interface_mock_model_delegate.php">MockModelDelegate</a></li>
 <li><a class="el" href="interface_s_b_json_base.php">SBJsonBase</a><ul>
-<li><a class="el" href="interface_s_b_j_s_o_n.php">SBJSON</a></li>
 <li><a class="el" href="interface_s_b_json_parser.php">SBJsonParser</a></li>
 <li><a class="el" href="interface_s_b_json_writer.php">SBJsonWriter</a></li>
 </ul>
@@ -132,6 +155,9 @@ This inheritance list is sorted roughly, but not completely, alphabetically:<ul>
 <li><a class="el" href="interface_t_t_c_s_s_parser.php">TTCSSParser</a></li>
 <li><a class="el" href="interface_t_t_c_s_s_style_sheet.php">TTCSSStyleSheet</a></li>
 <li><a class="el" href="interface_t_t_entity_tables.php">TTEntityTables</a></li>
+<li><a class="el" href="interface_t_t_extension_author.php">TTExtensionAuthor</a></li>
+<li><a class="el" href="interface_t_t_extension_info.php">TTExtensionInfo</a></li>
+<li><a class="el" href="class_t_t_extension_loader.php">TTExtensionLoader</a></li>
 <li><a class="el" href="interface_t_t_launcher_item.php">TTLauncherItem</a></li>
 <li><a class="el" href="interface_t_t_layout.php">TTLayout</a><ul>
 <li><a class="el" href="interface_t_t_flow_layout.php">TTFlowLayout</a></li>
@@ -273,6 +299,7 @@ This inheritance list is sorted roughly, but not completely, alphabetically:<ul>
 <li><a class="el" href="interface_t_t_table_view_var_height_delegate.php">TTTableViewVarHeightDelegate</a><ul>
 <li><a class="el" href="interface_t_t_table_view_drag_refresh_delegate.php">TTTableViewDragRefreshDelegate</a></li>
 <li><a class="el" href="interface_t_t_table_view_grouped_var_height_delegate.php">TTTableViewGroupedVarHeightDelegate</a></li>
+<li><a class="el" href="interface_t_t_table_view_network_enabled_delegate.php">TTTableViewNetworkEnabledDelegate</a></li>
 <li><a class="el" href="interface_t_t_table_view_plain_var_height_delegate.php">TTTableViewPlainVarHeightDelegate</a></li>
 </ul>
 </li>
@@ -306,16 +333,6 @@ This inheritance list is sorted roughly, but not completely, alphabetically:<ul>
 </li>
 <li><a class="el" href="class_n_s_string.php">NSString</a></li>
 <li><a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a></li>
-<li><a class="el" href="protocol_s_b_json_parser-p.php">&lt;SBJsonParser&gt;</a><ul>
-<li><a class="el" href="interface_s_b_j_s_o_n.php">SBJSON</a></li>
-<li><a class="el" href="interface_s_b_json_parser.php">SBJsonParser</a></li>
-</ul>
-</li>
-<li><a class="el" href="protocol_s_b_json_writer-p.php">&lt;SBJsonWriter&gt;</a><ul>
-<li><a class="el" href="interface_s_b_j_s_o_n.php">SBJSON</a></li>
-<li><a class="el" href="interface_s_b_json_writer.php">SBJsonWriter</a></li>
-</ul>
-</li>
 <li><a class="el" href="interface_t_t_action_sheet.php">TTActionSheet</a></li>
 <li><a class="el" href="protocol_t_t_action_sheet_controller_delegate-p.php">&lt;TTActionSheetControllerDelegate&gt;</a></li>
 <li><a class="el" href="interface_t_t_alert_view.php">TTAlertView</a></li>
@@ -351,6 +368,8 @@ This inheritance list is sorted roughly, but not completely, alphabetically:<ul>
 </ul>
 </li>
 <li><a class="el" href="interface_t_t_table_view_controller.php">TTTableViewController</a><ul>
+<li><a class="el" href="interface_t_t_extension_info_controller.php">TTExtensionInfoController</a></li>
+<li><a class="el" href="interface_t_t_extensions_controller.php">TTExtensionsController</a></li>
 <li><a class="el" href="interface_t_t_thumbs_view_controller.php">TTThumbsViewController</a></li>
 </ul>
 </li>
@@ -360,6 +379,10 @@ This inheritance list is sorted roughly, but not completely, alphabetically:<ul>
 </ul>
 </li>
 <li><a class="el" href="protocol_t_t_navigator_delegate-p.php">&lt;TTNavigatorDelegate&gt;</a></li>
+<li><a class="el" href="protocol_t_t_navigator_root_container-p.php">&lt;TTNavigatorRootContainer&gt;</a><ul>
+<li><a class="el" href="interface_t_t_split_view_controller.php">TTSplitViewController</a></li>
+</ul>
+</li>
 <li><a class="el" href="interface_t_t_page_control.php">TTPageControl</a></li>
 <li><a class="el" href="protocol_t_t_post_controller_delegate-p.php">&lt;TTPostControllerDelegate&gt;</a></li>
 <li><a class="el" href="protocol_t_t_recursive_progress_delegate-p.php">&lt;TTRecursiveProgressDelegate&gt;</a></li>
@@ -414,6 +437,7 @@ This inheritance list is sorted roughly, but not completely, alphabetically:<ul>
 </ul>
 </li>
 <li><a class="el" href="protocol_t_t_tab_delegate-p.php">&lt;TTTabDelegate&gt;</a></li>
+<li><a class="el" href="protocol_t_t_table_network_enabled_table_view_controller-p.php">&lt;TTTableNetworkEnabledTableViewController&gt;</a></li>
 <li><a class="el" href="interface_t_t_table_view_cell.php">TTTableViewCell</a><ul>
 <li><a class="el" href="interface_t_t_styled_text_table_cell.php">TTStyledTextTableCell</a></li>
 <li><a class="el" href="interface_t_t_table_activity_item_cell.php">TTTableActivityItemCell</a></li>
@@ -495,6 +519,10 @@ This inheritance list is sorted roughly, but not completely, alphabetically:<ul>
 </li>
 </ul>
 </li>
+<li><a class="el" href="class_u_i_split_view_controller.php">UISplitViewController</a><ul>
+<li><a class="el" href="interface_t_t_split_view_controller.php">TTSplitViewController</a></li>
+</ul>
+</li>
 <li><a class="el" href="class_u_i_tab_bar_controller.php">UITabBarController</a></li>
 <li><a class="el" href="class_u_i_table_view.php">UITableView</a><ul>
 <li><a class="el" href="interface_t_t_table_view.php">TTTableView</a></li>
@@ -509,7 +537,7 @@ This inheritance list is sorted roughly, but not completely, alphabetically:<ul>
 <li><a class="el" href="interface_t_t_launcher_view.php">TTLauncherView</a></li>
 <li><a class="el" href="interface_t_t_scroll_view.php">TTScrollView</a></li>
 <li><a class="el" href="interface_t_t_searchlight_label.php">TTSearchlightLabel</a></li>
-<li><a class="el" href="interface_t_t_styled_text_label.php">TTStyledTextLabel</a></li>
+<li><a class="el" href="interface_t_t_table_footer_infinite_scroll_view.php">TTTableFooterInfiniteScrollView</a></li>
 <li><a class="el" href="interface_t_t_table_header_drag_refresh_view.php">TTTableHeaderDragRefreshView</a></li>
 <li><a class="el" href="interface_t_t_unclipped_view.php">TTUnclippedView</a></li>
 <li><a class="el" href="interface_t_t_view.php">TTView</a></li>
@@ -566,47 +594,46 @@ This inheritance list is sorted roughly, but not completely, alphabetically:<ul>
 </iframe>
 </div>
 
-
-</div> <!-- .fixed-width -->
-
-<div class="fixed-width">
-<div id="disqus_thread"></div>
-<script type="text/javascript">
+<div id="disqus_thread"></div> 
+<script type="text/javascript"> 
   (function() {
    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
    dsq.src = 'http://three20info2.disqus.com/embed.js';
    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</div> <!-- .fixed-width -->
-
-</div> <!-- #content -->
-</div> <!-- #page-wrapper -->
-
-<script type="text/javascript">
-
+</script> 
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript> 
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> 
+</div> <!-- .fixed-width --> 
+ 
+</div> <!-- #content --> 
+</div> <!-- #page-wrapper --> 
+ 
+ 
+ 
+<script type="text/javascript"> 
+ 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-19295672-1']);
   _gaq.push(['_setDomainName', '.three20.info']);
   _gaq.push(['_trackPageview']);
-
+ 
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-</script>
-
-<script type="text/javascript">
+</script> 
+ 
+<script type="text/javascript"> 
 var disqus_shortname = 'three20info2';
 (function () {
   var s = document.createElement('script'); s.async = true;
   s.src = 'http://disqus.com/forums/three20info2/count.js';
   (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
-</script>
-
-</body>
+</script> 
+ 
+ 
+</body> 
 </html>

@@ -1,48 +1,71 @@
-<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:og="http://opengraphprotocol.org/schema/"
-      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta property="fb:app_id" content="114720825217072"/>
-  <meta property="fb:admins" content="122605446"/>
-  <meta property="og:title" content="three20.info"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="http://three20.info/"/>
-  <meta property="og:image" content="http://github.com/facebook/three20/raw/06cd0abe33ac39d1f509e278e286c6bf1e45e821/samples/Resources/Icon.png"/>
-  <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
+      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en"> 
+<head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  <meta property="fb:app_id" content="114720825217072"/> 
+  <meta property="fb:admins" content="122605446"/> 
+  <meta property="og:title" content="three20.info"/> 
+  <meta property="og:type" content="website"/> 
+  <meta property="og:url" content="http://three20.info/"/> 
+  <meta property="og:image" content="http://github.com/facebook/three20/raw/master/samples/Resources/Icon.png"/> 
+  <meta name="keywords" content="three20 iPhone api open source library uikit tt" /> 
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
-  <title>Three20: Class List</title>
+<title>Three20 API: Class List</title>
 <link href="http://three20.info/css/reset.css" rel="stylesheet" type="text/css"/>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/global.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/article.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/api.css" rel="stylesheet" type="text/css"/>
+<link href="http://dev.three20.info/css/global.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/article.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/api.css" rel="stylesheet" type="text/css"/>
 </head>
 <body onload='searchBox.OnSelectItem(0);'>
+<div id="page-wrapper"> 
 
-<div id="page-wrapper">
+<!-- HEADER -->
 
-<!-- HEADER --> 
- 
 <div id="header"> 
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
   <li><a href="http://three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://three20.info/documentation">Documentation</a></li> 
-  <li><a href="http://api.three20.info/">API</a></li> 
+  <li><a href="http://three20.info/extensions">Extensions</a></li> 
   <li><a href="http://three20.info/community">Community</a></li> 
 </ul> 
  
+<div id="fb-root"></div> 
+<script> 
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId   : '165692500131929',
+      session : {"access_token":"165692500131929|2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446|7YjdqHOYyL6MXMHd-udsP0EbTsg","base_domain":"three20.info","expires":"1298952000","secret":"Hcv3uGki22DI7f_imqBhgQ__","session_key":"2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446","sig":"fdaa725c7cf196ce9579d1b232a16e64","uid":"122605446"}, // don't refetch the session when PHP already has it
+      status  : true, // check login status
+      cookie  : true, // enable cookies to allow the server to access the session
+      xfbml   : true // parse XFBML
+    });
+ 
+    // whenever the user logs in, we refresh the page
+    FB.Event.subscribe('auth.login', function() {
+      window.location.reload();
+    });
+  };
+ 
+  (function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script> 
+ 
 <ul class="right-links"> 
-  <li><a href="http://<?= $_SERVER['SERVER_NAME']?><?= $_SERVER['REQUEST_URI'] ?>#disqus_thread">Comments</a></li>
+<li><img class="profileimg" width="25" height="25" valign="bottom" src="https://graph.facebook.com/122605446/picture?type=square">Jeff Verkoeyen</li> 
+<li><a href="https://www.facebook.com/logout.php?next=http%3A%2F%2Fdev.three20.info%2F&access_token=165692500131929%7C2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446%7C7YjdqHOYyL6MXMHd-udsP0EbTsg" onclick="FB.logout(function() { window.location.reload();}); return false;">Log out</a></li> 
 </ul> 
  
 <div class="leadin"> 
@@ -53,7 +76,9 @@
 </div> <!-- .fixed-width --> 
 </div> <!-- #header --> 
 
-<div id="content">
+<!-- CONTENT -->
+
+<div id="content"> 
 <div class="fixed-width">
 <!-- Generated by Doxygen 1.7.1 -->
 <script type="text/javascript"><!--
@@ -63,7 +88,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul class="tablist">
       <li><a href="index.php"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.php"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.php"><span>Classes</span></a></li>
       <li><a href="files.php"><span>Files</span></a></li>
       <li><a href="examples.php"><span>Examples</span></a></li>
@@ -120,12 +144,9 @@ Here are the classes, structs, unions and interfaces with brief descriptions:<ta
   <tr><td class="indexkey"><a class="el" href="class_n_s_object.php">NSObject</a></td><td class="indexvalue">Additions </td></tr>
   <tr><td class="indexkey"><a class="el" href="class_n_s_string.php">NSString</a></td><td class="indexvalue">Additions </td></tr>
   <tr><td class="indexkey"><a class="el" href="class_pbxproj_1_1_pbxproj.php">Pbxproj::Pbxproj</a></td><td class="indexvalue"></td></tr>
-  <tr><td class="indexkey"><a class="el" href="interface_s_b_j_s_o_n.php">SBJSON</a></td><td class="indexvalue">Facade for SBJsonWriter/SBJsonParser </td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_s_b_json_base.php">SBJsonBase</a></td><td class="indexvalue">Common base class for parsing &amp; writing </td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_s_b_json_parser.php">SBJsonParser</a></td><td class="indexvalue">The JSON parser class </td></tr>
-  <tr><td class="indexkey"><a class="el" href="protocol_s_b_json_parser-p.php">&lt;SBJsonParser&gt;</a></td><td class="indexvalue">Options for the parser class </td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_s_b_json_writer.php">SBJsonWriter</a></td><td class="indexvalue">The JSON writer class </td></tr>
-  <tr><td class="indexkey"><a class="el" href="protocol_s_b_json_writer-p.php">&lt;SBJsonWriter&gt;</a></td><td class="indexvalue">Options for the writer class </td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_action_sheet.php">TTActionSheet</a></td><td class="indexvalue">[private] A subclassed UIActionSheet that retains the popup view controller </td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_action_sheet_controller.php">TTActionSheetController</a></td><td class="indexvalue">A view controller that displays an action sheet </td></tr>
   <tr><td class="indexkey"><a class="el" href="protocol_t_t_action_sheet_controller_delegate-p.php">&lt;TTActionSheetControllerDelegate&gt;</a></td><td class="indexvalue">Inherits the UIActionSheetDelegate protocol and adds <a class="el" href="interface_t_t_navigator.php" title="A URL-based navigation system with built-in persistence.">TTNavigator</a> support </td></tr>
@@ -149,6 +170,11 @@ Here are the classes, structs, unions and interfaces with brief descriptions:<ta
   <tr><td class="indexkey"><a class="el" href="interface_t_t_default_style_sheet.php">TTDefaultStyleSheet</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_entity_tables.php">TTEntityTables</a></td><td class="indexvalue">Standard entity tables for use with XML parsers </td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_error_view.php">TTErrorView</a></td><td class="indexvalue"></td></tr>
+  <tr><td class="indexkey"><a class="el" href="interface_t_t_extension_author.php">TTExtensionAuthor</a></td><td class="indexvalue"></td></tr>
+  <tr><td class="indexkey"><a class="el" href="interface_t_t_extension_info.php">TTExtensionInfo</a></td><td class="indexvalue"></td></tr>
+  <tr><td class="indexkey"><a class="el" href="interface_t_t_extension_info_controller.php">TTExtensionInfoController</a></td><td class="indexvalue">Display information about a specific extension </td></tr>
+  <tr><td class="indexkey"><a class="el" href="class_t_t_extension_loader.php">TTExtensionLoader</a></td><td class="indexvalue">The extension loader provides basic utility methods to load extensions once an application has started running </td></tr>
+  <tr><td class="indexkey"><a class="el" href="interface_t_t_extensions_controller.php">TTExtensionsController</a></td><td class="indexvalue">A list of all available, loaded, and failed extensions </td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_flow_layout.php">TTFlowLayout</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_four_border_style.php">TTFourBorderStyle</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_grid_layout.php">TTGridLayout</a></td><td class="indexvalue"></td></tr>
@@ -186,6 +212,7 @@ Here are the classes, structs, unions and interfaces with brief descriptions:<ta
   <tr><td class="indexkey"><a class="el" href="interface_t_t_navigation_controller.php">TTNavigationController</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_navigator.php">TTNavigator</a></td><td class="indexvalue">A URL-based navigation system with built-in persistence </td></tr>
   <tr><td class="indexkey"><a class="el" href="protocol_t_t_navigator_delegate-p.php">&lt;TTNavigatorDelegate&gt;</a></td><td class="indexvalue"></td></tr>
+  <tr><td class="indexkey"><a class="el" href="protocol_t_t_navigator_root_container-p.php">&lt;TTNavigatorRootContainer&gt;</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_navigator_view_controller.php">TTNavigatorViewController</a></td><td class="indexvalue">Cleans up navigator properties when the controller is released </td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_navigator_window.php">TTNavigatorWindow</a></td><td class="indexvalue">Provides support for shake gestures </td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_page_control.php">TTPageControl</a></td><td class="indexvalue"><a class="el" href="interface_t_t_page_control.php" title="TTPageControl is a version of UIPageControl which allows you to style the dots.">TTPageControl</a> is a version of UIPageControl which allows you to style the dots </td></tr>
@@ -224,6 +251,7 @@ Here are the classes, structs, unions and interfaces with brief descriptions:<ta
   <tr><td class="indexkey"><a class="el" href="interface_t_t_solid_border_style.php">TTSolidBorderStyle</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_solid_fill_style.php">TTSolidFillStyle</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_speech_bubble_shape.php">TTSpeechBubbleShape</a></td><td class="indexvalue"></td></tr>
+  <tr><td class="indexkey"><a class="el" href="interface_t_t_split_view_controller.php">TTSplitViewController</a></td><td class="indexvalue">A split view controller that implements the navigator root protocol </td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_style.php">TTStyle</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_style_context.php">TTStyleContext</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_styled_block.php">TTStyledBlock</a></td><td class="indexvalue"></td></tr>
@@ -265,6 +293,7 @@ Here are the classes, structs, unions and interfaces with brief descriptions:<ta
   <tr><td class="indexkey"><a class="el" href="interface_t_t_table_control_cell.php">TTTableControlCell</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_table_control_item.php">TTTableControlItem</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_table_flush_view_cell.php">TTTableFlushViewCell</a></td><td class="indexvalue"></td></tr>
+  <tr><td class="indexkey"><a class="el" href="interface_t_t_table_footer_infinite_scroll_view.php">TTTableFooterInfiniteScrollView</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_table_gray_text_item.php">TTTableGrayTextItem</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_table_header_drag_refresh_view.php">TTTableHeaderDragRefreshView</a></td><td class="indexvalue">Pulled from the uprise78/three20-P31 fork with consent of uprise78 </td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_table_header_view.php">TTTableHeaderView</a></td><td class="indexvalue"></td></tr>
@@ -279,6 +308,7 @@ Here are the classes, structs, unions and interfaces with brief descriptions:<ta
   <tr><td class="indexkey"><a class="el" href="interface_t_t_table_message_item_cell.php">TTTableMessageItemCell</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_table_more_button.php">TTTableMoreButton</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_table_more_button_cell.php">TTTableMoreButtonCell</a></td><td class="indexvalue"></td></tr>
+  <tr><td class="indexkey"><a class="el" href="protocol_t_t_table_network_enabled_table_view_controller-p.php">&lt;TTTableNetworkEnabledTableViewController&gt;</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_table_right_caption_item.php">TTTableRightCaptionItem</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_table_right_caption_item_cell.php">TTTableRightCaptionItemCell</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_table_right_image_item.php">TTTableRightImageItem</a></td><td class="indexvalue"></td></tr>
@@ -301,6 +331,7 @@ Here are the classes, structs, unions and interfaces with brief descriptions:<ta
   <tr><td class="indexkey"><a class="el" href="interface_t_t_table_view_grouped_var_height_delegate.php">TTTableViewGroupedVarHeightDelegate</a></td><td class="indexvalue">A table view delegate for grouped table views that provides the header size </td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_table_view_interstitial_data_source.php">TTTableViewInterstitialDataSource</a></td><td class="indexvalue">A datasource that is eternally loading </td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_table_view_item.php">TTTableViewItem</a></td><td class="indexvalue"></td></tr>
+  <tr><td class="indexkey"><a class="el" href="interface_t_t_table_view_network_enabled_delegate.php">TTTableViewNetworkEnabledDelegate</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_table_view_plain_delegate.php">TTTableViewPlainDelegate</a></td><td class="indexvalue">The most basic delegate </td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_table_view_plain_var_height_delegate.php">TTTableViewPlainVarHeightDelegate</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_table_view_var_height_delegate.php">TTTableViewVarHeightDelegate</a></td><td class="indexvalue">A table view delegate that queries the cell items for their height </td></tr>
@@ -341,7 +372,7 @@ Here are the classes, structs, unions and interfaces with brief descriptions:<ta
   <tr><td class="indexkey"><a class="el" href="interface_t_t_u_r_l_wildcard.php">TTURLWildcard</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_u_r_l_x_m_l_response.php">TTURLXMLResponse</a></td><td class="indexvalue">An implementation of the <a class="el" href="protocol_t_t_u_r_l_response-p.php" title="A response protocol for TTURLRequest.">TTURLResponse</a> protocal for turning XML responses into NSObjects </td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_user_info.php">TTUserInfo</a></td><td class="indexvalue">A helper class for storing user info to help identify a request </td></tr>
-  <tr><td class="indexkey"><a class="el" href="interface_t_t_view.php">TTView</a></td><td class="indexvalue">A <a class="el" href="class_u_i_view.php">UIView</a> with an attached style and layout that are used to render and layout the view, respectively </td></tr>
+  <tr><td class="indexkey"><a class="el" href="interface_t_t_view.php">TTView</a></td><td class="indexvalue">A <a class="el" href="class_u_i_view.php" title="Additions.">UIView</a> with an attached style and layout that are used to render and layout the view, respectively </td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_view_controller.php">TTViewController</a></td><td class="indexvalue">A view controller with some useful additions </td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_t_t_web_controller.php">TTWebController</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="protocol_t_t_web_controller_delegate-p.php">&lt;TTWebControllerDelegate&gt;</a></td><td class="indexvalue"></td></tr>
@@ -356,12 +387,13 @@ Here are the classes, structs, unions and interfaces with brief descriptions:<ta
   <tr><td class="indexkey"><a class="el" href="interface_u_i_global_tests.php">UIGlobalTests</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="class_u_i_image.php">UIImage</a></td><td class="indexvalue">Additions </td></tr>
   <tr><td class="indexkey"><a class="el" href="class_u_i_navigation_controller.php">UINavigationController</a></td><td class="indexvalue">Additions </td></tr>
+  <tr><td class="indexkey"><a class="el" href="class_u_i_split_view_controller.php">UISplitViewController</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="class_u_i_tab_bar_controller.php">UITabBarController</a></td><td class="indexvalue">Additions </td></tr>
   <tr><td class="indexkey"><a class="el" href="class_u_i_table_view.php">UITableView</a></td><td class="indexvalue">Additions </td></tr>
   <tr><td class="indexkey"><a class="el" href="class_u_i_toolbar.php">UIToolbar</a></td><td class="indexvalue">Additions </td></tr>
   <tr><td class="indexkey"><a class="el" href="class_u_i_touch.php">UITouch</a></td><td class="indexvalue"></td></tr>
-  <tr><td class="indexkey"><a class="el" href="class_u_i_view.php">UIView</a></td><td class="indexvalue"></td></tr>
-  <tr><td class="indexkey"><a class="el" href="class_u_i_view_controller.php">UIViewController</a></td><td class="indexvalue"></td></tr>
+  <tr><td class="indexkey"><a class="el" href="class_u_i_view.php">UIView</a></td><td class="indexvalue">Additions </td></tr>
+  <tr><td class="indexkey"><a class="el" href="class_u_i_view_controller.php">UIViewController</a></td><td class="indexvalue">Additions </td></tr>
   <tr><td class="indexkey"><a class="el" href="interface_u_i_view_controller_addition_tests.php">UIViewControllerAdditionTests</a></td><td class="indexvalue"></td></tr>
   <tr><td class="indexkey"><a class="el" href="class_u_i_web_view.php">UIWebView</a></td><td class="indexvalue">Additions </td></tr>
   <tr><td class="indexkey"><a class="el" href="class_u_i_window.php">UIWindow</a></td><td class="indexvalue">Additions </td></tr>
@@ -394,47 +426,46 @@ Here are the classes, structs, unions and interfaces with brief descriptions:<ta
 </iframe>
 </div>
 
-
-</div> <!-- .fixed-width -->
-
-<div class="fixed-width">
-<div id="disqus_thread"></div>
-<script type="text/javascript">
+<div id="disqus_thread"></div> 
+<script type="text/javascript"> 
   (function() {
    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
    dsq.src = 'http://three20info2.disqus.com/embed.js';
    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</div> <!-- .fixed-width -->
-
-</div> <!-- #content -->
-</div> <!-- #page-wrapper -->
-
-<script type="text/javascript">
-
+</script> 
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript> 
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> 
+</div> <!-- .fixed-width --> 
+ 
+</div> <!-- #content --> 
+</div> <!-- #page-wrapper --> 
+ 
+ 
+ 
+<script type="text/javascript"> 
+ 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-19295672-1']);
   _gaq.push(['_setDomainName', '.three20.info']);
   _gaq.push(['_trackPageview']);
-
+ 
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-</script>
-
-<script type="text/javascript">
+</script> 
+ 
+<script type="text/javascript"> 
 var disqus_shortname = 'three20info2';
 (function () {
   var s = document.createElement('script'); s.async = true;
   s.src = 'http://disqus.com/forums/three20info2/count.js';
   (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
-</script>
-
-</body>
+</script> 
+ 
+ 
+</body> 
 </html>

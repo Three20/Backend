@@ -1,48 +1,71 @@
-<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:og="http://opengraphprotocol.org/schema/"
-      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta property="fb:app_id" content="114720825217072"/>
-  <meta property="fb:admins" content="122605446"/>
-  <meta property="og:title" content="three20.info"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="http://three20.info/"/>
-  <meta property="og:image" content="http://github.com/facebook/three20/raw/06cd0abe33ac39d1f509e278e286c6bf1e45e821/samples/Resources/Icon.png"/>
-  <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
+      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en"> 
+<head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  <meta property="fb:app_id" content="114720825217072"/> 
+  <meta property="fb:admins" content="122605446"/> 
+  <meta property="og:title" content="three20.info"/> 
+  <meta property="og:type" content="website"/> 
+  <meta property="og:url" content="http://three20.info/"/> 
+  <meta property="og:image" content="http://github.com/facebook/three20/raw/master/samples/Resources/Icon.png"/> 
+  <meta name="keywords" content="three20 iPhone api open source library uikit tt" /> 
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
-  <title>Three20: TTStyledImageFrame Class Reference</title>
+<title>Three20 API: TTStyledImageFrame Class Reference</title>
 <link href="http://three20.info/css/reset.css" rel="stylesheet" type="text/css"/>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/global.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/article.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/api.css" rel="stylesheet" type="text/css"/>
+<link href="http://dev.three20.info/css/global.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/article.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/api.css" rel="stylesheet" type="text/css"/>
 </head>
 <body onload='searchBox.OnSelectItem(0);'>
+<div id="page-wrapper"> 
 
-<div id="page-wrapper">
+<!-- HEADER -->
 
-<!-- HEADER --> 
- 
 <div id="header"> 
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
   <li><a href="http://three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://three20.info/documentation">Documentation</a></li> 
-  <li><a href="http://api.three20.info/">API</a></li> 
+  <li><a href="http://three20.info/extensions">Extensions</a></li> 
   <li><a href="http://three20.info/community">Community</a></li> 
 </ul> 
  
+<div id="fb-root"></div> 
+<script> 
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId   : '165692500131929',
+      session : {"access_token":"165692500131929|2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446|7YjdqHOYyL6MXMHd-udsP0EbTsg","base_domain":"three20.info","expires":"1298952000","secret":"Hcv3uGki22DI7f_imqBhgQ__","session_key":"2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446","sig":"fdaa725c7cf196ce9579d1b232a16e64","uid":"122605446"}, // don't refetch the session when PHP already has it
+      status  : true, // check login status
+      cookie  : true, // enable cookies to allow the server to access the session
+      xfbml   : true // parse XFBML
+    });
+ 
+    // whenever the user logs in, we refresh the page
+    FB.Event.subscribe('auth.login', function() {
+      window.location.reload();
+    });
+  };
+ 
+  (function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script> 
+ 
 <ul class="right-links"> 
-  <li><a href="http://<?= $_SERVER['SERVER_NAME']?><?= $_SERVER['REQUEST_URI'] ?>#disqus_thread">Comments</a></li>
+<li><img class="profileimg" width="25" height="25" valign="bottom" src="https://graph.facebook.com/122605446/picture?type=square">Jeff Verkoeyen</li> 
+<li><a href="https://www.facebook.com/logout.php?next=http%3A%2F%2Fdev.three20.info%2F&access_token=165692500131929%7C2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446%7C7YjdqHOYyL6MXMHd-udsP0EbTsg" onclick="FB.logout(function() { window.location.reload();}); return false;">Log out</a></li> 
 </ul> 
  
 <div class="leadin"> 
@@ -53,7 +76,9 @@
 </div> <!-- .fixed-width --> 
 </div> <!-- #header --> 
 
-<div id="content">
+<!-- CONTENT -->
+
+<div id="content"> 
 <div class="fixed-width">
 <!-- Generated by Doxygen 1.7.1 -->
 <script type="text/javascript"><!--
@@ -63,7 +88,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul class="tablist">
       <li><a href="index.php"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.php"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.php"><span>Classes</span></a></li>
       <li><a href="files.php"><span>Files</span></a></li>
       <li><a href="examples.php"><span>Examples</span></a></li>
@@ -120,33 +144,12 @@ Inheritance diagram for TTStyledImageFrame:</div>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75d82b65cb573c6af000b7b546704051"></a><!-- doxytag: member="TTStyledImageFrame::initWithElement:node:" ref="a75d82b65cb573c6af000b7b546704051" args="(TTStyledElement *element,[node] TTStyledImageNode *node)" -->
 (id)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>initWithElement:node:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93c91ef15228fa6ae4b7693f5e093979"></a><!-- doxytag: member="TTStyledImageFrame::font" ref="a93c91ef15228fa6ae4b7693f5e093979" args="()" -->
-(<a class="el" href="class_u_i_font.php">UIFont</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>font</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abdd58f43dbce357ebf32748429e3196a"></a><!-- doxytag: member="TTStyledImageFrame::initWithElement:" ref="abdd58f43dbce357ebf32748429e3196a" args="(TTStyledElement *element)" -->
-(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>initWithElement:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a303beb9208d9cc6368f0c6e0ff8db821"></a><!-- doxytag: member="TTStyledImageFrame::drawInRect:" ref="a303beb9208d9cc6368f0c6e0ff8db821" args="(CGRect rect)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_styled_frame.php#a303beb9208d9cc6368f0c6e0ff8db821">drawInRect:</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Draws the frame. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6fff50b9be6a44d492ef1437dbbe43a2"></a><!-- doxytag: member="TTStyledImageFrame::hitTest:" ref="a6fff50b9be6a44d492ef1437dbbe43a2" args="(CGPoint point)" -->
-(<a class="el" href="interface_t_t_styled_box_frame.php">TTStyledBoxFrame</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>hitTest:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ca8c9a930241745c77280b6e5296a6b"></a><!-- doxytag: member="TTStyledImageFrame::textForLayerWithStyle:" ref="a6ca8c9a930241745c77280b6e5296a6b" args="(TTStyle *style)" -->
-(<a class="el" href="class_n_s_string.php">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>textForLayerWithStyle:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61b305018c41e4b8596d477337614e28"></a><!-- doxytag: member="TTStyledImageFrame::imageForLayerWithStyle:" ref="a61b305018c41e4b8596d477337614e28" args="(TTStyle *style)" -->
-(<a class="el" href="class_u_i_image.php">UIImage</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>imageForLayerWithStyle:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a940c09a71f143ac572cf3ebaddeb127e"></a><!-- doxytag: member="TTStyledImageFrame::drawLayer:withStyle:" ref="a940c09a71f143ac572cf3ebaddeb127e" args="(TTStyleContext *context,[withStyle] TTStyle *style)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>drawLayer:withStyle:</b></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a563924520b2989745883fa6c7adef023"></a><!-- doxytag: member="TTStyledImageFrame::_imageNode" ref="a563924520b2989745883fa6c7adef023" args="" -->
 <a class="el" href="interface_t_t_styled_image_node.php">TTStyledImageNode</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_imageNode</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad0d2c2e2a1f6d8e16c5318e9d0eba1b4"></a><!-- doxytag: member="TTStyledImageFrame::_style" ref="ad0d2c2e2a1f6d8e16c5318e9d0eba1b4" args="" -->
 <a class="el" href="interface_t_t_style.php">TTStyle</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_style</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad03f8db51cb723fc5e39421e6bb57aa5"></a><!-- doxytag: member="TTStyledImageFrame::_element" ref="ad03f8db51cb723fc5e39421e6bb57aa5" args="" -->
-<a class="el" href="interface_t_t_styled_element.php">TTStyledElement</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_element</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ae54400ddeca3d416f1fd3b9e3ddfb1"></a><!-- doxytag: member="TTStyledImageFrame::_nextFrame" ref="a5ae54400ddeca3d416f1fd3b9e3ddfb1" args="" -->
-<a class="el" href="interface_t_t_styled_frame.php">TTStyledFrame</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_nextFrame</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24cf68c1443114c196c041743b8ee39e"></a><!-- doxytag: member="TTStyledImageFrame::_bounds" ref="a24cf68c1443114c196c041743b8ee39e" args="" -->
-CGRect&nbsp;</td><td class="memItemRight" valign="bottom"><b>_bounds</b></td></tr>
 <tr><td colspan="2"><h2><a name="properties"></a>
 Properties</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abe27e03646d5ce7877a8e8d128de3d2c"></a><!-- doxytag: member="TTStyledImageFrame::imageNode" ref="abe27e03646d5ce7877a8e8d128de3d2c" args="" -->
@@ -155,23 +158,6 @@ Properties</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4419840410dcc3f63169692800591469"></a><!-- doxytag: member="TTStyledImageFrame::style" ref="a4419840410dcc3f63169692800591469" args="" -->
 <a class="el" href="interface_t_t_style.php">TTStyle</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_styled_image_frame.php#a4419840410dcc3f63169692800591469">style</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The style used to render the frame;. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67cc15e5eeaca5b7ad03e29bed795168"></a><!-- doxytag: member="TTStyledImageFrame::element" ref="a67cc15e5eeaca5b7ad03e29bed795168" args="" -->
-<a class="el" href="interface_t_t_styled_element.php">TTStyledElement</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_styled_frame.php#a67cc15e5eeaca5b7ad03e29bed795168">element</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The element that contains the frame. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac766ee3e369aade645baa3f93cec4867"></a><!-- doxytag: member="TTStyledImageFrame::nextFrame" ref="ac766ee3e369aade645baa3f93cec4867" args="" -->
-<a class="el" href="interface_t_t_styled_frame.php">TTStyledFrame</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_styled_frame.php#ac766ee3e369aade645baa3f93cec4867">nextFrame</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The next in the linked list of frames. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab0bd9f22c306b1983ffe3889a3057971"></a><!-- doxytag: member="TTStyledImageFrame::bounds" ref="ab0bd9f22c306b1983ffe3889a3057971" args="" -->
-CGRect&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_styled_frame.php#ab0bd9f22c306b1983ffe3889a3057971">bounds</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The bounds of the content that is displayed by this frame. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e4e82fffc643c459e0527325dcb6cda"></a><!-- doxytag: member="TTStyledImageFrame::x" ref="a2e4e82fffc643c459e0527325dcb6cda" args="" -->
-CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><b>x</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6dfa6d3f5a80762f9b0dda76a61ba9ac"></a><!-- doxytag: member="TTStyledImageFrame::y" ref="a6dfa6d3f5a80762f9b0dda76a61ba9ac" args="" -->
-CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><b>y</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac52f801db1357e38f7cfc785264e55ea"></a><!-- doxytag: member="TTStyledImageFrame::width" ref="ac52f801db1357e38f7cfc785264e55ea" args="" -->
-CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><b>width</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a01628cb8596f1b94b801484be6bb321c"></a><!-- doxytag: member="TTStyledImageFrame::height" ref="a01628cb8596f1b94b801484be6bb321c" args="" -->
-CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><b>height</b></td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Three20Style/Headers/<a class="el" href="_t_t_styled_image_frame_8h_source.php">TTStyledImageFrame.h</a></li>
@@ -192,47 +178,46 @@ CGFloat&nbsp;</td><td class="memItemRight" valign="bottom"><b>height</b></td></t
 </iframe>
 </div>
 
-
-</div> <!-- .fixed-width -->
-
-<div class="fixed-width">
-<div id="disqus_thread"></div>
-<script type="text/javascript">
+<div id="disqus_thread"></div> 
+<script type="text/javascript"> 
   (function() {
    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
    dsq.src = 'http://three20info2.disqus.com/embed.js';
    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</div> <!-- .fixed-width -->
-
-</div> <!-- #content -->
-</div> <!-- #page-wrapper -->
-
-<script type="text/javascript">
-
+</script> 
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript> 
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> 
+</div> <!-- .fixed-width --> 
+ 
+</div> <!-- #content --> 
+</div> <!-- #page-wrapper --> 
+ 
+ 
+ 
+<script type="text/javascript"> 
+ 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-19295672-1']);
   _gaq.push(['_setDomainName', '.three20.info']);
   _gaq.push(['_trackPageview']);
-
+ 
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-</script>
-
-<script type="text/javascript">
+</script> 
+ 
+<script type="text/javascript"> 
 var disqus_shortname = 'three20info2';
 (function () {
   var s = document.createElement('script'); s.async = true;
   s.src = 'http://disqus.com/forums/three20info2/count.js';
   (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
-</script>
-
-</body>
+</script> 
+ 
+ 
+</body> 
 </html>

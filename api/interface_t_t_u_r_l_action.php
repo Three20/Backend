@@ -1,48 +1,71 @@
-<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:og="http://opengraphprotocol.org/schema/"
-      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta property="fb:app_id" content="114720825217072"/>
-  <meta property="fb:admins" content="122605446"/>
-  <meta property="og:title" content="three20.info"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="http://three20.info/"/>
-  <meta property="og:image" content="http://github.com/facebook/three20/raw/06cd0abe33ac39d1f509e278e286c6bf1e45e821/samples/Resources/Icon.png"/>
-  <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
+      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en"> 
+<head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  <meta property="fb:app_id" content="114720825217072"/> 
+  <meta property="fb:admins" content="122605446"/> 
+  <meta property="og:title" content="three20.info"/> 
+  <meta property="og:type" content="website"/> 
+  <meta property="og:url" content="http://three20.info/"/> 
+  <meta property="og:image" content="http://github.com/facebook/three20/raw/master/samples/Resources/Icon.png"/> 
+  <meta name="keywords" content="three20 iPhone api open source library uikit tt" /> 
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
-  <title>Three20: TTURLAction Class Reference</title>
+<title>Three20 API: TTURLAction Class Reference</title>
 <link href="http://three20.info/css/reset.css" rel="stylesheet" type="text/css"/>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/global.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/article.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/api.css" rel="stylesheet" type="text/css"/>
+<link href="http://dev.three20.info/css/global.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/article.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/api.css" rel="stylesheet" type="text/css"/>
 </head>
 <body onload='searchBox.OnSelectItem(0);'>
+<div id="page-wrapper"> 
 
-<div id="page-wrapper">
+<!-- HEADER -->
 
-<!-- HEADER --> 
- 
 <div id="header"> 
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
   <li><a href="http://three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://three20.info/documentation">Documentation</a></li> 
-  <li><a href="http://api.three20.info/">API</a></li> 
+  <li><a href="http://three20.info/extensions">Extensions</a></li> 
   <li><a href="http://three20.info/community">Community</a></li> 
 </ul> 
  
+<div id="fb-root"></div> 
+<script> 
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId   : '165692500131929',
+      session : {"access_token":"165692500131929|2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446|7YjdqHOYyL6MXMHd-udsP0EbTsg","base_domain":"three20.info","expires":"1298952000","secret":"Hcv3uGki22DI7f_imqBhgQ__","session_key":"2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446","sig":"fdaa725c7cf196ce9579d1b232a16e64","uid":"122605446"}, // don't refetch the session when PHP already has it
+      status  : true, // check login status
+      cookie  : true, // enable cookies to allow the server to access the session
+      xfbml   : true // parse XFBML
+    });
+ 
+    // whenever the user logs in, we refresh the page
+    FB.Event.subscribe('auth.login', function() {
+      window.location.reload();
+    });
+  };
+ 
+  (function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script> 
+ 
 <ul class="right-links"> 
-  <li><a href="http://<?= $_SERVER['SERVER_NAME']?><?= $_SERVER['REQUEST_URI'] ?>#disqus_thread">Comments</a></li>
+<li><img class="profileimg" width="25" height="25" valign="bottom" src="https://graph.facebook.com/122605446/picture?type=square">Jeff Verkoeyen</li> 
+<li><a href="https://www.facebook.com/logout.php?next=http%3A%2F%2Fdev.three20.info%2F&access_token=165692500131929%7C2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446%7C7YjdqHOYyL6MXMHd-udsP0EbTsg" onclick="FB.logout(function() { window.location.reload();}); return false;">Log out</a></li> 
 </ul> 
  
 <div class="leadin"> 
@@ -53,7 +76,9 @@
 </div> <!-- .fixed-width --> 
 </div> <!-- #header --> 
 
-<div id="content">
+<!-- CONTENT -->
+
+<div id="content"> 
 <div class="fixed-width">
 <!-- Generated by Doxygen 1.7.1 -->
 <script type="text/javascript"><!--
@@ -63,7 +88,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul class="tablist">
       <li><a href="index.php"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.php"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.php"><span>Classes</span></a></li>
       <li><a href="files.php"><span>Files</span></a></li>
       <li><a href="examples.php"><span>Examples</span></a></li>
@@ -124,6 +148,8 @@ Inheritance diagram for TTURLAction:</div>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_action.php#a6b4e366c94a2175e67a166975d4e788a">initWithURLPath:</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Initialize a <a class="el" href="interface_t_t_u_r_l_action.php" title="This object bundles up a set of parameters and ships them off to TTBasicNavigator&#39;s openURLAction...">TTURLAction</a> object with a URL path.  <a href="#a6b4e366c94a2175e67a166975d4e788a"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2a031d25e1e451ced88758ffbedb0f3f"></a><!-- doxytag: member="TTURLAction::init" ref="a2a031d25e1e451ced88758ffbedb0f3f" args="()" -->
+(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>init</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad8f6ce474886786cfc111c41f556cb5"></a><!-- doxytag: member="TTURLAction::applyParentURLPath:" ref="aad8f6ce474886786cfc111c41f556cb5" args="(NSString *parentURLPath)" -->
 (<a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_action.php#aad8f6ce474886786cfc111c41f556cb5">applyParentURLPath:</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">nil <br/></td></tr>
@@ -139,13 +165,26 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a780e109c55db1360345d05290378e199"></a><!-- doxytag: member="TTURLAction::applyWithDelay:" ref="a780e109c55db1360345d05290378e199" args="(BOOL withDelay)" -->
 (<a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_action.php#a780e109c55db1360345d05290378e199">applyWithDelay:</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">NO <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a95d10b15906df019bd795422e2f2b6a5"></a><!-- doxytag: member="TTURLAction::applySourceRect:" ref="a95d10b15906df019bd795422e2f2b6a5" args="(CGRect sourceRect)" -->
+(<a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_action.php#a95d10b15906df019bd795422e2f2b6a5">applySourceRect:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">CGRectZero <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aca5cb0f5b5aed196d64559f3bd2a1276"></a><!-- doxytag: member="TTURLAction::applySourceView:" ref="aca5cb0f5b5aed196d64559f3bd2a1276" args="(UIView *sourceView)" -->
+(<a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_action.php#aca5cb0f5b5aed196d64559f3bd2a1276">applySourceView:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">nil <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad91055d47450658c4febd98672e659fe"></a><!-- doxytag: member="TTURLAction::applySourceButton:" ref="ad91055d47450658c4febd98672e659fe" args="(UIBarButtonItem *sourceButton)" -->
+(<a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_action.php#ad91055d47450658c4febd98672e659fe">applySourceButton:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">nil <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac17d57fb9dafd4cf042f5bbf958664ef"></a><!-- doxytag: member="TTURLAction::applyTransition:" ref="ac17d57fb9dafd4cf042f5bbf958664ef" args="(UIViewAnimationTransition transition)" -->
 (<a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_u_r_l_action.php#ac17d57fb9dafd4cf042f5bbf958664ef">applyTransition:</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">UIViewAnimationTransitionNone <br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(id)&nbsp;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_t_t_u_r_l_action.php#a5f1a15f21d5a747f8dd4eafe4dbcdfdf">actionWithURLPath:</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Create an autoreleased <a class="el" href="interface_t_t_u_r_l_action.php" title="This object bundles up a set of parameters and ships them off to TTBasicNavigator&#39;s openURLAction...">TTURLAction</a> object with a URL path.  <a href="#a5f1a15f21d5a747f8dd4eafe4dbcdfdf"></a><br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a005cbced24c80d18f58f23694489be0f"></a><!-- doxytag: member="TTURLAction::action" ref="a005cbced24c80d18f58f23694489be0f" args="()" -->
+(id)&nbsp;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_t_t_u_r_l_action.php#a005cbced24c80d18f58f23694489be0f">action</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Create an autoreleased <a class="el" href="interface_t_t_u_r_l_action.php" title="This object bundles up a set of parameters and ships them off to TTBasicNavigator&#39;s openURLAction...">TTURLAction</a> object. <br/></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f1a15f21d5a747f8dd4eafe4dbcdfdf"></a><!-- doxytag: member="TTURLAction::actionWithURLPath:" ref="a5f1a15f21d5a747f8dd4eafe4dbcdfdf" args="(NSString *urlPath)" -->
+(id)&nbsp;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_t_t_u_r_l_action.php#a5f1a15f21d5a747f8dd4eafe4dbcdfdf">actionWithURLPath:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Create an autoreleased <a class="el" href="interface_t_t_u_r_l_action.php" title="This object bundles up a set of parameters and ships them off to TTBasicNavigator&#39;s openURLAction...">TTURLAction</a> object with a URL path. <br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae599096d72afde4f86f1eb4f268cda9f"></a><!-- doxytag: member="TTURLAction::_urlPath" ref="ae599096d72afde4f86f1eb4f268cda9f" args="" -->
@@ -160,6 +199,12 @@ Protected Attributes</h2></td></tr>
 BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_animated</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4477015b71b5af3ec89e9ccbb238c885"></a><!-- doxytag: member="TTURLAction::_withDelay" ref="a4477015b71b5af3ec89e9ccbb238c885" args="" -->
 BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_withDelay</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6611f841468cf88da95e2af1e0bb7098"></a><!-- doxytag: member="TTURLAction::_sourceRect" ref="a6611f841468cf88da95e2af1e0bb7098" args="" -->
+CGRect&nbsp;</td><td class="memItemRight" valign="bottom"><b>_sourceRect</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a987771942a48c42aa6823c6c15edc8b9"></a><!-- doxytag: member="TTURLAction::_sourceView" ref="a987771942a48c42aa6823c6c15edc8b9" args="" -->
+<a class="el" href="class_u_i_view.php">UIView</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_sourceView</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5cd7da50bbf68962009766090b98ccc0"></a><!-- doxytag: member="TTURLAction::_sourceButton" ref="a5cd7da50bbf68962009766090b98ccc0" args="" -->
+UIBarButtonItem *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_sourceButton</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0334bcef02420a92dfcad71adf639084"></a><!-- doxytag: member="TTURLAction::_transition" ref="a0334bcef02420a92dfcad71adf639084" args="" -->
 UIViewAnimationTransition&nbsp;</td><td class="memItemRight" valign="bottom"><b>_transition</b></td></tr>
 <tr><td colspan="2"><h2><a name="properties"></a>
@@ -176,6 +221,12 @@ Properties</h2></td></tr>
 BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>animated</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2606984acf7560f0f293eaef682404ec"></a><!-- doxytag: member="TTURLAction::withDelay" ref="a2606984acf7560f0f293eaef682404ec" args="" -->
 BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>withDelay</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba371a38754562a689024fa79b267dfa"></a><!-- doxytag: member="TTURLAction::sourceRect" ref="aba371a38754562a689024fa79b267dfa" args="" -->
+CGRect&nbsp;</td><td class="memItemRight" valign="bottom"><b>sourceRect</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2730ab5a52788924d3a119082e42b496"></a><!-- doxytag: member="TTURLAction::sourceView" ref="a2730ab5a52788924d3a119082e42b496" args="" -->
+<a class="el" href="class_u_i_view.php">UIView</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>sourceView</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad47b4c2c1a30c9d375b58011c6e7f79"></a><!-- doxytag: member="TTURLAction::sourceButton" ref="aad47b4c2c1a30c9d375b58011c6e7f79" args="" -->
+UIBarButtonItem *&nbsp;</td><td class="memItemRight" valign="bottom"><b>sourceButton</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad6a68c8b811dccca8a770bbc74d61f81"></a><!-- doxytag: member="TTURLAction::transition" ref="ad6a68c8b811dccca8a770bbc74d61f81" args="" -->
 UIViewAnimationTransition&nbsp;</td><td class="memItemRight" valign="bottom"><b>transition</b></td></tr>
 </table>
@@ -186,27 +237,6 @@ UIViewAnimationTransition&nbsp;</td><td class="memItemRight" valign="bottom"><b>
  Create an autoreleased URL action object with the path @"tt://some/path" that is animated.</p>
 <p>For the default values, see the apply method documentation below. </p>
 <hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="a5f1a15f21d5a747f8dd4eafe4dbcdfdf"></a><!-- doxytag: member="TTURLAction::actionWithURLPath:" ref="a5f1a15f21d5a747f8dd4eafe4dbcdfdf" args="(NSString *urlPath)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">+ (id) actionWithURLPath: </td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="class_n_s_string.php">NSString</a>*)&nbsp;</td>
-          <td class="paramname"> <em>urlPath</em></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Create an autoreleased <a class="el" href="interface_t_t_u_r_l_action.php" title="This object bundles up a set of parameters and ships them off to TTBasicNavigator&#39;s openURLAction...">TTURLAction</a> object with a URL path. </p>
-<p>The path is required. </p>
-
-</div>
-</div>
 <a class="anchor" id="a6b4e366c94a2175e67a166975d4e788a"></a><!-- doxytag: member="TTURLAction::initWithURLPath:" ref="a6b4e366c94a2175e67a166975d4e788a" args="(NSString *urlPath)" -->
 <div class="memitem">
 <div class="memproto">
@@ -224,7 +254,6 @@ UIViewAnimationTransition&nbsp;</td><td class="memItemRight" valign="bottom"><b>
 <div class="memdoc">
 
 <p>Initialize a <a class="el" href="interface_t_t_u_r_l_action.php" title="This object bundles up a set of parameters and ships them off to TTBasicNavigator&#39;s openURLAction...">TTURLAction</a> object with a URL path. </p>
-<p>The path is required.</p>
 <p>Designated initializer. </p>
 
 </div>
@@ -248,47 +277,46 @@ UIViewAnimationTransition&nbsp;</td><td class="memItemRight" valign="bottom"><b>
 </iframe>
 </div>
 
-
-</div> <!-- .fixed-width -->
-
-<div class="fixed-width">
-<div id="disqus_thread"></div>
-<script type="text/javascript">
+<div id="disqus_thread"></div> 
+<script type="text/javascript"> 
   (function() {
    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
    dsq.src = 'http://three20info2.disqus.com/embed.js';
    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</div> <!-- .fixed-width -->
-
-</div> <!-- #content -->
-</div> <!-- #page-wrapper -->
-
-<script type="text/javascript">
-
+</script> 
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript> 
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> 
+</div> <!-- .fixed-width --> 
+ 
+</div> <!-- #content --> 
+</div> <!-- #page-wrapper --> 
+ 
+ 
+ 
+<script type="text/javascript"> 
+ 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-19295672-1']);
   _gaq.push(['_setDomainName', '.three20.info']);
   _gaq.push(['_trackPageview']);
-
+ 
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-</script>
-
-<script type="text/javascript">
+</script> 
+ 
+<script type="text/javascript"> 
 var disqus_shortname = 'three20info2';
 (function () {
   var s = document.createElement('script'); s.async = true;
   s.src = 'http://disqus.com/forums/three20info2/count.js';
   (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
-</script>
-
-</body>
+</script> 
+ 
+ 
+</body> 
 </html>

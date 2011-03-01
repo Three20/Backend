@@ -1,48 +1,71 @@
-<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:og="http://opengraphprotocol.org/schema/"
-      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta property="fb:app_id" content="114720825217072"/>
-  <meta property="fb:admins" content="122605446"/>
-  <meta property="og:title" content="three20.info"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="http://three20.info/"/>
-  <meta property="og:image" content="http://github.com/facebook/three20/raw/06cd0abe33ac39d1f509e278e286c6bf1e45e821/samples/Resources/Icon.png"/>
-  <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
+      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en"> 
+<head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  <meta property="fb:app_id" content="114720825217072"/> 
+  <meta property="fb:admins" content="122605446"/> 
+  <meta property="og:title" content="three20.info"/> 
+  <meta property="og:type" content="website"/> 
+  <meta property="og:url" content="http://three20.info/"/> 
+  <meta property="og:image" content="http://github.com/facebook/three20/raw/master/samples/Resources/Icon.png"/> 
+  <meta name="keywords" content="three20 iPhone api open source library uikit tt" /> 
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
-  <title>Three20: YAJLGen Class Reference</title>
+<title>Three20 API: YAJLGen Class Reference</title>
 <link href="http://three20.info/css/reset.css" rel="stylesheet" type="text/css"/>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/global.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/article.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/api.css" rel="stylesheet" type="text/css"/>
+<link href="http://dev.three20.info/css/global.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/article.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/api.css" rel="stylesheet" type="text/css"/>
 </head>
 <body onload='searchBox.OnSelectItem(0);'>
+<div id="page-wrapper"> 
 
-<div id="page-wrapper">
+<!-- HEADER -->
 
-<!-- HEADER --> 
- 
 <div id="header"> 
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
   <li><a href="http://three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://three20.info/documentation">Documentation</a></li> 
-  <li><a href="http://api.three20.info/">API</a></li> 
+  <li><a href="http://three20.info/extensions">Extensions</a></li> 
   <li><a href="http://three20.info/community">Community</a></li> 
 </ul> 
  
+<div id="fb-root"></div> 
+<script> 
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId   : '165692500131929',
+      session : {"access_token":"165692500131929|2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446|7YjdqHOYyL6MXMHd-udsP0EbTsg","base_domain":"three20.info","expires":"1298952000","secret":"Hcv3uGki22DI7f_imqBhgQ__","session_key":"2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446","sig":"fdaa725c7cf196ce9579d1b232a16e64","uid":"122605446"}, // don't refetch the session when PHP already has it
+      status  : true, // check login status
+      cookie  : true, // enable cookies to allow the server to access the session
+      xfbml   : true // parse XFBML
+    });
+ 
+    // whenever the user logs in, we refresh the page
+    FB.Event.subscribe('auth.login', function() {
+      window.location.reload();
+    });
+  };
+ 
+  (function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script> 
+ 
 <ul class="right-links"> 
-  <li><a href="http://<?= $_SERVER['SERVER_NAME']?><?= $_SERVER['REQUEST_URI'] ?>#disqus_thread">Comments</a></li>
+<li><img class="profileimg" width="25" height="25" valign="bottom" src="https://graph.facebook.com/122605446/picture?type=square">Jeff Verkoeyen</li> 
+<li><a href="https://www.facebook.com/logout.php?next=http%3A%2F%2Fdev.three20.info%2F&access_token=165692500131929%7C2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446%7C7YjdqHOYyL6MXMHd-udsP0EbTsg" onclick="FB.logout(function() { window.location.reload();}); return false;">Log out</a></li> 
 </ul> 
  
 <div class="leadin"> 
@@ -53,7 +76,9 @@
 </div> <!-- .fixed-width --> 
 </div> <!-- #header --> 
 
-<div id="content">
+<!-- CONTENT -->
+
+<div id="content"> 
 <div class="fixed-width">
 <!-- Generated by Doxygen 1.7.1 -->
 <script type="text/javascript"><!--
@@ -63,7 +88,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul class="tablist">
       <li><a href="index.php"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.php"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.php"><span>Classes</span></a></li>
       <li><a href="files.php"><span>Files</span></a></li>
       <li><a href="examples.php"><span>Examples</span></a></li>
@@ -117,30 +141,18 @@ Inheritance diagram for YAJLGen:</div>
 <table class="memberdecls">
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af7ec25a4613926fbe1c680a5e1e35382"></a><!-- doxytag: member="YAJLGen::initWithGenOptions:indentString:" ref="af7ec25a4613926fbe1c680a5e1e35382" args="(YAJLGenOptions genOptions,[indentString] NSString *indentString)" -->
-(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>initWithGenOptions:indentString:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86a412c3fecbd4d373c6d27d9d6cc629"></a><!-- doxytag: member="YAJLGen::object:" ref="a86a412c3fecbd4d373c6d27d9d6cc629" args="(id obj)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>object:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae504147ecf0dea92aec1666d36cc68f2"></a><!-- doxytag: member="YAJLGen::null" ref="ae504147ecf0dea92aec1666d36cc68f2" args="()" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>null</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a137bbb2d3e47e55e8da7c5e6c21460fc"></a><!-- doxytag: member="YAJLGen::bool:" ref="a137bbb2d3e47e55e8da7c5e6c21460fc" args="(BOOL b)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>bool:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e4a8772e21f52bae06a2e65fa25d225"></a><!-- doxytag: member="YAJLGen::number:" ref="a1e4a8772e21f52bae06a2e65fa25d225" args="(NSNumber *number)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>number:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="adce76a63a681bfb4afd182171ec0c6dd"></a><!-- doxytag: member="YAJLGen::string:" ref="adce76a63a681bfb4afd182171ec0c6dd" args="(NSString *s)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>string:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a925dbacc9c51ae073cbfb63a8427a8e5"></a><!-- doxytag: member="YAJLGen::startDictionary" ref="a925dbacc9c51ae073cbfb63a8427a8e5" args="()" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>startDictionary</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f61134985ea924512f3cf67f0acf031"></a><!-- doxytag: member="YAJLGen::endDictionary" ref="a4f61134985ea924512f3cf67f0acf031" args="()" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>endDictionary</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af41d83df5c360fbe4c603ecee704ddac"></a><!-- doxytag: member="YAJLGen::startArray" ref="af41d83df5c360fbe4c603ecee704ddac" args="()" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>startArray</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeea6ec78ebb24d5251c8db1c7b25d38c"></a><!-- doxytag: member="YAJLGen::endArray" ref="aeea6ec78ebb24d5251c8db1c7b25d38c" args="()" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>endArray</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08d4d2a7f58f09977e16bd56f1442e87"></a><!-- doxytag: member="YAJLGen::clear" ref="a08d4d2a7f58f09977e16bd56f1442e87" args="()" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>clear</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a66343aa54387a8be5864896e4d357468"></a><!-- doxytag: member="YAJLGen::buffer" ref="a66343aa54387a8be5864896e4d357468" args="()" -->
-(<a class="el" href="class_n_s_string.php">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>buffer</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_y_a_j_l_gen.php#af7ec25a4613926fbe1c680a5e1e35382">initWithGenOptions:indentString:</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_y_a_j_l_gen.php#a86a412c3fecbd4d373c6d27d9d6cc629">object:</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_y_a_j_l_gen.php#ae504147ecf0dea92aec1666d36cc68f2">null</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_y_a_j_l_gen.php#a137bbb2d3e47e55e8da7c5e6c21460fc">bool:</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_y_a_j_l_gen.php#a1e4a8772e21f52bae06a2e65fa25d225">number:</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_y_a_j_l_gen.php#adce76a63a681bfb4afd182171ec0c6dd">string:</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_y_a_j_l_gen.php#a925dbacc9c51ae073cbfb63a8427a8e5">startDictionary</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_y_a_j_l_gen.php#a4f61134985ea924512f3cf67f0acf031">endDictionary</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_y_a_j_l_gen.php#af41d83df5c360fbe4c603ecee704ddac">startArray</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_y_a_j_l_gen.php#aeea6ec78ebb24d5251c8db1c7b25d38c">endArray</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_y_a_j_l_gen.php#a08d4d2a7f58f09977e16bd56f1442e87">clear</a></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="class_n_s_string.php">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_y_a_j_l_gen.php#a66343aa54387a8be5864896e4d357468">buffer</a></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0a9c0fd42e792406218e03e82550c548"></a><!-- doxytag: member="YAJLGen::gen_" ref="a0a9c0fd42e792406218e03e82550c548" args="" -->
@@ -159,10 +171,279 @@ YAJLGenOptions&nbsp;</td><td class="memItemRight" valign="bottom"><b>genOptions_
 </ul>
 <p>We also support the following types (if using YAJLGenOptionsIncludeUnsupportedTypes option), by converting to JSON supported types:</p>
 <ul>
-<li><a class="el" href="class_n_s_date.php" title="Additions.">NSDate</a> -&gt; number representing number of milliseconds since (1970) epoch</li>
-<li><a class="el" href="class_n_s_data.php" title="Additions.">NSData</a> -&gt; Base64 encoded string</li>
-<li>NSURL -&gt; URL (absolute) string </li>
+<li><a class="el" href="class_n_s_date.php" title="Additions.">NSDate</a>: number representing number of milliseconds since (1970) epoch</li>
+<li><a class="el" href="class_n_s_data.php" title="Additions.">NSData</a>: Base64 encoded string</li>
+<li>NSURL: URL (absolute) string </li>
 </ul>
+<hr/><h2>Member Function Documentation</h2>
+<a class="anchor" id="a137bbb2d3e47e55e8da7c5e6c21460fc"></a><!-- doxytag: member="YAJLGen::bool:" ref="a137bbb2d3e47e55e8da7c5e6c21460fc" args="(BOOL b)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) bool: </td>
+          <td></td>
+          <td class="paramtype">(BOOL)&nbsp;</td>
+          <td class="paramname"> <em>b</em></td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Write bool value to buffer. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>b</em>&nbsp;</td><td>Output true or false </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a66343aa54387a8be5864896e4d357468"></a><!-- doxytag: member="YAJLGen::buffer" ref="a66343aa54387a8be5864896e4d357468" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="class_n_s_string.php">NSString</a> *) buffer </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Get current JSON buffer. </p>
+
+</div>
+</div>
+<a class="anchor" id="a08d4d2a7f58f09977e16bd56f1442e87"></a><!-- doxytag: member="YAJLGen::clear" ref="a08d4d2a7f58f09977e16bd56f1442e87" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) clear </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Clear JSON buffer. </p>
+
+</div>
+</div>
+<a class="anchor" id="aeea6ec78ebb24d5251c8db1c7b25d38c"></a><!-- doxytag: member="YAJLGen::endArray" ref="aeea6ec78ebb24d5251c8db1c7b25d38c" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) endArray </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Write array end (']') to buffer. </p>
+
+</div>
+</div>
+<a class="anchor" id="a4f61134985ea924512f3cf67f0acf031"></a><!-- doxytag: member="YAJLGen::endDictionary" ref="a4f61134985ea924512f3cf67f0acf031" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) endDictionary </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Write dictionary end ('}') to buffer. </p>
+
+</div>
+</div>
+<a class="anchor" id="af7ec25a4613926fbe1c680a5e1e35382"></a><!-- doxytag: member="YAJLGen::initWithGenOptions:indentString:" ref="af7ec25a4613926fbe1c680a5e1e35382" args="(YAJLGenOptions genOptions,[indentString] NSString *indentString)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (id) initWithGenOptions: </td>
+          <td></td>
+          <td class="paramtype">(YAJLGenOptions)&nbsp;</td>
+          <td class="paramname"> <em>genOptions</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">indentString:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_n_s_string.php">NSString</a> *)&nbsp;</td>
+          <td class="paramname"> <em>indentString</em></td><td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td><td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>JSON generator with options. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>genOptions</em>&nbsp;</td><td>Generate options</p>
+<ul>
+<li>YAJLGenOptionsNone: No options</li>
+<li>YAJLGenOptionsBeautify: Beautifiy JSON output</li>
+<li>YAJLGenOptionsIgnoreUnknownTypes: Ignore unknown types (will use null value)</li>
+<li>YAJLGenOptionsIncludeUnsupportedTypes: Handle non-JSON types (including <a class="el" href="class_n_s_date.php" title="Additions.">NSDate</a>, <a class="el" href="class_n_s_data.php" title="Additions.">NSData</a>, NSURL)</li>
+</ul>
+</td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>indentString</em>&nbsp;</td><td>String for indentation </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="ae504147ecf0dea92aec1666d36cc68f2"></a><!-- doxytag: member="YAJLGen::null" ref="ae504147ecf0dea92aec1666d36cc68f2" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) null </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Write null value to buffer. </p>
+
+</div>
+</div>
+<a class="anchor" id="a1e4a8772e21f52bae06a2e65fa25d225"></a><!-- doxytag: member="YAJLGen::number:" ref="a1e4a8772e21f52bae06a2e65fa25d225" args="(NSNumber *number)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) number: </td>
+          <td></td>
+          <td class="paramtype">(NSNumber *)&nbsp;</td>
+          <td class="paramname"> <em>number</em></td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Write numeric value to buffer. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>number</em>&nbsp;</td><td>Numeric value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="a86a412c3fecbd4d373c6d27d9d6cc629"></a><!-- doxytag: member="YAJLGen::object:" ref="a86a412c3fecbd4d373c6d27d9d6cc629" args="(id obj)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) object: </td>
+          <td></td>
+          <td class="paramtype">(id)&nbsp;</td>
+          <td class="paramname"> <em>obj</em></td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Write JSON for object to buffer. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>obj</em>&nbsp;</td><td>Supported or custom object </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a class="anchor" id="af41d83df5c360fbe4c603ecee704ddac"></a><!-- doxytag: member="YAJLGen::startArray" ref="af41d83df5c360fbe4c603ecee704ddac" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) startArray </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Write array start ('[') to buffer. </p>
+
+</div>
+</div>
+<a class="anchor" id="a925dbacc9c51ae073cbfb63a8427a8e5"></a><!-- doxytag: member="YAJLGen::startDictionary" ref="a925dbacc9c51ae073cbfb63a8427a8e5" args="()" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) startDictionary </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Write dictionary start ('{') to buffer. </p>
+
+</div>
+</div>
+<a class="anchor" id="adce76a63a681bfb4afd182171ec0c6dd"></a><!-- doxytag: member="YAJLGen::string:" ref="adce76a63a681bfb4afd182171ec0c6dd" args="(NSString *s)" -->
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) string: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="class_n_s_string.php">NSString</a> *)&nbsp;</td>
+          <td class="paramname"> <em>s</em></td>
+          <td>&nbsp;</td>
+          <td></td>
+        </tr>
+      </table>
+</div>
+<div class="memdoc">
+<p>Write string value to buffer. </p>
+<dl><dt><b>Parameters:</b></dt><dd>
+  <table border="0" cellspacing="2" cellpadding="0">
+    <tr><td valign="top"></td><td valign="top"><em>s</em>&nbsp;</td><td>String value </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>extThree20JSON/Vendors/YAJL/<a class="el" href="_y_a_j_l_gen_8h_source.php">YAJLGen.h</a></li>
 <li>extThree20JSON/Vendors/YAJL/YAJLGen.m</li>
@@ -182,47 +463,46 @@ YAJLGenOptions&nbsp;</td><td class="memItemRight" valign="bottom"><b>genOptions_
 </iframe>
 </div>
 
-
-</div> <!-- .fixed-width -->
-
-<div class="fixed-width">
-<div id="disqus_thread"></div>
-<script type="text/javascript">
+<div id="disqus_thread"></div> 
+<script type="text/javascript"> 
   (function() {
    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
    dsq.src = 'http://three20info2.disqus.com/embed.js';
    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</div> <!-- .fixed-width -->
-
-</div> <!-- #content -->
-</div> <!-- #page-wrapper -->
-
-<script type="text/javascript">
-
+</script> 
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript> 
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> 
+</div> <!-- .fixed-width --> 
+ 
+</div> <!-- #content --> 
+</div> <!-- #page-wrapper --> 
+ 
+ 
+ 
+<script type="text/javascript"> 
+ 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-19295672-1']);
   _gaq.push(['_setDomainName', '.three20.info']);
   _gaq.push(['_trackPageview']);
-
+ 
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-</script>
-
-<script type="text/javascript">
+</script> 
+ 
+<script type="text/javascript"> 
 var disqus_shortname = 'three20info2';
 (function () {
   var s = document.createElement('script'); s.async = true;
   s.src = 'http://disqus.com/forums/three20info2/count.js';
   (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
-</script>
-
-</body>
+</script> 
+ 
+ 
+</body> 
 </html>

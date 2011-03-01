@@ -1,48 +1,71 @@
-<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:og="http://opengraphprotocol.org/schema/"
-      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta property="fb:app_id" content="114720825217072"/>
-  <meta property="fb:admins" content="122605446"/>
-  <meta property="og:title" content="three20.info"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="http://three20.info/"/>
-  <meta property="og:image" content="http://github.com/facebook/three20/raw/06cd0abe33ac39d1f509e278e286c6bf1e45e821/samples/Resources/Icon.png"/>
-  <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
+      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en"> 
+<head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  <meta property="fb:app_id" content="114720825217072"/> 
+  <meta property="fb:admins" content="122605446"/> 
+  <meta property="og:title" content="three20.info"/> 
+  <meta property="og:type" content="website"/> 
+  <meta property="og:url" content="http://three20.info/"/> 
+  <meta property="og:image" content="http://github.com/facebook/three20/raw/master/samples/Resources/Icon.png"/> 
+  <meta name="keywords" content="three20 iPhone api open source library uikit tt" /> 
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
-  <title>Three20: TTMessageController Class Reference</title>
+<title>Three20 API: TTMessageController Class Reference</title>
 <link href="http://three20.info/css/reset.css" rel="stylesheet" type="text/css"/>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/global.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/article.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/api.css" rel="stylesheet" type="text/css"/>
+<link href="http://dev.three20.info/css/global.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/article.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/api.css" rel="stylesheet" type="text/css"/>
 </head>
 <body onload='searchBox.OnSelectItem(0);'>
+<div id="page-wrapper"> 
 
-<div id="page-wrapper">
+<!-- HEADER -->
 
-<!-- HEADER --> 
- 
 <div id="header"> 
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
   <li><a href="http://three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://three20.info/documentation">Documentation</a></li> 
-  <li><a href="http://api.three20.info/">API</a></li> 
+  <li><a href="http://three20.info/extensions">Extensions</a></li> 
   <li><a href="http://three20.info/community">Community</a></li> 
 </ul> 
  
+<div id="fb-root"></div> 
+<script> 
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId   : '165692500131929',
+      session : {"access_token":"165692500131929|2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446|7YjdqHOYyL6MXMHd-udsP0EbTsg","base_domain":"three20.info","expires":"1298952000","secret":"Hcv3uGki22DI7f_imqBhgQ__","session_key":"2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446","sig":"fdaa725c7cf196ce9579d1b232a16e64","uid":"122605446"}, // don't refetch the session when PHP already has it
+      status  : true, // check login status
+      cookie  : true, // enable cookies to allow the server to access the session
+      xfbml   : true // parse XFBML
+    });
+ 
+    // whenever the user logs in, we refresh the page
+    FB.Event.subscribe('auth.login', function() {
+      window.location.reload();
+    });
+  };
+ 
+  (function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script> 
+ 
 <ul class="right-links"> 
-  <li><a href="http://<?= $_SERVER['SERVER_NAME']?><?= $_SERVER['REQUEST_URI'] ?>#disqus_thread">Comments</a></li>
+<li><img class="profileimg" width="25" height="25" valign="bottom" src="https://graph.facebook.com/122605446/picture?type=square">Jeff Verkoeyen</li> 
+<li><a href="https://www.facebook.com/logout.php?next=http%3A%2F%2Fdev.three20.info%2F&access_token=165692500131929%7C2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446%7C7YjdqHOYyL6MXMHd-udsP0EbTsg" onclick="FB.logout(function() { window.location.reload();}); return false;">Log out</a></li> 
 </ul> 
  
 <div class="leadin"> 
@@ -53,7 +76,9 @@
 </div> <!-- .fixed-width --> 
 </div> <!-- #header --> 
 
-<div id="content">
+<!-- CONTENT -->
+
+<div id="content"> 
 <div class="fixed-width">
 <!-- Generated by Doxygen 1.7.1 -->
 <script type="text/javascript"><!--
@@ -63,7 +88,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul class="tablist">
       <li><a href="index.php"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.php"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.php"><span>Classes</span></a></li>
       <li><a href="files.php"><span>Files</span></a></li>
       <li><a href="examples.php"><span>Examples</span></a></li>
@@ -96,7 +120,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#properties">Properties</a>  </div>
   <div class="headertitle">
@@ -137,7 +160,7 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_message_controller.php#a84cf08a943476bf4df1f15f93a972f49">fieldHasValueAtIndex:</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns true if the field at the supplied index is not empty or has only whitespace.  <a href="#a84cf08a943476bf4df1f15f93a972f49"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="class_u_i_view.php">UIView</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_message_controller.php#a9d61201cf2b42c9f21c3f4474c0a4083">viewForFieldAtIndex:</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the <a class="el" href="class_u_i_view.php">UIView</a> instance representing the field at fieldIndex.  <a href="#a9d61201cf2b42c9f21c3f4474c0a4083"></a><br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Returns the <a class="el" href="class_u_i_view.php" title="Additions.">UIView</a> instance representing the field at fieldIndex.  <a href="#a9d61201cf2b42c9f21c3f4474c0a4083"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_message_controller.php#a28d5a259e0d174feec29a11400094173">showActivityView:</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Causes a view used to indicate message activity to be shown or dismissed depending on the value of show.  <a href="#a28d5a259e0d174feec29a11400094173"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(<a class="el" href="class_n_s_string.php">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_message_controller.php#a48fd3ef54fda0dfaeac75317b71e6d84">titleForSending</a></td></tr>
@@ -159,38 +182,6 @@ Public Member Functions</h2></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sent after the delegate has been informed that it should send the message.  <a href="#a3e9dcb9a2a11041b1694d0da3b135d71"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_message_controller.php#af47187c50e2e1b382841fa4be783c0ba">messageShouldCancel</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Determines if the message should cancel without confirming with the user.  <a href="#af47187c50e2e1b382841fa4be783c0ba"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae517ac05a60aff4c64dadfdf5e0be548"></a><!-- doxytag: member="TTMessageController::keyboardWillAppear:withBounds:" ref="ae517ac05a60aff4c64dadfdf5e0be548" args="(BOOL animated,[withBounds] CGRect bounds)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_base_view_controller.php#ae517ac05a60aff4c64dadfdf5e0be548">keyboardWillAppear:withBounds:</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sent to the controller before the keyboard slides in. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3b370029749e85fe261726375ba13289"></a><!-- doxytag: member="TTMessageController::keyboardWillDisappear:withBounds:" ref="a3b370029749e85fe261726375ba13289" args="(BOOL animated,[withBounds] CGRect bounds)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_base_view_controller.php#a3b370029749e85fe261726375ba13289">keyboardWillDisappear:withBounds:</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sent to the controller before the keyboard slides out. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1405d3b2f2c3d4e1db7c7e29226c2e74"></a><!-- doxytag: member="TTMessageController::keyboardDidAppear:withBounds:" ref="a1405d3b2f2c3d4e1db7c7e29226c2e74" args="(BOOL animated,[withBounds] CGRect bounds)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_base_view_controller.php#a1405d3b2f2c3d4e1db7c7e29226c2e74">keyboardDidAppear:withBounds:</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sent to the controller after the keyboard has slid in. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad27dfcbbc6587b779af6231825679be0"></a><!-- doxytag: member="TTMessageController::keyboardDidDisappear:withBounds:" ref="ad27dfcbbc6587b779af6231825679be0" args="(BOOL animated,[withBounds] CGRect bounds)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_base_view_controller.php#ad27dfcbbc6587b779af6231825679be0">keyboardDidDisappear:withBounds:</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sent to the controller after the keyboard has slid out. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32e01b7570a4309f31af9dad40fbdf44"></a><!-- doxytag: member="TTMessageController::textEditorShouldBeginEditing:" ref="a32e01b7570a4309f31af9dad40fbdf44" args="(TTTextEditor *textEditor)" -->
-(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>textEditorShouldBeginEditing:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3cd382bdd0bc1a68404ec8ff2f45ec7b"></a><!-- doxytag: member="TTMessageController::textEditorShouldEndEditing:" ref="a3cd382bdd0bc1a68404ec8ff2f45ec7b" args="(TTTextEditor *textEditor)" -->
-(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>textEditorShouldEndEditing:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae9c7de44946d45463d983bfcf2a0371f"></a><!-- doxytag: member="TTMessageController::textEditorDidBeginEditing:" ref="ae9c7de44946d45463d983bfcf2a0371f" args="(TTTextEditor *textEditor)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>textEditorDidBeginEditing:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acda76c4826b4e6c2cbc0d211956aa06f"></a><!-- doxytag: member="TTMessageController::textEditorDidEndEditing:" ref="acda76c4826b4e6c2cbc0d211956aa06f" args="(TTTextEditor *textEditor)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>textEditorDidEndEditing:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4bc6752a27f4f996d7c3cdd489cc7b47"></a><!-- doxytag: member="TTMessageController::textEditor:shouldChangeTextInRange:replacementText:" ref="a4bc6752a27f4f996d7c3cdd489cc7b47" args="(TTTextEditor *textEditor,[shouldChangeTextInRange] NSRange range,[replacementText] NSString *replacementText)" -->
-(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>textEditor:shouldChangeTextInRange:replacementText:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa8b7484f91b804294f2da65f754f64ef"></a><!-- doxytag: member="TTMessageController::textEditorDidChange:" ref="aa8b7484f91b804294f2da65f754f64ef" args="(TTTextEditor *textEditor)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>textEditorDidChange:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4942886317d9773499b2535330036164"></a><!-- doxytag: member="TTMessageController::textEditor:shouldResizeBy:" ref="a4942886317d9773499b2535330036164" args="(TTTextEditor *textEditor,[shouldResizeBy] CGFloat height)" -->
-(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>textEditor:shouldResizeBy:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41aa31bb51bc2b2a5189ef8492ce9ac2"></a><!-- doxytag: member="TTMessageController::textEditorShouldReturn:" ref="a41aa31bb51bc2b2a5189ef8492ce9ac2" args="(TTTextEditor *textEditor)" -->
-(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>textEditorShouldReturn:</b></td></tr>
-<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">+ <a class="el" href="interface_t_t_view_controller.php#a0e5fe2b34de8a02a7f3f0dccd5156958">doGarbageCollection</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Forcefully initiates garbage collection.  <a href="#a0e5fe2b34de8a02a7f3f0dccd5156958"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a65c84e8022e3fa76b01cb6dac5b5d4fc"></a><!-- doxytag: member="TTMessageController::_fields" ref="a65c84e8022e3fa76b01cb6dac5b5d4fc" args="" -->
@@ -215,22 +206,6 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_requireNonEmptyMessa
 id&lt; <a class="el" href="interface_t_t_table_view_data_source.php">TTTableViewDataSource</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>_dataSource</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a47fca5147d52366682fdff075fefd5c8"></a><!-- doxytag: member="TTMessageController::_delegate" ref="a47fca5147d52366682fdff075fefd5c8" args="" -->
 id&lt; <a class="el" href="protocol_t_t_message_controller_delegate-p.php">TTMessageControllerDelegate</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>_delegate</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62bac03420a9ca3fe201915f64c710df"></a><!-- doxytag: member="TTMessageController::_searchController" ref="a62bac03420a9ca3fe201915f64c710df" args="" -->
-<a class="el" href="interface_t_t_search_display_controller.php">TTSearchDisplayController</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_searchController</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af73a75af4a8540e9a0824dfde0ff7ba9"></a><!-- doxytag: member="TTMessageController::_frozenState" ref="af73a75af4a8540e9a0824dfde0ff7ba9" args="" -->
-<a class="el" href="class_n_s_dictionary.php">NSDictionary</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_frozenState</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a043ebeb2719175e6b4fd09ff8e6dc7eb"></a><!-- doxytag: member="TTMessageController::_navigationBarStyle" ref="a043ebeb2719175e6b4fd09ff8e6dc7eb" args="" -->
-UIBarStyle&nbsp;</td><td class="memItemRight" valign="bottom"><b>_navigationBarStyle</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9539b16b96e55313d37a24a517d91aa1"></a><!-- doxytag: member="TTMessageController::_navigationBarTintColor" ref="a9539b16b96e55313d37a24a517d91aa1" args="" -->
-<a class="el" href="class_u_i_color.php">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_navigationBarTintColor</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ba256d9d10c48e1f20b5ec266186452"></a><!-- doxytag: member="TTMessageController::_statusBarStyle" ref="a9ba256d9d10c48e1f20b5ec266186452" args="" -->
-UIStatusBarStyle&nbsp;</td><td class="memItemRight" valign="bottom"><b>_statusBarStyle</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a92713568320087178a7ec813edd761fa"></a><!-- doxytag: member="TTMessageController::_isViewAppearing" ref="a92713568320087178a7ec813edd761fa" args="" -->
-BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_isViewAppearing</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a78f0448e948f1157cf6ba0a2d2f21d59"></a><!-- doxytag: member="TTMessageController::_hasViewAppeared" ref="a78f0448e948f1157cf6ba0a2d2f21d59" args="" -->
-BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_hasViewAppeared</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d7348edcd90eb5573452996da10b0c8"></a><!-- doxytag: member="TTMessageController::_autoresizesForKeyboard" ref="a6d7348edcd90eb5573452996da10b0c8" args="" -->
-BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_autoresizesForKeyboard</b></td></tr>
 <tr><td colspan="2"><h2><a name="properties"></a>
 Properties</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8cf1658e4a2cdbe7dc72f1c0e9e6b2ed"></a><!-- doxytag: member="TTMessageController::delegate" ref="a8cf1658e4a2cdbe7dc72f1c0e9e6b2ed" args="" -->
@@ -251,23 +226,6 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indicates if this message has been modified since it was originally shown.  <a href="#aa41f369642a1ce1afcfc381972d79d68"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_message_controller.php#a59c21173aaf5330e31ba62a8a0f834d5">requireNonEmptyMessageBody</a></td></tr>
 <tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indicates if the user must enter text in the editor field to be allowed to send the message.  <a href="#a59c21173aaf5330e31ba62a8a0f834d5"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_t_t_table_view_controller.php">TTTableViewController</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_view_controller.php#aee5cb350b30e5feefffd3f118df21f86">searchViewController</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">A view controller used to display the contents of the search display controller.  <a href="#aee5cb350b30e5feefffd3f118df21f86"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">UIBarStyle&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_base_view_controller.php#a0d8ab3d6c6b655258293c2df842d161b">navigationBarStyle</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The style of the navigation bar when this view controller is pushed onto a navigation controller.  <a href="#a0d8ab3d6c6b655258293c2df842d161b"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_u_i_color.php">UIColor</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_base_view_controller.php#af9f360ea82a7008a4cdb785765ca368d">navigationBarTintColor</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The color of the navigation bar when this view controller is pushed onto a navigation controller.  <a href="#af9f360ea82a7008a4cdb785765ca368d"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">UIStatusBarStyle&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_base_view_controller.php#a9fbdc64e7c1d0e33c6e5c18c637484f7">statusBarStyle</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The style of the status bar when this view controller is appearing.  <a href="#a9fbdc64e7c1d0e33c6e5c18c637484f7"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba404e0d3d915055ce87f45191c2be8d"></a><!-- doxytag: member="TTMessageController::hasViewAppeared" ref="aba404e0d3d915055ce87f45191c2be8d" args="" -->
-BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_base_view_controller.php#aba404e0d3d915055ce87f45191c2be8d">hasViewAppeared</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The view has appeared at least once and hasn't been removed due to a memory warning. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afeb4bf49b4efd4199f03e32dc793c87d"></a><!-- doxytag: member="TTMessageController::isViewAppearing" ref="afeb4bf49b4efd4199f03e32dc793c87d" args="" -->
-BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_base_view_controller.php#afeb4bf49b4efd4199f03e32dc793c87d">isViewAppearing</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The view is about to appear and has not appeared yet. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c53a69ddcc3e4d4f8eef61d51d98c75"></a><!-- doxytag: member="TTMessageController::autoresizesForKeyboard" ref="a9c53a69ddcc3e4d4f8eef61d51d98c75" args="" -->
-BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_t_t_base_view_controller.php#a9c53a69ddcc3e4d4f8eef61d51d98c75">autoresizesForKeyboard</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Determines if the view will be resized automatically to fit the keyboard. <br/></td></tr>
 </table>
 <hr/><a name="_details"></a><h2>Detailed Description</h2>
 <p>A view controller for composing email like messages, which is visually similar to Apple's in-app mail composer. </p>
@@ -302,27 +260,6 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <p>Adds the supplied recipient to the field at the index provided. </p>
 <p>That recipient will be rendered as a cell within that field's view. The cell's label will be determined by asking the datasource for a string label for the recipient object provided.</p>
 <p>This method is a no-op if the datasource fails to provide a label for the cell, or if the fieldIndex provided does not refer to a <a class="el" href="interface_t_t_picker_text_field.php">TTPickerTextField</a>. </p>
-
-</div>
-</div>
-<a class="anchor" id="a0e5fe2b34de8a02a7f3f0dccd5156958"></a><!-- doxytag: member="TTMessageController::doGarbageCollection" ref="a0e5fe2b34de8a02a7f3f0dccd5156958" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">+ (void) doGarbageCollection </td>
-          <td></td>
-          <td class="paramname"></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Forcefully initiates garbage collection. </p>
-<p>You may call this in your didReceiveMemoryWarning message if you are worried about garbage collection memory consumption.</p>
-<p>See Articles/UI/GarbageCollection.mdown for a more detailed discussion. </p>
 
 </div>
 </div>
@@ -559,7 +496,7 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </div>
 <div class="memdoc">
 
-<p>Returns the <a class="el" href="class_u_i_view.php">UIView</a> instance representing the field at fieldIndex. </p>
+<p>Returns the <a class="el" href="class_u_i_view.php" title="Additions.">UIView</a> instance representing the field at fieldIndex. </p>
 <p>Passing fields.count returns the view representing the body contents. </p>
 
 </div>
@@ -570,7 +507,7 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">- (<a class="el" href="class_n_s_string.php">NSString</a> *) body<code> [read, write, retain]</code></td>
+          <td class="memname">- (<a class="el" href="class_n_s_string.php">NSString</a> *) body<code> [read, write, copy]</code></td>
         </tr>
       </table>
 </div>
@@ -602,7 +539,7 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">- (<a class="el" href="class_n_s_array.php">NSArray</a>*) fields<code> [read, write, retain]</code></td>
+          <td class="memname">- (<a class="el" href="class_n_s_array.php">NSArray</a>*) fields<code> [read, write, copy]</code></td>
         </tr>
       </table>
 </div>
@@ -629,38 +566,6 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 
 </div>
 </div>
-<a class="anchor" id="a0d8ab3d6c6b655258293c2df842d161b"></a><!-- doxytag: member="TTMessageController::navigationBarStyle" ref="a0d8ab3d6c6b655258293c2df842d161b" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (UIBarStyle) navigationBarStyle<code> [read, write, assign, inherited]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>The style of the navigation bar when this view controller is pushed onto a navigation controller. </p>
-<p>UIBarStyleDefault </p>
-
-</div>
-</div>
-<a class="anchor" id="af9f360ea82a7008a4cdb785765ca368d"></a><!-- doxytag: member="TTMessageController::navigationBarTintColor" ref="af9f360ea82a7008a4cdb785765ca368d" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="class_u_i_color.php">UIColor</a>*) navigationBarTintColor<code> [read, write, retain, inherited]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>The color of the navigation bar when this view controller is pushed onto a navigation controller. </p>
-<p>TTSTYLEVAR(navigationBarTintColor) </p>
-
-</div>
-</div>
 <a class="anchor" id="a59c21173aaf5330e31ba62a8a0f834d5"></a><!-- doxytag: member="TTMessageController::requireNonEmptyMessageBody" ref="a59c21173aaf5330e31ba62a8a0f834d5" args="" -->
 <div class="memitem">
 <div class="memproto">
@@ -677,44 +582,12 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 
 </div>
 </div>
-<a class="anchor" id="aee5cb350b30e5feefffd3f118df21f86"></a><!-- doxytag: member="TTMessageController::searchViewController" ref="aee5cb350b30e5feefffd3f118df21f86" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (<a class="el" href="interface_t_t_table_view_controller.php">TTTableViewController</a> *) searchViewController<code> [read, write, retain, inherited]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>A view controller used to display the contents of the search display controller. </p>
-<p>If you assign a view controller to this property, it will automatically create a search display controller which you can access through this view controller's searchDisplaController property. You can then take the searchBar from that controller and add it to your views. The search bar will then search the data source of the view controller that you assigned here. </p>
-
-</div>
-</div>
-<a class="anchor" id="a9fbdc64e7c1d0e33c6e5c18c637484f7"></a><!-- doxytag: member="TTMessageController::statusBarStyle" ref="a9fbdc64e7c1d0e33c6e5c18c637484f7" args="" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (UIStatusBarStyle) statusBarStyle<code> [read, write, assign, inherited]</code></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>The style of the status bar when this view controller is appearing. </p>
-<p>UIStatusBarStyleDefault </p>
-
-</div>
-</div>
 <a class="anchor" id="a8414169377f297b9fcb41bbc9c0a058d"></a><!-- doxytag: member="TTMessageController::subject" ref="a8414169377f297b9fcb41bbc9c0a058d" args="" -->
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">- (<a class="el" href="class_n_s_string.php">NSString</a> *) subject<code> [read, write, retain]</code></td>
+          <td class="memname">- (<a class="el" href="class_n_s_string.php">NSString</a> *) subject<code> [read, write, copy]</code></td>
         </tr>
       </table>
 </div>
@@ -744,47 +617,46 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 </iframe>
 </div>
 
-
-</div> <!-- .fixed-width -->
-
-<div class="fixed-width">
-<div id="disqus_thread"></div>
-<script type="text/javascript">
+<div id="disqus_thread"></div> 
+<script type="text/javascript"> 
   (function() {
    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
    dsq.src = 'http://three20info2.disqus.com/embed.js';
    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</div> <!-- .fixed-width -->
-
-</div> <!-- #content -->
-</div> <!-- #page-wrapper -->
-
-<script type="text/javascript">
-
+</script> 
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript> 
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> 
+</div> <!-- .fixed-width --> 
+ 
+</div> <!-- #content --> 
+</div> <!-- #page-wrapper --> 
+ 
+ 
+ 
+<script type="text/javascript"> 
+ 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-19295672-1']);
   _gaq.push(['_setDomainName', '.three20.info']);
   _gaq.push(['_trackPageview']);
-
+ 
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-</script>
-
-<script type="text/javascript">
+</script> 
+ 
+<script type="text/javascript"> 
 var disqus_shortname = 'three20info2';
 (function () {
   var s = document.createElement('script'); s.async = true;
   s.src = 'http://disqus.com/forums/three20info2/count.js';
   (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
-</script>
-
-</body>
+</script> 
+ 
+ 
+</body> 
 </html>

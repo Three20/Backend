@@ -1,48 +1,71 @@
-<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:og="http://opengraphprotocol.org/schema/"
-      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta property="fb:app_id" content="114720825217072"/>
-  <meta property="fb:admins" content="122605446"/>
-  <meta property="og:title" content="three20.info"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="http://three20.info/"/>
-  <meta property="og:image" content="http://github.com/facebook/three20/raw/06cd0abe33ac39d1f509e278e286c6bf1e45e821/samples/Resources/Icon.png"/>
-  <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
+      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en"> 
+<head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  <meta property="fb:app_id" content="114720825217072"/> 
+  <meta property="fb:admins" content="122605446"/> 
+  <meta property="og:title" content="three20.info"/> 
+  <meta property="og:type" content="website"/> 
+  <meta property="og:url" content="http://three20.info/"/> 
+  <meta property="og:image" content="http://github.com/facebook/three20/raw/master/samples/Resources/Icon.png"/> 
+  <meta name="keywords" content="three20 iPhone api open source library uikit tt" /> 
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
-  <title>Three20: Member List</title>
+<title>Three20 API: Member List</title>
 <link href="http://three20.info/css/reset.css" rel="stylesheet" type="text/css"/>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/global.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/article.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/api.css" rel="stylesheet" type="text/css"/>
+<link href="http://dev.three20.info/css/global.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/article.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/api.css" rel="stylesheet" type="text/css"/>
 </head>
 <body onload='searchBox.OnSelectItem(0);'>
+<div id="page-wrapper"> 
 
-<div id="page-wrapper">
+<!-- HEADER -->
 
-<!-- HEADER --> 
- 
 <div id="header"> 
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
   <li><a href="http://three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://three20.info/documentation">Documentation</a></li> 
-  <li><a href="http://api.three20.info/">API</a></li> 
+  <li><a href="http://three20.info/extensions">Extensions</a></li> 
   <li><a href="http://three20.info/community">Community</a></li> 
 </ul> 
  
+<div id="fb-root"></div> 
+<script> 
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId   : '165692500131929',
+      session : {"access_token":"165692500131929|2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446|7YjdqHOYyL6MXMHd-udsP0EbTsg","base_domain":"three20.info","expires":"1298952000","secret":"Hcv3uGki22DI7f_imqBhgQ__","session_key":"2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446","sig":"fdaa725c7cf196ce9579d1b232a16e64","uid":"122605446"}, // don't refetch the session when PHP already has it
+      status  : true, // check login status
+      cookie  : true, // enable cookies to allow the server to access the session
+      xfbml   : true // parse XFBML
+    });
+ 
+    // whenever the user logs in, we refresh the page
+    FB.Event.subscribe('auth.login', function() {
+      window.location.reload();
+    });
+  };
+ 
+  (function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script> 
+ 
 <ul class="right-links"> 
-  <li><a href="http://<?= $_SERVER['SERVER_NAME']?><?= $_SERVER['REQUEST_URI'] ?>#disqus_thread">Comments</a></li>
+<li><img class="profileimg" width="25" height="25" valign="bottom" src="https://graph.facebook.com/122605446/picture?type=square">Jeff Verkoeyen</li> 
+<li><a href="https://www.facebook.com/logout.php?next=http%3A%2F%2Fdev.three20.info%2F&access_token=165692500131929%7C2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446%7C7YjdqHOYyL6MXMHd-udsP0EbTsg" onclick="FB.logout(function() { window.location.reload();}); return false;">Log out</a></li> 
 </ul> 
  
 <div class="leadin"> 
@@ -53,7 +76,9 @@
 </div> <!-- .fixed-width --> 
 </div> <!-- #header --> 
 
-<div id="content">
+<!-- CONTENT -->
+
+<div id="content"> 
 <div class="fixed-width">
 <!-- Generated by Doxygen 1.7.1 -->
 <script type="text/javascript"><!--
@@ -63,7 +88,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul class="tablist">
       <li><a href="index.php"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.php"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.php"><span>Classes</span></a></li>
       <li><a href="files.php"><span>Files</span></a></li>
       <li><a href="examples.php"><span>Examples</span></a></li>
@@ -102,21 +126,32 @@ This is the complete list of members for <a class="el" href="interface_t_t_u_r_l
   <tr bgcolor="#f0f0f0"><td></td><td><b>_animated</b> (defined in <a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a>)</td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td><code> [protected]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td></td><td><b>_parentURLPath</b> (defined in <a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a>)</td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td><code> [protected]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td></td><td><b>_query</b> (defined in <a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a>)</td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td><code> [protected]</code></td></tr>
+  <tr bgcolor="#f0f0f0"><td></td><td><b>_sourceButton</b> (defined in <a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a>)</td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td><code> [protected]</code></td></tr>
+  <tr bgcolor="#f0f0f0"><td></td><td><b>_sourceRect</b> (defined in <a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a>)</td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td><code> [protected]</code></td></tr>
+  <tr bgcolor="#f0f0f0"><td></td><td><b>_sourceView</b> (defined in <a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a>)</td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td><code> [protected]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td></td><td><b>_state</b> (defined in <a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a>)</td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td><code> [protected]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td></td><td><b>_transition</b> (defined in <a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a>)</td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td><code> [protected]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td></td><td><b>_urlPath</b> (defined in <a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a>)</td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td><code> [protected]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td></td><td><b>_withDelay</b> (defined in <a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a>)</td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td><code> [protected]</code></td></tr>
+  <tr class="memlist"><td>+&nbsp;</td><td><a class="el" href="interface_t_t_u_r_l_action.php#a005cbced24c80d18f58f23694489be0f">action</a></td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td><code> [static]</code></td></tr>
   <tr class="memlist"><td>+&nbsp;</td><td><a class="el" href="interface_t_t_u_r_l_action.php#a5f1a15f21d5a747f8dd4eafe4dbcdfdf">actionWithURLPath:</a></td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td><code> [static]</code></td></tr>
   <tr bgcolor="#f0f0f0"><td></td><td><b>animated</b> (defined in <a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a>)</td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td></td></tr>
   <tr class="memlist"><td>-&nbsp;</td><td><a class="el" href="interface_t_t_u_r_l_action.php#aa7cdd76071a10d77315bdbc6f4b2407b">applyAnimated:</a></td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td></td></tr>
   <tr class="memlist"><td>-&nbsp;</td><td><a class="el" href="interface_t_t_u_r_l_action.php#aad8f6ce474886786cfc111c41f556cb5">applyParentURLPath:</a></td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td></td></tr>
   <tr class="memlist"><td>-&nbsp;</td><td><a class="el" href="interface_t_t_u_r_l_action.php#acf71add67882f826a0cb135fda6a82c9">applyQuery:</a></td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td></td></tr>
+  <tr class="memlist"><td>-&nbsp;</td><td><a class="el" href="interface_t_t_u_r_l_action.php#ad91055d47450658c4febd98672e659fe">applySourceButton:</a></td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td></td></tr>
+  <tr class="memlist"><td>-&nbsp;</td><td><a class="el" href="interface_t_t_u_r_l_action.php#a95d10b15906df019bd795422e2f2b6a5">applySourceRect:</a></td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td></td></tr>
+  <tr class="memlist"><td>-&nbsp;</td><td><a class="el" href="interface_t_t_u_r_l_action.php#aca5cb0f5b5aed196d64559f3bd2a1276">applySourceView:</a></td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td></td></tr>
   <tr class="memlist"><td>-&nbsp;</td><td><a class="el" href="interface_t_t_u_r_l_action.php#ade1d8e73c2ff3aa31e8086ad0e2fdc18">applyState:</a></td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td></td></tr>
   <tr class="memlist"><td>-&nbsp;</td><td><a class="el" href="interface_t_t_u_r_l_action.php#ac17d57fb9dafd4cf042f5bbf958664ef">applyTransition:</a></td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td></td></tr>
   <tr class="memlist"><td>-&nbsp;</td><td><a class="el" href="interface_t_t_u_r_l_action.php#a780e109c55db1360345d05290378e199">applyWithDelay:</a></td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td>-&nbsp;</td><td><b>init</b> (defined in <a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a>)</td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td></td></tr>
   <tr class="memlist"><td>-&nbsp;</td><td><a class="el" href="interface_t_t_u_r_l_action.php#a6b4e366c94a2175e67a166975d4e788a">initWithURLPath:</a></td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td></td><td><b>parentURLPath</b> (defined in <a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a>)</td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td></td><td><b>query</b> (defined in <a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a>)</td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td></td><td><b>sourceButton</b> (defined in <a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a>)</td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td></td><td><b>sourceRect</b> (defined in <a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a>)</td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td></td></tr>
+  <tr bgcolor="#f0f0f0"><td></td><td><b>sourceView</b> (defined in <a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a>)</td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td></td><td><b>state</b> (defined in <a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a>)</td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td></td><td><b>transition</b> (defined in <a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a>)</td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td></td></tr>
   <tr bgcolor="#f0f0f0"><td></td><td><b>urlPath</b> (defined in <a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a>)</td><td><a class="el" href="interface_t_t_u_r_l_action.php">TTURLAction</a></td><td></td></tr>
@@ -136,47 +171,46 @@ This is the complete list of members for <a class="el" href="interface_t_t_u_r_l
 </iframe>
 </div>
 
-
-</div> <!-- .fixed-width -->
-
-<div class="fixed-width">
-<div id="disqus_thread"></div>
-<script type="text/javascript">
+<div id="disqus_thread"></div> 
+<script type="text/javascript"> 
   (function() {
    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
    dsq.src = 'http://three20info2.disqus.com/embed.js';
    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</div> <!-- .fixed-width -->
-
-</div> <!-- #content -->
-</div> <!-- #page-wrapper -->
-
-<script type="text/javascript">
-
+</script> 
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript> 
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> 
+</div> <!-- .fixed-width --> 
+ 
+</div> <!-- #content --> 
+</div> <!-- #page-wrapper --> 
+ 
+ 
+ 
+<script type="text/javascript"> 
+ 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-19295672-1']);
   _gaq.push(['_setDomainName', '.three20.info']);
   _gaq.push(['_trackPageview']);
-
+ 
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-</script>
-
-<script type="text/javascript">
+</script> 
+ 
+<script type="text/javascript"> 
 var disqus_shortname = 'three20info2';
 (function () {
   var s = document.createElement('script'); s.async = true;
   s.src = 'http://disqus.com/forums/three20info2/count.js';
   (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
-</script>
-
-</body>
+</script> 
+ 
+ 
+</body> 
 </html>

@@ -1,48 +1,71 @@
-<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:og="http://opengraphprotocol.org/schema/"
-      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta property="fb:app_id" content="114720825217072"/>
-  <meta property="fb:admins" content="122605446"/>
-  <meta property="og:title" content="three20.info"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="http://three20.info/"/>
-  <meta property="og:image" content="http://github.com/facebook/three20/raw/06cd0abe33ac39d1f509e278e286c6bf1e45e821/samples/Resources/Icon.png"/>
-  <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
+      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en"> 
+<head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  <meta property="fb:app_id" content="114720825217072"/> 
+  <meta property="fb:admins" content="122605446"/> 
+  <meta property="og:title" content="three20.info"/> 
+  <meta property="og:type" content="website"/> 
+  <meta property="og:url" content="http://three20.info/"/> 
+  <meta property="og:image" content="http://github.com/facebook/three20/raw/master/samples/Resources/Icon.png"/> 
+  <meta name="keywords" content="three20 iPhone api open source library uikit tt" /> 
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
-  <title>Three20: TTListDataSource Class Reference</title>
+<title>Three20 API: TTListDataSource Class Reference</title>
 <link href="http://three20.info/css/reset.css" rel="stylesheet" type="text/css"/>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/global.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/article.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/api.css" rel="stylesheet" type="text/css"/>
+<link href="http://dev.three20.info/css/global.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/article.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/api.css" rel="stylesheet" type="text/css"/>
 </head>
 <body onload='searchBox.OnSelectItem(0);'>
+<div id="page-wrapper"> 
 
-<div id="page-wrapper">
+<!-- HEADER -->
 
-<!-- HEADER --> 
- 
 <div id="header"> 
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
   <li><a href="http://three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://three20.info/documentation">Documentation</a></li> 
-  <li><a href="http://api.three20.info/">API</a></li> 
+  <li><a href="http://three20.info/extensions">Extensions</a></li> 
   <li><a href="http://three20.info/community">Community</a></li> 
 </ul> 
  
+<div id="fb-root"></div> 
+<script> 
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId   : '165692500131929',
+      session : {"access_token":"165692500131929|2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446|7YjdqHOYyL6MXMHd-udsP0EbTsg","base_domain":"three20.info","expires":"1298952000","secret":"Hcv3uGki22DI7f_imqBhgQ__","session_key":"2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446","sig":"fdaa725c7cf196ce9579d1b232a16e64","uid":"122605446"}, // don't refetch the session when PHP already has it
+      status  : true, // check login status
+      cookie  : true, // enable cookies to allow the server to access the session
+      xfbml   : true // parse XFBML
+    });
+ 
+    // whenever the user logs in, we refresh the page
+    FB.Event.subscribe('auth.login', function() {
+      window.location.reload();
+    });
+  };
+ 
+  (function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script> 
+ 
 <ul class="right-links"> 
-  <li><a href="http://<?= $_SERVER['SERVER_NAME']?><?= $_SERVER['REQUEST_URI'] ?>#disqus_thread">Comments</a></li>
+<li><img class="profileimg" width="25" height="25" valign="bottom" src="https://graph.facebook.com/122605446/picture?type=square">Jeff Verkoeyen</li> 
+<li><a href="https://www.facebook.com/logout.php?next=http%3A%2F%2Fdev.three20.info%2F&access_token=165692500131929%7C2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446%7C7YjdqHOYyL6MXMHd-udsP0EbTsg" onclick="FB.logout(function() { window.location.reload();}); return false;">Log out</a></li> 
 </ul> 
  
 <div class="leadin"> 
@@ -53,7 +76,9 @@
 </div> <!-- .fixed-width --> 
 </div> <!-- #header --> 
 
-<div id="content">
+<!-- CONTENT -->
+
+<div id="content"> 
 <div class="fixed-width">
 <!-- Generated by Doxygen 1.7.1 -->
 <script type="text/javascript"><!--
@@ -63,7 +88,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul class="tablist">
       <li><a href="index.php"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.php"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.php"><span>Classes</span></a></li>
       <li><a href="files.php"><span>Files</span></a></li>
       <li><a href="examples.php"><span>Examples</span></a></li>
@@ -124,252 +148,21 @@ Public Member Functions</h2></td></tr>
 (id)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>initWithItems:</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8290467631b1e885b26769748cf1dc92"></a><!-- doxytag: member="TTListDataSource::indexPathOfItemWithUserInfo:" ref="a8290467631b1e885b26769748cf1dc92" args="(id userInfo)" -->
 (NSIndexPath *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>indexPathOfItemWithUserInfo:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aba12e1d7bef111d6f5956b2fd6759faf"></a><!-- doxytag: member="TTListDataSource::tableView:objectForRowAtIndexPath:" ref="aba12e1d7bef111d6f5956b2fd6759faf" args="(UITableView *tableView,[objectForRowAtIndexPath] NSIndexPath *indexPath)" -->
-(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>tableView:objectForRowAtIndexPath:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac11f86bf7d0d42d5e20b0f89004a4c56"></a><!-- doxytag: member="TTListDataSource::tableView:cellClassForObject:" ref="ac11f86bf7d0d42d5e20b0f89004a4c56" args="(UITableView *tableView,[cellClassForObject] id object)" -->
-(Class)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>tableView:cellClassForObject:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac0ee4024f85437dedf7f256e5e00a3ee"></a><!-- doxytag: member="TTListDataSource::tableView:labelForObject:" ref="ac0ee4024f85437dedf7f256e5e00a3ee" args="(UITableView *tableView,[labelForObject] id object)" -->
-(<a class="el" href="class_n_s_string.php">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>tableView:labelForObject:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5179df0a147ee5170dfa7d5e0b6a996"></a><!-- doxytag: member="TTListDataSource::tableView:indexPathForObject:" ref="aa5179df0a147ee5170dfa7d5e0b6a996" args="(UITableView *tableView,[indexPathForObject] id object)" -->
-(NSIndexPath *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>tableView:indexPathForObject:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af066c5f1bf3b623b0bc15d625a3dfefd"></a><!-- doxytag: member="TTListDataSource::tableView:cell:willAppearAtIndexPath:" ref="af066c5f1bf3b623b0bc15d625a3dfefd" args="(UITableView *tableView,[cell] UITableViewCell *cell,[willAppearAtIndexPath] NSIndexPath *indexPath)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>tableView:cell:willAppearAtIndexPath:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_table_view_data_source-p.php#a96aa481ecfee16bc78f32bc1ba3128d7">tableViewDidLoadModel:</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Informs the data source that its model loaded.  <a href="#a96aa481ecfee16bc78f32bc1ba3128d7"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a432044702db503f758eb6fb93cebd032"></a><!-- doxytag: member="TTListDataSource::titleForLoading:" ref="a432044702db503f758eb6fb93cebd032" args="(BOOL reloading)" -->
-(<a class="el" href="class_n_s_string.php">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>titleForLoading:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8d0d695ba46be9c20f58eb4fc3424fb9"></a><!-- doxytag: member="TTListDataSource::imageForEmpty" ref="a8d0d695ba46be9c20f58eb4fc3424fb9" args="()" -->
-(<a class="el" href="class_u_i_image.php">UIImage</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>imageForEmpty</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5f54b11f92cd485ac5dc4c81c26c978a"></a><!-- doxytag: member="TTListDataSource::titleForEmpty" ref="a5f54b11f92cd485ac5dc4c81c26c978a" args="()" -->
-(<a class="el" href="class_n_s_string.php">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>titleForEmpty</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a712c72db930b723c5bad64cc87b38644"></a><!-- doxytag: member="TTListDataSource::subtitleForEmpty" ref="a712c72db930b723c5bad64cc87b38644" args="()" -->
-(<a class="el" href="class_n_s_string.php">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>subtitleForEmpty</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab69cea7f2e4c174bd134b82782a523f2"></a><!-- doxytag: member="TTListDataSource::imageForError:" ref="ab69cea7f2e4c174bd134b82782a523f2" args="(NSError *error)" -->
-(<a class="el" href="class_u_i_image.php">UIImage</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>imageForError:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae950d5e9343de3514b99f7dfcc9c8bca"></a><!-- doxytag: member="TTListDataSource::titleForError:" ref="ae950d5e9343de3514b99f7dfcc9c8bca" args="(NSError *error)" -->
-(<a class="el" href="class_n_s_string.php">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>titleForError:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad1326ecafd1eeb59e49ba9257b6b2ff8"></a><!-- doxytag: member="TTListDataSource::subtitleForError:" ref="ad1326ecafd1eeb59e49ba9257b6b2ff8" args="(NSError *error)" -->
-(<a class="el" href="class_n_s_string.php">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>subtitleForError:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a1979c7af6da8c2dc943d3e816a47bc"></a><!-- doxytag: member="TTListDataSource::tableView:willUpdateObject:atIndexPath:" ref="a7a1979c7af6da8c2dc943d3e816a47bc" args="(UITableView *tableView,[willUpdateObject] id object,[atIndexPath] NSIndexPath *indexPath)" -->
-(NSIndexPath *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>tableView:willUpdateObject:atIndexPath:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a981fc1cae11416c6497002ae4ef903af"></a><!-- doxytag: member="TTListDataSource::tableView:willInsertObject:atIndexPath:" ref="a981fc1cae11416c6497002ae4ef903af" args="(UITableView *tableView,[willInsertObject] id object,[atIndexPath] NSIndexPath *indexPath)" -->
-(NSIndexPath *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>tableView:willInsertObject:atIndexPath:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a663315fc2c2d144f773d57a16bb001c9"></a><!-- doxytag: member="TTListDataSource::tableView:willRemoveObject:atIndexPath:" ref="a663315fc2c2d144f773d57a16bb001c9" args="(UITableView *tableView,[willRemoveObject] id object,[atIndexPath] NSIndexPath *indexPath)" -->
-(NSIndexPath *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>tableView:willRemoveObject:atIndexPath:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a963c2771674e2dca920685e34fc20cce"></a><!-- doxytag: member="TTListDataSource::search:" ref="a963c2771674e2dca920685e34fc20cce" args="(NSString *text)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>search:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a75f0ad85113d05134ed5e79b37b5827e"></a><!-- doxytag: member="TTListDataSource::delegates" ref="a75f0ad85113d05134ed5e79b37b5827e" args="()" -->
-(<a class="el" href="class_n_s_mutable_array.php">NSMutableArray</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model-p.php#a75f0ad85113d05134ed5e79b37b5827e">delegates</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">An array of objects that conform to the <a class="el" href="protocol_t_t_model_delegate-p.php">TTModelDelegate</a> protocol. <br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model-p.php#a0717855b556f4efac8de7571f1d38cea">isLoaded</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indicates that the data has been loaded.  <a href="#a0717855b556f4efac8de7571f1d38cea"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model-p.php#a68b9d49ad095a221c82ec0d13b6038ec">isLoading</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indicates that the data is in the process of loading.  <a href="#a68b9d49ad095a221c82ec0d13b6038ec"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model-p.php#a41b1268d87a53c51aa8b22bbeeb29d07">isLoadingMore</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indicates that the data is in the process of loading additional data.  <a href="#a41b1268d87a53c51aa8b22bbeeb29d07"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(BOOL)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model-p.php#adbf2fa828a24a0428695f4cd708d9db6">isOutdated</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Indicates that the model is of date and should be reloaded as soon as possible.  <a href="#adbf2fa828a24a0428695f4cd708d9db6"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model-p.php#a7b6152507942206e12aa6889a0ed8b8c">load:more:</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Loads the model.  <a href="#a7b6152507942206e12aa6889a0ed8b8c"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model-p.php#ab1a78579b78649df0061aabd384db721">cancel</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Cancels a load that is in progress.  <a href="#ab1a78579b78649df0061aabd384db721"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_t_t_model-p.php#a13efe0c75b14ded343cd95bc84ed65f6">invalidate:</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Invalidates data stored in the cache or optionally erases it.  <a href="#a13efe0c75b14ded343cd95bc84ed65f6"></a><br/></td></tr>
 <tr><td colspan="2"><h2><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac7f2c087784d85ea7b9d6b6d36c69912"></a><!-- doxytag: member="TTListDataSource::dataSourceWithObjects:" ref="ac7f2c087784d85ea7b9d6b6d36c69912" args="(id object,[,]...)" -->
 (<a class="el" href="interface_t_t_list_data_source.php">TTListDataSource</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">+ <b>dataSourceWithObjects:</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae6c4bbfddd13a6403a0e18a1cb4c5aef"></a><!-- doxytag: member="TTListDataSource::dataSourceWithItems:" ref="ae6c4bbfddd13a6403a0e18a1cb4c5aef" args="(NSMutableArray *items)" -->
 (<a class="el" href="interface_t_t_list_data_source.php">TTListDataSource</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">+ <b>dataSourceWithItems:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a554b7a403f36a62957d3e7d10b89453e"></a><!-- doxytag: member="TTListDataSource::lettersForSectionsWithSearch:summary:" ref="a554b7a403f36a62957d3e7d10b89453e" args="(BOOL search,[summary] BOOL summary)" -->
-(<a class="el" href="class_n_s_array.php">NSArray</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">+ <b>lettersForSectionsWithSearch:summary:</b></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04b25fd324772abfc4667ebb18360ed2"></a><!-- doxytag: member="TTListDataSource::_items" ref="a04b25fd324772abfc4667ebb18360ed2" args="" -->
 <a class="el" href="class_n_s_mutable_array.php">NSMutableArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_items</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a1846e4913a3193578eed27b0818d9b"></a><!-- doxytag: member="TTListDataSource::_model" ref="a3a1846e4913a3193578eed27b0818d9b" args="" -->
-id&lt; <a class="el" href="interface_t_t_model.php">TTModel</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>_model</b></td></tr>
 <tr><td colspan="2"><h2><a name="properties"></a>
 Properties</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3308b2911bccd75f7b9659597645f05c"></a><!-- doxytag: member="TTListDataSource::items" ref="a3308b2911bccd75f7b9659597645f05c" args="" -->
 <a class="el" href="class_n_s_mutable_array.php">NSMutableArray</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>items</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeb1d63fdb51ebb1608817e3d43a64ab6"></a><!-- doxytag: member="TTListDataSource::model" ref="aeb1d63fdb51ebb1608817e3d43a64ab6" args="" -->
-id&lt; <a class="el" href="interface_t_t_model.php">TTModel</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="protocol_t_t_table_view_data_source-p.php#aeb1d63fdb51ebb1608817e3d43a64ab6">model</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Optional method to return a model object to delegate the <a class="el" href="interface_t_t_model.php" title="A default implementation of TTModel does nothing other than appear to be loaded.">TTModel</a> protocol to. <br/></td></tr>
 </table>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="ab1a78579b78649df0061aabd384db721"></a><!-- doxytag: member="TTListDataSource::cancel" ref="ab1a78579b78649df0061aabd384db721" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) cancel </td>
-          <td></td>
-          <td class="paramname"></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Cancels a load that is in progress. </p>
-<p>Default implementation does nothing. </p>
-
-</div>
-</div>
-<a class="anchor" id="a13efe0c75b14ded343cd95bc84ed65f6"></a><!-- doxytag: member="TTListDataSource::invalidate:" ref="a13efe0c75b14ded343cd95bc84ed65f6" args="(BOOL erase)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) invalidate: </td>
-          <td></td>
-          <td class="paramtype">(BOOL)&nbsp;</td>
-          <td class="paramname"> <em>erase</em></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Invalidates data stored in the cache or optionally erases it. </p>
-<p>Default implementation does nothing. </p>
-
-</div>
-</div>
-<a class="anchor" id="a0717855b556f4efac8de7571f1d38cea"></a><!-- doxytag: member="TTListDataSource::isLoaded" ref="a0717855b556f4efac8de7571f1d38cea" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (BOOL) isLoaded </td>
-          <td></td>
-          <td class="paramname"></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Indicates that the data has been loaded. </p>
-<p>Default implementation returns YES. </p>
-
-</div>
-</div>
-<a class="anchor" id="a68b9d49ad095a221c82ec0d13b6038ec"></a><!-- doxytag: member="TTListDataSource::isLoading" ref="a68b9d49ad095a221c82ec0d13b6038ec" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (BOOL) isLoading </td>
-          <td></td>
-          <td class="paramname"></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Indicates that the data is in the process of loading. </p>
-<p>Default implementation returns NO. </p>
-
-</div>
-</div>
-<a class="anchor" id="a41b1268d87a53c51aa8b22bbeeb29d07"></a><!-- doxytag: member="TTListDataSource::isLoadingMore" ref="a41b1268d87a53c51aa8b22bbeeb29d07" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (BOOL) isLoadingMore </td>
-          <td></td>
-          <td class="paramname"></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Indicates that the data is in the process of loading additional data. </p>
-<p>Default implementation returns NO. </p>
-
-</div>
-</div>
-<a class="anchor" id="adbf2fa828a24a0428695f4cd708d9db6"></a><!-- doxytag: member="TTListDataSource::isOutdated" ref="adbf2fa828a24a0428695f4cd708d9db6" args="()" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (BOOL) isOutdated </td>
-          <td></td>
-          <td class="paramname"></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Indicates that the model is of date and should be reloaded as soon as possible. </p>
-<p>Default implementation returns NO. </p>
-
-</div>
-</div>
-<a class="anchor" id="a7b6152507942206e12aa6889a0ed8b8c"></a><!-- doxytag: member="TTListDataSource::load:more:" ref="a7b6152507942206e12aa6889a0ed8b8c" args="(TTURLRequestCachePolicy cachePolicy,[more] BOOL more)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) load: </td>
-          <td></td>
-          <td class="paramtype">(TTURLRequestCachePolicy)&nbsp;</td>
-          <td class="paramname"> <em>cachePolicy</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">more:</td>
-          <td></td>
-          <td class="paramtype">(BOOL)&nbsp;</td>
-          <td class="paramname"> <em>more</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Loads the model. </p>
-<p>Default implementation does nothing. </p>
-
-</div>
-</div>
-<a class="anchor" id="a96aa481ecfee16bc78f32bc1ba3128d7"></a><!-- doxytag: member="TTListDataSource::tableViewDidLoadModel:" ref="a96aa481ecfee16bc78f32bc1ba3128d7" args="(UITableView *tableView)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) tableViewDidLoadModel: </td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="class_u_i_table_view.php">UITableView</a> *)&nbsp;</td>
-          <td class="paramname"> <em>tableView</em></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Informs the data source that its model loaded. </p>
-<p>That would be a good time to prepare the freshly loaded data for use in the table view. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Three20UI/Headers/<a class="el" href="_t_t_list_data_source_8h_source.php">TTListDataSource.h</a></li>
 <li>Three20UI/Sources/TTListDataSource.m</li>
@@ -389,47 +182,46 @@ id&lt; <a class="el" href="interface_t_t_model.php">TTModel</a> &gt;&nbsp;</td><
 </iframe>
 </div>
 
-
-</div> <!-- .fixed-width -->
-
-<div class="fixed-width">
-<div id="disqus_thread"></div>
-<script type="text/javascript">
+<div id="disqus_thread"></div> 
+<script type="text/javascript"> 
   (function() {
    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
    dsq.src = 'http://three20info2.disqus.com/embed.js';
    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</div> <!-- .fixed-width -->
-
-</div> <!-- #content -->
-</div> <!-- #page-wrapper -->
-
-<script type="text/javascript">
-
+</script> 
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript> 
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> 
+</div> <!-- .fixed-width --> 
+ 
+</div> <!-- #content --> 
+</div> <!-- #page-wrapper --> 
+ 
+ 
+ 
+<script type="text/javascript"> 
+ 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-19295672-1']);
   _gaq.push(['_setDomainName', '.three20.info']);
   _gaq.push(['_trackPageview']);
-
+ 
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-</script>
-
-<script type="text/javascript">
+</script> 
+ 
+<script type="text/javascript"> 
 var disqus_shortname = 'three20info2';
 (function () {
   var s = document.createElement('script'); s.async = true;
   s.src = 'http://disqus.com/forums/three20info2/count.js';
   (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
-</script>
-
-</body>
+</script> 
+ 
+ 
+</body> 
 </html>

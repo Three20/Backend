@@ -1,48 +1,71 @@
-<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:og="http://opengraphprotocol.org/schema/"
-      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta property="fb:app_id" content="114720825217072"/>
-  <meta property="fb:admins" content="122605446"/>
-  <meta property="og:title" content="three20.info"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="http://three20.info/"/>
-  <meta property="og:image" content="http://github.com/facebook/three20/raw/06cd0abe33ac39d1f509e278e286c6bf1e45e821/samples/Resources/Icon.png"/>
-  <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
+      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en"> 
+<head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  <meta property="fb:app_id" content="114720825217072"/> 
+  <meta property="fb:admins" content="122605446"/> 
+  <meta property="og:title" content="three20.info"/> 
+  <meta property="og:type" content="website"/> 
+  <meta property="og:url" content="http://three20.info/"/> 
+  <meta property="og:image" content="http://github.com/facebook/three20/raw/master/samples/Resources/Icon.png"/> 
+  <meta name="keywords" content="three20 iPhone api open source library uikit tt" /> 
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
-  <title>Three20: Three20Network/Headers/TTURLRequest.h Source File</title>
+<title>Three20 API: Three20Network/Headers/TTURLRequest.h Source File</title>
 <link href="http://three20.info/css/reset.css" rel="stylesheet" type="text/css"/>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/global.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/article.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/api.css" rel="stylesheet" type="text/css"/>
+<link href="http://dev.three20.info/css/global.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/article.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/api.css" rel="stylesheet" type="text/css"/>
 </head>
 <body onload='searchBox.OnSelectItem(0);'>
+<div id="page-wrapper"> 
 
-<div id="page-wrapper">
+<!-- HEADER -->
 
-<!-- HEADER --> 
- 
 <div id="header"> 
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
   <li><a href="http://three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://three20.info/documentation">Documentation</a></li> 
-  <li><a href="http://api.three20.info/">API</a></li> 
+  <li><a href="http://three20.info/extensions">Extensions</a></li> 
   <li><a href="http://three20.info/community">Community</a></li> 
 </ul> 
  
+<div id="fb-root"></div> 
+<script> 
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId   : '165692500131929',
+      session : {"access_token":"165692500131929|2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446|7YjdqHOYyL6MXMHd-udsP0EbTsg","base_domain":"three20.info","expires":"1298952000","secret":"Hcv3uGki22DI7f_imqBhgQ__","session_key":"2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446","sig":"fdaa725c7cf196ce9579d1b232a16e64","uid":"122605446"}, // don't refetch the session when PHP already has it
+      status  : true, // check login status
+      cookie  : true, // enable cookies to allow the server to access the session
+      xfbml   : true // parse XFBML
+    });
+ 
+    // whenever the user logs in, we refresh the page
+    FB.Event.subscribe('auth.login', function() {
+      window.location.reload();
+    });
+  };
+ 
+  (function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script> 
+ 
 <ul class="right-links"> 
-  <li><a href="http://<?= $_SERVER['SERVER_NAME']?><?= $_SERVER['REQUEST_URI'] ?>#disqus_thread">Comments</a></li>
+<li><img class="profileimg" width="25" height="25" valign="bottom" src="https://graph.facebook.com/122605446/picture?type=square">Jeff Verkoeyen</li> 
+<li><a href="https://www.facebook.com/logout.php?next=http%3A%2F%2Fdev.three20.info%2F&access_token=165692500131929%7C2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446%7C7YjdqHOYyL6MXMHd-udsP0EbTsg" onclick="FB.logout(function() { window.location.reload();}); return false;">Log out</a></li> 
 </ul> 
  
 <div class="leadin"> 
@@ -53,7 +76,9 @@
 </div> <!-- .fixed-width --> 
 </div> <!-- #header --> 
 
-<div id="content">
+<!-- CONTENT -->
+
+<div id="content"> 
 <div class="fixed-width">
 <!-- Generated by Doxygen 1.7.1 -->
 <script type="text/javascript"><!--
@@ -63,7 +88,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul class="tablist">
       <li><a href="index.php"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.php"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="annotated.php"><span>Classes</span></a></li>
       <li class="current"><a href="files.php"><span>Files</span></a></li>
       <li><a href="examples.php"><span>Examples</span></a></li>
@@ -97,7 +121,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
-<a name="l00002"></a>00002 <span class="comment">// Copyright 2009-2010 Facebook</span>
+<a name="l00002"></a>00002 <span class="comment">// Copyright 2009-2011 Facebook</span>
 <a name="l00003"></a>00003 <span class="comment">//</span>
 <a name="l00004"></a>00004 <span class="comment">// Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
 <a name="l00005"></a>00005 <span class="comment">// you may not use this file except in compliance with the License.</span>
@@ -147,78 +171,85 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00055"></a>00055   NSInteger             _totalBytesLoaded;
 <a name="l00056"></a>00056   NSInteger             _totalBytesExpected;
 <a name="l00057"></a>00057 
-<a name="l00058"></a>00058   <span class="keywordtype">id</span>    _userInfo;
-<a name="l00059"></a>00059 
-<a name="l00060"></a>00060   BOOL  _isLoading;
-<a name="l00061"></a>00061   BOOL  _shouldHandleCookies;
-<a name="l00062"></a>00062   BOOL  _respondedFromCache;
-<a name="l00063"></a>00063   BOOL  _filterPasswordLogging;
-<a name="l00064"></a>00064 
-<a name="l00065"></a>00065   <a class="code" href="class_n_s_mutable_array.php" title="Additions.">NSMutableArray</a>* _delegates;
-<a name="l00066"></a>00066 }
+<a name="l00058"></a>00058   NSInteger             _totalBytesDownloaded;
+<a name="l00059"></a>00059   NSInteger             _totalContentLength;
+<a name="l00060"></a>00060 
+<a name="l00061"></a>00061   <span class="keywordtype">id</span>    _userInfo;
+<a name="l00062"></a>00062 
+<a name="l00063"></a>00063   BOOL  _isLoading;
+<a name="l00064"></a>00064   BOOL  _shouldHandleCookies;
+<a name="l00065"></a>00065   BOOL  _respondedFromCache;
+<a name="l00066"></a>00066   BOOL  _filterPasswordLogging;
 <a name="l00067"></a>00067 
-<a name="l00071"></a><a class="code" href="interface_t_t_u_r_l_request.php#a4ad107c41d501a5666e65ad357842a4a">00071</a> @property (nonatomic, copy) <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>* urlPath;
-<a name="l00072"></a>00072 
-<a name="l00079"></a><a class="code" href="interface_t_t_u_r_l_request.php#ac8412fff243d33553ac0c20800e604ed">00079</a> @property (nonatomic, copy) <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>* URL __TTDEPRECATED_METHOD;
-<a name="l00080"></a>00080 
-<a name="l00089"></a>00089 @property (nonatomic, copy) <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>* httpMethod;
-<a name="l00090"></a>00090 
-<a name="l00098"></a><a class="code" href="interface_t_t_u_r_l_request.php#ae5480dad46898eb6007913b6746e706c">00098</a> @property (nonatomic, retain) <span class="keywordtype">id</span>&lt;<a class="code" href="protocol_t_t_u_r_l_response-p.php" title="A response protocol for TTURLRequest.">TTURLResponse</a>&gt; response;
-<a name="l00099"></a>00099 
-<a name="l00107"></a><a class="code" href="interface_t_t_u_r_l_request.php#a81363a89ad2263f875252fa65cacf8ec">00107</a> @property (nonatomic, retain) <a class="code" href="class_n_s_data.php" title="Additions.">NSData</a>* httpBody;
-<a name="l00108"></a>00108 
-<a name="l00114"></a><a class="code" href="interface_t_t_u_r_l_request.php#a7cf514d3f3d6526b183220d9c21513fd">00114</a> @property (nonatomic, copy) <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>* contentType;
-<a name="l00115"></a>00115 
-<a name="l00119"></a><a class="code" href="interface_t_t_u_r_l_request.php#ab7b6a26183ddcb2d0ff3ff17d3da4441">00119</a> @property (nonatomic, readonly) <a class="code" href="class_n_s_mutable_dictionary.php" title="Additions.">NSMutableDictionary</a>* parameters;
-<a name="l00120"></a>00120 
-<a name="l00124"></a><a class="code" href="interface_t_t_u_r_l_request.php#a2e0a8de578fffdf0e14f38b00e2f7116">00124</a> @property (nonatomic, readonly) <a class="code" href="class_n_s_mutable_dictionary.php" title="Additions.">NSMutableDictionary</a>* headers;
-<a name="l00125"></a>00125 
-<a name="l00129"></a><a class="code" href="interface_t_t_u_r_l_request.php#a34ad517e5d5fe222baec6702b9eb4cde">00129</a> @property (nonatomic) TTURLRequestCachePolicy cachePolicy;
-<a name="l00130"></a>00130 
-<a name="l00136"></a><a class="code" href="interface_t_t_u_r_l_request.php#aa0f7d2b7001143d1b9f1d3635449a4f1">00136</a> @property (nonatomic) NSTimeInterval cacheExpirationAge;
-<a name="l00137"></a>00137 
-<a name="l00144"></a><a class="code" href="interface_t_t_u_r_l_request.php#ace472f23740be06aa40dffdbdca99953">00144</a> @property (nonatomic, retain) <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>* cacheKey;
-<a name="l00145"></a>00145 
-<a name="l00152"></a><a class="code" href="interface_t_t_u_r_l_request.php#af0b3b2400e591b6e5d6f535ee6d63207">00152</a> @property (nonatomic, retain) <span class="keywordtype">id</span> userInfo;
-<a name="l00153"></a>00153 
-<a name="l00154"></a>00154 @property (nonatomic, retain) <a class="code" href="class_n_s_date.php" title="Additions.">NSDate</a>* timestamp;
-<a name="l00155"></a>00155 
-<a name="l00159"></a><a class="code" href="interface_t_t_u_r_l_request.php#a25d8560d31c9df8a7a274e2ad1825081">00159</a> @property (nonatomic) BOOL isLoading;
-<a name="l00160"></a>00160 
-<a name="l00171"></a><a class="code" href="interface_t_t_u_r_l_request.php#aa421862494ee35a9bdb29102044d4301">00171</a> @property (nonatomic) BOOL shouldHandleCookies;
-<a name="l00172"></a>00172 
-<a name="l00176"></a><a class="code" href="interface_t_t_u_r_l_request.php#a8021fb197041175383a69f20e0e471bc">00176</a> @property (nonatomic) NSInteger totalBytesLoaded;
-<a name="l00177"></a>00177 
-<a name="l00181"></a><a class="code" href="interface_t_t_u_r_l_request.php#a52951bb86cb8979e357db311468fce2b">00181</a> @property (nonatomic) NSInteger totalBytesExpected;
-<a name="l00182"></a>00182 
-<a name="l00188"></a><a class="code" href="interface_t_t_u_r_l_request.php#a4276b8e633d614eab0fd649775d75e7a">00188</a> @property (nonatomic) BOOL respondedFromCache;
-<a name="l00189"></a>00189 
-<a name="l00193"></a><a class="code" href="interface_t_t_u_r_l_request.php#a01c9b278379d6fe161e156a986ab845b">00193</a> @property (nonatomic, assign) BOOL filterPasswordLogging;
-<a name="l00194"></a>00194 
-<a name="l00200"></a><a class="code" href="interface_t_t_u_r_l_request.php#a8a432224b4b3c781a593f8512c124ec1">00200</a> @property (nonatomic) NSStringEncoding charsetForMultipart;
-<a name="l00201"></a>00201 
-<a name="l00205"></a><a class="code" href="interface_t_t_u_r_l_request.php#a71bb6bdcc1bc9699a0babfd2b8a398db">00205</a> @property (nonatomic, readonly) <a class="code" href="class_n_s_mutable_array.php" title="Additions.">NSMutableArray</a>* delegates;
-<a name="l00206"></a>00206 
+<a name="l00068"></a>00068   <a class="code" href="class_n_s_mutable_array.php" title="Additions.">NSMutableArray</a>* _delegates;
+<a name="l00069"></a>00069 }
+<a name="l00070"></a>00070 
+<a name="l00074"></a><a class="code" href="interface_t_t_u_r_l_request.php#a4ad107c41d501a5666e65ad357842a4a">00074</a> @property (nonatomic, copy) <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>* urlPath;
+<a name="l00075"></a>00075 
+<a name="l00082"></a><a class="code" href="interface_t_t_u_r_l_request.php#ac8412fff243d33553ac0c20800e604ed">00082</a> @property (nonatomic, copy) <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>* URL __TTDEPRECATED_METHOD;
+<a name="l00083"></a>00083 
+<a name="l00092"></a>00092 @property (nonatomic, copy) <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>* httpMethod;
+<a name="l00093"></a>00093 
+<a name="l00101"></a><a class="code" href="interface_t_t_u_r_l_request.php#ae5480dad46898eb6007913b6746e706c">00101</a> @property (nonatomic, retain) <span class="keywordtype">id</span>&lt;<a class="code" href="protocol_t_t_u_r_l_response-p.php" title="A response protocol for TTURLRequest.">TTURLResponse</a>&gt; response;
+<a name="l00102"></a>00102 
+<a name="l00110"></a><a class="code" href="interface_t_t_u_r_l_request.php#a81363a89ad2263f875252fa65cacf8ec">00110</a> @property (nonatomic, retain) <a class="code" href="class_n_s_data.php" title="Additions.">NSData</a>* httpBody;
+<a name="l00111"></a>00111 
+<a name="l00117"></a><a class="code" href="interface_t_t_u_r_l_request.php#a7cf514d3f3d6526b183220d9c21513fd">00117</a> @property (nonatomic, copy) <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>* contentType;
+<a name="l00118"></a>00118 
+<a name="l00122"></a><a class="code" href="interface_t_t_u_r_l_request.php#ab7b6a26183ddcb2d0ff3ff17d3da4441">00122</a> @property (nonatomic, readonly) <a class="code" href="class_n_s_mutable_dictionary.php" title="Additions.">NSMutableDictionary</a>* parameters;
+<a name="l00123"></a>00123 
+<a name="l00127"></a><a class="code" href="interface_t_t_u_r_l_request.php#a2e0a8de578fffdf0e14f38b00e2f7116">00127</a> @property (nonatomic, readonly) <a class="code" href="class_n_s_mutable_dictionary.php" title="Additions.">NSMutableDictionary</a>* headers;
+<a name="l00128"></a>00128 
+<a name="l00132"></a><a class="code" href="interface_t_t_u_r_l_request.php#a34ad517e5d5fe222baec6702b9eb4cde">00132</a> @property (nonatomic) TTURLRequestCachePolicy cachePolicy;
+<a name="l00133"></a>00133 
+<a name="l00139"></a><a class="code" href="interface_t_t_u_r_l_request.php#aa0f7d2b7001143d1b9f1d3635449a4f1">00139</a> @property (nonatomic) NSTimeInterval cacheExpirationAge;
+<a name="l00140"></a>00140 
+<a name="l00147"></a><a class="code" href="interface_t_t_u_r_l_request.php#ace472f23740be06aa40dffdbdca99953">00147</a> @property (nonatomic, copy) <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>* cacheKey;
+<a name="l00148"></a>00148 
+<a name="l00155"></a><a class="code" href="interface_t_t_u_r_l_request.php#af0b3b2400e591b6e5d6f535ee6d63207">00155</a> @property (nonatomic, retain) <span class="keywordtype">id</span> userInfo;
+<a name="l00156"></a>00156 
+<a name="l00157"></a>00157 @property (nonatomic, retain) <a class="code" href="class_n_s_date.php" title="Additions.">NSDate</a>* timestamp;
+<a name="l00158"></a>00158 
+<a name="l00162"></a><a class="code" href="interface_t_t_u_r_l_request.php#a25d8560d31c9df8a7a274e2ad1825081">00162</a> @property (nonatomic) BOOL isLoading;
+<a name="l00163"></a>00163 
+<a name="l00174"></a><a class="code" href="interface_t_t_u_r_l_request.php#aa421862494ee35a9bdb29102044d4301">00174</a> @property (nonatomic) BOOL shouldHandleCookies;
+<a name="l00175"></a>00175 
+<a name="l00179"></a><a class="code" href="interface_t_t_u_r_l_request.php#a8021fb197041175383a69f20e0e471bc">00179</a> @property (nonatomic) NSInteger totalBytesLoaded;
+<a name="l00180"></a>00180 
+<a name="l00184"></a><a class="code" href="interface_t_t_u_r_l_request.php#a52951bb86cb8979e357db311468fce2b">00184</a> @property (nonatomic) NSInteger totalBytesExpected;
+<a name="l00185"></a>00185 
+<a name="l00189"></a><a class="code" href="interface_t_t_u_r_l_request.php#a57e7e58d55768b6f55f809ed7540f188">00189</a> @property (nonatomic) NSInteger totalBytesDownloaded;
+<a name="l00190"></a>00190 
+<a name="l00194"></a><a class="code" href="interface_t_t_u_r_l_request.php#a56d883edac9ce53e50062dc782c59d19">00194</a> @property (nonatomic) NSInteger totalContentLength;
+<a name="l00195"></a>00195 
+<a name="l00201"></a><a class="code" href="interface_t_t_u_r_l_request.php#a4276b8e633d614eab0fd649775d75e7a">00201</a> @property (nonatomic) BOOL respondedFromCache;
+<a name="l00202"></a>00202 
+<a name="l00206"></a><a class="code" href="interface_t_t_u_r_l_request.php#a01c9b278379d6fe161e156a986ab845b">00206</a> @property (nonatomic, assign) BOOL filterPasswordLogging;
 <a name="l00207"></a>00207 
-<a name="l00208"></a>00208 + (<a class="code" href="interface_t_t_u_r_l_request.php" title="The Three20 network request object, built to work with the Three20 cache and co.">TTURLRequest</a>*)request;
-<a name="l00209"></a>00209 
-<a name="l00210"></a>00210 + (<a class="code" href="interface_t_t_u_r_l_request.php" title="The Three20 network request object, built to work with the Three20 cache and co.">TTURLRequest</a>*)requestWithURL:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)URL delegate:(<span class="keywordtype">id</span> <span class="comment">/*&lt;TTURLRequestDelegate&gt;*/</span>)delegate;
-<a name="l00211"></a>00211 
-<a name="l00212"></a>00212 - (<span class="keywordtype">id</span>)initWithURL:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)URL delegate:(<span class="keywordtype">id</span> <span class="comment">/*&lt;TTURLRequestDelegate&gt;*/</span>)delegate;
-<a name="l00213"></a>00213 
-<a name="l00214"></a>00214 - (<span class="keywordtype">void</span>)setValue:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a> *)value forHTTPHeaderField:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a> *)field;
-<a name="l00215"></a>00215 
-<a name="l00219"></a>00219 - (<span class="keywordtype">void</span>)addFile:(<a class="code" href="class_n_s_data.php" title="Additions.">NSData</a>*)data mimeType:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)mimeType fileName:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)fileName;
+<a name="l00213"></a><a class="code" href="interface_t_t_u_r_l_request.php#a8a432224b4b3c781a593f8512c124ec1">00213</a> @property (nonatomic) NSStringEncoding charsetForMultipart;
+<a name="l00214"></a>00214 
+<a name="l00218"></a><a class="code" href="interface_t_t_u_r_l_request.php#a71bb6bdcc1bc9699a0babfd2b8a398db">00218</a> @property (nonatomic, readonly) <a class="code" href="class_n_s_mutable_array.php" title="Additions.">NSMutableArray</a>* delegates;
+<a name="l00219"></a>00219 
 <a name="l00220"></a>00220 
-<a name="l00229"></a>00229 - (BOOL)send;
-<a name="l00230"></a>00230 
-<a name="l00239"></a>00239 - (BOOL)sendSynchronously;
-<a name="l00240"></a>00240 
-<a name="l00247"></a>00247 - (<span class="keywordtype">void</span>)cancel;
-<a name="l00248"></a>00248 
-<a name="l00249"></a>00249 - (NSURLRequest*)createNSURLRequest;
-<a name="l00250"></a>00250 
-<a name="l00251"></a>00251 @end
+<a name="l00221"></a>00221 + (<a class="code" href="interface_t_t_u_r_l_request.php" title="The Three20 network request object, built to work with the Three20 cache and co.">TTURLRequest</a>*)request;
+<a name="l00222"></a>00222 
+<a name="l00223"></a>00223 + (<a class="code" href="interface_t_t_u_r_l_request.php" title="The Three20 network request object, built to work with the Three20 cache and co.">TTURLRequest</a>*)requestWithURL:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)URL delegate:(<span class="keywordtype">id</span> <span class="comment">/*&lt;TTURLRequestDelegate&gt;*/</span>)delegate;
+<a name="l00224"></a>00224 
+<a name="l00225"></a>00225 - (<span class="keywordtype">id</span>)initWithURL:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)URL delegate:(<span class="keywordtype">id</span> <span class="comment">/*&lt;TTURLRequestDelegate&gt;*/</span>)delegate;
+<a name="l00226"></a>00226 
+<a name="l00227"></a>00227 - (<span class="keywordtype">void</span>)setValue:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a> *)value forHTTPHeaderField:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a> *)field;
+<a name="l00228"></a>00228 
+<a name="l00232"></a>00232 - (<span class="keywordtype">void</span>)addFile:(<a class="code" href="class_n_s_data.php" title="Additions.">NSData</a>*)data mimeType:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)mimeType fileName:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)fileName;
+<a name="l00233"></a>00233 
+<a name="l00242"></a>00242 - (BOOL)send;
+<a name="l00243"></a>00243 
+<a name="l00252"></a>00252 - (BOOL)sendSynchronously;
+<a name="l00253"></a>00253 
+<a name="l00260"></a>00260 - (<span class="keywordtype">void</span>)cancel;
+<a name="l00261"></a>00261 
+<a name="l00262"></a>00262 - (NSURLRequest*)createNSURLRequest;
+<a name="l00263"></a>00263 
+<a name="l00264"></a>00264 @end
 </pre></div></div>
 </div>
 <!--- window showing the filter options -->
@@ -235,47 +266,46 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-
-</div> <!-- .fixed-width -->
-
-<div class="fixed-width">
-<div id="disqus_thread"></div>
-<script type="text/javascript">
+<div id="disqus_thread"></div> 
+<script type="text/javascript"> 
   (function() {
    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
    dsq.src = 'http://three20info2.disqus.com/embed.js';
    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</div> <!-- .fixed-width -->
-
-</div> <!-- #content -->
-</div> <!-- #page-wrapper -->
-
-<script type="text/javascript">
-
+</script> 
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript> 
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> 
+</div> <!-- .fixed-width --> 
+ 
+</div> <!-- #content --> 
+</div> <!-- #page-wrapper --> 
+ 
+ 
+ 
+<script type="text/javascript"> 
+ 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-19295672-1']);
   _gaq.push(['_setDomainName', '.three20.info']);
   _gaq.push(['_trackPageview']);
-
+ 
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-</script>
-
-<script type="text/javascript">
+</script> 
+ 
+<script type="text/javascript"> 
 var disqus_shortname = 'three20info2';
 (function () {
   var s = document.createElement('script'); s.async = true;
   s.src = 'http://disqus.com/forums/three20info2/count.js';
   (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
-</script>
-
-</body>
+</script> 
+ 
+ 
+</body> 
 </html>

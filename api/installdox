@@ -60,7 +60,7 @@ foreach $sub (keys %subst)
 if ( ! @files ) {
   if (opendir(D,".")) {
     foreach $file ( readdir(D) ) {
-      $match = ".html";
+      $match = ".php";
       next if ( $file =~ /^\.\.?$/ );
       ($file =~ /$match/) && (push @files, $file);
       ($file =~ "tree.js") && (push @files, $file);

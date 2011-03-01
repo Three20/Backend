@@ -1,48 +1,71 @@
-<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:og="http://opengraphprotocol.org/schema/"
-      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta property="fb:app_id" content="114720825217072"/>
-  <meta property="fb:admins" content="122605446"/>
-  <meta property="og:title" content="three20.info"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="http://three20.info/"/>
-  <meta property="og:image" content="http://github.com/facebook/three20/raw/06cd0abe33ac39d1f509e278e286c6bf1e45e821/samples/Resources/Icon.png"/>
-  <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
+      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en"> 
+<head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  <meta property="fb:app_id" content="114720825217072"/> 
+  <meta property="fb:admins" content="122605446"/> 
+  <meta property="og:title" content="three20.info"/> 
+  <meta property="og:type" content="website"/> 
+  <meta property="og:url" content="http://three20.info/"/> 
+  <meta property="og:image" content="http://github.com/facebook/three20/raw/master/samples/Resources/Icon.png"/> 
+  <meta name="keywords" content="three20 iPhone api open source library uikit tt" /> 
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
-  <title>Three20: TTTableSubtitleItem Class Reference</title>
+<title>Three20 API: TTTableSubtitleItem Class Reference</title>
 <link href="http://three20.info/css/reset.css" rel="stylesheet" type="text/css"/>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/global.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/article.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/api.css" rel="stylesheet" type="text/css"/>
+<link href="http://dev.three20.info/css/global.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/article.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/api.css" rel="stylesheet" type="text/css"/>
 </head>
 <body onload='searchBox.OnSelectItem(0);'>
+<div id="page-wrapper"> 
 
-<div id="page-wrapper">
+<!-- HEADER -->
 
-<!-- HEADER --> 
- 
 <div id="header"> 
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
   <li><a href="http://three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://three20.info/documentation">Documentation</a></li> 
-  <li><a href="http://api.three20.info/">API</a></li> 
+  <li><a href="http://three20.info/extensions">Extensions</a></li> 
   <li><a href="http://three20.info/community">Community</a></li> 
 </ul> 
  
+<div id="fb-root"></div> 
+<script> 
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId   : '165692500131929',
+      session : {"access_token":"165692500131929|2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446|7YjdqHOYyL6MXMHd-udsP0EbTsg","base_domain":"three20.info","expires":"1298952000","secret":"Hcv3uGki22DI7f_imqBhgQ__","session_key":"2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446","sig":"fdaa725c7cf196ce9579d1b232a16e64","uid":"122605446"}, // don't refetch the session when PHP already has it
+      status  : true, // check login status
+      cookie  : true, // enable cookies to allow the server to access the session
+      xfbml   : true // parse XFBML
+    });
+ 
+    // whenever the user logs in, we refresh the page
+    FB.Event.subscribe('auth.login', function() {
+      window.location.reload();
+    });
+  };
+ 
+  (function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script> 
+ 
 <ul class="right-links"> 
-  <li><a href="http://<?= $_SERVER['SERVER_NAME']?><?= $_SERVER['REQUEST_URI'] ?>#disqus_thread">Comments</a></li>
+<li><img class="profileimg" width="25" height="25" valign="bottom" src="https://graph.facebook.com/122605446/picture?type=square">Jeff Verkoeyen</li> 
+<li><a href="https://www.facebook.com/logout.php?next=http%3A%2F%2Fdev.three20.info%2F&access_token=165692500131929%7C2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446%7C7YjdqHOYyL6MXMHd-udsP0EbTsg" onclick="FB.logout(function() { window.location.reload();}); return false;">Log out</a></li> 
 </ul> 
  
 <div class="leadin"> 
@@ -53,7 +76,9 @@
 </div> <!-- .fixed-width --> 
 </div> <!-- #header --> 
 
-<div id="content">
+<!-- CONTENT -->
+
+<div id="content"> 
 <div class="fixed-width">
 <!-- Generated by Doxygen 1.7.1 -->
 <script type="text/javascript"><!--
@@ -63,7 +88,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul class="tablist">
       <li><a href="index.php"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.php"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.php"><span>Classes</span></a></li>
       <li><a href="files.php"><span>Files</span></a></li>
       <li><a href="examples.php"><span>Examples</span></a></li>
@@ -130,14 +154,6 @@ Static Public Member Functions</h2></td></tr>
 (id)&nbsp;</td><td class="memItemRight" valign="bottom">+ <b>itemWithText:subtitle:imageURL:URL:</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9f4dc74e4292f55cae836d0c9997dfd2"></a><!-- doxytag: member="TTTableSubtitleItem::itemWithText:subtitle:imageURL:defaultImage:URL:accessoryURL:" ref="a9f4dc74e4292f55cae836d0c9997dfd2" args="(NSString *text,[subtitle] NSString *subtitle,[imageURL] NSString *imageURL,[defaultImage] UIImage *defaultImage,[URL] NSString *URL,[accessoryURL] NSString *accessoryURL)" -->
 (id)&nbsp;</td><td class="memItemRight" valign="bottom">+ <b>itemWithText:subtitle:imageURL:defaultImage:URL:accessoryURL:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a1a3c6669b341a49c134cce5c2066b8"></a><!-- doxytag: member="TTTableSubtitleItem::itemWithText:" ref="a7a1a3c6669b341a49c134cce5c2066b8" args="(NSString *text)" -->
-(id)&nbsp;</td><td class="memItemRight" valign="bottom">+ <b>itemWithText:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5d0597557c8eae893cf002717e4b545"></a><!-- doxytag: member="TTTableSubtitleItem::itemWithText:URL:" ref="ac5d0597557c8eae893cf002717e4b545" args="(NSString *text,[URL] NSString *URL)" -->
-(id)&nbsp;</td><td class="memItemRight" valign="bottom">+ <b>itemWithText:URL:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a532ef9a3ae6f9e8a08df07f618c369ac"></a><!-- doxytag: member="TTTableSubtitleItem::itemWithText:URL:accessoryURL:" ref="a532ef9a3ae6f9e8a08df07f618c369ac" args="(NSString *text,[URL] NSString *URL,[accessoryURL] NSString *accessoryURL)" -->
-(id)&nbsp;</td><td class="memItemRight" valign="bottom">+ <b>itemWithText:URL:accessoryURL:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af2908f179fefde4a17bc3d80b1b5e786"></a><!-- doxytag: member="TTTableSubtitleItem::itemWithText:delegate:selector:" ref="af2908f179fefde4a17bc3d80b1b5e786" args="(NSString *text,[delegate] id delegate,[selector] SEL selector)" -->
-(id)&nbsp;</td><td class="memItemRight" valign="bottom">+ <b>itemWithText:delegate:selector:</b></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2d7b60289b3b59b99c075fead4576bd"></a><!-- doxytag: member="TTTableSubtitleItem::_subtitle" ref="ac2d7b60289b3b59b99c075fead4576bd" args="" -->
@@ -146,18 +162,6 @@ Protected Attributes</h2></td></tr>
 <a class="el" href="class_n_s_string.php">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_imageURL</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a41ccb6a34bc09abe5d90018d5720c529"></a><!-- doxytag: member="TTTableSubtitleItem::_defaultImage" ref="a41ccb6a34bc09abe5d90018d5720c529" args="" -->
 <a class="el" href="class_u_i_image.php">UIImage</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_defaultImage</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a16c685cb0be26ff1287d539aab13ccaf"></a><!-- doxytag: member="TTTableSubtitleItem::_text" ref="a16c685cb0be26ff1287d539aab13ccaf" args="" -->
-<a class="el" href="class_n_s_string.php">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_text</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1d264f7a01a020c0e7ca82aee4d5653b"></a><!-- doxytag: member="TTTableSubtitleItem::_URL" ref="a1d264f7a01a020c0e7ca82aee4d5653b" args="" -->
-<a class="el" href="class_n_s_string.php">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_URL</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aff6ad4624fff456b0ff9bbcb0bc5b4b9"></a><!-- doxytag: member="TTTableSubtitleItem::_accessoryURL" ref="aff6ad4624fff456b0ff9bbcb0bc5b4b9" args="" -->
-<a class="el" href="class_n_s_string.php">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_accessoryURL</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28b76c4e7ea43e4fd85be0edbabebd05"></a><!-- doxytag: member="TTTableSubtitleItem::_delegate" ref="a28b76c4e7ea43e4fd85be0edbabebd05" args="" -->
-id&nbsp;</td><td class="memItemRight" valign="bottom"><b>_delegate</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9c183702ce0b220819db0203107181af"></a><!-- doxytag: member="TTTableSubtitleItem::_selector" ref="a9c183702ce0b220819db0203107181af" args="" -->
-SEL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_selector</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d7fa24f1f7e650b44a70bfd243e7b56"></a><!-- doxytag: member="TTTableSubtitleItem::_userInfo" ref="a6d7fa24f1f7e650b44a70bfd243e7b56" args="" -->
-id&nbsp;</td><td class="memItemRight" valign="bottom"><b>_userInfo</b></td></tr>
 <tr><td colspan="2"><h2><a name="properties"></a>
 Properties</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5bf0e16c03041fd997e6ecd5a3a7f7a"></a><!-- doxytag: member="TTTableSubtitleItem::subtitle" ref="ac5bf0e16c03041fd997e6ecd5a3a7f7a" args="" -->
@@ -166,18 +170,6 @@ Properties</h2></td></tr>
 <a class="el" href="class_n_s_string.php">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>imageURL</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0969a166133d97b4c4847435b4a54c26"></a><!-- doxytag: member="TTTableSubtitleItem::defaultImage" ref="a0969a166133d97b4c4847435b4a54c26" args="" -->
 <a class="el" href="class_u_i_image.php">UIImage</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>defaultImage</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cb1b3d75b0166f44741f618cb741ff5"></a><!-- doxytag: member="TTTableSubtitleItem::text" ref="a7cb1b3d75b0166f44741f618cb741ff5" args="" -->
-<a class="el" href="class_n_s_string.php">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>text</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af812057f561e9078045fe54eeb3c195d"></a><!-- doxytag: member="TTTableSubtitleItem::URL" ref="af812057f561e9078045fe54eeb3c195d" args="" -->
-<a class="el" href="class_n_s_string.php">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>URL</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7a6499fbdde7270664c0dc9ef346e3e9"></a><!-- doxytag: member="TTTableSubtitleItem::accessoryURL" ref="a7a6499fbdde7270664c0dc9ef346e3e9" args="" -->
-<a class="el" href="class_n_s_string.php">NSString</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>accessoryURL</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e31b38e92fb6dd00531738d9cfe23d2"></a><!-- doxytag: member="TTTableSubtitleItem::delegate" ref="a1e31b38e92fb6dd00531738d9cfe23d2" args="" -->
-id&nbsp;</td><td class="memItemRight" valign="bottom"><b>delegate</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a500dd37b9ee35aaa0cd873944877481d"></a><!-- doxytag: member="TTTableSubtitleItem::selector" ref="a500dd37b9ee35aaa0cd873944877481d" args="" -->
-SEL&nbsp;</td><td class="memItemRight" valign="bottom"><b>selector</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3a604b1a44c5f115d699b01f338feb34"></a><!-- doxytag: member="TTTableSubtitleItem::userInfo" ref="a3a604b1a44c5f115d699b01f338feb34" args="" -->
-id&nbsp;</td><td class="memItemRight" valign="bottom"><b>userInfo</b></td></tr>
 </table>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Three20UI/Headers/<a class="el" href="_t_t_table_subtitle_item_8h_source.php">TTTableSubtitleItem.h</a></li>
@@ -198,47 +190,46 @@ id&nbsp;</td><td class="memItemRight" valign="bottom"><b>userInfo</b></td></tr>
 </iframe>
 </div>
 
-
-</div> <!-- .fixed-width -->
-
-<div class="fixed-width">
-<div id="disqus_thread"></div>
-<script type="text/javascript">
+<div id="disqus_thread"></div> 
+<script type="text/javascript"> 
   (function() {
    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
    dsq.src = 'http://three20info2.disqus.com/embed.js';
    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</div> <!-- .fixed-width -->
-
-</div> <!-- #content -->
-</div> <!-- #page-wrapper -->
-
-<script type="text/javascript">
-
+</script> 
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript> 
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> 
+</div> <!-- .fixed-width --> 
+ 
+</div> <!-- #content --> 
+</div> <!-- #page-wrapper --> 
+ 
+ 
+ 
+<script type="text/javascript"> 
+ 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-19295672-1']);
   _gaq.push(['_setDomainName', '.three20.info']);
   _gaq.push(['_trackPageview']);
-
+ 
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-</script>
-
-<script type="text/javascript">
+</script> 
+ 
+<script type="text/javascript"> 
 var disqus_shortname = 'three20info2';
 (function () {
   var s = document.createElement('script'); s.async = true;
   s.src = 'http://disqus.com/forums/three20info2/count.js';
   (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
-</script>
-
-</body>
+</script> 
+ 
+ 
+</body> 
 </html>

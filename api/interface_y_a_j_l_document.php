@@ -1,48 +1,71 @@
-<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:og="http://opengraphprotocol.org/schema/"
-      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta property="fb:app_id" content="114720825217072"/>
-  <meta property="fb:admins" content="122605446"/>
-  <meta property="og:title" content="three20.info"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="http://three20.info/"/>
-  <meta property="og:image" content="http://github.com/facebook/three20/raw/06cd0abe33ac39d1f509e278e286c6bf1e45e821/samples/Resources/Icon.png"/>
-  <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
+      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en"> 
+<head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  <meta property="fb:app_id" content="114720825217072"/> 
+  <meta property="fb:admins" content="122605446"/> 
+  <meta property="og:title" content="three20.info"/> 
+  <meta property="og:type" content="website"/> 
+  <meta property="og:url" content="http://three20.info/"/> 
+  <meta property="og:image" content="http://github.com/facebook/three20/raw/master/samples/Resources/Icon.png"/> 
+  <meta name="keywords" content="three20 iPhone api open source library uikit tt" /> 
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
-  <title>Three20: YAJLDocument Class Reference</title>
+<title>Three20 API: YAJLDocument Class Reference</title>
 <link href="http://three20.info/css/reset.css" rel="stylesheet" type="text/css"/>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/global.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/article.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/api.css" rel="stylesheet" type="text/css"/>
+<link href="http://dev.three20.info/css/global.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/article.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/api.css" rel="stylesheet" type="text/css"/>
 </head>
 <body onload='searchBox.OnSelectItem(0);'>
+<div id="page-wrapper"> 
 
-<div id="page-wrapper">
+<!-- HEADER -->
 
-<!-- HEADER --> 
- 
 <div id="header"> 
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
   <li><a href="http://three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://three20.info/documentation">Documentation</a></li> 
-  <li><a href="http://api.three20.info/">API</a></li> 
+  <li><a href="http://three20.info/extensions">Extensions</a></li> 
   <li><a href="http://three20.info/community">Community</a></li> 
 </ul> 
  
+<div id="fb-root"></div> 
+<script> 
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId   : '165692500131929',
+      session : {"access_token":"165692500131929|2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446|7YjdqHOYyL6MXMHd-udsP0EbTsg","base_domain":"three20.info","expires":"1298952000","secret":"Hcv3uGki22DI7f_imqBhgQ__","session_key":"2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446","sig":"fdaa725c7cf196ce9579d1b232a16e64","uid":"122605446"}, // don't refetch the session when PHP already has it
+      status  : true, // check login status
+      cookie  : true, // enable cookies to allow the server to access the session
+      xfbml   : true // parse XFBML
+    });
+ 
+    // whenever the user logs in, we refresh the page
+    FB.Event.subscribe('auth.login', function() {
+      window.location.reload();
+    });
+  };
+ 
+  (function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script> 
+ 
 <ul class="right-links"> 
-  <li><a href="http://<?= $_SERVER['SERVER_NAME']?><?= $_SERVER['REQUEST_URI'] ?>#disqus_thread">Comments</a></li>
+<li><img class="profileimg" width="25" height="25" valign="bottom" src="https://graph.facebook.com/122605446/picture?type=square">Jeff Verkoeyen</li> 
+<li><a href="https://www.facebook.com/logout.php?next=http%3A%2F%2Fdev.three20.info%2F&access_token=165692500131929%7C2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446%7C7YjdqHOYyL6MXMHd-udsP0EbTsg" onclick="FB.logout(function() { window.location.reload();}); return false;">Log out</a></li> 
 </ul> 
  
 <div class="leadin"> 
@@ -53,7 +76,9 @@
 </div> <!-- .fixed-width --> 
 </div> <!-- #header --> 
 
-<div id="content">
+<!-- CONTENT -->
+
+<div id="content"> 
 <div class="fixed-width">
 <!-- Generated by Doxygen 1.7.1 -->
 <script type="text/javascript"><!--
@@ -63,7 +88,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul class="tablist">
       <li><a href="index.php"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.php"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.php"><span>Classes</span></a></li>
       <li><a href="files.php"><span>Files</span></a></li>
       <li><a href="examples.php"><span>Examples</span></a></li>
@@ -102,7 +126,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>YAJLDocument Class Reference</h1>  </div>
 </div>
 <div class="contents">
-<!-- doxytag: class="YAJLDocument" --><!-- doxytag: inherits="NSObject,YAJLParserDelegate-p" --><div class="dynheader">
+<!-- doxytag: class="YAJLDocument" --><!-- doxytag: inherits="NSObject,YAJLParserDelegate-p" -->
+<p><code>#import &lt;<a class="el" href="_y_a_j_l_document_8h_source.php">YAJLDocument.h</a>&gt;</code></p>
+<div class="dynheader">
 Inheritance diagram for YAJLDocument:</div>
 <div class="dyncontent">
  <div class="center">
@@ -118,31 +144,21 @@ Inheritance diagram for YAJLDocument:</div>
 <tr><td colspan="2"><h2><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_y_a_j_l_document.php#a9b206b6d99ed1edd0cbec744ec75ff1b">initWithData:parserOptions:error:</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Delegate.  <a href="#a9b206b6d99ed1edd0cbec744ec75ff1b"></a><br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(id)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_y_a_j_l_document.php#a5244e742acee8498bbc4b488ed63ad0c">initWithParserOptions:</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top">(YAJLParserStatus)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_y_a_j_l_document.php#a535595df957db118207836ca5217509f">parse:error:</a></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17d21d8cd1413c4596dd23bcd9e69fb2"></a><!-- doxytag: member="YAJLDocument::_pop" ref="a17d21d8cd1413c4596dd23bcd9e69fb2" args="()" -->
 (void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>_pop</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa582b4d02310f594a0f34f186a251581"></a><!-- doxytag: member="YAJLDocument::_popKey" ref="aa582b4d02310f594a0f34f186a251581" args="()" -->
 (void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>_popKey</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a68176263236a3ff3f7578816d0ec9e0d"></a><!-- doxytag: member="YAJLDocument::parserDidStartDictionary:" ref="a68176263236a3ff3f7578816d0ec9e0d" args="(YAJLParser *parser)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>parserDidStartDictionary:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24e62f45b73eb271dc0744b6787992ba"></a><!-- doxytag: member="YAJLDocument::parserDidEndDictionary:" ref="a24e62f45b73eb271dc0744b6787992ba" args="(YAJLParser *parser)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>parserDidEndDictionary:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab28667c43cd21dee7500ed3f44137fd2"></a><!-- doxytag: member="YAJLDocument::parserDidStartArray:" ref="ab28667c43cd21dee7500ed3f44137fd2" args="(YAJLParser *parser)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>parserDidStartArray:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e07bb4fac65e5b329786b6f08efbddc"></a><!-- doxytag: member="YAJLDocument::parserDidEndArray:" ref="a2e07bb4fac65e5b329786b6f08efbddc" args="(YAJLParser *parser)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>parserDidEndArray:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ad90afbda4e77208c1e61fc2a7175fe"></a><!-- doxytag: member="YAJLDocument::parser:didMapKey:" ref="a9ad90afbda4e77208c1e61fc2a7175fe" args="(YAJLParser *parser,[didMapKey] NSString *key)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>parser:didMapKey:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="protocol_y_a_j_l_parser_delegate-p.php#a2f554ab453f9108c0c046a9ad5b2034d">parser:didAdd:</a></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a21c81df73f53b55e8537cdd1b79e21c5"></a><!-- doxytag: member="YAJLDocument::root_" ref="a21c81df73f53b55e8537cdd1b79e21c5" args="" -->
 id&nbsp;</td><td class="memItemRight" valign="bottom"><b>root_</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5991f280579ffd800d584d378072176a"></a><!-- doxytag: member="YAJLDocument::parser_" ref="a5991f280579ffd800d584d378072176a" args="" -->
 <a class="el" href="interface_y_a_j_l_parser.php">YAJLParser</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>parser_</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06b5f4a293ea5369243a0e3ce2025a93"></a><!-- doxytag: member="YAJLDocument::delegate_" ref="a06b5f4a293ea5369243a0e3ce2025a93" args="" -->
-__weak id&lt; <a class="el" href="protocol_y_a_j_l_document_delegate-p.php">YAJLDocumentDelegate</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>delegate_</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8288e07c689d1dada6808c6e4cf1cb15"></a><!-- doxytag: member="YAJLDocument::delegate_" ref="a8288e07c689d1dada6808c6e4cf1cb15" args="" -->
+id&lt; <a class="el" href="protocol_y_a_j_l_document_delegate-p.php">YAJLDocumentDelegate</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>delegate_</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ae30f71f48362d88dade56e01b2b1ca"></a><!-- doxytag: member="YAJLDocument::dict_" ref="a3ae30f71f48362d88dade56e01b2b1ca" args="" -->
 __weak <a class="el" href="class_n_s_mutable_dictionary.php">NSMutableDictionary</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>dict_</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2293b5747edf5a45096b0e0f5a7d77cf"></a><!-- doxytag: member="YAJLDocument::array_" ref="a2293b5747edf5a45096b0e0f5a7d77cf" args="" -->
@@ -163,11 +179,38 @@ Properties</h2></td></tr>
 id&nbsp;</td><td class="memItemRight" valign="bottom"><b>root</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3ef4dae31a36129f29cc48046cdfd97e"></a><!-- doxytag: member="YAJLDocument::parserStatus" ref="a3ef4dae31a36129f29cc48046cdfd97e" args="" -->
 YAJLParserStatus&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_y_a_j_l_document.php#a3ef4dae31a36129f29cc48046cdfd97e">parserStatus</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Root element. <br/></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The root element of the document, either <a class="el" href="class_n_s_array.php" title="Additions.">NSArray</a> or <a class="el" href="class_n_s_dictionary.php">NSDictionary</a>. <br/></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8f0312e4c03f935bd8cef8990e5ad97b"></a><!-- doxytag: member="YAJLDocument::delegate" ref="a8f0312e4c03f935bd8cef8990e5ad97b" args="" -->
-id&lt; <a class="el" href="protocol_y_a_j_l_document_delegate-p.php">YAJLDocumentDelegate</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>delegate</b></td></tr>
+id&lt; <a class="el" href="protocol_y_a_j_l_document_delegate-p.php">YAJLDocumentDelegate</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_y_a_j_l_document.php#a8f0312e4c03f935bd8cef8990e5ad97b">delegate</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">The current status of parsing. <br/></td></tr>
 </table>
-<hr/><h2>Member Function Documentation</h2>
+<hr/><a name="_details"></a><h2>Detailed Description</h2>
+<p>JSON document interface.</p>
+<div class="fragment"><pre class="fragment"> <a class="code" href="class_n_s_data.php" title="Additions.">NSData</a> *data = [<a class="code" href="class_n_s_data.php" title="Additions.">NSData</a> dataWithContentsOfFile:<span class="stringliteral">@&quot;example.json&quot;</span>];
+ NSError *error = nil;
+ <a class="code" href="interface_y_a_j_l_document.php">YAJLDocument</a> *document = [[<a class="code" href="interface_y_a_j_l_document.php">YAJLDocument</a> alloc] initWithData:data parserOptions:YAJLParserOptionsNone error:&amp;error];
+ <span class="comment">// Access root element at document.root</span>
+ NSLog(<span class="stringliteral">@&quot;Root: %@&quot;</span>, document.root);
+ [document release];
+</pre></div><p>Example for streaming: </p>
+<div class="fragment"><pre class="fragment"> <a class="code" href="interface_y_a_j_l_document.php">YAJLDocument</a> *document = [[<a class="code" href="interface_y_a_j_l_document.php">YAJLDocument</a> alloc] init];
+ document.<a class="code" href="interface_y_a_j_l_document.php#a8f0312e4c03f935bd8cef8990e5ad97b" title="The current status of parsing.">delegate</a> = <span class="keyword">self</span>;
+
+ NSError *error = nil;
+ [document parse:chunk1 error:error];
+ [document parse:chunk2 error:error];
+
+ <span class="comment">// You can access root element at document.root</span>
+ NSLog(<span class="stringliteral">@&quot;Root: %@&quot;</span>, document.root);
+ [document release];
+
+ <span class="comment">// Or via the YAJLDocumentDelegate delegate methods</span>
+
+ - (void)document:(<a class="code" href="interface_y_a_j_l_document.php">YAJLDocument</a> *)document didAddDictionary:(<a class="code" href="class_n_s_dictionary.php">NSDictionary</a> *)dict { }
+ - (void)document:(<a class="code" href="interface_y_a_j_l_document.php">YAJLDocument</a> *)document didAddArray:(<a class="code" href="class_n_s_array.php" title="Additions.">NSArray</a> *)array { }
+ - (void)document:(<a class="code" href="interface_y_a_j_l_document.php">YAJLDocument</a> *)document didAddObject:(id)<span class="keywordtype">object</span> toArray:(<a class="code" href="class_n_s_array.php" title="Additions.">NSArray</a> *)array { }
+ - (void)document:(<a class="code" href="interface_y_a_j_l_document.php">YAJLDocument</a> *)document didSetObject:(id)<span class="keywordtype">object</span> forKey:(<span class="keywordtype">id</span>)key inDictionary:(<a class="code" href="class_n_s_dictionary.php">NSDictionary</a> *)dict { }
+</pre></div> <hr/><h2>Member Function Documentation</h2>
 <a class="anchor" id="a9b206b6d99ed1edd0cbec744ec75ff1b"></a><!-- doxytag: member="YAJLDocument::initWithData:parserOptions:error:" ref="a9b206b6d99ed1edd0cbec744ec75ff1b" args="(NSData *data,[parserOptions] YAJLParserOptions parserOptions,[error] NSError **error)" -->
 <div class="memitem">
 <div class="memproto">
@@ -198,11 +241,20 @@ id&lt; <a class="el" href="protocol_y_a_j_l_document_delegate-p.php">YAJLDocumen
       </table>
 </div>
 <div class="memdoc">
+
+<p>Delegate. </p>
 <p>Create document from data. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>Data to parse </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>parserOptions</em>&nbsp;</td><td>Parse options </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>parserOptions</em>&nbsp;</td><td>Parse options</p>
+<ul>
+<li>YAJLParserOptionsNone: No options</li>
+<li>YAJLParserOptionsAllowComments: Javascript style comments will be allowed in the input (both / / and //)</li>
+<li>YAJLParserOptionsCheckUTF8: Invalid UTF8 strings will cause a parse error</li>
+<li>YAJLParserOptionsStrictPrecision: If YES will force strict precision and return integer overflow error </li>
+</ul>
+</td></tr>
     <tr><td valign="top"></td><td valign="top"><em>error</em>&nbsp;</td><td>Error to set on failure </td></tr>
   </table>
   </dd>
@@ -228,7 +280,14 @@ id&lt; <a class="el" href="protocol_y_a_j_l_document_delegate-p.php">YAJLDocumen
 <p>Create empty document with parser options. </p>
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>parserOptions</em>&nbsp;</td><td>Parse options </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>parserOptions</em>&nbsp;</td><td>Parse options</p>
+<ul>
+<li>YAJLParserOptionsNone: No options</li>
+<li>YAJLParserOptionsAllowComments: Javascript style comments will be allowed in the input (both / / and //)</li>
+<li>YAJLParserOptionsCheckUTF8: Invalid UTF8 strings will cause a parse error</li>
+<li>YAJLParserOptionsStrictPrecision: If YES will force strict precision and return integer overflow error </li>
+</ul>
+</td></tr>
   </table>
   </dd>
 </dl>
@@ -263,46 +322,17 @@ id&lt; <a class="el" href="protocol_y_a_j_l_document_delegate-p.php">YAJLDocumen
 <dl><dt><b>Parameters:</b></dt><dd>
   <table border="0" cellspacing="2" cellpadding="0">
     <tr><td valign="top"></td><td valign="top"><em>data</em>&nbsp;</td><td>Data to parse </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>error</em>&nbsp;</td><td>Error to set on failure </td></tr>
+    <tr><td valign="top"></td><td valign="top"><em>error</em>&nbsp;</td><td>Out error to set on failure </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>Returns:</b></dt><dd>Parser status </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a2f554ab453f9108c0c046a9ad5b2034d"></a><!-- doxytag: member="YAJLDocument::parser:didAdd:" ref="a2f554ab453f9108c0c046a9ad5b2034d" args="(YAJLParser *parser,[didAdd] id value)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) parser: </td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="interface_y_a_j_l_parser.php">YAJLParser</a> *)&nbsp;</td>
-          <td class="paramname"> <em>parser</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">didAdd:</td>
-          <td></td>
-          <td class="paramtype">(id)&nbsp;</td>
-          <td class="paramname"> <em>value</em></td><td>&nbsp;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td><td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-<p>Did add value. </p>
-<dl><dt><b>Parameters:</b></dt><dd>
-  <table border="0" cellspacing="2" cellpadding="0">
-    <tr><td valign="top"></td><td valign="top"><em>parser</em>&nbsp;</td><td>Sender </td></tr>
-    <tr><td valign="top"></td><td valign="top"><em>value</em>&nbsp;</td><td>Value of type NSNull, <a class="el" href="class_n_s_string.php" title="Additions.">NSString</a> or NSNumber </td></tr>
-  </table>
-  </dd>
-</dl>
+<dl class="return"><dt><b>Returns:</b></dt><dd>Parser status<ul>
+<li>YAJLParserStatusNone: No status</li>
+<li>YAJLParserStatusOK: Parsed OK</li>
+<li>YAJLParserStatusInsufficientData: There was insufficient data</li>
+<li>YAJLParserStatusError: Parser errored </li>
+</ul>
+</dd></dl>
 
 </div>
 </div>
@@ -325,47 +355,46 @@ id&lt; <a class="el" href="protocol_y_a_j_l_document_delegate-p.php">YAJLDocumen
 </iframe>
 </div>
 
-
-</div> <!-- .fixed-width -->
-
-<div class="fixed-width">
-<div id="disqus_thread"></div>
-<script type="text/javascript">
+<div id="disqus_thread"></div> 
+<script type="text/javascript"> 
   (function() {
    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
    dsq.src = 'http://three20info2.disqus.com/embed.js';
    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</div> <!-- .fixed-width -->
-
-</div> <!-- #content -->
-</div> <!-- #page-wrapper -->
-
-<script type="text/javascript">
-
+</script> 
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript> 
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> 
+</div> <!-- .fixed-width --> 
+ 
+</div> <!-- #content --> 
+</div> <!-- #page-wrapper --> 
+ 
+ 
+ 
+<script type="text/javascript"> 
+ 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-19295672-1']);
   _gaq.push(['_setDomainName', '.three20.info']);
   _gaq.push(['_trackPageview']);
-
+ 
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-</script>
-
-<script type="text/javascript">
+</script> 
+ 
+<script type="text/javascript"> 
 var disqus_shortname = 'three20info2';
 (function () {
   var s = document.createElement('script'); s.async = true;
   s.src = 'http://disqus.com/forums/three20info2/count.js';
   (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
-</script>
-
-</body>
+</script> 
+ 
+ 
+</body> 
 </html>

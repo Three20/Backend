@@ -1,48 +1,71 @@
-<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:og="http://opengraphprotocol.org/schema/"
-      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta property="fb:app_id" content="114720825217072"/>
-  <meta property="fb:admins" content="122605446"/>
-  <meta property="og:title" content="three20.info"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="http://three20.info/"/>
-  <meta property="og:image" content="http://github.com/facebook/three20/raw/06cd0abe33ac39d1f509e278e286c6bf1e45e821/samples/Resources/Icon.png"/>
-  <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
+      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en"> 
+<head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  <meta property="fb:app_id" content="114720825217072"/> 
+  <meta property="fb:admins" content="122605446"/> 
+  <meta property="og:title" content="three20.info"/> 
+  <meta property="og:type" content="website"/> 
+  <meta property="og:url" content="http://three20.info/"/> 
+  <meta property="og:image" content="http://github.com/facebook/three20/raw/master/samples/Resources/Icon.png"/> 
+  <meta name="keywords" content="three20 iPhone api open source library uikit tt" /> 
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
-  <title>Three20: Class Members - Properties</title>
+<title>Three20 API: Class Members - Properties</title>
 <link href="http://three20.info/css/reset.css" rel="stylesheet" type="text/css"/>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/global.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/article.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/api.css" rel="stylesheet" type="text/css"/>
+<link href="http://dev.three20.info/css/global.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/article.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/api.css" rel="stylesheet" type="text/css"/>
 </head>
 <body onload='searchBox.OnSelectItem(0);'>
+<div id="page-wrapper"> 
 
-<div id="page-wrapper">
+<!-- HEADER -->
 
-<!-- HEADER --> 
- 
 <div id="header"> 
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
   <li><a href="http://three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://three20.info/documentation">Documentation</a></li> 
-  <li><a href="http://api.three20.info/">API</a></li> 
+  <li><a href="http://three20.info/extensions">Extensions</a></li> 
   <li><a href="http://three20.info/community">Community</a></li> 
 </ul> 
  
+<div id="fb-root"></div> 
+<script> 
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId   : '165692500131929',
+      session : {"access_token":"165692500131929|2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446|7YjdqHOYyL6MXMHd-udsP0EbTsg","base_domain":"three20.info","expires":"1298952000","secret":"Hcv3uGki22DI7f_imqBhgQ__","session_key":"2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446","sig":"fdaa725c7cf196ce9579d1b232a16e64","uid":"122605446"}, // don't refetch the session when PHP already has it
+      status  : true, // check login status
+      cookie  : true, // enable cookies to allow the server to access the session
+      xfbml   : true // parse XFBML
+    });
+ 
+    // whenever the user logs in, we refresh the page
+    FB.Event.subscribe('auth.login', function() {
+      window.location.reload();
+    });
+  };
+ 
+  (function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script> 
+ 
 <ul class="right-links"> 
-  <li><a href="http://<?= $_SERVER['SERVER_NAME']?><?= $_SERVER['REQUEST_URI'] ?>#disqus_thread">Comments</a></li>
+<li><img class="profileimg" width="25" height="25" valign="bottom" src="https://graph.facebook.com/122605446/picture?type=square">Jeff Verkoeyen</li> 
+<li><a href="https://www.facebook.com/logout.php?next=http%3A%2F%2Fdev.three20.info%2F&access_token=165692500131929%7C2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446%7C7YjdqHOYyL6MXMHd-udsP0EbTsg" onclick="FB.logout(function() { window.location.reload();}); return false;">Log out</a></li> 
 </ul> 
  
 <div class="leadin"> 
@@ -53,7 +76,9 @@
 </div> <!-- .fixed-width --> 
 </div> <!-- #header --> 
 
-<div id="content">
+<!-- CONTENT -->
+
+<div id="content"> 
 <div class="fixed-width">
 <!-- Generated by Doxygen 1.7.1 -->
 <script type="text/javascript"><!--
@@ -63,7 +88,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul class="tablist">
       <li><a href="index.php"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.php"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.php"><span>Classes</span></a></li>
       <li><a href="files.php"><span>Files</span></a></li>
       <li><a href="examples.php"><span>Examples</span></a></li>
@@ -218,9 +242,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>delegate
 : <a class="el" href="interface_t_t_message_controller.php#a8cf1658e4a2cdbe7dc72f1c0e9e6b2ed">TTMessageController</a>
-, <a class="el" href="interface_t_t_recursive_progress.php#a997fa2b9da25fe52d45742f5d1700466">TTRecursiveProgress</a>
 , <a class="el" href="interface_t_t_web_controller.php#ab9a2dd7b03546df421e5dcae2e094799">TTWebController</a>
 , <a class="el" href="interface_t_t_image_view.php#a28a5a7c4401e82b11b9266ae4fb4c414">TTImageView</a>
+, <a class="el" href="interface_t_t_recursive_progress.php#a997fa2b9da25fe52d45742f5d1700466">TTRecursiveProgress</a>
+, <a class="el" href="interface_y_a_j_l_document.php#a8f0312e4c03f935bd8cef8990e5ad97b">YAJLDocument</a>
 </li>
 <li>delegates
 : <a class="el" href="interface_t_t_u_r_l_request.php#a71bb6bdcc1bc9699a0babfd2b8a398db">TTURLRequest</a>
@@ -303,7 +328,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="interface_t_t_u_r_l_request.php#a81363a89ad2263f875252fa65cacf8ec">TTURLRequest</a>
 </li>
 <li>humanReadable
-: <a class="el" href="protocol_s_b_json_writer-p.php#a69f531597668b4b3c20aabee1e3d4558">&lt;SBJsonWriter&gt;</a>
+: <a class="el" href="interface_s_b_json_writer.php#a16ca84860a2ee76a03b567dc5181a851">SBJsonWriter</a>
 </li>
 </ul>
 
@@ -433,6 +458,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>persistenceExpirationAge
 : <a class="el" href="interface_t_t_base_navigator.php#abe6d7ee14fd1147201694ffdfdb3228d">TTBaseNavigator</a>
 </li>
+<li>persistenceKey
+: <a class="el" href="interface_t_t_base_navigator.php#afc067091161086784d8c2d95be39083a">TTBaseNavigator</a>
+</li>
 <li>persistenceMode
 : <a class="el" href="interface_t_t_base_navigator.php#af4584c3f244a628f9986960f5973cb92">TTBaseNavigator</a>
 </li>
@@ -457,6 +485,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>response
 : <a class="el" href="interface_t_t_u_r_l_request.php#ae5480dad46898eb6007913b6746e706c">TTURLRequest</a>
+</li>
+<li>rootContainer
+: <a class="el" href="interface_t_t_base_navigator.php#a060fe6a28f50c4eac1753965a153077c">TTBaseNavigator</a>
 </li>
 <li>rootFrame
 : <a class="el" href="interface_t_t_styled_text.php#ac6883624b3950d6df12acef4d4d379e3">TTStyledText</a>
@@ -496,7 +527,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="protocol_t_t_photo-p.php#af3f9f350defa57ccad9dfd3fa3379065">&lt;TTPhoto&gt;</a>
 </li>
 <li>sortKeys
-: <a class="el" href="protocol_s_b_json_writer-p.php#ad424f1c19aead35d04509bfa549f7290">&lt;SBJsonWriter&gt;</a>
+: <a class="el" href="interface_s_b_json_writer.php#af25807a58a322b56cb5d3593532228e5">SBJsonWriter</a>
 </li>
 <li>statusBarStyle
 : <a class="el" href="interface_t_t_base_view_controller.php#a9fbdc64e7c1d0e33c6e5c18c637484f7">TTBaseViewController</a>
@@ -544,11 +575,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>topViewController
 : <a class="el" href="interface_t_t_base_navigator.php#a9d5c8ea878103dd007eb3012d3749210">TTBaseNavigator</a>
 </li>
+<li>totalBytesDownloaded
+: <a class="el" href="interface_t_t_u_r_l_request.php#a57e7e58d55768b6f55f809ed7540f188">TTURLRequest</a>
+</li>
 <li>totalBytesExpected
 : <a class="el" href="interface_t_t_u_r_l_request.php#a52951bb86cb8979e357db311468fce2b">TTURLRequest</a>
 </li>
 <li>totalBytesLoaded
 : <a class="el" href="interface_t_t_u_r_l_request.php#a8021fb197041175383a69f20e0e471bc">TTURLRequest</a>
+</li>
+<li>totalContentLength
+: <a class="el" href="interface_t_t_u_r_l_request.php#a56d883edac9ce53e50062dc782c59d19">TTURLRequest</a>
 </li>
 <li>treatDuplicateKeysAsArrayItems
 : <a class="el" href="interface_t_t_x_m_l_parser.php#aa2ffa5a06a6b5f25cc4301777544c128">TTXMLParser</a>
@@ -565,13 +602,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>URLAction
 : <a class="el" href="interface_t_t_link.php#acac5fc4e17c49e878bd9e25df4fa1780">TTLink</a>
 </li>
-<li>URLMap
-: <a class="el" href="interface_t_t_base_navigator.php#a3017d22aba919b66969e863484bb2168">TTBaseNavigator</a>
-</li>
 <li>urlPath
-: <a class="el" href="interface_t_t_u_r_l_request.php#a4ad107c41d501a5666e65ad357842a4a">TTURLRequest</a>
-, <a class="el" href="interface_t_t_image_view.php#a037c253134647eeb0dec16dc5bd8f7f6">TTImageView</a>
+: <a class="el" href="interface_t_t_image_view.php#a037c253134647eeb0dec16dc5bd8f7f6">TTImageView</a>
 , <a class="el" href="interface_t_t_request_loader.php#ae05ab957f8610bdf6d8dc6c55561cf18">TTRequestLoader</a>
+, <a class="el" href="interface_t_t_u_r_l_request.php#a4ad107c41d501a5666e65ad357842a4a">TTURLRequest</a>
 </li>
 <li>URLValue
 : <a class="el" href="protocol_t_t_u_r_l_object-p.php#a618b16ff58bc21afb3d6fc427a96a2ab">&lt;TTURLObject&gt;</a>
@@ -637,47 +671,46 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-
-</div> <!-- .fixed-width -->
-
-<div class="fixed-width">
-<div id="disqus_thread"></div>
-<script type="text/javascript">
+<div id="disqus_thread"></div> 
+<script type="text/javascript"> 
   (function() {
    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
    dsq.src = 'http://three20info2.disqus.com/embed.js';
    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</div> <!-- .fixed-width -->
-
-</div> <!-- #content -->
-</div> <!-- #page-wrapper -->
-
-<script type="text/javascript">
-
+</script> 
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript> 
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> 
+</div> <!-- .fixed-width --> 
+ 
+</div> <!-- #content --> 
+</div> <!-- #page-wrapper --> 
+ 
+ 
+ 
+<script type="text/javascript"> 
+ 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-19295672-1']);
   _gaq.push(['_setDomainName', '.three20.info']);
   _gaq.push(['_trackPageview']);
-
+ 
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-</script>
-
-<script type="text/javascript">
+</script> 
+ 
+<script type="text/javascript"> 
 var disqus_shortname = 'three20info2';
 (function () {
   var s = document.createElement('script'); s.async = true;
   s.src = 'http://disqus.com/forums/three20info2/count.js';
   (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
-</script>
-
-</body>
+</script> 
+ 
+ 
+</body> 
 </html>

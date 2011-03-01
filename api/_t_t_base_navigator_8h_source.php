@@ -1,48 +1,71 @@
-<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:og="http://opengraphprotocol.org/schema/"
-      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta property="fb:app_id" content="114720825217072"/>
-  <meta property="fb:admins" content="122605446"/>
-  <meta property="og:title" content="three20.info"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="http://three20.info/"/>
-  <meta property="og:image" content="http://github.com/facebook/three20/raw/06cd0abe33ac39d1f509e278e286c6bf1e45e821/samples/Resources/Icon.png"/>
-  <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
+      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en"> 
+<head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  <meta property="fb:app_id" content="114720825217072"/> 
+  <meta property="fb:admins" content="122605446"/> 
+  <meta property="og:title" content="three20.info"/> 
+  <meta property="og:type" content="website"/> 
+  <meta property="og:url" content="http://three20.info/"/> 
+  <meta property="og:image" content="http://github.com/facebook/three20/raw/master/samples/Resources/Icon.png"/> 
+  <meta name="keywords" content="three20 iPhone api open source library uikit tt" /> 
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
-  <title>Three20: Three20UINavigator/Headers/TTBaseNavigator.h Source File</title>
+<title>Three20 API: Three20UINavigator/Headers/TTBaseNavigator.h Source File</title>
 <link href="http://three20.info/css/reset.css" rel="stylesheet" type="text/css"/>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/global.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/article.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/api.css" rel="stylesheet" type="text/css"/>
+<link href="http://dev.three20.info/css/global.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/article.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/api.css" rel="stylesheet" type="text/css"/>
 </head>
 <body onload='searchBox.OnSelectItem(0);'>
+<div id="page-wrapper"> 
 
-<div id="page-wrapper">
+<!-- HEADER -->
 
-<!-- HEADER --> 
- 
 <div id="header"> 
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
   <li><a href="http://three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://three20.info/documentation">Documentation</a></li> 
-  <li><a href="http://api.three20.info/">API</a></li> 
+  <li><a href="http://three20.info/extensions">Extensions</a></li> 
   <li><a href="http://three20.info/community">Community</a></li> 
 </ul> 
  
+<div id="fb-root"></div> 
+<script> 
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId   : '165692500131929',
+      session : {"access_token":"165692500131929|2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446|7YjdqHOYyL6MXMHd-udsP0EbTsg","base_domain":"three20.info","expires":"1298952000","secret":"Hcv3uGki22DI7f_imqBhgQ__","session_key":"2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446","sig":"fdaa725c7cf196ce9579d1b232a16e64","uid":"122605446"}, // don't refetch the session when PHP already has it
+      status  : true, // check login status
+      cookie  : true, // enable cookies to allow the server to access the session
+      xfbml   : true // parse XFBML
+    });
+ 
+    // whenever the user logs in, we refresh the page
+    FB.Event.subscribe('auth.login', function() {
+      window.location.reload();
+    });
+  };
+ 
+  (function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script> 
+ 
 <ul class="right-links"> 
-  <li><a href="http://<?= $_SERVER['SERVER_NAME']?><?= $_SERVER['REQUEST_URI'] ?>#disqus_thread">Comments</a></li>
+<li><img class="profileimg" width="25" height="25" valign="bottom" src="https://graph.facebook.com/122605446/picture?type=square">Jeff Verkoeyen</li> 
+<li><a href="https://www.facebook.com/logout.php?next=http%3A%2F%2Fdev.three20.info%2F&access_token=165692500131929%7C2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446%7C7YjdqHOYyL6MXMHd-udsP0EbTsg" onclick="FB.logout(function() { window.location.reload();}); return false;">Log out</a></li> 
 </ul> 
  
 <div class="leadin"> 
@@ -53,7 +76,9 @@
 </div> <!-- .fixed-width --> 
 </div> <!-- #header --> 
 
-<div id="content">
+<!-- CONTENT -->
+
+<div id="content"> 
 <div class="fixed-width">
 <!-- Generated by Doxygen 1.7.1 -->
 <script type="text/javascript"><!--
@@ -63,7 +88,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul class="tablist">
       <li><a href="index.php"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.php"><span>Related&nbsp;Pages</span></a></li>
       <li><a href="annotated.php"><span>Classes</span></a></li>
       <li class="current"><a href="files.php"><span>Files</span></a></li>
       <li><a href="examples.php"><span>Examples</span></a></li>
@@ -97,7 +121,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 <div class="contents">
 <div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 <span class="comment">//</span>
-<a name="l00002"></a>00002 <span class="comment">// Copyright 2009-2010 Facebook</span>
+<a name="l00002"></a>00002 <span class="comment">// Copyright 2009-2011 Facebook</span>
 <a name="l00003"></a>00003 <span class="comment">//</span>
 <a name="l00004"></a>00004 <span class="comment">// Licensed under the Apache License, Version 2.0 (the &quot;License&quot;);</span>
 <a name="l00005"></a>00005 <span class="comment">// you may not use this file except in compliance with the License.</span>
@@ -118,89 +142,100 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00020"></a>00020 <span class="preprocessor">#import &quot;Three20UINavigator/TTNavigatorPersistenceMode.h&quot;</span>
 <a name="l00021"></a>00021 
 <a name="l00022"></a>00022 <span class="keyword">@protocol </span><a class="code" href="protocol_t_t_navigator_delegate-p.php">TTNavigatorDelegate</a>;
-<a name="l00023"></a>00023 <span class="keyword">@class</span> <a class="code" href="interface_t_t_u_r_l_action.php" title="This object bundles up a set of parameters and ships them off to TTBasicNavigator&amp;#39;s openURLAction...">TTURLAction</a>;
-<a name="l00024"></a>00024 <span class="keyword">@class</span> <a class="code" href="interface_t_t_u_r_l_map.php">TTURLMap</a>;
-<a name="l00025"></a>00025 <span class="keyword">@class</span> <a class="code" href="interface_t_t_u_r_l_pattern.php">TTURLPattern</a>;
-<a name="l00026"></a>00026 
-<a name="l00030"></a><a class="code" href="interface_t_t_base_navigator.php">00030</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_base_navigator.php" title="A URL-based navigation system with built-in persistence.">TTBaseNavigator</a> : <a class="code" href="class_n_s_object.php" title="Additions.">NSObject</a> {
-<a name="l00031"></a>00031   <a class="code" href="interface_t_t_u_r_l_map.php">TTURLMap</a>*                   _URLMap;
-<a name="l00032"></a>00032 
-<a name="l00033"></a>00033   <a class="code" href="class_u_i_window.php" title="Additions.">UIWindow</a>*                   _window;
-<a name="l00034"></a>00034 
-<a name="l00035"></a>00035   <a class="code" href="class_u_i_view_controller.php">UIViewController</a>*           _rootViewController;
-<a name="l00036"></a>00036   <a class="code" href="class_n_s_mutable_array.php" title="Additions.">NSMutableArray</a>*             _delayedControllers;
+<a name="l00023"></a>00023 <span class="keyword">@protocol </span><a class="code" href="protocol_t_t_navigator_root_container-p.php">TTNavigatorRootContainer</a>;
+<a name="l00024"></a>00024 <span class="keyword">@class</span> <a class="code" href="interface_t_t_u_r_l_action.php" title="This object bundles up a set of parameters and ships them off to TTBasicNavigator&amp;#39;s openURLAction...">TTURLAction</a>;
+<a name="l00025"></a>00025 <span class="keyword">@class</span> <a class="code" href="interface_t_t_u_r_l_map.php">TTURLMap</a>;
+<a name="l00026"></a>00026 <span class="keyword">@class</span> <a class="code" href="interface_t_t_u_r_l_pattern.php">TTURLPattern</a>;
+<a name="l00027"></a>00027 
+<a name="l00031"></a><a class="code" href="interface_t_t_base_navigator.php">00031</a> <span class="keyword">@interface </span><a class="code" href="interface_t_t_base_navigator.php" title="A URL-based navigation system with built-in persistence.">TTBaseNavigator</a> : <a class="code" href="class_n_s_object.php" title="Additions.">NSObject</a> &lt;
+<a name="l00032"></a>00032   UIPopoverControllerDelegate
+<a name="l00033"></a>00033 &gt; {
+<a name="l00034"></a>00034   <a class="code" href="interface_t_t_u_r_l_map.php">TTURLMap</a>*                   _URLMap;
+<a name="l00035"></a>00035 
+<a name="l00036"></a>00036   <a class="code" href="class_u_i_window.php" title="Additions.">UIWindow</a>*                   _window;
 <a name="l00037"></a>00037 
-<a name="l00038"></a>00038   TTNavigatorPersistenceMode  _persistenceMode;
-<a name="l00039"></a>00039   NSTimeInterval              _persistenceExpirationAge;
-<a name="l00040"></a>00040 
-<a name="l00041"></a>00041   BOOL                        _delayCount;
-<a name="l00042"></a>00042 
-<a name="l00043"></a>00043   BOOL                        _supportsShakeToReload;
-<a name="l00044"></a>00044   BOOL                        _opensExternalURLs;
+<a name="l00038"></a>00038   <a class="code" href="class_u_i_view_controller.php" title="Additions.">UIViewController</a>*           _rootViewController;
+<a name="l00039"></a>00039   <a class="code" href="class_n_s_mutable_array.php" title="Additions.">NSMutableArray</a>*             _delayedControllers;
+<a name="l00040"></a>00040   UIPopoverController*        _popoverController;
+<a name="l00041"></a>00041 
+<a name="l00042"></a>00042   <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*                   _persistenceKey;
+<a name="l00043"></a>00043   TTNavigatorPersistenceMode  _persistenceMode;
+<a name="l00044"></a>00044   NSTimeInterval              _persistenceExpirationAge;
 <a name="l00045"></a>00045 
-<a name="l00046"></a>00046   id&lt;TTNavigatorDelegate&gt;     _delegate;
-<a name="l00047"></a>00047 }
-<a name="l00048"></a>00048 
-<a name="l00054"></a><a class="code" href="interface_t_t_base_navigator.php#a3017d22aba919b66969e863484bb2168">00054</a> @property (nonatomic, readonly) <a class="code" href="interface_t_t_u_r_l_map.php">TTURLMap</a>* URLMap;
-<a name="l00055"></a>00055 
-<a name="l00062"></a><a class="code" href="interface_t_t_base_navigator.php#a584f4a80461eea29d39b085acb023704">00062</a> @property (nonatomic, retain) <a class="code" href="class_u_i_window.php" title="Additions.">UIWindow</a>* window;
-<a name="l00063"></a>00063 
-<a name="l00067"></a><a class="code" href="interface_t_t_base_navigator.php#a5568a0c8e0a19d26306e9d160d302b6e">00067</a> @property (nonatomic, readonly) <a class="code" href="class_u_i_view_controller.php">UIViewController</a>* rootViewController;
-<a name="l00068"></a>00068 
-<a name="l00072"></a><a class="code" href="interface_t_t_base_navigator.php#abe08b1203a02a91fe9b81f8dbb6cbda1">00072</a> @property (nonatomic, readonly) <a class="code" href="class_u_i_view_controller.php">UIViewController</a>* visibleViewController;
-<a name="l00073"></a>00073 
-<a name="l00080"></a><a class="code" href="interface_t_t_base_navigator.php#a9d5c8ea878103dd007eb3012d3749210">00080</a> @property (nonatomic, readonly) <a class="code" href="class_u_i_view_controller.php">UIViewController</a>* topViewController;
-<a name="l00081"></a>00081 
-<a name="l00087"></a><a class="code" href="interface_t_t_base_navigator.php#a1ffbcfbcbefed8badea9d3bcbe21681a">00087</a> @property (nonatomic, copy) <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>* URL;
+<a name="l00046"></a>00046   BOOL                        _delayCount;
+<a name="l00047"></a>00047 
+<a name="l00048"></a>00048   BOOL                        _supportsShakeToReload;
+<a name="l00049"></a>00049   BOOL                        _opensExternalURLs;
+<a name="l00050"></a>00050 
+<a name="l00051"></a>00051   id&lt;TTNavigatorDelegate&gt;       _delegate;
+<a name="l00052"></a>00052   id&lt;TTNavigatorRootContainer&gt;  _rootContainer;
+<a name="l00053"></a>00053 }
+<a name="l00054"></a>00054 
+<a name="l00060"></a><a class="code" href="interface_t_t_base_navigator.php#a584f4a80461eea29d39b085acb023704">00060</a> @property (nonatomic, readonly) <a class="code" href="interface_t_t_u_r_l_map.php">TTURLMap</a>* URLMap;
+<a name="l00061"></a>00061 
+<a name="l00068"></a>00068 @property (nonatomic, retain) <a class="code" href="class_u_i_window.php" title="Additions.">UIWindow</a>* window;
+<a name="l00069"></a>00069 
+<a name="l00077"></a><a class="code" href="interface_t_t_base_navigator.php#a060fe6a28f50c4eac1753965a153077c">00077</a> @property (nonatomic, assign) <span class="keywordtype">id</span>&lt;<a class="code" href="protocol_t_t_navigator_root_container-p.php">TTNavigatorRootContainer</a>&gt; rootContainer;
+<a name="l00078"></a>00078 
+<a name="l00082"></a><a class="code" href="interface_t_t_base_navigator.php#a5568a0c8e0a19d26306e9d160d302b6e">00082</a> @property (nonatomic, readonly) <a class="code" href="class_u_i_view_controller.php" title="Additions.">UIViewController</a>* rootViewController;
+<a name="l00083"></a>00083 
+<a name="l00087"></a><a class="code" href="interface_t_t_base_navigator.php#abe08b1203a02a91fe9b81f8dbb6cbda1">00087</a> @property (nonatomic, readonly) <a class="code" href="class_u_i_view_controller.php" title="Additions.">UIViewController</a>* visibleViewController;
 <a name="l00088"></a>00088 
-<a name="l00094"></a><a class="code" href="interface_t_t_base_navigator.php#af4584c3f244a628f9986960f5973cb92">00094</a> @property (nonatomic) TTNavigatorPersistenceMode persistenceMode;
-<a name="l00095"></a>00095 
-<a name="l00107"></a><a class="code" href="interface_t_t_base_navigator.php#abe6d7ee14fd1147201694ffdfdb3228d">00107</a> @property (nonatomic) NSTimeInterval persistenceExpirationAge;
-<a name="l00108"></a>00108 
-<a name="l00114"></a><a class="code" href="interface_t_t_base_navigator.php#ad49b7a6c9a4820d955a7eaf3687c05f2">00114</a> @property (nonatomic) BOOL supportsShakeToReload;
+<a name="l00095"></a><a class="code" href="interface_t_t_base_navigator.php#a9d5c8ea878103dd007eb3012d3749210">00095</a> @property (nonatomic, readonly) <a class="code" href="class_u_i_view_controller.php" title="Additions.">UIViewController</a>* topViewController;
+<a name="l00096"></a>00096 
+<a name="l00102"></a><a class="code" href="interface_t_t_base_navigator.php#a1ffbcfbcbefed8badea9d3bcbe21681a">00102</a> @property (nonatomic, copy) <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>* URL;
+<a name="l00103"></a>00103 
+<a name="l00114"></a><a class="code" href="interface_t_t_base_navigator.php#afc067091161086784d8c2d95be39083a">00114</a> @property (nonatomic, copy) <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>* persistenceKey;
 <a name="l00115"></a>00115 
-<a name="l00121"></a><a class="code" href="interface_t_t_base_navigator.php#a093b7725f813a2819977991b416df181">00121</a> @property (nonatomic) BOOL opensExternalURLs;
+<a name="l00121"></a><a class="code" href="interface_t_t_base_navigator.php#af4584c3f244a628f9986960f5973cb92">00121</a> @property (nonatomic) TTNavigatorPersistenceMode persistenceMode;
 <a name="l00122"></a>00122 
-<a name="l00128"></a><a class="code" href="interface_t_t_base_navigator.php#aaaa44f8ff42826f21da0fa61bc55e22e">00128</a> @property (nonatomic, readonly) BOOL isDelayed;
-<a name="l00129"></a>00129 
-<a name="l00130"></a>00130 @property (nonatomic, assign) <span class="keywordtype">id</span>&lt;<a class="code" href="protocol_t_t_navigator_delegate-p.php">TTNavigatorDelegate</a>&gt; delegate;
-<a name="l00131"></a>00131 
-<a name="l00132"></a>00132 
-<a name="l00133"></a>00133 + (<a class="code" href="interface_t_t_base_navigator.php" title="A URL-based navigation system with built-in persistence.">TTBaseNavigator</a>*)globalNavigator;
-<a name="l00134"></a>00134 + (<span class="keywordtype">void</span>)setGlobalNavigator:(<a class="code" href="interface_t_t_base_navigator.php" title="A URL-based navigation system with built-in persistence.">TTBaseNavigator</a>*)navigator;
+<a name="l00134"></a><a class="code" href="interface_t_t_base_navigator.php#abe6d7ee14fd1147201694ffdfdb3228d">00134</a> @property (nonatomic) NSTimeInterval persistenceExpirationAge;
 <a name="l00135"></a>00135 
-<a name="l00154"></a>00154 - (<a class="code" href="class_u_i_view_controller.php">UIViewController</a>*)openURLAction:(<a class="code" href="interface_t_t_u_r_l_action.php" title="This object bundles up a set of parameters and ships them off to TTBasicNavigator&amp;#39;s openURLAction...">TTURLAction</a>*)URLAction;
-<a name="l00155"></a>00155 
-<a name="l00161"></a>00161 - (<a class="code" href="class_u_i_view_controller.php">UIViewController</a>*)openURLs:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)URL,...;
-<a name="l00162"></a>00162 
-<a name="l00168"></a>00168 - (<a class="code" href="class_u_i_view_controller.php">UIViewController</a>*)viewControllerForURL:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)URL;
+<a name="l00141"></a><a class="code" href="interface_t_t_base_navigator.php#ad49b7a6c9a4820d955a7eaf3687c05f2">00141</a> @property (nonatomic) BOOL supportsShakeToReload;
+<a name="l00142"></a>00142 
+<a name="l00148"></a><a class="code" href="interface_t_t_base_navigator.php#a093b7725f813a2819977991b416df181">00148</a> @property (nonatomic) BOOL opensExternalURLs;
+<a name="l00149"></a>00149 
+<a name="l00155"></a><a class="code" href="interface_t_t_base_navigator.php#aaaa44f8ff42826f21da0fa61bc55e22e">00155</a> @property (nonatomic, readonly) BOOL isDelayed;
+<a name="l00156"></a>00156 
+<a name="l00157"></a>00157 @property (nonatomic, assign) <span class="keywordtype">id</span>&lt;<a class="code" href="protocol_t_t_navigator_delegate-p.php">TTNavigatorDelegate</a>&gt; delegate;
+<a name="l00158"></a>00158 
+<a name="l00168"></a>00168 + (<a class="code" href="interface_t_t_base_navigator.php" title="A URL-based navigation system with built-in persistence.">TTBaseNavigator</a>*)navigatorForView:(<a class="code" href="class_u_i_view.php" title="Additions.">UIView</a>*)view;
 <a name="l00169"></a>00169 
-<a name="l00175"></a>00175 - (<a class="code" href="class_u_i_view_controller.php">UIViewController</a>*)viewControllerForURL:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)URL query:(<a class="code" href="class_n_s_dictionary.php">NSDictionary</a>*)query;
-<a name="l00176"></a>00176 
-<a name="l00182"></a>00182 - (<a class="code" href="class_u_i_view_controller.php">UIViewController</a>*)viewControllerForURL:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)URL query:(<a class="code" href="class_n_s_dictionary.php">NSDictionary</a>*)query
-<a name="l00183"></a>00183                                   pattern:(<a class="code" href="interface_t_t_u_r_l_pattern.php">TTURLPattern</a>**)pattern;
-<a name="l00184"></a>00184 
-<a name="l00192"></a>00192 - (<span class="keywordtype">void</span>)beginDelay;
-<a name="l00193"></a>00193 
-<a name="l00197"></a>00197 - (<span class="keywordtype">void</span>)endDelay;
-<a name="l00198"></a>00198 
-<a name="l00202"></a>00202 - (<span class="keywordtype">void</span>)cancelDelay;
-<a name="l00203"></a>00203 
-<a name="l00207"></a>00207 - (<span class="keywordtype">void</span>)persistViewControllers;
-<a name="l00208"></a>00208 
-<a name="l00212"></a>00212 - (<a class="code" href="class_u_i_view_controller.php">UIViewController</a>*)restoreViewControllers;
+<a name="l00170"></a>00170 + (<a class="code" href="interface_t_t_base_navigator.php" title="A URL-based navigation system with built-in persistence.">TTBaseNavigator</a>*)globalNavigator;
+<a name="l00171"></a>00171 + (<span class="keywordtype">void</span>)setGlobalNavigator:(<a class="code" href="interface_t_t_base_navigator.php" title="A URL-based navigation system with built-in persistence.">TTBaseNavigator</a>*)navigator;
+<a name="l00172"></a>00172 
+<a name="l00191"></a>00191 - (<a class="code" href="class_u_i_view_controller.php" title="Additions.">UIViewController</a>*)openURLAction:(<a class="code" href="interface_t_t_u_r_l_action.php" title="This object bundles up a set of parameters and ships them off to TTBasicNavigator&amp;#39;s openURLAction...">TTURLAction</a>*)URLAction;
+<a name="l00192"></a>00192 
+<a name="l00198"></a>00198 - (<a class="code" href="class_u_i_view_controller.php" title="Additions.">UIViewController</a>*)openURLs:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)URL,...;
+<a name="l00199"></a>00199 
+<a name="l00205"></a>00205 - (<a class="code" href="class_u_i_view_controller.php" title="Additions.">UIViewController</a>*)viewControllerForURL:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)URL;
+<a name="l00206"></a>00206 
+<a name="l00212"></a>00212 - (<a class="code" href="class_u_i_view_controller.php" title="Additions.">UIViewController</a>*)viewControllerForURL:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)URL query:(<a class="code" href="class_n_s_dictionary.php">NSDictionary</a>*)query;
 <a name="l00213"></a>00213 
-<a name="l00220"></a>00220 - (<span class="keywordtype">void</span>)persistController:(<a class="code" href="class_u_i_view_controller.php">UIViewController</a>*)controller path:(<a class="code" href="class_n_s_mutable_array.php" title="Additions.">NSMutableArray</a>*)path;
+<a name="l00219"></a>00219 - (<a class="code" href="class_u_i_view_controller.php" title="Additions.">UIViewController</a>*)viewControllerForURL:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)URL query:(<a class="code" href="class_n_s_dictionary.php">NSDictionary</a>*)query
+<a name="l00220"></a>00220                                   pattern:(<a class="code" href="interface_t_t_u_r_l_pattern.php">TTURLPattern</a>**)pattern;
 <a name="l00221"></a>00221 
-<a name="l00225"></a>00225 - (<span class="keywordtype">void</span>)removeAllViewControllers;
-<a name="l00226"></a>00226 
-<a name="l00230"></a>00230 - (<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)pathForObject:(<span class="keywordtype">id</span>)<span class="keywordtype">object</span>;
-<a name="l00231"></a>00231 
-<a name="l00235"></a>00235 - (<span class="keywordtype">id</span>)objectForPath:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)path;
-<a name="l00236"></a>00236 
-<a name="l00240"></a>00240 - (<span class="keywordtype">void</span>)resetDefaults;
-<a name="l00241"></a>00241 
-<a name="l00242"></a>00242 @end
+<a name="l00229"></a>00229 - (<span class="keywordtype">void</span>)beginDelay;
+<a name="l00230"></a>00230 
+<a name="l00234"></a>00234 - (<span class="keywordtype">void</span>)endDelay;
+<a name="l00235"></a>00235 
+<a name="l00239"></a>00239 - (<span class="keywordtype">void</span>)cancelDelay;
+<a name="l00240"></a>00240 
+<a name="l00244"></a>00244 - (<span class="keywordtype">void</span>)persistViewControllers;
+<a name="l00245"></a>00245 
+<a name="l00249"></a>00249 - (<a class="code" href="class_u_i_view_controller.php" title="Additions.">UIViewController</a>*)restoreViewControllers;
+<a name="l00250"></a>00250 
+<a name="l00257"></a>00257 - (<span class="keywordtype">void</span>)persistController:(<a class="code" href="class_u_i_view_controller.php" title="Additions.">UIViewController</a>*)controller path:(<a class="code" href="class_n_s_mutable_array.php" title="Additions.">NSMutableArray</a>*)path;
+<a name="l00258"></a>00258 
+<a name="l00262"></a>00262 - (<span class="keywordtype">void</span>)removeAllViewControllers;
+<a name="l00263"></a>00263 
+<a name="l00267"></a>00267 - (<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)pathForObject:(<span class="keywordtype">id</span>)<span class="keywordtype">object</span>;
+<a name="l00268"></a>00268 
+<a name="l00272"></a>00272 - (<span class="keywordtype">id</span>)objectForPath:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)path;
+<a name="l00273"></a>00273 
+<a name="l00277"></a>00277 - (<span class="keywordtype">void</span>)resetDefaults;
+<a name="l00278"></a>00278 
+<a name="l00279"></a>00279 @end
 </pre></div></div>
 </div>
 <!--- window showing the filter options -->
@@ -217,47 +252,46 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
-
-</div> <!-- .fixed-width -->
-
-<div class="fixed-width">
-<div id="disqus_thread"></div>
-<script type="text/javascript">
+<div id="disqus_thread"></div> 
+<script type="text/javascript"> 
   (function() {
    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
    dsq.src = 'http://three20info2.disqus.com/embed.js';
    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</div> <!-- .fixed-width -->
-
-</div> <!-- #content -->
-</div> <!-- #page-wrapper -->
-
-<script type="text/javascript">
-
+</script> 
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript> 
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> 
+</div> <!-- .fixed-width --> 
+ 
+</div> <!-- #content --> 
+</div> <!-- #page-wrapper --> 
+ 
+ 
+ 
+<script type="text/javascript"> 
+ 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-19295672-1']);
   _gaq.push(['_setDomainName', '.three20.info']);
   _gaq.push(['_trackPageview']);
-
+ 
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-</script>
-
-<script type="text/javascript">
+</script> 
+ 
+<script type="text/javascript"> 
 var disqus_shortname = 'three20info2';
 (function () {
   var s = document.createElement('script'); s.async = true;
   s.src = 'http://disqus.com/forums/three20info2/count.js';
   (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
-</script>
-
-</body>
+</script> 
+ 
+ 
+</body> 
 </html>

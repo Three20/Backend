@@ -1,48 +1,71 @@
-<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:og="http://opengraphprotocol.org/schema/"
-      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta property="fb:app_id" content="114720825217072"/>
-  <meta property="fb:admins" content="122605446"/>
-  <meta property="og:title" content="three20.info"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="http://three20.info/"/>
-  <meta property="og:image" content="http://github.com/facebook/three20/raw/06cd0abe33ac39d1f509e278e286c6bf1e45e821/samples/Resources/Icon.png"/>
-  <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
+      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en"> 
+<head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  <meta property="fb:app_id" content="114720825217072"/> 
+  <meta property="fb:admins" content="122605446"/> 
+  <meta property="og:title" content="three20.info"/> 
+  <meta property="og:type" content="website"/> 
+  <meta property="og:url" content="http://three20.info/"/> 
+  <meta property="og:image" content="http://github.com/facebook/three20/raw/master/samples/Resources/Icon.png"/> 
+  <meta name="keywords" content="three20 iPhone api open source library uikit tt" /> 
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
-  <title>Three20: NSObject Class Reference</title>
+<title>Three20 API: NSObject Class Reference</title>
 <link href="http://three20.info/css/reset.css" rel="stylesheet" type="text/css"/>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/global.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/article.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/api.css" rel="stylesheet" type="text/css"/>
+<link href="http://dev.three20.info/css/global.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/article.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/api.css" rel="stylesheet" type="text/css"/>
 </head>
 <body onload='searchBox.OnSelectItem(0);'>
+<div id="page-wrapper"> 
 
-<div id="page-wrapper">
+<!-- HEADER -->
 
-<!-- HEADER --> 
- 
 <div id="header"> 
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
   <li><a href="http://three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://three20.info/documentation">Documentation</a></li> 
-  <li><a href="http://api.three20.info/">API</a></li> 
+  <li><a href="http://three20.info/extensions">Extensions</a></li> 
   <li><a href="http://three20.info/community">Community</a></li> 
 </ul> 
  
+<div id="fb-root"></div> 
+<script> 
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId   : '165692500131929',
+      session : {"access_token":"165692500131929|2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446|7YjdqHOYyL6MXMHd-udsP0EbTsg","base_domain":"three20.info","expires":"1298952000","secret":"Hcv3uGki22DI7f_imqBhgQ__","session_key":"2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446","sig":"fdaa725c7cf196ce9579d1b232a16e64","uid":"122605446"}, // don't refetch the session when PHP already has it
+      status  : true, // check login status
+      cookie  : true, // enable cookies to allow the server to access the session
+      xfbml   : true // parse XFBML
+    });
+ 
+    // whenever the user logs in, we refresh the page
+    FB.Event.subscribe('auth.login', function() {
+      window.location.reload();
+    });
+  };
+ 
+  (function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script> 
+ 
 <ul class="right-links"> 
-  <li><a href="http://<?= $_SERVER['SERVER_NAME']?><?= $_SERVER['REQUEST_URI'] ?>#disqus_thread">Comments</a></li>
+<li><img class="profileimg" width="25" height="25" valign="bottom" src="https://graph.facebook.com/122605446/picture?type=square">Jeff Verkoeyen</li> 
+<li><a href="https://www.facebook.com/logout.php?next=http%3A%2F%2Fdev.three20.info%2F&access_token=165692500131929%7C2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446%7C7YjdqHOYyL6MXMHd-udsP0EbTsg" onclick="FB.logout(function() { window.location.reload();}); return false;">Log out</a></li> 
 </ul> 
  
 <div class="leadin"> 
@@ -53,7 +76,9 @@
 </div> <!-- .fixed-width --> 
 </div> <!-- #header --> 
 
-<div id="content">
+<!-- CONTENT -->
+
+<div id="content"> 
 <div class="fixed-width">
 <!-- Generated by Doxygen 1.7.1 -->
 <script type="text/javascript"><!--
@@ -63,7 +88,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul class="tablist">
       <li><a href="index.php"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.php"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.php"><span>Classes</span></a></li>
       <li><a href="files.php"><span>Files</span></a></li>
       <li><a href="examples.php"><span>Examples</span></a></li>
@@ -115,47 +139,50 @@ Inheritance diagram for NSObject:</div>
 <area href="interface_t_t_c_s_s_parser.php" alt="TTCSSParser" shape="rect" coords="170,336,330,360"/>
 <area href="interface_t_t_c_s_s_style_sheet.php" alt="TTCSSStyleSheet" shape="rect" coords="170,392,330,416"/>
 <area href="interface_t_t_entity_tables.php" alt="TTEntityTables" shape="rect" coords="170,448,330,472"/>
-<area href="interface_t_t_launcher_item.php" alt="TTLauncherItem" shape="rect" coords="170,504,330,528"/>
-<area href="interface_t_t_layout.php" alt="TTLayout" shape="rect" coords="170,560,330,584"/>
-<area href="interface_t_t_markup_stripper.php" alt="TTMarkupStripper" shape="rect" coords="170,616,330,640"/>
-<area href="interface_t_t_message_field.php" alt="TTMessageField" shape="rect" coords="170,672,330,696"/>
-<area href="interface_t_t_model.php" alt="TTModel" shape="rect" coords="170,728,330,752"/>
-<area href="interface_t_t_recursive_progress.php" alt="TTRecursiveProgress" shape="rect" coords="170,784,330,808"/>
-<area href="interface_t_t_request_loader.php" alt="TTRequestLoader" shape="rect" coords="170,840,330,864"/>
-<area href="interface_t_t_search_text_field_internal.php" alt="TTSearchTextFieldInternal" shape="rect" coords="170,896,330,920"/>
-<area href="interface_t_t_shape.php" alt="TTShape" shape="rect" coords="170,952,330,976"/>
-<area href="interface_t_t_style.php" alt="TTStyle" shape="rect" coords="170,1008,330,1032"/>
-<area href="interface_t_t_style_context.php" alt="TTStyleContext" shape="rect" coords="170,1064,330,1088"/>
-<area href="interface_t_t_styled_frame.php" alt="TTStyledFrame" shape="rect" coords="170,1120,330,1144"/>
-<area href="interface_t_t_styled_layout.php" alt="TTStyledLayout" shape="rect" coords="170,1176,330,1200"/>
-<area href="interface_t_t_styled_node.php" alt="TTStyledNode" shape="rect" coords="170,1232,330,1256"/>
-<area href="interface_t_t_styled_text.php" alt="TTStyledText" shape="rect" coords="170,1288,330,1312"/>
-<area href="interface_t_t_styled_text_parser.php" alt="TTStyledTextParser" shape="rect" coords="170,1344,330,1368"/>
-<area href="interface_t_t_style_sheet.php" alt="TTStyleSheet" shape="rect" coords="170,1400,330,1424"/>
-<area href="interface_t_t_tab_item.php" alt="TTTabItem" shape="rect" coords="170,1456,330,1480"/>
-<area href="interface_t_t_table_item.php" alt="TTTableItem" shape="rect" coords="170,1512,330,1536"/>
-<area href="interface_t_t_table_view_data_source.php" alt="TTTableViewDataSource" shape="rect" coords="170,1568,330,1592"/>
-<area href="interface_t_t_table_view_delegate.php" alt="TTTableViewDelegate" shape="rect" coords="170,1624,330,1648"/>
-<area href="interface_t_t_text_editor_internal.php" alt="TTTextEditorInternal" shape="rect" coords="170,1680,330,1704"/>
-<area href="interface_t_t_u_r_l_action.php" alt="TTURLAction" shape="rect" coords="170,1736,330,1760"/>
-<area href="interface_t_t_u_r_l_cache.php" alt="TTURLCache" shape="rect" coords="170,1792,330,1816"/>
-<area href="interface_t_t_u_r_l_data_response.php" alt="TTURLDataResponse" shape="rect" coords="170,1848,330,1872"/>
-<area href="interface_t_t_u_r_l_image_response.php" alt="TTURLImageResponse" shape="rect" coords="170,1904,330,1928"/>
-<area href="interface_t_t_u_r_l_j_s_o_n_response.php" alt="TTURLJSONResponse" shape="rect" coords="170,1960,330,1984"/>
-<area href="interface_t_t_u_r_l_literal.php" alt="TTURLLiteral" shape="rect" coords="170,2016,330,2040"/>
-<area href="interface_t_t_u_r_l_map.php" alt="TTURLMap" shape="rect" coords="170,2072,330,2096"/>
-<area href="interface_t_t_u_r_l_pattern.php" alt="TTURLPattern" shape="rect" coords="170,2128,330,2152"/>
-<area href="interface_t_t_u_r_l_request.php" alt="TTURLRequest" shape="rect" coords="170,2184,330,2208"/>
-<area href="interface_t_t_u_r_l_request_queue.php" alt="TTURLRequestQueue" shape="rect" coords="170,2240,330,2264"/>
-<area href="interface_t_t_u_r_l_selector.php" alt="TTURLSelector" shape="rect" coords="170,2296,330,2320"/>
-<area href="interface_t_t_u_r_l_wildcard.php" alt="TTURLWildcard" shape="rect" coords="170,2352,330,2376"/>
-<area href="interface_t_t_u_r_l_x_m_l_response.php" alt="TTURLXMLResponse" shape="rect" coords="170,2408,330,2432"/>
-<area href="interface_t_t_user_info.php" alt="TTUserInfo" shape="rect" coords="170,2464,330,2488"/>
-<area href="interface_u_i_event_fake.php" alt="UIEventFake" shape="rect" coords="170,2520,330,2544"/>
-<area href="interface_y_a_j_l___g_t_m_base64.php" alt="YAJL_GTMBase64" shape="rect" coords="170,2576,330,2600"/>
-<area href="interface_y_a_j_l_document.php" alt="YAJLDocument" shape="rect" coords="170,2632,330,2656"/>
-<area href="interface_y_a_j_l_gen.php" alt="YAJLGen" shape="rect" coords="170,2688,330,2712"/>
-<area href="interface_y_a_j_l_parser.php" alt="YAJLParser" shape="rect" coords="170,2744,330,2768"/>
+<area href="interface_t_t_extension_author.php" alt="TTExtensionAuthor" shape="rect" coords="170,504,330,528"/>
+<area href="interface_t_t_extension_info.php" alt="TTExtensionInfo" shape="rect" coords="170,560,330,584"/>
+<area href="class_t_t_extension_loader.php" alt="TTExtensionLoader" shape="rect" coords="170,616,330,640"/>
+<area href="interface_t_t_launcher_item.php" alt="TTLauncherItem" shape="rect" coords="170,672,330,696"/>
+<area href="interface_t_t_layout.php" alt="TTLayout" shape="rect" coords="170,728,330,752"/>
+<area href="interface_t_t_markup_stripper.php" alt="TTMarkupStripper" shape="rect" coords="170,784,330,808"/>
+<area href="interface_t_t_message_field.php" alt="TTMessageField" shape="rect" coords="170,840,330,864"/>
+<area href="interface_t_t_model.php" alt="TTModel" shape="rect" coords="170,896,330,920"/>
+<area href="interface_t_t_recursive_progress.php" alt="TTRecursiveProgress" shape="rect" coords="170,952,330,976"/>
+<area href="interface_t_t_request_loader.php" alt="TTRequestLoader" shape="rect" coords="170,1008,330,1032"/>
+<area href="interface_t_t_search_text_field_internal.php" alt="TTSearchTextFieldInternal" shape="rect" coords="170,1064,330,1088"/>
+<area href="interface_t_t_shape.php" alt="TTShape" shape="rect" coords="170,1120,330,1144"/>
+<area href="interface_t_t_style.php" alt="TTStyle" shape="rect" coords="170,1176,330,1200"/>
+<area href="interface_t_t_style_context.php" alt="TTStyleContext" shape="rect" coords="170,1232,330,1256"/>
+<area href="interface_t_t_styled_frame.php" alt="TTStyledFrame" shape="rect" coords="170,1288,330,1312"/>
+<area href="interface_t_t_styled_layout.php" alt="TTStyledLayout" shape="rect" coords="170,1344,330,1368"/>
+<area href="interface_t_t_styled_node.php" alt="TTStyledNode" shape="rect" coords="170,1400,330,1424"/>
+<area href="interface_t_t_styled_text.php" alt="TTStyledText" shape="rect" coords="170,1456,330,1480"/>
+<area href="interface_t_t_styled_text_parser.php" alt="TTStyledTextParser" shape="rect" coords="170,1512,330,1536"/>
+<area href="interface_t_t_style_sheet.php" alt="TTStyleSheet" shape="rect" coords="170,1568,330,1592"/>
+<area href="interface_t_t_tab_item.php" alt="TTTabItem" shape="rect" coords="170,1624,330,1648"/>
+<area href="interface_t_t_table_item.php" alt="TTTableItem" shape="rect" coords="170,1680,330,1704"/>
+<area href="interface_t_t_table_view_data_source.php" alt="TTTableViewDataSource" shape="rect" coords="170,1736,330,1760"/>
+<area href="interface_t_t_table_view_delegate.php" alt="TTTableViewDelegate" shape="rect" coords="170,1792,330,1816"/>
+<area href="interface_t_t_text_editor_internal.php" alt="TTTextEditorInternal" shape="rect" coords="170,1848,330,1872"/>
+<area href="interface_t_t_u_r_l_action.php" alt="TTURLAction" shape="rect" coords="170,1904,330,1928"/>
+<area href="interface_t_t_u_r_l_cache.php" alt="TTURLCache" shape="rect" coords="170,1960,330,1984"/>
+<area href="interface_t_t_u_r_l_data_response.php" alt="TTURLDataResponse" shape="rect" coords="170,2016,330,2040"/>
+<area href="interface_t_t_u_r_l_image_response.php" alt="TTURLImageResponse" shape="rect" coords="170,2072,330,2096"/>
+<area href="interface_t_t_u_r_l_j_s_o_n_response.php" alt="TTURLJSONResponse" shape="rect" coords="170,2128,330,2152"/>
+<area href="interface_t_t_u_r_l_literal.php" alt="TTURLLiteral" shape="rect" coords="170,2184,330,2208"/>
+<area href="interface_t_t_u_r_l_map.php" alt="TTURLMap" shape="rect" coords="170,2240,330,2264"/>
+<area href="interface_t_t_u_r_l_pattern.php" alt="TTURLPattern" shape="rect" coords="170,2296,330,2320"/>
+<area href="interface_t_t_u_r_l_request.php" alt="TTURLRequest" shape="rect" coords="170,2352,330,2376"/>
+<area href="interface_t_t_u_r_l_request_queue.php" alt="TTURLRequestQueue" shape="rect" coords="170,2408,330,2432"/>
+<area href="interface_t_t_u_r_l_selector.php" alt="TTURLSelector" shape="rect" coords="170,2464,330,2488"/>
+<area href="interface_t_t_u_r_l_wildcard.php" alt="TTURLWildcard" shape="rect" coords="170,2520,330,2544"/>
+<area href="interface_t_t_u_r_l_x_m_l_response.php" alt="TTURLXMLResponse" shape="rect" coords="170,2576,330,2600"/>
+<area href="interface_t_t_user_info.php" alt="TTUserInfo" shape="rect" coords="170,2632,330,2656"/>
+<area href="interface_u_i_event_fake.php" alt="UIEventFake" shape="rect" coords="170,2688,330,2712"/>
+<area href="interface_y_a_j_l___g_t_m_base64.php" alt="YAJL_GTMBase64" shape="rect" coords="170,2744,330,2768"/>
+<area href="interface_y_a_j_l_document.php" alt="YAJLDocument" shape="rect" coords="170,2800,330,2824"/>
+<area href="interface_y_a_j_l_gen.php" alt="YAJLGen" shape="rect" coords="170,2856,330,2880"/>
+<area href="interface_y_a_j_l_parser.php" alt="YAJLParser" shape="rect" coords="170,2912,330,2936"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -180,47 +207,46 @@ Inheritance diagram for NSObject:</div>
 </iframe>
 </div>
 
-
-</div> <!-- .fixed-width -->
-
-<div class="fixed-width">
-<div id="disqus_thread"></div>
-<script type="text/javascript">
+<div id="disqus_thread"></div> 
+<script type="text/javascript"> 
   (function() {
    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
    dsq.src = 'http://three20info2.disqus.com/embed.js';
    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</div> <!-- .fixed-width -->
-
-</div> <!-- #content -->
-</div> <!-- #page-wrapper -->
-
-<script type="text/javascript">
-
+</script> 
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript> 
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> 
+</div> <!-- .fixed-width --> 
+ 
+</div> <!-- #content --> 
+</div> <!-- #page-wrapper --> 
+ 
+ 
+ 
+<script type="text/javascript"> 
+ 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-19295672-1']);
   _gaq.push(['_setDomainName', '.three20.info']);
   _gaq.push(['_trackPageview']);
-
+ 
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-</script>
-
-<script type="text/javascript">
+</script> 
+ 
+<script type="text/javascript"> 
 var disqus_shortname = 'three20info2';
 (function () {
   var s = document.createElement('script'); s.async = true;
   s.src = 'http://disqus.com/forums/three20info2/count.js';
   (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
-</script>
-
-</body>
+</script> 
+ 
+ 
+</body> 
 </html>

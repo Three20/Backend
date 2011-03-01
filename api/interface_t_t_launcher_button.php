@@ -1,48 +1,71 @@
-<!-- This comment will put IE 6, 7 and 8 in quirks mode -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"> 
+ 
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:og="http://opengraphprotocol.org/schema/"
-      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-  <meta property="fb:app_id" content="114720825217072"/>
-  <meta property="fb:admins" content="122605446"/>
-  <meta property="og:title" content="three20.info"/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="http://three20.info/"/>
-  <meta property="og:image" content="http://github.com/facebook/three20/raw/06cd0abe33ac39d1f509e278e286c6bf1e45e821/samples/Resources/Icon.png"/>
-  <meta name="keywords" content="three20 iPhone api open source library uikit tt" />
+      xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en"> 
+<head> 
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  <meta property="fb:app_id" content="114720825217072"/> 
+  <meta property="fb:admins" content="122605446"/> 
+  <meta property="og:title" content="three20.info"/> 
+  <meta property="og:type" content="website"/> 
+  <meta property="og:url" content="http://three20.info/"/> 
+  <meta property="og:image" content="http://github.com/facebook/three20/raw/master/samples/Resources/Icon.png"/> 
+  <meta name="keywords" content="three20 iPhone api open source library uikit tt" /> 
   <meta name="description" content="API documentation, articles, and tutorials related to the three20 iPhone library." />
-  <title>Three20: TTLauncherButton Class Reference</title>
+<title>Three20 API: TTLauncherButton Class Reference</title>
 <link href="http://three20.info/css/reset.css" rel="stylesheet" type="text/css"/>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
-<link href="doxygen.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/global.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/article.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/>
-<link href="http://three20.info/css/api.css" rel="stylesheet" type="text/css"/>
+<link href="http://dev.three20.info/css/global.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/article.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/> 
+<link href="http://dev.three20.info/css/api.css" rel="stylesheet" type="text/css"/>
 </head>
 <body onload='searchBox.OnSelectItem(0);'>
+<div id="page-wrapper"> 
 
-<div id="page-wrapper">
+<!-- HEADER -->
 
-<!-- HEADER --> 
- 
 <div id="header"> 
 <div class="fixed-width"> 
  
 <ul class="right-links"> 
   <li><a href="http://three20.info/roadmap">Roadmap</a></li> 
   <li><a href="http://three20.info/documentation">Documentation</a></li> 
-  <li><a href="http://api.three20.info/">API</a></li> 
+  <li><a href="http://three20.info/extensions">Extensions</a></li> 
   <li><a href="http://three20.info/community">Community</a></li> 
 </ul> 
  
+<div id="fb-root"></div> 
+<script> 
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId   : '165692500131929',
+      session : {"access_token":"165692500131929|2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446|7YjdqHOYyL6MXMHd-udsP0EbTsg","base_domain":"three20.info","expires":"1298952000","secret":"Hcv3uGki22DI7f_imqBhgQ__","session_key":"2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446","sig":"fdaa725c7cf196ce9579d1b232a16e64","uid":"122605446"}, // don't refetch the session when PHP already has it
+      status  : true, // check login status
+      cookie  : true, // enable cookies to allow the server to access the session
+      xfbml   : true // parse XFBML
+    });
+ 
+    // whenever the user logs in, we refresh the page
+    FB.Event.subscribe('auth.login', function() {
+      window.location.reload();
+    });
+  };
+ 
+  (function() {
+    var e = document.createElement('script');
+    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+    e.async = true;
+    document.getElementById('fb-root').appendChild(e);
+  }());
+</script> 
+ 
 <ul class="right-links"> 
-  <li><a href="http://<?= $_SERVER['SERVER_NAME']?><?= $_SERVER['REQUEST_URI'] ?>#disqus_thread">Comments</a></li>
+<li><img class="profileimg" width="25" height="25" valign="bottom" src="https://graph.facebook.com/122605446/picture?type=square">Jeff Verkoeyen</li> 
+<li><a href="https://www.facebook.com/logout.php?next=http%3A%2F%2Fdev.three20.info%2F&access_token=165692500131929%7C2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446%7C7YjdqHOYyL6MXMHd-udsP0EbTsg" onclick="FB.logout(function() { window.location.reload();}); return false;">Log out</a></li> 
 </ul> 
  
 <div class="leadin"> 
@@ -53,7 +76,9 @@
 </div> <!-- .fixed-width --> 
 </div> <!-- #header --> 
 
-<div id="content">
+<!-- CONTENT -->
+
+<div id="content"> 
 <div class="fixed-width">
 <!-- Generated by Doxygen 1.7.1 -->
 <script type="text/javascript"><!--
@@ -63,7 +88,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="tabs">
     <ul class="tablist">
       <li><a href="index.php"><span>Main&nbsp;Page</span></a></li>
-      <li><a href="pages.php"><span>Related&nbsp;Pages</span></a></li>
       <li class="current"><a href="annotated.php"><span>Classes</span></a></li>
       <li><a href="files.php"><span>Files</span></a></li>
       <li><a href="examples.php"><span>Examples</span></a></li>
@@ -96,7 +120,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="#properties">Properties</a>  </div>
   <div class="headertitle">
@@ -121,37 +144,8 @@ Public Member Functions</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0519599e5381bec9740756b524060dc6"></a><!-- doxytag: member="TTLauncherButton::initWithItem:" ref="a0519599e5381bec9740756b524060dc6" args="(TTLauncherItem *item)" -->
 (id)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>initWithItem:</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28c5fbbb99057eb53052aa60c4e7c4c9"></a><!-- doxytag: member="TTLauncherButton::updateBadge" ref="a28c5fbbb99057eb53052aa60c4e7c4c9" args="()" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>updateBadge</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acbddab283adc5b293cb673be8a79c472"></a><!-- doxytag: member="TTLauncherButton::titleForState:" ref="acbddab283adc5b293cb673be8a79c472" args="(UIControlState state)" -->
-(<a class="el" href="class_n_s_string.php">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>titleForState:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a765a97304e71d21e3298ee47416fce62"></a><!-- doxytag: member="TTLauncherButton::setTitle:forState:" ref="a765a97304e71d21e3298ee47416fce62" args="(NSString *title,[forState] UIControlState state)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>setTitle:forState:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8d3926727810ee8658ea83f336616ce"></a><!-- doxytag: member="TTLauncherButton::imageForState:" ref="af8d3926727810ee8658ea83f336616ce" args="(UIControlState state)" -->
-(<a class="el" href="class_n_s_string.php">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>imageForState:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5a04a59e482f1215eacfc38def99257"></a><!-- doxytag: member="TTLauncherButton::setImage:forState:" ref="aa5a04a59e482f1215eacfc38def99257" args="(NSString *title,[forState] UIControlState state)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>setImage:forState:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3da4d1884047a4c7bc4884549f293435"></a><!-- doxytag: member="TTLauncherButton::styleForState:" ref="a3da4d1884047a4c7bc4884549f293435" args="(UIControlState state)" -->
-(<a class="el" href="interface_t_t_style.php">TTStyle</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>styleForState:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac563a3ded5656535d709f0a909490cf4"></a><!-- doxytag: member="TTLauncherButton::setStyle:forState:" ref="ac563a3ded5656535d709f0a909490cf4" args="(TTStyle *style,[forState] UIControlState state)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>setStyle:forState:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_button.php#ad60dcde51645f676d1052c67ce9b1fe9">setStylesWithSelector:</a></td></tr>
-<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Sets the styles for all control states using a single style selector.  <a href="#ad60dcde51645f676d1052c67ce9b1fe9"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af4ea8a0827dbf4e36ab732efa27b5efb"></a><!-- doxytag: member="TTLauncherButton::suspendLoadingImages:" ref="af4ea8a0827dbf4e36ab732efa27b5efb" args="(BOOL suspended)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>suspendLoadingImages:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a17c59d0828ebd92aa985a2395994f9d5"></a><!-- doxytag: member="TTLauncherButton::rectForImage" ref="a17c59d0828ebd92aa985a2395994f9d5" args="()" -->
-(CGRect)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>rectForImage</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6ca8c9a930241745c77280b6e5296a6b"></a><!-- doxytag: member="TTLauncherButton::textForLayerWithStyle:" ref="a6ca8c9a930241745c77280b6e5296a6b" args="(TTStyle *style)" -->
-(<a class="el" href="class_n_s_string.php">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>textForLayerWithStyle:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a61b305018c41e4b8596d477337614e28"></a><!-- doxytag: member="TTLauncherButton::imageForLayerWithStyle:" ref="a61b305018c41e4b8596d477337614e28" args="(TTStyle *style)" -->
-(<a class="el" href="class_u_i_image.php">UIImage</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>imageForLayerWithStyle:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a940c09a71f143ac572cf3ebaddeb127e"></a><!-- doxytag: member="TTLauncherButton::drawLayer:withStyle:" ref="a940c09a71f143ac572cf3ebaddeb127e" args="(TTStyleContext *context,[withStyle] TTStyle *style)" -->
-(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>drawLayer:withStyle:</b></td></tr>
-<tr><td colspan="2"><h2><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="abea22b806d132cf3b9388e48b6ac4e0a"></a><!-- doxytag: member="TTLauncherButton::buttonWithStyle:" ref="abea22b806d132cf3b9388e48b6ac4e0a" args="(NSString *selector)" -->
-(<a class="el" href="interface_t_t_button.php">TTButton</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">+ <b>buttonWithStyle:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a20416941eb7320012ae8daa05764eee3"></a><!-- doxytag: member="TTLauncherButton::buttonWithStyle:title:" ref="a20416941eb7320012ae8daa05764eee3" args="(NSString *selector,[title] NSString *title)" -->
-(<a class="el" href="interface_t_t_button.php">TTButton</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">+ <b>buttonWithStyle:title:</b></td></tr>
+(void)&nbsp;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_t_t_launcher_button.php#a28c5fbbb99057eb53052aa60c4e7c4c9">updateBadge</a></td></tr>
+<tr><td class="mdescLeft">&nbsp;</td><td class="mdescRight">Adds the badge view to this button and sets its display values. <br/></td></tr>
 <tr><td colspan="2"><h2><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae68173b5f8315a347b1301d6b2f54e88"></a><!-- doxytag: member="TTLauncherButton::_item" ref="ae68173b5f8315a347b1301d6b2f54e88" args="" -->
@@ -164,14 +158,6 @@ Protected Attributes</h2></td></tr>
 BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_dragging</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aad7e5208716c539b728166819355bf1d"></a><!-- doxytag: member="TTLauncherButton::_editing" ref="aad7e5208716c539b728166819355bf1d" args="" -->
 BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_editing</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5ec03f2492358eb92f7e2135225361a7"></a><!-- doxytag: member="TTLauncherButton::_content" ref="a5ec03f2492358eb92f7e2135225361a7" args="" -->
-<a class="el" href="class_n_s_mutable_dictionary.php">NSMutableDictionary</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_content</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a36c32d288a92ad23d46c732882feff15"></a><!-- doxytag: member="TTLauncherButton::_font" ref="a36c32d288a92ad23d46c732882feff15" args="" -->
-<a class="el" href="class_u_i_font.php">UIFont</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>_font</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a654ab4afc99809c77c1125c71eba7f07"></a><!-- doxytag: member="TTLauncherButton::_isVertical" ref="a654ab4afc99809c77c1125c71eba7f07" args="" -->
-BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>_isVertical</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acf469d2c051ecae9a81f45c9c15b35eb"></a><!-- doxytag: member="TTLauncherButton::_imageDelegate" ref="acf469d2c051ecae9a81f45c9c15b35eb" args="" -->
-id&lt; <a class="el" href="protocol_t_t_image_view_delegate-p.php">TTImageViewDelegate</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>_imageDelegate</b></td></tr>
 <tr><td colspan="2"><h2><a name="properties"></a>
 Properties</h2></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a940f62823f104eff83baa687dbd64c70"></a><!-- doxytag: member="TTLauncherButton::item" ref="a940f62823f104eff83baa687dbd64c70" args="" -->
@@ -182,35 +168,7 @@ Properties</h2></td></tr>
 BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>dragging</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3c2be37e480d3745ba614354f713979f"></a><!-- doxytag: member="TTLauncherButton::editing" ref="a3c2be37e480d3745ba614354f713979f" args="" -->
 BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>editing</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab7ebfd30adeb7766b08402d346d61003"></a><!-- doxytag: member="TTLauncherButton::font" ref="ab7ebfd30adeb7766b08402d346d61003" args="" -->
-<a class="el" href="class_u_i_font.php">UIFont</a> *&nbsp;</td><td class="memItemRight" valign="bottom"><b>font</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d5c8aaa4652326e06eb1ea9d85a8621"></a><!-- doxytag: member="TTLauncherButton::isVertical" ref="a2d5c8aaa4652326e06eb1ea9d85a8621" args="" -->
-BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><b>isVertical</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d7930f8ab232c45da3faf3a5e005a88"></a><!-- doxytag: member="TTLauncherButton::imageDelegate" ref="a6d7930f8ab232c45da3faf3a5e005a88" args="" -->
-id&lt; <a class="el" href="protocol_t_t_image_view_delegate-p.php">TTImageViewDelegate</a> &gt;&nbsp;</td><td class="memItemRight" valign="bottom"><b>imageDelegate</b></td></tr>
 </table>
-<hr/><h2>Member Function Documentation</h2>
-<a class="anchor" id="ad60dcde51645f676d1052c67ce9b1fe9"></a><!-- doxytag: member="TTLauncherButton::setStylesWithSelector:" ref="ad60dcde51645f676d1052c67ce9b1fe9" args="(NSString *selector)" -->
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) setStylesWithSelector: </td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="class_n_s_string.php">NSString</a>*)&nbsp;</td>
-          <td class="paramname"> <em>selector</em></td>
-          <td>&nbsp;</td>
-          <td></td>
-        </tr>
-      </table>
-</div>
-<div class="memdoc">
-
-<p>Sets the styles for all control states using a single style selector. </p>
-<p>The method for the selector must accept a single argument for the control state. It will be called to return a style for each of the different control states. </p>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>Three20UI/Headers/<a class="el" href="_t_t_launcher_button_8h_source.php">TTLauncherButton.h</a></li>
 <li>Three20UI/Sources/TTLauncherButton.m</li>
@@ -230,47 +188,46 @@ id&lt; <a class="el" href="protocol_t_t_image_view_delegate-p.php">TTImageViewDe
 </iframe>
 </div>
 
-
-</div> <!-- .fixed-width -->
-
-<div class="fixed-width">
-<div id="disqus_thread"></div>
-<script type="text/javascript">
+<div id="disqus_thread"></div> 
+<script type="text/javascript"> 
   (function() {
    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
    dsq.src = 'http://three20info2.disqus.com/embed.js';
    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
   })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript>
-<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
-</div> <!-- .fixed-width -->
-
-</div> <!-- #content -->
-</div> <!-- #page-wrapper -->
-
-<script type="text/javascript">
-
+</script> 
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=three20info2">comments powered by Disqus.</a></noscript> 
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a> 
+</div> <!-- .fixed-width --> 
+ 
+</div> <!-- #content --> 
+</div> <!-- #page-wrapper --> 
+ 
+ 
+ 
+<script type="text/javascript"> 
+ 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-19295672-1']);
   _gaq.push(['_setDomainName', '.three20.info']);
   _gaq.push(['_trackPageview']);
-
+ 
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-</script>
-
-<script type="text/javascript">
+</script> 
+ 
+<script type="text/javascript"> 
 var disqus_shortname = 'three20info2';
 (function () {
   var s = document.createElement('script'); s.async = true;
   s.src = 'http://disqus.com/forums/three20info2/count.js';
   (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
 }());
-</script>
-
-</body>
+</script> 
+ 
+ 
+</body> 
 </html>
