@@ -118,30 +118,7 @@ $class_lookup = array();
 for ($ix = 0; $ix < count($indices['classes']['names']); ++$ix) {
   $link = $indices['classes']['links'][$ix];
   $link = substr($link, 3);
-  $class_lookup[$indices['classes']['names'][$ix]] = $link;
+  $class_lookup[$indices['classes']['names'][$ix]] = 'http://api.three20.info/'.$link;
 }
 
-echo "$(document).ready(function() {
-  var class_to_url = {\n";
-$map = array();
-foreach ($class_lookup as $name => $link) {
-  $map []= "    '".$name."' : 'http://api.three20.info/".$link."'";
-}
-echo implode(",\n", $map)."\n";
-echo "  };
-  var class_names = [];
-  for( var key in class_to_url ) {
-    class_names.push(key);
-  }
-  $(\"#globallookup\")
-    .placeholder()
-    .autocomplete(class_names, {
-      autoFill: false,
-      mustMatch: false,
-      matchContains: true,
-      width: '250px'
-    })
-    .result(function(event, data, formatted) {
-      window.location = class_to_url[formatted];
-    });
-});\n";
+echo json_encode($class_lookup);
