@@ -1,1 +1,2 @@
 /Applications/Doxygen.app/Contents/Resources/doxygen doxygen.config
+php buildindex.php > ../index.json
