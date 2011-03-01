@@ -18,10 +18,10 @@
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javaScript" src="search/search.js"></script>
-<link href="http://dev.three20.info/css/global.css" rel="stylesheet" type="text/css"/> 
-<link href="http://dev.three20.info/css/article.css" rel="stylesheet" type="text/css"/> 
-<link href="http://dev.three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/> 
-<link href="http://dev.three20.info/css/api.css" rel="stylesheet" type="text/css"/>
+<link href="http://three20.info/css/global.css" rel="stylesheet" type="text/css"/> 
+<link href="http://three20.info/css/article.css" rel="stylesheet" type="text/css"/> 
+<link href="http://three20.info/css/headerbar.css" rel="stylesheet" type="text/css"/> 
+<link href="http://three20.info/css/api.css" rel="stylesheet" type="text/css"/>
 </head>
 <body onload='searchBox.OnSelectItem(0);'>
 <div id="page-wrapper"> 
@@ -65,7 +65,7 @@
  
 <ul class="right-links"> 
 <li><img class="profileimg" width="25" height="25" valign="bottom" src="https://graph.facebook.com/122605446/picture?type=square">Jeff Verkoeyen</li> 
-<li><a href="https://www.facebook.com/logout.php?next=http%3A%2F%2Fdev.three20.info%2F&access_token=165692500131929%7C2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446%7C7YjdqHOYyL6MXMHd-udsP0EbTsg" onclick="FB.logout(function() { window.location.reload();}); return false;">Log out</a></li> 
+<li><a href="https://www.facebook.com/logout.php?next=http%3A%2F%2Fthree20.info%2F&access_token=165692500131929%7C2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446%7C7YjdqHOYyL6MXMHd-udsP0EbTsg" onclick="FB.logout(function() { window.location.reload();}); return false;">Log out</a></li> 
 </ul> 
  
 <div class="leadin"> 
