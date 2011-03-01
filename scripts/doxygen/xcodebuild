@@ -1,0 +1,15 @@
+cp doxygen.config doxygen.xconfig
+
+echo "OUTPUT_DIRECTORY = Three20Docs.docset" >> doxygen.xconfig
+echo "GENERATE_DOCSET  = YES" >> doxygen.xconfig
+echo "DOCSET_BUNDLE_ID = com.facebook.Three20" >> doxygen.xconfig
+echo "HTML_FOOTER      = xdoxfooter.html" >> doxygen.xconfig
+
+/Applications/Doxygen.app/Contents/Resources/doxygen doxygen.xconfig
+mkdir -p Three20Docs.docset/gfx
+cp -r doxygengfx/* Three20Docs.docset/gfx/
+
+make -C Three20Docs.docset install
+
+rm -f doxygen.xconfig
+
