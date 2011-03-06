@@ -145,12 +145,14 @@ function check_cross_links($path, $pagePath) {
               $did_add = true;
             }
             $arg = ltrim($arg);
-            if ($arg[0] == '"') {
-              $is_string = true;
-              $arg = ltrim($arg, '"');
-            }
-            if ($arg[strlen($arg)-1] == '"') {
-              $is_string = false;
+            if ($arg) {
+              if ($arg[0] == '"') {
+                $is_string = true;
+                $arg = ltrim($arg, '"');
+              }
+              if ($arg[strlen($arg)-1] == '"') {
+                $is_string = false;
+              }
             }
             
             if (!$did_add) {
