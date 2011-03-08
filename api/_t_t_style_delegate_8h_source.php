@@ -38,36 +38,6 @@
   <li><a href="http://three20.info/community">Community</a></li> 
 </ul> 
  
-<div id="fb-root"></div> 
-<script> 
-  window.fbAsyncInit = function() {
-    FB.init({
-      appId   : '165692500131929',
-      session : {"access_token":"165692500131929|2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446|7YjdqHOYyL6MXMHd-udsP0EbTsg","base_domain":"three20.info","expires":"1298952000","secret":"Hcv3uGki22DI7f_imqBhgQ__","session_key":"2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446","sig":"fdaa725c7cf196ce9579d1b232a16e64","uid":"122605446"}, // don't refetch the session when PHP already has it
-      status  : true, // check login status
-      cookie  : true, // enable cookies to allow the server to access the session
-      xfbml   : true // parse XFBML
-    });
- 
-    // whenever the user logs in, we refresh the page
-    FB.Event.subscribe('auth.login', function() {
-      window.location.reload();
-    });
-  };
- 
-  (function() {
-    var e = document.createElement('script');
-    e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
-    e.async = true;
-    document.getElementById('fb-root').appendChild(e);
-  }());
-</script> 
- 
-<ul class="right-links"> 
-<li><img class="profileimg" width="25" height="25" valign="bottom" src="https://graph.facebook.com/122605446/picture?type=square">Jeff Verkoeyen</li> 
-<li><a href="https://www.facebook.com/logout.php?next=http%3A%2F%2Fthree20.info%2F&access_token=165692500131929%7C2.cwAeriJtimeS2wNxeTCEqQ__.3600.1298952000-122605446%7C7YjdqHOYyL6MXMHd-udsP0EbTsg" onclick="FB.logout(function() { window.location.reload();}); return false;">Log out</a></li> 
-</ul> 
- 
 <div class="leadin"> 
   <h1><a href="http://three20.info/">Three20</a></h1> 
   <h2><a href="http://three20.info/">An open-source library for iOS applications</a></h2> 
