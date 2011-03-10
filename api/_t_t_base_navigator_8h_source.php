@@ -36,6 +36,7 @@
   <li><a href="http://three20.info/documentation">Documentation</a></li> 
   <li><a href="http://three20.info/extensions">Extensions</a></li> 
   <li><a href="http://three20.info/community">Community</a></li> 
+  <li><a href="http://forums.three20.info/">Forums</a></li> 
 </ul> 
  
 <div class="leadin"> 
@@ -169,43 +170,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00156"></a>00156 
 <a name="l00157"></a>00157 @property (nonatomic, assign) <span class="keywordtype">id</span>&lt;<a class="code" href="protocol_t_t_navigator_delegate-p.php">TTNavigatorDelegate</a>&gt; delegate;
 <a name="l00158"></a>00158 
-<a name="l00168"></a>00168 + (<a class="code" href="interface_t_t_base_navigator.php" title="A URL-based navigation system with built-in persistence.">TTBaseNavigator</a>*)navigatorForView:(<a class="code" href="class_u_i_view.php" title="Additions.">UIView</a>*)view;
-<a name="l00169"></a>00169 
-<a name="l00170"></a>00170 + (<a class="code" href="interface_t_t_base_navigator.php" title="A URL-based navigation system with built-in persistence.">TTBaseNavigator</a>*)globalNavigator;
-<a name="l00171"></a>00171 + (<span class="keywordtype">void</span>)setGlobalNavigator:(<a class="code" href="interface_t_t_base_navigator.php" title="A URL-based navigation system with built-in persistence.">TTBaseNavigator</a>*)navigator;
-<a name="l00172"></a>00172 
-<a name="l00191"></a>00191 - (<a class="code" href="class_u_i_view_controller.php" title="Additions.">UIViewController</a>*)openURLAction:(<a class="code" href="interface_t_t_u_r_l_action.php" title="This object bundles up a set of parameters and ships them off to TTBasicNavigator&amp;#39;s openURLAction...">TTURLAction</a>*)URLAction;
-<a name="l00192"></a>00192 
-<a name="l00198"></a>00198 - (<a class="code" href="class_u_i_view_controller.php" title="Additions.">UIViewController</a>*)openURLs:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)URL,...;
-<a name="l00199"></a>00199 
-<a name="l00205"></a>00205 - (<a class="code" href="class_u_i_view_controller.php" title="Additions.">UIViewController</a>*)viewControllerForURL:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)URL;
-<a name="l00206"></a>00206 
-<a name="l00212"></a>00212 - (<a class="code" href="class_u_i_view_controller.php" title="Additions.">UIViewController</a>*)viewControllerForURL:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)URL query:(<a class="code" href="class_n_s_dictionary.php">NSDictionary</a>*)query;
-<a name="l00213"></a>00213 
-<a name="l00219"></a>00219 - (<a class="code" href="class_u_i_view_controller.php" title="Additions.">UIViewController</a>*)viewControllerForURL:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)URL query:(<a class="code" href="class_n_s_dictionary.php">NSDictionary</a>*)query
-<a name="l00220"></a>00220                                   pattern:(<a class="code" href="interface_t_t_u_r_l_pattern.php">TTURLPattern</a>**)pattern;
-<a name="l00221"></a>00221 
-<a name="l00229"></a>00229 - (<span class="keywordtype">void</span>)beginDelay;
-<a name="l00230"></a>00230 
-<a name="l00234"></a>00234 - (<span class="keywordtype">void</span>)endDelay;
-<a name="l00235"></a>00235 
-<a name="l00239"></a>00239 - (<span class="keywordtype">void</span>)cancelDelay;
-<a name="l00240"></a>00240 
-<a name="l00244"></a>00244 - (<span class="keywordtype">void</span>)persistViewControllers;
-<a name="l00245"></a>00245 
-<a name="l00249"></a>00249 - (<a class="code" href="class_u_i_view_controller.php" title="Additions.">UIViewController</a>*)restoreViewControllers;
-<a name="l00250"></a>00250 
-<a name="l00257"></a>00257 - (<span class="keywordtype">void</span>)persistController:(<a class="code" href="class_u_i_view_controller.php" title="Additions.">UIViewController</a>*)controller path:(<a class="code" href="class_n_s_mutable_array.php" title="Additions.">NSMutableArray</a>*)path;
-<a name="l00258"></a>00258 
-<a name="l00262"></a>00262 - (<span class="keywordtype">void</span>)removeAllViewControllers;
-<a name="l00263"></a>00263 
-<a name="l00267"></a>00267 - (<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)pathForObject:(<span class="keywordtype">id</span>)<span class="keywordtype">object</span>;
-<a name="l00268"></a>00268 
-<a name="l00272"></a>00272 - (<span class="keywordtype">id</span>)objectForPath:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)path;
-<a name="l00273"></a>00273 
-<a name="l00277"></a>00277 - (<span class="keywordtype">void</span>)resetDefaults;
-<a name="l00278"></a>00278 
-<a name="l00279"></a>00279 @end
+<a name="l00174"></a>00174 + (<a class="code" href="interface_t_t_base_navigator.php" title="A URL-based navigation system with built-in persistence.">TTBaseNavigator</a>*)navigatorForView:(<a class="code" href="class_u_i_view.php" title="Additions.">UIView</a>*)view;
+<a name="l00175"></a>00175 
+<a name="l00176"></a>00176 + (<a class="code" href="interface_t_t_base_navigator.php" title="A URL-based navigation system with built-in persistence.">TTBaseNavigator</a>*)globalNavigator;
+<a name="l00177"></a>00177 + (<span class="keywordtype">void</span>)setGlobalNavigator:(<a class="code" href="interface_t_t_base_navigator.php" title="A URL-based navigation system with built-in persistence.">TTBaseNavigator</a>*)navigator;
+<a name="l00178"></a>00178 
+<a name="l00197"></a>00197 - (<a class="code" href="class_u_i_view_controller.php" title="Additions.">UIViewController</a>*)openURLAction:(<a class="code" href="interface_t_t_u_r_l_action.php" title="This object bundles up a set of parameters and ships them off to TTBasicNavigator&amp;#39;s openURLAction...">TTURLAction</a>*)URLAction;
+<a name="l00198"></a>00198 
+<a name="l00204"></a>00204 - (<a class="code" href="class_u_i_view_controller.php" title="Additions.">UIViewController</a>*)openURLs:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)URL,...;
+<a name="l00205"></a>00205 
+<a name="l00211"></a>00211 - (<a class="code" href="class_u_i_view_controller.php" title="Additions.">UIViewController</a>*)viewControllerForURL:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)URL;
+<a name="l00212"></a>00212 
+<a name="l00218"></a>00218 - (<a class="code" href="class_u_i_view_controller.php" title="Additions.">UIViewController</a>*)viewControllerForURL:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)URL query:(<a class="code" href="class_n_s_dictionary.php">NSDictionary</a>*)query;
+<a name="l00219"></a>00219 
+<a name="l00225"></a>00225 - (<a class="code" href="class_u_i_view_controller.php" title="Additions.">UIViewController</a>*)viewControllerForURL:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)URL query:(<a class="code" href="class_n_s_dictionary.php">NSDictionary</a>*)query
+<a name="l00226"></a>00226                                   pattern:(<a class="code" href="interface_t_t_u_r_l_pattern.php">TTURLPattern</a>**)pattern;
+<a name="l00227"></a>00227 
+<a name="l00235"></a>00235 - (<span class="keywordtype">void</span>)beginDelay;
+<a name="l00236"></a>00236 
+<a name="l00240"></a>00240 - (<span class="keywordtype">void</span>)endDelay;
+<a name="l00241"></a>00241 
+<a name="l00245"></a>00245 - (<span class="keywordtype">void</span>)cancelDelay;
+<a name="l00246"></a>00246 
+<a name="l00250"></a>00250 - (<span class="keywordtype">void</span>)persistViewControllers;
+<a name="l00251"></a>00251 
+<a name="l00255"></a>00255 - (<a class="code" href="class_u_i_view_controller.php" title="Additions.">UIViewController</a>*)restoreViewControllers;
+<a name="l00256"></a>00256 
+<a name="l00263"></a>00263 - (<span class="keywordtype">void</span>)persistController:(<a class="code" href="class_u_i_view_controller.php" title="Additions.">UIViewController</a>*)controller path:(<a class="code" href="class_n_s_mutable_array.php" title="Additions.">NSMutableArray</a>*)path;
+<a name="l00264"></a>00264 
+<a name="l00268"></a>00268 - (<span class="keywordtype">void</span>)removeAllViewControllers;
+<a name="l00269"></a>00269 
+<a name="l00273"></a>00273 - (<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)pathForObject:(<span class="keywordtype">id</span>)<span class="keywordtype">object</span>;
+<a name="l00274"></a>00274 
+<a name="l00278"></a>00278 - (<span class="keywordtype">id</span>)objectForPath:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)path;
+<a name="l00279"></a>00279 
+<a name="l00283"></a>00283 - (<span class="keywordtype">void</span>)resetDefaults;
+<a name="l00284"></a>00284 
+<a name="l00285"></a>00285 @end
 </pre></div></div>
 </div>
 <!--- window showing the filter options -->

@@ -36,6 +36,7 @@
   <li><a href="http://three20.info/documentation">Documentation</a></li> 
   <li><a href="http://three20.info/extensions">Extensions</a></li> 
   <li><a href="http://three20.info/community">Community</a></li> 
+  <li><a href="http://forums.three20.info/">Forums</a></li> 
 </ul> 
  
 <div class="leadin"> 

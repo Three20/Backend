@@ -36,6 +36,7 @@
   <li><a href="http://three20.info/documentation">Documentation</a></li> 
   <li><a href="http://three20.info/extensions">Extensions</a></li> 
   <li><a href="http://three20.info/community">Community</a></li> 
+  <li><a href="http://forums.three20.info/">Forums</a></li> 
 </ul> 
  
 <div class="leadin"> 
@@ -85,7 +86,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h1>Three20 API Documentation </h1>  </div>
 </div>
 <div class="contents">
-<h3 class="version">1.0.4 </h3><p>Generated from Three20 Release <a href="http://three20.info/roadmap/1.0.4">1.0.4</a>. </p>
+<h3 class="version">1.0.4 </h3><p>Generated from Three20 Release <a href="http://three20.info/roadmap/v1.0.4.1">v1.0.4.1</a>. </p>
 </div>
 <!--- window showing the filter options -->
 <div id="MSearchSelectWindow"

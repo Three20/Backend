@@ -36,6 +36,7 @@
   <li><a href="http://three20.info/documentation">Documentation</a></li> 
   <li><a href="http://three20.info/extensions">Extensions</a></li> 
   <li><a href="http://three20.info/community">Community</a></li> 
+  <li><a href="http://forums.three20.info/">Forums</a></li> 
 </ul> 
  
 <div class="leadin"> 
@@ -239,7 +240,9 @@ id&lt; <a class="el" href="protocol_t_t_navigator_delegate-p.php">TTNavigatorDel
 <div class="memdoc">
 
 <p>Determines the navigator that contains this view. </p>
-<p>Traverse the view hierarchy until the root view container is reached. If this root container conforms to the <a class="el" href="protocol_t_t_navigator_root_container-p.php">TTNavigatorRootContainer</a> protocol, we call getNavigatorForController: with the top-most controller that contains this view that /isn't/ the container. If getNavigatorForController: returns a navigator, this navigator is returned. Otherwise, the global navigator is returned. </p>
+<p>Traverse the view hierarchy until the root view container is reached. If this root container conforms to the <a class="el" href="protocol_t_t_navigator_root_container-p.php">TTNavigatorRootContainer</a> protocol, we call getNavigatorForController: with the top-most controller that contains this view that /isn't/ the container. If getNavigatorForController: returns a navigator, this navigator is returned. Otherwise, the global navigator is returned.</p>
+<p>If the given view is not, in fact, a view, which is the case if a UIBarButtonItem is passed, returns the global navigator via [<a class="el" href="interface_t_t_base_navigator.php" title="A URL-based navigation system with built-in persistence.">TTBaseNavigator</a> globalNavigator].</p>
+<p>If you need to use a specific navigator for UIBarButtonItem, handle the button tap yourself and use navigatorForView: on an actual view in the controller. </p>
 
 </div>
 </div>
