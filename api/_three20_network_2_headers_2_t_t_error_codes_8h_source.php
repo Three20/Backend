@@ -107,9 +107,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00014"></a>00014 <span class="comment">// limitations under the License.</span>
 <a name="l00015"></a>00015 <span class="comment">//</span>
 <a name="l00016"></a>00016 
-<a name="l00017"></a>00017 <span class="keyword">extern</span> <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>* <span class="keyword">const</span> kTTNetworkErrorDomain;
-<a name="l00018"></a>00018 <span class="keyword">extern</span> NSInteger <span class="keyword">const</span> kTTNetworkErrorCodeInvalidImage;
-<a name="l00019"></a>00019 
+<a name="l00017"></a>00017 <span class="preprocessor">#import &lt;Foundation/Foundation.h&gt;</span>
+<a name="l00018"></a>00018 
+<a name="l00019"></a>00019 <span class="keyword">extern</span> <a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>* <span class="keyword">const</span> kTTNetworkErrorDomain;
+<a name="l00020"></a>00020 <span class="keyword">extern</span> NSInteger <span class="keyword">const</span> kTTNetworkErrorCodeInvalidImage;
+<a name="l00021"></a>00021 
 </pre></div></div>
 </div>
 <!--- window showing the filter options -->

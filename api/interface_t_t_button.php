@@ -121,7 +121,7 @@ Public Member Functions</h2></td></tr>
 (void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>setTitle:forState:</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af8d3926727810ee8658ea83f336616ce"></a><!-- doxytag: member="TTButton::imageForState:" ref="af8d3926727810ee8658ea83f336616ce" args="(UIControlState state)" -->
 (<a class="el" href="class_n_s_string.php">NSString</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>imageForState:</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa5a04a59e482f1215eacfc38def99257"></a><!-- doxytag: member="TTButton::setImage:forState:" ref="aa5a04a59e482f1215eacfc38def99257" args="(NSString *title,[forState] UIControlState state)" -->
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac33dcd891550e77227c391365e7ac6a3"></a><!-- doxytag: member="TTButton::setImage:forState:" ref="ac33dcd891550e77227c391365e7ac6a3" args="(NSString *imageURL,[forState] UIControlState state)" -->
 (void)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>setImage:forState:</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3da4d1884047a4c7bc4884549f293435"></a><!-- doxytag: member="TTButton::styleForState:" ref="a3da4d1884047a4c7bc4884549f293435" args="(UIControlState state)" -->
 (<a class="el" href="interface_t_t_style.php">TTStyle</a> *)&nbsp;</td><td class="memItemRight" valign="bottom">- <b>styleForState:</b></td></tr>

@@ -224,7 +224,7 @@ BOOL&nbsp;</td><td class="memItemRight" valign="bottom"><a class="el" href="inte
 <div class="memdoc">
 
 <p>The style of the status bar when this view controller is appearing. </p>
-<p>UIStatusBarStyleDefault </p>
+<p>[[UIApplication sharedApplication] statusBarStyle] via app's info.plist </p>
 
 </div>
 </div>

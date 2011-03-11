@@ -122,6 +122,8 @@ def&nbsp;</td><td class="memItemRight" valign="bottom"><b>path</b></td></tr>
 def&nbsp;</td><td class="memItemRight" valign="bottom"><b>xcodeprojpath</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a991656bf3f6eca0acb2aa90a70a04861"></a><!-- doxytag: member="Pbxproj::Pbxproj::guid" ref="a991656bf3f6eca0acb2aa90a70a04861" args="" -->
 def&nbsp;</td><td class="memItemRight" valign="bottom"><b>guid</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52162fb131b5f9f861cfe68b8324af0c"></a><!-- doxytag: member="Pbxproj::Pbxproj::version" ref="a52162fb131b5f9f861cfe68b8324af0c" args="" -->
+def&nbsp;</td><td class="memItemRight" valign="bottom"><b>version</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08f78751c01bba31aa88d8827180f91e"></a><!-- doxytag: member="Pbxproj::Pbxproj::get_project_data" ref="a08f78751c01bba31aa88d8827180f91e" args="" -->
 def&nbsp;</td><td class="memItemRight" valign="bottom"><b>get_project_data</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a32e70b1bbcbd76b270750002e06928a5"></a><!-- doxytag: member="Pbxproj::Pbxproj::set_project_data" ref="a32e70b1bbcbd76b270750002e06928a5" args="" -->
@@ -186,6 +188,10 @@ Private Attributes</h2></td></tr>
 &nbsp;</td><td class="memItemRight" valign="bottom"><b>_guid</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4b17133607b857ea0cb525961c052578"></a><!-- doxytag: member="Pbxproj::Pbxproj::_deps" ref="a4b17133607b857ea0cb525961c052578" args="" -->
 &nbsp;</td><td class="memItemRight" valign="bottom"><b>_deps</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa729d26f1d8207f9f3c0fe5c699ad03a"></a><!-- doxytag: member="Pbxproj::Pbxproj::_xcode_version" ref="aa729d26f1d8207f9f3c0fe5c699ad03a" args="" -->
+&nbsp;</td><td class="memItemRight" valign="bottom"><b>_xcode_version</b></td></tr>
+<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa060a974c5a2bde10d2601ba7d28159c"></a><!-- doxytag: member="Pbxproj::Pbxproj::_projectVersion" ref="aa060a974c5a2bde10d2601ba7d28159c" args="" -->
+&nbsp;</td><td class="memItemRight" valign="bottom"><b>_projectVersion</b></td></tr>
 <tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0065171b8617d3726d71dda13216f190"></a><!-- doxytag: member="Pbxproj::Pbxproj::_resources_guid" ref="a0065171b8617d3726d71dda13216f190" args="" -->
 &nbsp;</td><td class="memItemRight" valign="bottom"><b>_resources_guid</b></td></tr>
 </table>

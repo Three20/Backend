@@ -133,7 +133,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00040"></a>00040 - (<span class="keywordtype">void</span>)setTitle:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)title forState:(UIControlState)state;
 <a name="l00041"></a>00041 
 <a name="l00042"></a>00042 - (<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)imageForState:(UIControlState)state;
-<a name="l00043"></a>00043 - (<span class="keywordtype">void</span>)setImage:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)title forState:(UIControlState)state;
+<a name="l00043"></a>00043 - (<span class="keywordtype">void</span>)setImage:(<a class="code" href="class_n_s_string.php" title="Additions.">NSString</a>*)imageURL forState:(UIControlState)state;
 <a name="l00044"></a>00044 
 <a name="l00045"></a>00045 - (<a class="code" href="interface_t_t_style.php">TTStyle</a>*)styleForState:(UIControlState)state;
 <a name="l00046"></a>00046 - (<span class="keywordtype">void</span>)setStyle:(<a class="code" href="interface_t_t_style.php">TTStyle</a>*)style forState:(UIControlState)state;

@@ -126,25 +126,25 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00042"></a>00042 
 <a name="l00049"></a><a class="code" href="interface_t_t_base_view_controller.php#af9f360ea82a7008a4cdb785765ca368d">00049</a> @property (nonatomic, retain) <a class="code" href="class_u_i_color.php" title="Additions.">UIColor</a>* navigationBarTintColor;
 <a name="l00050"></a>00050 
-<a name="l00056"></a><a class="code" href="interface_t_t_base_view_controller.php#a9fbdc64e7c1d0e33c6e5c18c637484f7">00056</a> @property (nonatomic) UIStatusBarStyle statusBarStyle;
-<a name="l00057"></a>00057 
-<a name="l00061"></a><a class="code" href="interface_t_t_base_view_controller.php#aba404e0d3d915055ce87f45191c2be8d">00061</a> @property (nonatomic, readonly) BOOL hasViewAppeared;
-<a name="l00062"></a>00062 
-<a name="l00066"></a><a class="code" href="interface_t_t_base_view_controller.php#afeb4bf49b4efd4199f03e32dc793c87d">00066</a> @property (nonatomic, readonly) BOOL isViewAppearing;
-<a name="l00067"></a>00067 
-<a name="l00071"></a><a class="code" href="interface_t_t_base_view_controller.php#a9c53a69ddcc3e4d4f8eef61d51d98c75">00071</a> @property (nonatomic) BOOL autoresizesForKeyboard;
-<a name="l00072"></a>00072 
+<a name="l00057"></a><a class="code" href="interface_t_t_base_view_controller.php#a9fbdc64e7c1d0e33c6e5c18c637484f7">00057</a> @property (nonatomic) UIStatusBarStyle statusBarStyle;
+<a name="l00058"></a>00058 
+<a name="l00062"></a><a class="code" href="interface_t_t_base_view_controller.php#aba404e0d3d915055ce87f45191c2be8d">00062</a> @property (nonatomic, readonly) BOOL hasViewAppeared;
+<a name="l00063"></a>00063 
+<a name="l00067"></a><a class="code" href="interface_t_t_base_view_controller.php#afeb4bf49b4efd4199f03e32dc793c87d">00067</a> @property (nonatomic, readonly) BOOL isViewAppearing;
+<a name="l00068"></a>00068 
+<a name="l00072"></a><a class="code" href="interface_t_t_base_view_controller.php#a9c53a69ddcc3e4d4f8eef61d51d98c75">00072</a> @property (nonatomic) BOOL autoresizesForKeyboard;
 <a name="l00073"></a>00073 
-<a name="l00077"></a>00077 - (<span class="keywordtype">void</span>)keyboardWillAppear:(BOOL)animated withBounds:(CGRect)bounds;
-<a name="l00078"></a>00078 
-<a name="l00082"></a>00082 - (<span class="keywordtype">void</span>)keyboardWillDisappear:(BOOL)animated withBounds:(CGRect)bounds;
-<a name="l00083"></a>00083 
-<a name="l00087"></a>00087 - (<span class="keywordtype">void</span>)keyboardDidAppear:(BOOL)animated withBounds:(CGRect)bounds;
-<a name="l00088"></a>00088 
-<a name="l00092"></a>00092 - (<span class="keywordtype">void</span>)keyboardDidDisappear:(BOOL)animated withBounds:(CGRect)bounds;
-<a name="l00093"></a>00093 
+<a name="l00074"></a>00074 
+<a name="l00078"></a>00078 - (<span class="keywordtype">void</span>)keyboardWillAppear:(BOOL)animated withBounds:(CGRect)bounds;
+<a name="l00079"></a>00079 
+<a name="l00083"></a>00083 - (<span class="keywordtype">void</span>)keyboardWillDisappear:(BOOL)animated withBounds:(CGRect)bounds;
+<a name="l00084"></a>00084 
+<a name="l00088"></a>00088 - (<span class="keywordtype">void</span>)keyboardDidAppear:(BOOL)animated withBounds:(CGRect)bounds;
+<a name="l00089"></a>00089 
+<a name="l00093"></a>00093 - (<span class="keywordtype">void</span>)keyboardDidDisappear:(BOOL)animated withBounds:(CGRect)bounds;
 <a name="l00094"></a>00094 
-<a name="l00095"></a>00095 @end
+<a name="l00095"></a>00095 
+<a name="l00096"></a>00096 @end
 </pre></div></div>
 </div>
 <!--- window showing the filter options -->
